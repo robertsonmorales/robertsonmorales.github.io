@@ -1,0 +1,61 @@
+[{
+    "id": 1,
+    "audio": "Ed Sheeran - Supermarket Flowers [Official Audio].mp3",
+    "image": "ed-sheeran-supermarket-flowers.jpg",
+    "artist": "Ed Sheeran",
+    "title": "Supermarket Flowers"
+},{
+    "id": 2,
+    "audio": "MV Jack Stauber - Buttercup.mp3",
+    "image": "jack-stauber-buttercup.jpg",
+    "artist": "Jack Stauber",
+    "title": "Buttercup"
+},{
+    "id": 3,
+    "audio": "Jeremy Zucker - always, i'll care (Lyric Video).mp3",
+    "image": "jeremy-zucker-always-ill-care.jpg",
+    "artist": "Jeremy Zucker",
+    "title": "Always I'll Care"
+},{
+    "id": 4,
+    "audio": "Jeremy Zucker - supercuts (Lyric Video).mp3",
+    "image": "jeremy-zucker-papercuts.jpg",
+    "artist": "Jeremy Zucker",
+    "title": "Papercuts"
+},{
+    "id": 5,
+    "audio": "Justin Bieber - Holy (Lyrics) ft. Chance The Rapper.mp3",
+    "image": "justin-bieber-holy.png",
+    "artist": "Justin Bieber",
+    "title": "Holy"
+},{
+    "id": 6,
+    "audio": "Khalid - Better (Official Video).mp3",
+    "image": "khalid-better.jpg",
+    "artist": "Khalid",
+    "title": "Better"
+},{
+    "id": 7,
+    "audio": "Marshmello ft. Bastille - Happier (Official Music Video).mp3",
+    "image": "marshmello-and-bastille-happier.png",
+    "artist": "Marshmello ft. Bastille",
+    "title": "Happier"
+},{
+    "id": 8,
+    "audio": "Marshmello - Blocks (Official Music Video).mp3",
+    "image": "marshmello-blocks.jpg",
+    "artist": "Marshmello",
+    "title": "Blocks"
+},{
+    "id": 9,
+    "audio": "Marshmello - Moving On (Original Mix).mp3",
+    "image": "marshmello-moving-on.jpg",
+    "artist": "Marshmello",
+    "title": "Moving On"
+},{
+    "id": 10,
+    "audio": "SLANDER - Love Is Gone ft. Dylan Matthew (Acoustic).mp3",
+    "image": "slander-love-is-gone.jpg",
+    "artist": "Slander ft. Dylan Matthew (Accoustic)",
+    "title": "Love Is Gone"
+}]
