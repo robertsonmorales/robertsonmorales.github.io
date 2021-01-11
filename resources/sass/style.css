@@ -56,8 +56,14 @@ body {
 .new-card {
   -webkit-box-shadow: 0 10px 40px 10px rgba(140, 152, 164, 0.175) !important;
           box-shadow: 0 10px 40px 10px rgba(140, 152, 164, 0.175) !important;
-  border: 0.0625rem solid rgba(231, 234, 243, 0.7);
-  border-radius: 0.75rem;
+  border: 0.0625rem solid rgba(231, 234, 243, 0.7) !important;
+  border-radius: 0.75rem !important;
+  overflow: hidden;
+}
+
+.img-fluid-extension {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .nav-selected {

@@ -67,8 +67,13 @@ body{
 
 .new-card{
     box-shadow: $dropdown-shadow !important;
-    border: $border;
-    border-radius: $radius;
+    border: $border !important;
+    border-radius: $radius !important;
+    overflow: hidden;
+}
+
+.img-fluid-extension{
+    object-fit: fill;
 }
 
 .nav-selected{
