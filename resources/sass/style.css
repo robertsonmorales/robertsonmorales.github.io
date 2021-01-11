@@ -45,6 +45,19 @@ body {
   line-height: 25px;
 }
 
+.media-icons {
+  color: #fff;
+  text-decoration: none;
+}
+
+.media-icon-facebook {
+  background-color: #38529a;
+}
+
+.media-icon-linkedin {
+  background-color: #028bc8;
+}
+
 .active {
   color: #007bff !important;
 }
@@ -88,6 +101,11 @@ body {
   width: 100%;
   font-weight: 600;
   font-size: 1em;
+}
+
+.dark-mode-revert {
+  -webkit-filter: invert(100%) !important;
+          filter: invert(100%) !important;
 }
 
 .dark-mode {

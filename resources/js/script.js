@@ -8,31 +8,32 @@ function navSelected(id){
 
     let el = document.getElementById(id);
     el.classList.add('nav-selected');
+    let html = document.querySelectorAll('html')[0].classList.contains('dark-mode');
+    if(html){
+        el.classList.add('dark-mode-revert');
+    }else{
+        el.classList.remove('dark-mode-revert');
+    }
 }
 
 $(() => {
-    function getAge() {
-        var today = new Date();
-        var birthDate = new Date('09/27/1999');
-        var age = today.getFullYear() - birthDate.getFullYear();
-        var m = today.getMonth() - birthDate.getMonth();
-        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-            age = age - 1;
-        }
-
-        $('#my-age').html(age);
-    }
-
-    getAge();
-
     $(document).on('scroll', function () {
         $("#navbar").toggleClass('shadow-sm', $(this).scrollTop() > $("#navbar").height());
-        // $("#navbar").toggleClass('scrolled', $(this).scrollTop() > $nav.height());
 	});
 
     $('#dark-light-mode').on('click', function(){
-        $div = $('html');
-        $div.toggleClass('dark-mode');
+        $('html').toggleClass('dark-mode');
+        $('.media-icons').toggleClass('dark-mode-revert');
+        $('.img-fluid').toggleClass('dark-mode-revert');
+        $('.text-primary').toggleClass('dark-mode-revert');
+        $('.btn-outline-primary').toggleClass('dark-mode-revert');
+
+        if($('html').hasClass('dark-mode')){
+            $('.nav-selected').addClass('dark-mode-revert');
+        }else{
+            $('.nav-selected').removeClass('dark-mode-revert');
+        }
+
         $('.dark-theme').toggleClass('d-none');
         $('.light-theme').toggleClass('d-none');
     });
