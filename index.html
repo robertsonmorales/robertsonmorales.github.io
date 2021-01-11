@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple music player with neumorphism effects">    
+
     <title>trebordev</title>
 
-    <script src="plugins/jquery/dist/jquery.min.js"></script>
-    <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="plugins/feather-icons/dist/feather.min.js"></script>
+    <link rel="preload" href="plugins/bootstrap/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="resources/sass/style.css" as="style">
+
+    <link rel="preload" href="plugins/jquery/dist/jquery.min.js" as="script">
+    <link rel="preload" href="plugins/feather-icons/dist/feather.min.js" as="script">
+    <link rel="preload" href="plugins/bootstrap/dist/js/bootstrap.min.js" as="script">
+    <link rel="preload" href="resources/js/script.js" as="script">
+
+    <link rel="shortcut icon" href="resources/images/logo/favicon/logo_size.jpg" type="image/x-icon">
     <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="resources/sass/style.css">
-
-    <!-- <link rel="shortcut icon" href="resources/images/logo/favicon/logo_size.jpg" type="image/x-icon"> -->
 </head>
-<body id="index"> <!-- data-spy="scroll" data-target="#navbar" data-offset="0" -->
-    <div class="container">
+<body>
+    <div class="container" id="index">
         <nav class="navbar navbar-expand-md navbar-light bg-white px-sm-5 py-2 fixed-top" id="navbar">
             <a class="navbar-brand font-weight-bold" href="#index">
                 <span class="text-primary">trebor</span><span class="text-dark ">dev</span>
@@ -61,12 +63,12 @@
             <section class="row no-gutters flex-column flex-md-row align-items-center justify-content-center py-5 my-5">
     
                 <div class="col">
-                    <img src="resources/images/me/58919933.jpg" class="img-fluid rounded-circle img-dark-mode">
+                    <img src="resources/images/me/58919933.jpg" class="img-fluid rounded-circle img-dark-mode" alt="avatar">
                 </div>
     
                 <div class="col">
                     <h1 class="mb-2 font-weight-bold">- Hello there, I'm <span class="text-primary">Robertson</span> Morales.</h1>
-                    <h6 class="text-muted mb-4 about-me">I'm a Web Designer & Developer, I pretty much enjoy doing this job and I love discovering new opportunities that will strongly develop my skills and expertise. Let's design & develop things on the internet.</h6>
+                    <p class="text-muted mb-4 about-me">I'm a Web Designer & Developer, I pretty much enjoy doing this job and I love discovering new opportunities that will strongly develop my skills and expertise. Let's design & develop things on the internet.</p>
                     
                     <div class="d-flex justify-content-start">
                         <a href="https://web.facebook.com/profile.php?id=100004962736826" title="Connect with me at facebook" target="_blank" class="media-icons media-icon-facebook mr-3 rounded-circle p-2 shadow">
@@ -107,32 +109,32 @@
     
                     <div class="card-deck">
                         <div class="card new-card rounded justify-content-between">
-                            <img class="img-fluid w-100 img-fluid-extension" src="resources/images/projects/login-forms.JPG">
+                            <img class="img-fluid w-100 img-fluid-extension" src="resources/images/projects/login-forms.JPG" alt="Login Form UI Designs">
                             
                             <div class="card-body text-left">
-                                <h4 class="card-title">Login Form UI Designs</h4>
+                                <div class="h4 card-title font-weight-bold">Login Form UI Designs</div>
                                 <p class="card-text text-muted">This is a different type of approach in creating a login form, it's actually pretty basic but good for starter/beginners.</p>
-                                <a href="#" class="btn btn-outline-primary">Overview</a>
+                                <a href="#" class="btn btn-primary">Overview</a>
                             </div>
                         </div>
 
                         <div class="card new-card rounded">
-                            <img class="img-fluid w-100 img-fluid-extension" src="resources/images/projects/music-player-main.jpg">
+                            <img class="img-fluid w-100 img-fluid-extension" src="resources/images/projects/music-player-main.jpg" alt="Music Player with Neumorphism Effect">
                             
                             <div class="card-body text-left">
-                                <h4 class="card-title">Music Player with Neumorphism Effect</h4>
+                                <div class="h4 card-title font-weight-bold">Music Player with Neumorphism Effect</div>
                                 <p class="card-text text-muted">This is a music player, with static audio files. It has its basic functionalities such as shuffle, loop, next, prev, volume, play, and stop.</p>
-                                <a href="#" class="btn btn-outline-primary">Overview</a>
+                                <a href="#" class="btn btn-primary">Overview</a>
                             </div>
                         </div>
 
                         <div class="card new-card rounded justify-content-between">
-                            <img class="img-fluid w-100 img-fluid-extension" src="resources/images/projects/profile-cards.JPG">
+                            <img class="img-fluid w-100 img-fluid-extension" src="resources/images/projects/profile-cards.JPG" alt="Profile Cards with Hover Effect">
                             
                             <div class="card-body text-left">
-                                <h4 class="card-title">Profile Cards with Hover Effect</h4>
+                                <div class="h4 card-title font-weight-bold">Profile Cards with Hover Effect</div>
                                 <p class="card-text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo sunt autem magni saepe repellendus fuga culpa quibusdam optio ullam.</p>
-                                <a href="#" class="btn btn-outline-primary">Overview</a>
+                                <a href="#" class="btn btn-primary">Overview</a>
                             </div>
                         </div>
                     </div>
@@ -187,6 +189,9 @@
             </section> -->
         </main>
     </div>
-    <script src="resources/js/script.js"></script>
+    <script defer src="plugins/jquery/dist/jquery.min.js"></script>
+    <script defer src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script defer src="plugins/feather-icons/dist/feather.min.js"></script>
+    <script defer src="resources/js/script.js"></script>
 </body>
 </html>

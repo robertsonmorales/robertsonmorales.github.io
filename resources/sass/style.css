@@ -1,6 +1,31 @@
 @font-face {
-  font-family: 'Montserrat';
-  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+  font-family: 'Poppins-Regular';
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+  font-display: swap;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-SemiBold';
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url("../fonts/Poppins/Poppins-Medium.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url("../fonts/Poppins/Poppins-Bold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url("../fonts/Poppins/Poppins-Light.ttf");
   font-display: swap;
 }
 
@@ -30,15 +55,19 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif !important;
   background-color: #ffffff !important;
   line-height: 1.6 !important;
+  font-family: "Poppins-Regular", sans-serif !important;
   font-size: 0.9rem !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
   position: relative;
   overflow-x: hidden;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+}
+
+.font-weight-bold {
+  font-family: "Poppins-Medium", sans-serif !important;
 }
 
 .about-me {
@@ -48,6 +77,11 @@ body {
 .media-icons {
   color: #fff;
   text-decoration: none;
+}
+
+.media-icons:hover {
+  color: #fff;
+  opacity: 0.9;
 }
 
 .media-icon-facebook {

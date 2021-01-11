@@ -17,6 +17,8 @@ function navSelected(id){
 }
 
 $(() => {
+    'use strict';
+
     $(document).on('scroll', function () {
         $("#navbar").toggleClass('shadow-sm', $(this).scrollTop() > $("#navbar").height());
 	});
@@ -26,7 +28,7 @@ $(() => {
         $('.media-icons').toggleClass('dark-mode-revert');
         $('.img-fluid').toggleClass('dark-mode-revert');
         $('.text-primary').toggleClass('dark-mode-revert');
-        $('.btn-outline-primary').toggleClass('dark-mode-revert');
+        $('.btn-primary').toggleClass('dark-mode-revert');
 
         if($('html').hasClass('dark-mode')){
             $('.nav-selected').addClass('dark-mode-revert');
