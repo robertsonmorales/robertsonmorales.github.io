@@ -3,127 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Simple music player with neumorphism effects">    
+    <title>trebordev</title>
 
-    <title>Music Player</title>
+    <script src="plugins/jquery/dist/jquery.min.js"></script>
+    <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="plugins/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
 
-    <link rel="preload" href="node_modules/bootstrap/dist/css/bootstrap.min.css" as="style">
-    <link rel="preload" href="resources/sass/style.css" as="style">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <link rel="preload" href="node_modules/jquery/dist/jquery.min.js" as="script">
-    <link rel="preload" href="node_modules/feather-icons/dist/feather.min.js" as="script">
-    <link rel="preload" href="node_modules/bootstrap/dist/js/bootstrap.min.js" as="script">
-    <link rel="preload" href="resources/js/script.js" as="script">
-
-    <link rel="shortcut icon" href="resources/images/favicon/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/sass/style.css">
 
+    <!-- <link rel="shortcut icon" href="resources/images/logo/favicon/logo_size.jpg" type="image/x-icon"> -->
 </head>
-<body>
-    <div class="container-fluid">
-        <div class="container-wrapper justify-content-between vh-100">
-            <!-- header -->
-            <div class="header my-3">
-                <div class="header-items h4 mb-0">Now Playing</div>
-
-                <div class="header-items">
-                    <div class="volume-range">
-                        <div class="range active d-none">
-                            <span class="mr-3">
-                                <i data-feather="volume-2"></i>
-                            </span>
-                            <input type="range" name="volume-range" id="volume-range" min="0" max="1" value="1" step="0.01">
-                        </div>
-                    </div>
-
-                    <button type="button" class="header-buttons active" id="btn-volume" title="Volume 100%">
-                        <div class="volume-x d-none">
-                            <i data-feather="volume-x"></i>
-                        </div>
-                        <div class="volume d-none">
-                            <i data-feather="volume"></i>
-                        </div>
-                        <div class="volume-1 d-none">
-                            <i data-feather="volume-1"></i>
-                        </div>
-                        <div class="volume-2">
-                            <i data-feather="volume-2"></i>
-                        </div>
-                    </button>
-                </div>
-            </div>
-            <!-- ends here -->
-
-            <!-- artist -->
-            <div class="artist">
-                <div class="row no-gutters artist-wrapper">
-                    <div class="artist-disc mb-2">
-                        <!-- <img id="artist" class="img-thumbnail active"> -->
-                        <span class="music-icon">
-                            <i data-feather="music"></i>
-                        </span>
-                    </div>
-                    <div class="artist-details">
-                        <p id="artist-info" class="mb-0"></p>
-                        <h2 id="song-title"></h2>
-                    </div>
-                </div>
-            </div>
-            <!-- ends here -->
-
-            <div class="actions mb-3">
-                <div class="audio-tracker w-100 mb-3">
-                    <div class="time-tracker">
-                        <div id="current-time" class="mr-2">0:00</div>
-                        <input class="audio-track" type="range" name="audio-track" id="audio-track" min="0" step="1" value="0" title="Audio Tracker">
-                        <div id="duration" class="ml-2">0:00</div>
-                    </div>
-                </div>
-
-                <div class="filters justify-content-between justify-content-sm-center mb-2">
-                    <button type="button" class="btn-action active" id="btn-shuffle" title="Shuffle">
-                        <i data-feather="shuffle"></i>
-                    </button>
-                    <button type="button" class="btn-action active" id="btn-back" title="Back">
-                        <i data-feather="skip-back"></i>
-                    </button>
-                    <button type="button" class="btn-action active" id="btn-pause" style="display: none;" title="Pause">
-                        <i data-feather="pause"></i>
-                    </button>
-                    <button type="button" class="btn-action active" id="btn-play" title="Play">
-                        <i data-feather="play"></i>
-                    </button>
-                    <button type="button" class="btn-action active" id="btn-next" title="Next">
-                        <i data-feather="skip-forward"></i>
-                    </button>
-                    <button type="button" class="btn-action active" id="btn-repeat" title="Repeat: Off">
-                        <i data-feather="repeat"></i>
-                    </button>
-                </div>
-
-                <div class="show-list d-flex">
-                    <button type="button" class="btn-action" id="btn-show" title="Show List">
-                        <i data-feather="chevron-up"></i>
-                    </button>
-                </div>
-            </div>
-
-            <div class="table-responsive d-none mb-3" id="song-list-table">
-                <table class="table table-hover">
-                    <tbody id="tbody"></tbody>
-                </table>
-            </div>
-        </div>
-    </div>
+<body id="index"> <!-- data-spy="scroll" data-target="#navbar" data-offset="0" -->
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light bg-white px-sm-5 py-2 fixed-top" id="navbar">
+            <a class="navbar-brand font-weight-bold" href="#index">
+                <span class="text-primary">trebor</span><span class="text-dark ">dev</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNavbar" aria-controls="toggleNavbar" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
+              <i data-feather="menu"></i>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="toggleNavbar">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
     
-    <audio id="audio" controls type="audio/mp3, audio/mpeg" class="d-none"></audio>
+                <div class="navbar-text">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-xs-100">
+                        <li class="nav-item mr-3">
+                            <a class="nav-link text-muted navbar" href="#index" id="nav-index" onclick="navSelected('nav-index')">Home</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link text-muted navbar" href="#projects" id="nav-projects" onclick="navSelected('nav-projects')">Projects</a>
+                        </li>                    
+                        <li class="nav-item mr-3">
+                            <a class="nav-link text-muted navbar" href="#services" id="nav-services" onclick="navSelected('nav-works')">Services</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link text-muted navbar" href="#contact" id="nav-contact" onclick="navSelected('nav-contact')">Contact</a>
+                        </li>
+                        <li class="nav-item mr-3"></li>
+                        <li class="nav-item">
+                            <button class="nav-link text-muted navbar btn" title="Turn on dark mode" id="dark-light-mode">
+                                <span class="dark-theme"><i data-feather="moon"></i></span>
+                                <span class="light-theme d-none"><i data-feather="sun"></i></span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <!-- plugins -->
-    <script defer src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script defer src="node_modules/feather-icons/dist/feather.min.js"></script>
-    <script defer src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script defer src="resources/js/script.js"></script> 
-    <!-- ends here -->
+        <main>
+            <section class="row no-gutters flex-column flex-md-row align-items-center justify-content-center py-5 my-5">
+    
+                <div class="col">
+                    <img src="resources/images/me/58919933.jpg" class="img-fluid">
+                </div>
+    
+                <div class="col">
+                    <h1 class="mb-2 font-weight-bold">- Hello I'm Robert a Web <span class="text-primary">Designer</span> & <span class="text-primary">Developer</span>.</h1>
+                    <h6 class="text-muted mb-4 about-me">I pretty much enjoy doing this job and I love discovering new opportunities that will strongly develop my skills and expertise. Let's design & develop things on the internet.</h6>
+                    
+                    <div class="d-flex justify-content-start">
+                        <a href="https://web.facebook.com/profile.php?id=100004962736826" title="Connect with me at facebook" target="_blank" class="mr-3 rounded-circle p-2 shadow" style="background-color: #38529a; color: #fff; text-decoration: none;">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="https://github.com/RobertPujante" title="Follow me at github" target="_blank" class="bg-dark mr-3 rounded-circle p-2 shadow" style="color: #fff; text-decoration: none;">
+                            <i data-feather="github"></i>
+                        </a>
+                        <a href="http://www.linkedin.com/in/robert-morales-517a721bb" title="Connect with me at linkedin" target="_blank" class="mr-3 rounded-circle p-2 shadow" style="background-color: #028bc8; color: #fff; text-decoration: none;">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            
+            </section>
+    
+            <!-- skills -->
+            <!-- <section class="row flex-column no-gutters align-items-center mb-4">
+                <div class="col mb-sm-4">
+                    <h1 class="catch-phrase">Skills and Expertise</h1>
+                </div>
+    
+                <div class="col d-flex justify-content-between">
+                    <img src="resources/images/svg/adobe_xd.svg" alt="adobe xd" class="img-fluid">
+                    <img src="resources/images/svg/html-5.svg" alt="html 5" class="img-fluid">
+                    <img src="resources/images/svg/css.svg" alt="css" class="img-fluid">
+                    <img src="resources/images/svg/javascript.svg" alt="javascript" class="img-fluid">
+                    <img src="resources/images/svg/php.svg" alt="php" class="img-fluid">
+                    <img src="resources/images/svg/laravel.svg" alt="laravel" class="img-fluid" width="120">
+                    <img src="resources/images/svg/git.svg" alt="git" class="img-fluid" width="120">
+                </div>
+            </section> -->
+            <!-- ends here -->
+    
+            <section class="row no-gutters py-xs-1 py-sm-2 py-md-3 py-lg-4 py-xl-5 vh-100" id="projects">
+                <div class="col text-center">
+                    <br><br>
+                    <h1 class="catch-phrase mb-4">Projects</h1>
+    
+                    <div class="card-deck">
+                        <div class="card new-card rounded">
+                            <img class="image-fluid" src="resources/images/works/dashboard.PNG" width="200">
+                            <div class="card-body text-left">
+                                <h4 class="card-title">Back-End Portal</h4>
+                                <p class="card-text">Some example text.</p>
+                                <a href="#" class="btn btn-primary">Overview</a>
+                            </div>
+                        </div>
+                        <div class="card new-card rounded">
+                            <img class="image-fluid" src="resources/images/works/dashboard.PNG" width="200">
+                            
+                            <div class="card-body text-left">
+                                <h4 class="card-title">E-Commerce</h4>
+                                <p class="card-text">Some example text.</p>
+                                <a href="#" class="btn btn-primary">Overview</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="row no-gutters py-5 my-3" id="contact">
+                <div class="col-md d-flex flex-column justify-content-center">
+                    <br><br>
+                    <h1 class="catch-phrase text-center mb-4">Contact</h1>
+                    <div class="bg-white new-card p-4">
+                        <h5>Send a Message</h5>
+    
+                        <form action="" method="POST" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="name" class="text-muted">Name <span class="text-danger">*</span></label>
+                                <input type="text" name="name" id="name" class="form-control">
+                                <span class="text-danger" id="error-name" style="font-size: .8em;"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="text-muted">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" name="email" id="email" class="form-control">
+                                <span class="text-danger" id="error-email" style="font-size: .8em;"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="address" class="text-muted">Address <span class="text-danger">*</span></label>
+                                <input type="text" name="address" id="address" class="form-control">
+                                <span class="text-danger" id="error-address" style="font-size: .8em;"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="text-muted">How can I help? <span class="text-danger">*</span></label>
+                                <textarea name="message" id="message" cols="30" rows="5" class="form-control" style="resize: none;"></textarea>
+                                <span class="text-danger" id="error-message" style="font-size: .8em;"></span>
+                            </div>
+                            <div class="form-group text-right row no-gutters">
+                                <div class="col-2 mr-2">
+                                    <input type="file" class="d-none">
+                                    <button type="button" title="Attach File" class="btn btn-light"><i data-feather="paperclip"></i></button>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-primary font-weight-normal" id="btn-submit">
+                                        <div class="spinner-border spinner-border-sm d-none" id="spinner" role="status">
+                                            <span class="sr-only">Loading...</span>
+                                        </div>
+                                        <span id="submit-message">Submit Message</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="resources/js/script.js"></script>
 </body>
 </html>
