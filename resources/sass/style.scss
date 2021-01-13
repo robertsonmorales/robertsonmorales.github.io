@@ -69,7 +69,9 @@ html{
 }
 
 body{
-    background-color: #ffffff !important;
+    background-color: #fafafa !important;
+    // background: url('../images/svg/background.svg');
+    // background-size: cover;
     line-height: $line-height-base !important;
     font-family: $Poppins-Regular !important;
     font-size: $font-size-base !important;
@@ -115,6 +117,15 @@ body{
     }
 }
 
+.card-deck{
+    .card{
+        transition: all 0.4s ease;
+
+        &:hover{
+            transform: translateY(-2%);
+        }
+    }
+}
 .new-card{
     box-shadow: $dropdown-shadow !important;
     border: $border !important;

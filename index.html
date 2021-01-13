@@ -15,179 +15,179 @@
     <link rel="preload" href="plugins/bootstrap/dist/js/bootstrap.min.js" as="script">
     <link rel="preload" href="resources/js/script.js" as="script">
 
-    <link rel="shortcut icon" href="resources/images/logo/favicon/logo_size.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="resources/images/me/58919933.jpg" type="image/x-icon">
     <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/sass/style.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-md navbar-light bg-white px-sm-5 py-2 fixed-top" id="navbar">
+        <a class="navbar-brand font-weight-bold" href="#index">
+            <span class="text-primary">trebor</span><span class="text-dark ">dev</span>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNavbar" aria-controls="toggleNavbar" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
+          <i data-feather="menu"></i>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="toggleNavbar">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+
+            <div class="navbar-text">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-xs-100">
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-muted navbar" href="#index" id="nav-index" onclick="navSelected('nav-index')">Home</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-muted navbar" href="#skills" id="nav-skills" onclick="navSelected('nav-skills')">Skills</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-muted navbar" href="#projects" id="nav-projects" onclick="navSelected('nav-projects')">Projects</a>
+                    </li>              
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-muted navbar" href="#services" id="nav-services" onclick="navSelected('nav-services')">Services</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-muted navbar" href="#contact" id="nav-contact" onclick="navSelected('nav-contact')">Contact</a>
+                    </li>
+                    <li class="nav-item mr-3"></li>
+                    <li class="nav-item">
+                        <button class="nav-link text-muted navbar btn" title="Turn on dark mode" id="dark-light-mode">
+                            <span class="dark-theme"><i data-feather="moon"></i></span>
+                            <span class="light-theme d-none"><i data-feather="sun"></i></span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="container" id="index">
-        <nav class="navbar navbar-expand-md navbar-light bg-white px-sm-5 py-2 fixed-top" id="navbar">
-            <a class="navbar-brand font-weight-bold" href="#index">
-                <span class="text-primary">trebor</span><span class="text-dark ">dev</span>
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNavbar" aria-controls="toggleNavbar" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
-              <i data-feather="menu"></i>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="toggleNavbar">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+
+        <section class="row no-gutters flex-column flex-md-row align-items-center justify-content-center py-5 my-5">
     
-                <div class="navbar-text">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-xs-100">
-                        <li class="nav-item mr-3">
-                            <a class="nav-link text-muted navbar" href="#index" id="nav-index" onclick="navSelected('nav-index')">Home</a>
-                        </li>
-                        <li class="nav-item mr-3">
-                            <a class="nav-link text-muted navbar" href="#projects" id="nav-projects" onclick="navSelected('nav-projects')">Projects</a>
-                        </li>                    
-                        <li class="nav-item mr-3">
-                            <a class="nav-link text-muted navbar" href="#services" id="nav-services" onclick="navSelected('nav-works')">Services</a>
-                        </li>
-                        <li class="nav-item mr-3">
-                            <a class="nav-link text-muted navbar" href="#contact" id="nav-contact" onclick="navSelected('nav-contact')">Contact</a>
-                        </li>
-                        <li class="nav-item mr-3"></li>
-                        <li class="nav-item">
-                            <button class="nav-link text-muted navbar btn" title="Turn on dark mode" id="dark-light-mode">
-                                <span class="dark-theme"><i data-feather="moon"></i></span>
-                                <span class="light-theme d-none"><i data-feather="sun"></i></span>
-                            </button>
-                        </li>
-                    </ul>
+            <div class="col-5 mr-5">
+                <img src="resources/images/me/58919933.jpg" class="img-fluid rounded-circle img-dark-mode shadow" alt="avatar" id="avatar">
+            </div>
+
+            <div class="col">
+                <h1 class="mb-2 font-weight-bold">Robertson Morales, <br> Web <span class="text-primary">Designer</span> & <span class="text-primary">Developer</span></h1>
+                <p class="text-muted mb-4 about-me">- I pretty much enjoy doing this job and I love discovering new opportunities that will strongly develop my skills and expertise. Let's design & develop things on the internet.</p>
+            </div>
+        
+        </section>
+ 
+        <section class="row no-gutters flex-column align-items-center py-5 my-5" id="skills">
+            <div class="col mb-sm-4">
+                <h1 class="mb-4">Skills</h1>
+            </div>
+
+            <div class="col text-center">
+                <img src="resources/images/svg/skills/html.svg" alt="html 5" class="mr-5 mb-5 img-fluid img-fluid-extension" width="100" height="100">
+                <img src="resources/images/svg/skills/css3.svg" alt="css" class="mr-5 mb-5 img-fluid img-fluid-extension" width="100" height="100">
+                <img src="resources/images/svg/skills/sass.svg" alt="sass" class="mr-5 mb-5 img-fluid img-fluid-extension" width="100" height="100">
+                <img src="resources/images/svg/skills/javascript.svg" alt="javascript" class="mr-5 mb-5 img-fluid img-fluid-extension" width="100" height="120">
+                <img src="resources/images/svg/skills/jquery.svg" alt="jquery" class="mr-5 mb-5 img-fluid img-fluid-extension" width="100" height="100">
+                <div class="w-100"></div>
+                <img src="resources/images/svg/skills/angular.svg" alt="angular" class="mr-5 mb-5 img-fluid img-fluid-extension" width="100" height="100">
+                <img src="resources/images/svg/skills/php.svg" alt="php" class="mr-5 mb-5 img-fluid img-fluid-extension" width="100" height="100">
+                <img src="resources/images/svg/skills/laravel.svg" alt="git" class="mr-5 mb-5 img-fluid img-fluid-extension" width="100" height="100">
+                <img src="resources/images/svg/skills/git.svg" alt="git" class="mr-5 mb-5 img-fluid img-fluid-extension" width="100" height="100">
+                <img src="resources/images/svg/skills/adobe-xd.svg" alt="adobe xd" class="mr-5 mb-5 img-fluid img-fluid-extension" width="100" height="100">
+            </div>
+        </section>
+
+        <section class="row no-gutters py-5 my-5" id="projects">
+            <div class="col">
+                <h1 class="mb-4">Projects</h1>
+
+                <div class="card-deck">
+                    <div class="card new-card rounded justify-content-between">
+                        <img class="img-fluid w-100 img-fluid-extension" src="resources/images/projects/login-forms.JPG" alt="Login Form UI Designs">
+                        
+                        <div class="card-body text-left">
+                            <div class="h4 card-title font-weight-bold">Login Form UI Designs</div>
+                            <p class="card-text text-muted">This is a different type of approach in creating a login form, it's actually pretty basic but good for starter/beginners.</p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="btn btn-primary mr-2">Overview</a>
+                                <a href="#" class="btn btn-secondary">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card new-card rounded">
+                        <img class="img-fluid w-100 img-fluid-extension" src="resources/images/projects/music-player-main.jpg" alt="Music Player with Neumorphism Effect">
+                        
+                        <div class="card-body text-left">
+                            <div class="h4 card-title font-weight-bold">Music Player with Neumorphism Effect</div>
+                            <p class="card-text text-muted">This is a music player, with static audio files. It has its basic functionalities such as shuffle, loop, next, prev, volume, play, and stop.</p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="btn btn-primary mr-2">Overview</a>
+                                <a href="#" class="btn btn-secondary">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card new-card rounded justify-content-between">
+                        <img class="img-fluid w-100 img-fluid-extension" src="resources/images/projects/profile-cards.JPG" alt="Profile Cards with Hover Effect">
+                        
+                        <div class="card-body text-left">
+                            <div class="h4 card-title font-weight-bold">Profile Cards with Hover Effect</div>
+                            <p class="card-text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo sunt autem magni saepe repellendus fuga culpa quibusdam optio ullam.</p>
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="btn btn-primary mr-2">Overview</a>
+                                <a href="#" class="btn btn-secondary">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </section>
 
-        <main>
-            <section class="row no-gutters flex-column flex-md-row align-items-center justify-content-center py-5 my-5">
-    
-                <div class="col">
-                    <img src="resources/images/me/58919933.jpg" class="img-fluid rounded-circle img-dark-mode" alt="avatar">
-                </div>
-    
-                <div class="col">
-                    <h1 class="mb-2 font-weight-bold">- Hello there, I'm <span class="text-primary">Robertson</span> Morales.</h1>
-                    <p class="text-muted mb-4 about-me">I'm a Web Designer & Developer, I pretty much enjoy doing this job and I love discovering new opportunities that will strongly develop my skills and expertise. Let's design & develop things on the internet.</p>
-                    
-                    <div class="d-flex justify-content-start">
-                        <a href="https://web.facebook.com/profile.php?id=100004962736826" title="Connect with me at facebook" target="_blank" class="media-icons media-icon-facebook mr-3 rounded-circle p-2 shadow">
-                            <i data-feather="facebook"></i>
-                        </a>
-                        <a href="https://github.com/RobertPujante" title="Follow me at github" target="_blank" class="media-icons bg-dark mr-3 rounded-circle p-2 shadow">
-                            <i data-feather="github"></i>
-                        </a>
-                        <a href="http://www.linkedin.com/in/robert-morales-517a721bb" title="Connect with me at linkedin" target="_blank" class="media-icons media-icon-linkedin mr-3 rounded-circle p-2 shadow">
-                            <i data-feather="linkedin"></i>
-                        </a>
-                    </div>
-                </div>
-            
-            </section>
-    
-            <!-- skills -->
-            <!-- <section class="row flex-column no-gutters align-items-center mb-4">
-                <div class="col mb-sm-4">
-                    <h1 class="catch-phrase">Skills and Expertise</h1>
-                </div>
-    
-                <div class="col d-flex justify-content-between">
-                    <img src="resources/images/svg/adobe_xd.svg" alt="adobe xd" class="img-fluid">
-                    <img src="resources/images/svg/html-5.svg" alt="html 5" class="img-fluid">
-                    <img src="resources/images/svg/css.svg" alt="css" class="img-fluid">
-                    <img src="resources/images/svg/javascript.svg" alt="javascript" class="img-fluid">
-                    <img src="resources/images/svg/php.svg" alt="php" class="img-fluid">
-                    <img src="resources/images/svg/laravel.svg" alt="laravel" class="img-fluid" width="120">
-                    <img src="resources/images/svg/git.svg" alt="git" class="img-fluid" width="120">
-                </div>
-            </section> -->
-            <!-- ends here -->
-    
-            <section class="row no-gutters py-xs-1 py-5 my-5" id="projects">
-                <div class="col">
-                    <h1 class="mb-4">Projects</h1>
-    
-                    <div class="card-deck">
-                        <div class="card new-card rounded justify-content-between">
-                            <img class="img-fluid w-100 img-fluid-extension" src="resources/images/projects/login-forms.JPG" alt="Login Form UI Designs">
-                            
-                            <div class="card-body text-left">
-                                <div class="h4 card-title font-weight-bold">Login Form UI Designs</div>
-                                <p class="card-text text-muted">This is a different type of approach in creating a login form, it's actually pretty basic but good for starter/beginners.</p>
-                                <a href="#" class="btn btn-primary">Overview</a>
+        <!-- <section class="row no-gutters py-5 my-3" id="contact">
+            <div class="col-md d-flex flex-column justify-content-center">
+                <br><br>
+                <h1 class="catch-phrase text-center mb-4">Contact</h1>
+                <div class="bg-white new-card p-4">
+                    <h5>Send a Message</h5>
+
+                    <form action="" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="name" class="text-muted">Name <span class="text-danger">*</span></label>
+                            <input type="text" name="name" id="name" class="form-control">
+                            <span class="text-danger" id="error-name" style="font-size: .8em;"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="text-muted">Email Address <span class="text-danger">*</span></label>
+                            <input type="email" name="email" id="email" class="form-control">
+                            <span class="text-danger" id="error-email" style="font-size: .8em;"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="address" class="text-muted">Address <span class="text-danger">*</span></label>
+                            <input type="text" name="address" id="address" class="form-control">
+                            <span class="text-danger" id="error-address" style="font-size: .8em;"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="text-muted">How can I help? <span class="text-danger">*</span></label>
+                            <textarea name="message" id="message" cols="30" rows="5" class="form-control" style="resize: none;"></textarea>
+                            <span class="text-danger" id="error-message" style="font-size: .8em;"></span>
+                        </div>
+                        <div class="form-group text-right row no-gutters">
+                            <div class="col-2 mr-2">
+                                <input type="file" class="d-none">
+                                <button type="button" title="Attach File" class="btn btn-light"><i data-feather="paperclip"></i></button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-primary font-weight-normal" id="btn-submit">
+                                    <div class="spinner-border spinner-border-sm d-none" id="spinner" role="status">
+                                        <span class="sr-only">Loading...</span>
+                                    </div>
+                                    <span id="submit-message">Submit Message</span>
+                                </button>
                             </div>
                         </div>
-
-                        <div class="card new-card rounded">
-                            <img class="img-fluid w-100 img-fluid-extension" src="resources/images/projects/music-player-main.jpg" alt="Music Player with Neumorphism Effect">
-                            
-                            <div class="card-body text-left">
-                                <div class="h4 card-title font-weight-bold">Music Player with Neumorphism Effect</div>
-                                <p class="card-text text-muted">This is a music player, with static audio files. It has its basic functionalities such as shuffle, loop, next, prev, volume, play, and stop.</p>
-                                <a href="#" class="btn btn-primary">Overview</a>
-                            </div>
-                        </div>
-
-                        <div class="card new-card rounded justify-content-between">
-                            <img class="img-fluid w-100 img-fluid-extension" src="resources/images/projects/profile-cards.JPG" alt="Profile Cards with Hover Effect">
-                            
-                            <div class="card-body text-left">
-                                <div class="h4 card-title font-weight-bold">Profile Cards with Hover Effect</div>
-                                <p class="card-text text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo sunt autem magni saepe repellendus fuga culpa quibusdam optio ullam.</p>
-                                <a href="#" class="btn btn-primary">Overview</a>
-                            </div>
-                        </div>
-                    </div>
+                    </form>
                 </div>
-            </section>
-    
-            <!-- <section class="row no-gutters py-5 my-3" id="contact">
-                <div class="col-md d-flex flex-column justify-content-center">
-                    <br><br>
-                    <h1 class="catch-phrase text-center mb-4">Contact</h1>
-                    <div class="bg-white new-card p-4">
-                        <h5>Send a Message</h5>
-    
-                        <form action="" method="POST" enctype="multipart/form-data">
-                            <div class="form-group">
-                                <label for="name" class="text-muted">Name <span class="text-danger">*</span></label>
-                                <input type="text" name="name" id="name" class="form-control">
-                                <span class="text-danger" id="error-name" style="font-size: .8em;"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="email" class="text-muted">Email Address <span class="text-danger">*</span></label>
-                                <input type="email" name="email" id="email" class="form-control">
-                                <span class="text-danger" id="error-email" style="font-size: .8em;"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="address" class="text-muted">Address <span class="text-danger">*</span></label>
-                                <input type="text" name="address" id="address" class="form-control">
-                                <span class="text-danger" id="error-address" style="font-size: .8em;"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="message" class="text-muted">How can I help? <span class="text-danger">*</span></label>
-                                <textarea name="message" id="message" cols="30" rows="5" class="form-control" style="resize: none;"></textarea>
-                                <span class="text-danger" id="error-message" style="font-size: .8em;"></span>
-                            </div>
-                            <div class="form-group text-right row no-gutters">
-                                <div class="col-2 mr-2">
-                                    <input type="file" class="d-none">
-                                    <button type="button" title="Attach File" class="btn btn-light"><i data-feather="paperclip"></i></button>
-                                </div>
-                                <div class="col">
-                                    <button type="button" class="btn btn-primary font-weight-normal" id="btn-submit">
-                                        <div class="spinner-border spinner-border-sm d-none" id="spinner" role="status">
-                                            <span class="sr-only">Loading...</span>
-                                        </div>
-                                        <span id="submit-message">Submit Message</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section> -->
-        </main>
+            </div>
+        </section> -->
     </div>
     <script defer src="plugins/jquery/dist/jquery.min.js"></script>
     <script defer src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>

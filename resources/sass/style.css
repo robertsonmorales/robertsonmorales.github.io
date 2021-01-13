@@ -55,7 +55,7 @@ html {
 }
 
 body {
-  background-color: #ffffff !important;
+  background-color: #fafafa !important;
   line-height: 1.6 !important;
   font-family: "Poppins-Regular", sans-serif !important;
   font-size: 0.9rem !important;
@@ -98,6 +98,16 @@ body {
 
 .action-group a {
   font-size: .9em;
+}
+
+.card-deck .card {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.card-deck .card:hover {
+  -webkit-transform: translateY(-2%);
+          transform: translateY(-2%);
 }
 
 .new-card {
