@@ -41,13 +41,13 @@
                         <a class="nav-link text-muted navbar" href="#skills" id="nav-skills" onclick="navSelected('nav-skills')">Skills</a>
                     </li>
                     <li class="nav-item mr-3">
-                        <a class="nav-link text-muted navbar" href="#projects" id="nav-projects" onclick="navSelected('nav-projects')">Projects</a>
-                    </li>              
-                    <li class="nav-item mr-3">
                         <a class="nav-link text-muted navbar" href="#services" id="nav-services" onclick="navSelected('nav-services')">Services</a>
                     </li>
                     <li class="nav-item mr-3">
-                        <a class="nav-link text-muted navbar" href="#contact" id="nav-contact" onclick="navSelected('nav-contact')">Contact</a>
+                        <a class="nav-link text-muted navbar" href="#projects" id="nav-projects" onclick="navSelected('nav-projects')">Projects</a>
+                    </li>              
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-muted navbar" href="#contact-me" id="nav-contact-me" onclick="navSelected('nav-contact-me')">Contact Me</a>
                     </li>
                     <li class="nav-item mr-3"></li>
                     <li class="nav-item">
@@ -64,7 +64,7 @@
 
         <section class="row no-gutters flex-column flex-md-row align-items-center justify-content-center py-5 my-5">
     
-            <div class="col-5 mr-md-4 mr-lg-5">
+            <div class="col mr-md-4 mr-lg-5">
                 <img src="resources/images/me/58919933.jpg" class="img-fluid rounded-circle img-dark-mode shadow mb-4" alt="avatar" id="avatar">
             </div>
 
@@ -80,7 +80,7 @@
         
         </section>
  
-        <section class="row no-gutters flex-column align-items-center py-5 my-5" id="skills">
+        <section class="row no-gutters flex-column align-items-center py-5 my-5 bg-light" id="skills">
             <div class="col text-center">
                 <h1 class="mb-4 mt-5 font-weight-bold">Skills</h1>
             </div>
@@ -105,16 +105,32 @@
             </div>
         </section>
 
-        <section class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <img class="img-fluid w-100 img-fluid-extension" src="resources/images/projects/login-forms.JPG" alt="Login Form UI Designs">
+        <section class="row no-gutters py-5 my-5" id="services">
+            <div class="col">
+                <h1 class="mb-4 mt-5 font-weight-bold text-center">Services</h1>
+
+                <div class="row no-gutters">
+                    <div class="col">
+                        <div class="d-flex flex-column justify-content-center align-items-center mb-5">
+                            <img src="resources/images/svg/services/website-ui-design.svg" class="img-fluid img-fluid-extension mb-3" alt="website-ui-design" width="200">
+                            <span class="h4 font-weight-bold">UI Design</span>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="resources/images/svg/services/website-responsive-design.svg" class="img-fluid img-fluid-extension mb-3" alt="website-responsive-design" width="200">
+                            <span class="h4 font-weight-bold">Website Responsive Design</span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="d-flex flex-column justify-content-center align-items-center mb-5">
+                            <img src="resources/images/svg/services/website-enhancement.svg" class="img-fluid img-fluid-extension mb-3" alt="website-enhancement" width="200">
+                            <span class="h4 font-weight-bold">Web Maintenance & Enchancement</span>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img src="resources/images/svg/services/website-psd-to-html.svg" class="img-fluid img-fluid-extension mb-3" alt="website-psd-to-html" width="200">
+                            <span class="h4 font-weight-bold">Convert Prototypes to HTML</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
         </section>
 
@@ -124,7 +140,7 @@
 
                 <div class="card-deck">
                     <div class="card new-card rounded justify-content-between">
-                        <img class="img-fluid w-100 img-fluid-extension" data-toggle="modal" data-target="#exampleModal" src="resources/images/projects/login-forms.JPG" alt="Login Form UI Designs">
+                        <img class="img-fluid w-100 img-fluid-extension" src="resources/images/projects/login-forms.JPG" alt="Login Form UI Designs">
                         
                         <div class="card-body text-left">
                             <div class="h4 card-title font-weight-medium">Login Form UI Designs</div>
