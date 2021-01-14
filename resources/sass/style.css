@@ -66,8 +66,12 @@ body {
   transition: all 1s ease;
 }
 
-.font-weight-bold {
+.font-weight-medium {
   font-family: "Poppins-Medium", sans-serif !important;
+}
+
+.font-weieght-regular {
+  font-family: "Poppins-Light", sans-serif !important;
 }
 
 .about-me {
@@ -103,6 +107,10 @@ body {
 .card-deck .card {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+
+.card-deck .card .card-body .card-text {
+  letter-spacing: .4px !important;
 }
 
 .card-deck .card:hover {
