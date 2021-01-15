@@ -1,14 +1,14 @@
 @font-face {
+    font-family: 'Poppins-Light';
+    src: url('../fonts/Poppins/Poppins-Light.ttf');
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Poppins-Regular';
     src: url('../fonts/Poppins/Poppins-Regular.ttf');
     font-display: swap;
     font-weight: normal;
-}
-
-@font-face {
-    font-family: 'Poppins-SemiBold';
-    src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
-    font-display: swap;
 }
 
 @font-face {
@@ -18,16 +18,17 @@
 }
 
 @font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Poppins-Bold';
     src: url('../fonts/Poppins/Poppins-Bold.ttf');
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Poppins-Light';
-    src: url('../fonts/Poppins/Poppins-Light.ttf');
-    font-display: swap;
-}
 
 $Poppins-Light: 'Poppins-Light', sans-serif;
 $Poppins-Regular: 'Poppins-Regular', sans-serif;
