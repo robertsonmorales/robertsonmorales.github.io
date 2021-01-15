@@ -7,8 +7,9 @@ function navSelected(id){
     }
 
     let el = document.getElementById(id);
-    el.classList.add('nav-selected');
     let html = document.querySelectorAll('html')[0].classList.contains('dark-mode');
+    el.classList.add('nav-selected');
+    
     if(html){
         el.classList.add('dark-mode-revert');
     }else{

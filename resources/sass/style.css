@@ -1,48 +1,3 @@
-@font-face {
-  font-family: 'Poppins-Light';
-  src: url("../fonts/Poppins/Poppins-Light.ttf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Poppins-Regular';
-  src: url("../fonts/Poppins/Poppins-Regular.ttf");
-  font-display: swap;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Poppins-Medium';
-  src: url("../fonts/Poppins/Poppins-Medium.ttf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Poppins-SemiBold';
-  src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Poppins-Bold';
-  src: url("../fonts/Poppins/Poppins-Bold.ttf");
-  font-display: swap;
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #ddd;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #999;
-  border-radius: 0.75rem;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -57,25 +12,29 @@ html {
 body {
   background-color: #fff !important;
   line-height: 1.6 !important;
-  font-family: "Poppins-Regular", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
   font-size: 0.9rem !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
   position: relative;
   overflow-x: hidden;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
 
-.font-weight-medium {
-  font-family: "Poppins-Medium", sans-serif !important;
+.font-raleway {
+  font-family: "Raleway", sans-serif !important;
+  font-size: 3.6rem !important;
 }
 
-.font-weieght-regular {
-  font-family: "Poppins-Light", sans-serif !important;
+.font-poppins {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 2rem !important;
 }
 
-.about-me {
-  line-height: 25px;
+.font-prompt {
+  font-family: "Prompt", sans-serif !important;
+  font-size: 1.1rem !important;
+  font-weight: 300;
 }
 
 .media-icons {
@@ -107,6 +66,8 @@ body {
 .card-deck .card {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  border: 0.0625rem solid rgba(231, 234, 243, 0.7) !important;
+  overflow: hidden;
 }
 
 .card-deck .card .card-body .card-text {
@@ -116,6 +77,8 @@ body {
 .card-deck .card:hover {
   -webkit-transform: translateY(-2%);
           transform: translateY(-2%);
+  -webkit-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.05);
 }
 
 .new-card {
@@ -163,5 +126,19 @@ body {
 .dark-mode {
   -webkit-filter: invert(100%) !important;
           filter: invert(100%) !important;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 0.75rem;
 }
 /*# sourceMappingURL=style.css.map */

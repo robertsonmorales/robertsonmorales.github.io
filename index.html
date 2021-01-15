@@ -3,16 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Portfolio">    
-    <meta http-equiv="Cache-control" content="must-revalidate, public, max-age=31536000">
+    <meta name="description" content="Personal Portfolio">
+    <meta http-equiv="Content-Security-Policy: script-src 'self' https://fonts.gstatic.com">
 
     <title>Robertson Morales</title>
-
-    <link rel="preload" href="resources/fonts/Poppins/Poppins-Light.ttf" as="font">
-    <link rel="preload" href="resources/fonts/Poppins/Poppins-Regular.ttf" as="font">
-    <link rel="preload" href="resources/fonts/Poppins/Poppins-Medium.ttf" as="font">
-    <link rel="preload" href="resources/fonts/Poppins/Poppins-SemiBold.ttf" as="font">
-    <link rel="preload" href="resources/fonts/Poppins/Poppins-Bold.ttf" as="font">
 
     <link rel="preload" href="plugins/bootstrap/dist/css/bootstrap.min.css" as="style">
     <link rel="preload" href="resources/sass/style.css" as="style">
@@ -22,15 +16,19 @@
     <link rel="preload" href="plugins/bootstrap/dist/js/bootstrap.min.js" as="script">
     <link rel="preload" href="resources/js/script.js" as="script">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Prompt:wght@300;400;500&family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+
     <link rel="shortcut icon" href="resources/images/me/58919933.jpg" type="image/x-icon">
     <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/sass/style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-fluid p-0">
         <header>
-            <nav class="navbar navbar-expand-md navbar-light bg-white px-sm-5 py-2 fixed-top" id="navbar">
-                <a class="navbar-brand font-weight-bold" href="#index">
+            <nav class="navbar navbar-expand-md navbar-light bg-white px-5 fixed-top" id="navbar">
+                <a class="navbar-brand font-weight-bold" href="/">
                     <span class="text-primary">trebor</span><span class="text-dark ">dev</span>
                 </a>
                 
@@ -44,7 +42,7 @@
                     <div class="navbar-text">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-xs-100">
                             <li class="nav-item mr-3">
-                                <a class="nav-link text-muted navbar" href="#home" id="nav-home" onclick="navSelected('nav-home')">Home</a>
+                                <a class="nav-link text-muted navbar" href="#about-me" id="nav-about-me" onclick="navSelected('nav-about-me')">About Me</a>
                             </li>
                             <li class="nav-item mr-3">
                                 <a class="nav-link text-muted navbar" href="#skills" id="nav-skills" onclick="navSelected('nav-skills')">Skills</a>
@@ -55,9 +53,6 @@
                             <li class="nav-item mr-3">
                                 <a class="nav-link text-muted navbar" href="#projects" id="nav-projects" onclick="navSelected('nav-projects')">Projects</a>
                             </li>              
-                            <!-- <li class="nav-item mr-3">
-                                <a class="nav-link text-muted navbar" href="#contact-me" id="nav-contact-me" onclick="navSelected('nav-contact-me')">Contact Me</a>
-                            </li> -->
                             <li class="nav-item">
                                 <button class="nav-link text-muted navbar btn" title="Turn on dark mode" id="dark-light-mode">
                                     <span class="dark-theme"><i data-feather="moon"></i></span>
@@ -71,26 +66,38 @@
         </header>
         
         <main>
-            <section class="row no-gutters flex-column flex-md-row align-items-center justify-content-center py-5 my-5" id="home">
+            <section class="row p-5 my-5 flex-column flex-md-row align-items-center justify-content-center" id="about-me">
     
-                <div class="col mr-md-4 mr-lg-5">
-                    <img src="resources/images/me/58919933.jpg" class="img-fluid rounded-circle img-dark-mode mb-4" alt="avatar" id="avatar">
+                <div class="col d-flex justify-content-center">
+                    <img src="resources/images/me/58919933.jpg" class="img-fluid rounded-circle img-dark-mode" alt="avatar" id="avatar">
                 </div>
     
                 <div class="col">
-                    <div class="breakpoint-lg d-none d-lg-flex">
-                        <div class="h2 mb-2 font-weight-bold">Robertson Morales, <br> Web <span class="text-primary">Designer</span> & <span class="text-primary">Developer</span></div>
+                    <div class="mb-4 font-raleway h1">I'm Robertson Morales</div>
+                    <div class="mb-4 font-poppins h3">Web Designer & Developer <br> from Bulacan, Philippines</div>
+                    <div class="mb-4 font-prompt">I pretty much enjoy doing this job and I love <br> discovering new opportunities that will strongly <br> develop my skills and expertise. Let's design & <br> develop things on the internet.</div>
+
+                    <div class="mb-4 border w-75"></div>
+
+                    <div class="social-icons d-flex align-items-center justify-content-start">
+                        <a href="#facebook" rel="noopener" class="media-icons media-icon-facebook p-2 mr-2 rounded-circle shadow d-flex align-items-center justify-content-center">
+                            <span><i data-feather="facebook"></i></span>
+                        </a>
+                        <a href="#github" rel="noopener" class="media-icons bg-dark p-2 mr-2 rounded-circle shadow d-flex align-items-center justify-content-center">
+                            <span><i data-feather="github"></i></span>
+                        </a>
+                        <a href="#linkedin" rel="noopener" class="media-icons media-icon-linkedin p-2 mr-2 rounded-circle shadow d-flex align-items-center justify-content-center">
+                            <span><i data-feather="linkedin"></i></span>
+                        </a>
+                        <a href="#mail" rel="noopener" class="media-icons bg-danger p-2 mr-2 rounded-circle shadow d-flex align-items-center justify-content-center">
+                            <span><i data-feather="mail"></i></span>
+                        </a>
                     </div>
-                    <div class="breakpoint-md d-md-flex d-lg-none">
-                        <div class="h3 mb-2 font-weight-bold">Robertson Morales, <br> Web <span class="text-primary">Designer</span> & <span class="text-primary">Developer</span></div>
-                    </div>
-                    <p class="text-muted mb-4 about-me">- I pretty much enjoy doing this job and I love discovering new opportunities that will strongly develop my skills and expertise. Let's design & develop things on the internet.</p>
-                    <a href="#hire-me" class="btn btn-primary px-3">Hire Me</a>
-                </div>
+                </div>                
             
             </section>
      
-            <section class="row no-gutters flex-column align-items-center py-5 my-5 bg-light" id="skills">
+            <section class="row p-5 my-5 flex-column align-items-center bg-light" id="skills">
                 <div class="col text-center">
                     <h1 class="mb-4 mt-5 font-weight-bold">Skills</h1>
                 </div>
@@ -115,46 +122,42 @@
                 </div>
             </section>
     
-            <section class="row no-gutters py-5 my-5" id="services">
+            <section class="row p-5 my-5" id="services">
                 <div class="col">
                     <h1 class="mb-4 mt-5 font-weight-bold text-center">Services</h1>
     
-                    <div class="row no-gutters">
-                        <div class="col">
-                            <div class="d-flex flex-column justify-content-center align-items-center mb-5">
-                                <img src="resources/images/svg/services/website-ui-design.svg" class="img-fluid img-fluid-extension mb-3" alt="website-ui-design" width="200">
-                                <span class="h4 font-weight-bold">UI Design</span>
-                            </div>
-                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                <img src="resources/images/svg/services/website-responsive-design.svg" class="img-fluid img-fluid-extension mb-3" alt="website-responsive-design" width="200">
-                                <span class="h4 font-weight-bold">Website Responsive Design</span>
-                            </div>
+                    <div class="d-flex flex-wrap align-items-center">
+                        <div class="col d-flex flex-column align-items-center">
+                            <img src="resources/images/svg/services/website-ui-design.svg" class="img-fluid img-fluid-extension mb-3" alt="website-ui-design" width="250">
+                            <span class="h4">UI Design</span>
                         </div>
-                        <div class="col">
-                            <div class="d-flex flex-column justify-content-center align-items-center mb-5">
-                                <img src="resources/images/svg/services/website-enhancement.svg" class="img-fluid img-fluid-extension mb-3" alt="website-enhancement" width="200">
-                                <span class="h4 font-weight-bold">Web Maintenance & Enchancement</span>
-                            </div>
-                            <div class="d-flex flex-column justify-content-center align-items-center">
-                                <img src="resources/images/svg/services/website-psd-to-html.svg" class="img-fluid img-fluid-extension mb-3" alt="website-psd-to-html" width="200">
-                                <span class="h4 font-weight-bold">Convert Prototypes to HTML</span>
-                            </div>
+                        <div class="col d-flex flex-column align-items-center">
+                            <img src="resources/images/svg/services/website-responsive-design.svg" class="img-fluid img-fluid-extension mb-3" alt="website-responsive-design" width="250">
+                            <span class="h4">Website Responsive Design</span>
+                        </div>  
+                        <div class="col d-flex flex-column align-items-center">
+                            <img src="resources/images/svg/services/website-enhancement.svg" class="img-fluid img-fluid-extension mb-3" alt="website-enhancement" width="250">
+                            <span class="h4">Web Maintenance & Enchancement</span>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center">
+                            <img src="resources/images/svg/services/website-psd-to-html.svg" class="img-fluid img-fluid-extension mb-3" alt="website-psd-to-html" width="250">
+                            <span class="h4">Convert Prototypes to HTML</span>
                         </div>
                     </div>
                 </div>
             </section>
     
-            <section class="row no-gutters py-5 my-5" id="projects">
+            <section class="row p-5 my-5" id="projects">
                 <div class="col">
                     <h1 class="mb-4 mt-5 font-weight-bold text-center">Projects</h1>
     
                     <div class="card-deck">
-                        <div class="card new-card rounded justify-content-between">
+                        <div class="card rounded justify-content-between">
                             <img class="img-fluid w-100 img-fluid-extension" src="resources/images/projects/login-forms.JPG" alt="Login Form UI Designs">
                             
                             <div class="card-body text-left">
-                                <div class="h4 card-title font-weight-medium">Login Form UI Designs</div>
-                                <p class="card-text text-muted font-weieght-regular">This is a different type of approach in creating a login form, it's actually pretty basic but good for starter/beginners.</p>
+                                <div class="h4 card-title">Login Form UI Designs</div>
+                                <p class="card-text text-muted">This is a different type of approach in creating a login form, it's actually pretty basic but good for starter/beginners.</p>
                                 <div class="d-flex align-items-center align-items-md-start flex-md-column flex-lg-row">
                                     <a href="#" class="btn btn-primary mr-2 mb-md-2 mb-lg-0">Overview</a>
                                     <a href="https://github.com/robertsonmorales/login_forms" target="_blank" rel="noopener" class="btn btn-secondary">Source Code</a>
@@ -162,12 +165,12 @@
                             </div>
                         </div>
     
-                        <div class="card new-card rounded">
+                        <div class="card rounded">
                             <img class="img-fluid w-100 img-fluid-extension" src="resources/images/projects/music-player-main.jpg" alt="Music Player with Neumorphism Effects">
                             
                             <div class="card-body text-left">
-                                <div class="h4 card-title font-weight-medium">Music Player with Neumorphism Effects</div>
-                                <p class="card-text text-muted font-weieght-regular">This is a music player, with static audio files. It has its basic functionalities such as shuffle, loop, next, prev, volume, play, and stop.</p>
+                                <div class="h4 card-title">Music Player with Neumorphism Effects</div>
+                                <p class="card-text text-muted">This is a music player, with static audio files. It has its basic functionalities such as shuffle, loop, next, prev, volume, play, and stop.</p>
                                 <div class="d-flex align-items-center align-items-md-start flex-md-column flex-lg-row">
                                     <a href="#" class="btn btn-primary mr-2 mb-md-2 mb-lg-0">Overview</a>
                                     <a href="https://github.com/robertsonmorales/music_player" target="_blank" rel="noopener" class="btn btn-secondary">Source Code</a>
@@ -175,12 +178,12 @@
                             </div>
                         </div>                    
     
-                        <div class="card new-card rounded justify-content-between">
+                        <div class="card rounded">
                             <img class="img-fluid w-100 img-fluid-extension" src="resources/images/projects/profile-cards.JPG" alt="Profile Cards with Hover Effect">
                             
                             <div class="card-body text-left">
-                                <div class="h4 card-title font-weight-medium">Profile Cards with Hover Effects</div>
-                                <p class="card-text text-muted font-weieght-regular">This is a professional profile card with hover animations.</p>
+                                <div class="h4 card-title f">Profile Cards with Hover Effects</div>
+                                <p class="card-text text-muted">This is a professional profile card with hover animations.</p>
                                 <div class="d-flex align-items-center align-items-md-start flex-md-column flex-lg-row">
                                     <a href="#" class="btn btn-primary mr-2 mb-md-2 mb-lg-0">Overview</a>
                                     <a href="https://github.com/robertsonmorales/profile_cards" target="_blank" rel="noopener" class="btn btn-secondary">Source Code</a>
@@ -194,7 +197,7 @@
         <footer class="row no-gutters flex-column justify-content-between pt-5 mt-5 bg-secondary" id="hire-me">
             <div class="col text-center pb-5">
                 <div class="h1 mt-5 font-weight-bold text-center text-light">Interested in working together?</div>
-                <div class="h4 mb-4 font-weight-medium">- You can check & contact me here:</div>
+                <div class="h4 mb-4">- You can check & contact me here:</div>
 
                 <div class="row no-gutters align-items-center">
                     <div class="col d-flex align-items-center justify-content-center">

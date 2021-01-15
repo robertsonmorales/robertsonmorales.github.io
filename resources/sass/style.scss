@@ -1,63 +1,14 @@
-@font-face {
-    font-family: 'Poppins-Light';
-    src: url('../fonts/Poppins/Poppins-Light.ttf');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins-Regular';
-    src: url('../fonts/Poppins/Poppins-Regular.ttf');
-    font-display: swap;
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'Poppins-Medium';
-    src: url('../fonts/Poppins/Poppins-Medium.ttf');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins-SemiBold';
-    src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Poppins-Bold';
-    src: url('../fonts/Poppins/Poppins-Bold.ttf');
-    font-display: swap;
-}
-
-
-$Poppins-Light: 'Poppins-Light', sans-serif;
-$Poppins-Regular: 'Poppins-Regular', sans-serif;
-$Poppins-Medium: 'Poppins-Medium', sans-serif;
-$Poppins-Bold: 'Poppins-Bold', sans-serif;
+$font-family-Raleway: 'Raleway', sans-serif;
+$font-family-Poppins: 'Poppins', sans-serif;
+$font-family-Prompt: 'Prompt', sans-serif;
 
 $shadow: 0 6px 12px rgba(140,152,164,.075);
 $shadow-sm: 1px 3px 5px rgba(0,0,0,0.05);
 $dropdown-shadow: 0 10px 40px 10px rgba(140,152,164,.175);
 $border: .0625rem solid rgba(231,234,243,.7);
 $radius: .75rem;
-
-$font-size-base: 0.9rem;
+$font-size-base: .9rem;
 $line-height-base: 1.6;
-
-
-::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: #ddd;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #999;
-    border-radius: $radius;
-}
 
 *{
     padding: 0;
@@ -72,24 +23,28 @@ html{
 body{
     background-color: #fff !important;
     line-height: $line-height-base !important;
-    font-family: $Poppins-Regular !important;
+    font-family: $font-family-Poppins !important;
     font-size: $font-size-base !important;
-    font-weight: 600 !important;
+    font-weight: 500 !important;
     position: relative;
     overflow-x: hidden;
     transition: all 1s ease;
 }
 
-.font-weight-medium{
-    font-family: $Poppins-Medium !important;
+.font-raleway{
+    font-family: $font-family-Raleway !important;
+    font-size: 3.6rem !important;
 }
 
-.font-weieght-regular{
-    font-family: $Poppins-Light !important;
+.font-poppins{
+    font-family: $font-family-Poppins !important;
+    font-size: 2rem !important;
 }
 
-.about-me{
-    line-height: 25px;
+.font-prompt{
+    font-family: $font-family-Prompt !important;
+    font-size: 1.1rem !important;
+    font-weight: 300;
 }
 
 .media-icons{
@@ -123,6 +78,8 @@ body{
 .card-deck{
     .card{
         transition: all 0.4s ease;
+        border: $border !important;
+        overflow: hidden;
 
         .card-body{
             .card-text{
@@ -132,6 +89,7 @@ body{
 
         &:hover{
             transform: translateY(-2%);
+            box-shadow: $shadow-sm;
         }
     }
 }
@@ -178,4 +136,18 @@ body{
 
 .dark-mode{
     filter: invert(100%) !important;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #999;
+    border-radius: $radius;
 }
