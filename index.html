@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="resources/sass/style.css">
 </head>
 <body>
-    <div class="container" id="index">
+    <div class="container">
         <header>
             <nav class="navbar navbar-expand-md navbar-light bg-white px-sm-5 py-2 fixed-top" id="navbar">
                 <a class="navbar-brand font-weight-bold" href="#index">
@@ -44,7 +44,7 @@
                     <div class="navbar-text">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-xs-100">
                             <li class="nav-item mr-3">
-                                <a class="nav-link text-muted navbar" href="#index" id="nav-index" onclick="navSelected('nav-index')">Home</a>
+                                <a class="nav-link text-muted navbar" href="#home" id="nav-home" onclick="navSelected('nav-home')">Home</a>
                             </li>
                             <li class="nav-item mr-3">
                                 <a class="nav-link text-muted navbar" href="#skills" id="nav-skills" onclick="navSelected('nav-skills')">Skills</a>
@@ -55,10 +55,9 @@
                             <li class="nav-item mr-3">
                                 <a class="nav-link text-muted navbar" href="#projects" id="nav-projects" onclick="navSelected('nav-projects')">Projects</a>
                             </li>              
-                            <li class="nav-item mr-3">
+                            <!-- <li class="nav-item mr-3">
                                 <a class="nav-link text-muted navbar" href="#contact-me" id="nav-contact-me" onclick="navSelected('nav-contact-me')">Contact Me</a>
-                            </li>
-                            <li class="nav-item mr-3"></li>
+                            </li> -->
                             <li class="nav-item">
                                 <button class="nav-link text-muted navbar btn" title="Turn on dark mode" id="dark-light-mode">
                                     <span class="dark-theme"><i data-feather="moon"></i></span>
@@ -72,7 +71,7 @@
         </header>
         
         <main>
-            <section class="row no-gutters flex-column flex-md-row align-items-center justify-content-center py-5 my-5">
+            <section class="row no-gutters flex-column flex-md-row align-items-center justify-content-center py-5 my-5" id="home">
     
                 <div class="col mr-md-4 mr-lg-5">
                     <img src="resources/images/me/58919933.jpg" class="img-fluid rounded-circle img-dark-mode mb-4" alt="avatar" id="avatar">
@@ -86,11 +85,12 @@
                         <div class="h3 mb-2 font-weight-bold">Robertson Morales, <br> Web <span class="text-primary">Designer</span> & <span class="text-primary">Developer</span></div>
                     </div>
                     <p class="text-muted mb-4 about-me">- I pretty much enjoy doing this job and I love discovering new opportunities that will strongly develop my skills and expertise. Let's design & develop things on the internet.</p>
+                    <a href="#hire-me" class="btn btn-primary px-3">Hire Me</a>
                 </div>
             
             </section>
      
-            <section class="row no-gutters flex-column align-items-center py-5 my-5" id="skills">
+            <section class="row no-gutters flex-column align-items-center py-5 my-5 bg-light" id="skills">
                 <div class="col text-center">
                     <h1 class="mb-4 mt-5 font-weight-bold">Skills</h1>
                 </div>
@@ -191,11 +191,35 @@
                 </div>
             </section>
         </main>
+        <footer class="row no-gutters flex-column justify-content-between pt-5 mt-5 bg-secondary" id="hire-me">
+            <div class="col text-center pb-5">
+                <div class="h1 mt-5 font-weight-bold text-center text-light">Interested in working together?</div>
+                <div class="h4 mb-4 font-weight-medium">- You can check & contact me here:</div>
+
+                <div class="row no-gutters align-items-center">
+                    <div class="col d-flex align-items-center justify-content-center">
+                        <a href="#facebook" class="text-white mr-3" rel="noopener">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#linkedin" class="text-white mr-3" rel="noopener">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                        <a href="#github" class="text-white mr-3" target="_blank" rel="noopener">
+                            <i data-feather="github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col bg-dark py-2 text-secondary text-center">
+                <span>© 2021 robertsonmorales.github.io powered by GitHub, Inc</span>
+            </div>
+        </footer>
     </div>
 
-    <script async src="plugins/jquery/dist/jquery.min.js"></script>
-    <script async src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script defer src="plugins/jquery/dist/jquery.min.js"></script>
+    <script defer src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
     <script defer src="plugins/feather-icons/dist/feather.min.js"></script>
-    <script async src="resources/js/script.js"></script>
+    <script defer src="resources/js/script.js"></script>
+
 </body>
 </html>
