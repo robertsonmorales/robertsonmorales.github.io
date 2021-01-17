@@ -1,82 +1,74 @@
 feather.replace()
 
+
 function navSelected(id){
     let navbar = document.getElementsByClassName('navbar');
     for (let i = 0; i < navbar.length; i++) {
-        navbar[i].classList.remove('nav-selected');
+        if (navbar[i].classList.contains('active')) {
+            navbar[i].classList.remove('active');   
+        }
     }
 
     let el = document.getElementById(id);
-    el.classList.add('nav-selected');
-    let html = document.querySelectorAll('html')[0].classList.contains('dark-mode');
-    if(html){
-        el.classList.add('dark-mode-revert');
-    }else{
-        el.classList.remove('dark-mode-revert');
-    }
+    el.classList.add('active');
 }
 
 $(() => {
     'use strict';
 
+    $(document).on('load', function(){
+        $(this).scrollTop();
+    });
+
     $(document).on('scroll', function () {
         $("#navbar").toggleClass('shadow-sm', $(this).scrollTop() > $("#navbar").height());
+        $("#navbar").toggleClass('fixed-top', $(this).scrollTop() > $("#navbar").height());
+
+        if($("#navbar").hasClass('bg-white')){
+            $("#navbar").removeClass('bg-dark');
+            $("#navbar").addClass('bg-white', $(this).scrollTop() > $("#navbar").height());
+        }else if($("#navbar").hasClass('bg-dark')){
+            $("#navbar").removeClass('bg-white');
+            $("#navbar").addClass('bg-dark', $(this).scrollTop() > $("#navbar").height());
+        }
 	});
 
     $('#dark-light-mode').on('click', function(){
-        $('html').toggleClass('dark-mode');
-        $('.media-icons').toggleClass('dark-mode-revert');
-        $('.img-fluid').toggleClass('dark-mode-revert');
-        $('.text-primary').toggleClass('dark-mode-revert');
-        $('.btn-primary').toggleClass('dark-mode-revert');
+        $('body').toggleClass('bg-dark');
+        $('.media-icon-facebook').toggleClass('text-white');
+        $('.media-icon-linkedin').toggleClass('text-white');
+        $('.media-icon-mail').toggleClass('text-white');
+        $('.media-icon-github').toggleClass('text-white');
 
-        if($('html').hasClass('dark-mode')){
-            $('.nav-selected').addClass('dark-mode-revert');
-        }else{
-            $('.nav-selected').removeClass('dark-mode-revert');
+        if($('#navbar').hasClass('bg-white')){
+            $('#navbar').removeClass('bg-white');
+            $('#navbar').addClass('bg-dark');
+        }else if($('#navbar').hasClass('bg-dark')){
+            $('#navbar').removeClass('bg-dark');
+            $('#navbar').addClass('bg-white');
         }
 
+        $('.text-dark-mode').toggleClass('text-white');
         $('.dark-theme').toggleClass('d-none');
         $('.light-theme').toggleClass('d-none');
     });
 
-    $('#name').on('keyup', function(){
-        validator('name', $(this).val());
-    });
+    
 
-    $('#email').on('keyup', function(){
-        validator('email', $(this).val());
-    });
-
-    $('#address').on('keyup', function(){
-        validator('address', $(this).val());
-    });
-
-    $('#message').on('keyup', function(){
-        validator('message', $(this).val());
-    });
-
-    function validator(inputName, inputValue){
-        let value = inputValue.trim();
+    $('.shrink').hover(function(){
         
-        if(value == null || value == undefined || value == ""){
-            $('#error-'+inputName).html(inputName.charAt(0).toUpperCase() + inputName.substr(1) + ' field is required.');
-        }else{
-            $('#error-'+inputName).empty();
-        }
-    }
-
-    $('#btn-submit').on('click', function(event){
-        event.preventDefault()
-        var name = validator('name', $('#name').val());
-        var email = validator('email', $('#email').val());
-        var address = validator('address', $('#address').val());
-        var message = validator('message', $('#message').val());
-
-        if(name && email && address && message){
-            $(this).prop('disabled', true);
-            $('#submit-message').html('Submitting Message..');
-            $('#spinner').removeClass('d-none');
-        }
     });
+
+    let noOfString = $('.shrink').text().trim();
+    let splitString = noOfString.split(' ').join('');
+    for (let i = 0; i < splitString.length; i++) {
+        let createElement = document.createElement('span')
+        createElement.setAttribute('class', splitString[i]);
+        createElement.append(splitString[i]);
+
+        console.log(createElement.classList);
+        // $('.'+createElement.classList).hover(function(){
+        //     alert($(this).text());
+        // });
+    }
 });
