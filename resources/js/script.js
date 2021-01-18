@@ -1,5 +1,11 @@
 feather.replace()
 
+function getYear(){
+    let year = new Date();
+    document.querySelector('.year').innerHTML = year.getFullYear();
+}
+
+getYear();
 
 function navSelected(id){
     let navbar = document.getElementsByClassName('navbar');
@@ -10,6 +16,10 @@ function navSelected(id){
     }
 
     let el = document.getElementById(id);
+    if (el.id == 'nav-about-me') {
+        window.scrollTo(0, 0);
+    }
+
     el.classList.add('active');
 }
 
@@ -40,12 +50,27 @@ $(() => {
         $('.media-icon-mail').toggleClass('text-white');
         $('.media-icon-github').toggleClass('text-white');
 
-        if($('#navbar').hasClass('bg-white')){
+        $('.card-dark').toggleClass('bg-secondary');
+
+        if($('#navbar').hasClass('bg-white')){ // to dark-mode
             $('#navbar').removeClass('bg-white');
             $('#navbar').addClass('bg-dark');
-        }else if($('#navbar').hasClass('bg-dark')){
+
+            $('.text-mode').removeClass('text-primary');
+            $('.text-mode').addClass('text-light');
+
+            $('.bg-mode').removeClass('bg-primary');
+            $('.bg-mode').addClass('bg-light');
+
+        }else if($('#navbar').hasClass('bg-dark')){ // to light-mode
             $('#navbar').removeClass('bg-dark');
             $('#navbar').addClass('bg-white');
+
+            $('.text-mode').addClass('text-primary');
+            $('.text-mode').removeClass('text-light');
+
+            $('.bg-mode').addClass('bg-primary');
+            $('.bg-mode').removeClass('bg-light');
         }
 
         $('.text-dark-mode').toggleClass('text-white');
