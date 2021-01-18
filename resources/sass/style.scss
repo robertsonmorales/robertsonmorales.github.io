@@ -61,7 +61,7 @@ body{
 .font-raleway-override{
     font-family: $font-family-Raleway !important;
     font-size: 2rem !important;
-    font-weight: 900 !important;
+    font-weight: 800 !important;
 }
 
 .font-poppins{
@@ -243,7 +243,7 @@ body{
 }
 
 .quote-rotate{
-    transform: rotateZ(-15deg);
+    // transform: rotateZ(-15deg);
     text-shadow: -1px 7px 3px #000;
 }
 
