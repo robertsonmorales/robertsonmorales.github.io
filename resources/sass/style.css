@@ -21,7 +21,7 @@ body {
   font-weight: normal !important;
   position: relative;
   overflow-x: hidden;
-  color: #353d2fff !important;
+  color: #353d2f !important;
 }
 
 .font-raleway {
@@ -53,19 +53,19 @@ body {
 }
 
 .bg-primary {
-  background-color: #6ba368ff !important;
+  background-color: #6ba368 !important;
 }
 
 .bg-light {
-  background-color: #9cfc97ff !important;
+  background-color: #9cfc97 !important;
 }
 
 .bg-secondary {
-  background-color: #515b3aff !important;
+  background-color: #515b3a !important;
 }
 
 .bg-dark {
-  background-color: #353d2fff !important;
+  background-color: #353d2f !important;
 }
 
 .text-white {
@@ -73,20 +73,20 @@ body {
 }
 
 .text-primary {
-  color: #6ba368ff !important;
+  color: #6ba368 !important;
 }
 
 .text-light {
-  color: #9cfc97ff !important;
+  color: #9cfc97 !important;
 }
 
 .text-dark {
-  color: #353d2fff !important;
+  color: #353d2f !important;
 }
 
 .btn-new-primary {
-  background-color: #6ba368ff !important;
-  border: 1px solid #6ba368ff !important;
+  background-color: #6ba368 !important;
+  border: 1px solid #6ba368 !important;
   color: #f3f3f3;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
@@ -107,7 +107,7 @@ body {
 }
 
 .active {
-  color: #6ba368ff !important;
+  color: #6ba368 !important;
 }
 
 .clip-path {
@@ -187,7 +187,7 @@ body {
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   border-radius: 2px;
-  color: #353d2fff;
+  color: #353d2f;
 }
 
 .media-icons:hover {
@@ -230,12 +230,12 @@ body {
 .list-group-item {
   background-color: transparent !important;
   border: none !important;
-  color: #e6fafcff !important;
+  color: #e6fafc !important;
 }
 
 .list-group-item a {
   text-decoration: none;
-  color: #e6fafcff;
+  color: #e6fafc;
 }
 
 .quote-rotate {
@@ -250,11 +250,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #515b3aff;
+  background-color: #515b3a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #6ba368ff;
+  background-color: #6ba368;
   border-radius: 0.75rem;
 }
 
