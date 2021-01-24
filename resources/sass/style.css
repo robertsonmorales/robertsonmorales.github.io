@@ -26,7 +26,6 @@ body {
 
 .font-raleway {
   font-family: "Raleway", sans-serif;
-  font-size: 3.6rem;
   font-weight: 900;
 }
 
@@ -93,8 +92,13 @@ body {
 }
 
 .btn-new-primary:hover {
-  color: #f3f3f3;
-  opacity: 0.8 !important;
+  color: #f3f3f3 !important;
+  background-color: #507e4e !important;
+}
+
+.btn-new-primary:active {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(107, 163, 104, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(107, 163, 104, 0.25);
 }
 
 .navbar-brand {
@@ -121,39 +125,9 @@ body {
   overflow: hidden;
   -webkit-transition: all .4s ease !important;
   transition: all .4s ease !important;
-}
-
-.card-deck .card .card-body-extension {
-  -webkit-transition: all .6s ease;
-  transition: all .6s ease;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 0;
-  -webkit-clip-path: circle(0% at 50% 50%);
-          clip-path: circle(0% at 50% 50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  background-color: rgba(53, 61, 47, 0.8);
-}
-
-.card-deck .card:hover {
-  -webkit-transform: translateY(-3%);
-          transform: translateY(-3%);
-}
-
-.card-deck .card:hover .card-body-extension {
-  -webkit-clip-path: circle(100% at 50% 50%) !important;
-          clip-path: circle(100% at 50% 50%) !important;
-  opacity: 1 !important;
+  border-radius: 0.75rem !important;
+  -webkit-box-shadow: 0 10px 40px 10px rgba(140, 152, 164, 0.175) !important;
+          box-shadow: 0 10px 40px 10px rgba(140, 152, 164, 0.175) !important;
 }
 
 .img-fluid-extension {
@@ -213,13 +187,6 @@ body {
           box-shadow: 0px 0px 10px 5px rgba(2, 139, 200, 0.7);
 }
 
-.media-icon-mail:hover {
-  background-color: #dc3545 !important;
-  color: #fff;
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(220, 53, 69, 0.7);
-          box-shadow: 0px 0px 10px 5px rgba(220, 53, 69, 0.7);
-}
-
 .media-icon-github:hover {
   background-color: #6c757d !important;
   color: #fff;
@@ -230,7 +197,6 @@ body {
 .list-group-item {
   background-color: transparent !important;
   border: none !important;
-  color: #e6fafc !important;
 }
 
 .list-group-item a {
@@ -252,7 +218,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #6ba368;
+  background-color: #9cfc97;
   border-radius: 0.75rem;
 }
 
