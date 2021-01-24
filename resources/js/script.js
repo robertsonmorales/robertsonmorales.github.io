@@ -50,7 +50,9 @@ $(() => {
         $('.media-icon-mail').toggleClass('text-white');
         $('.media-icon-github').toggleClass('text-white');
 
-        $('.card-dark').toggleClass('bg-secondary');
+        $('.card-dark').toggleClass('bg-dark');
+        $('.card-title-ext').toggleClass('text-white');
+        $('.card-text-ext').toggleClass('text-white');
 
         if($('#navbar').hasClass('bg-white')){ // to dark-mode
             $('#navbar').removeClass('bg-white');
@@ -78,22 +80,4 @@ $(() => {
         $('.light-theme').toggleClass('d-none');
     });
 
-    
-
-    $('.shrink').hover(function(){
-        
-    });
-
-    let noOfString = $('.shrink').text().trim();
-    let splitString = noOfString.split(' ').join('');
-    for (let i = 0; i < splitString.length; i++) {
-        let createElement = document.createElement('span')
-        createElement.setAttribute('class', splitString[i]);
-        createElement.append(splitString[i]);
-
-        console.log(createElement.classList);
-        // $('.'+createElement.classList).hover(function(){
-        //     alert($(this).text());
-        // });
-    }
 });
