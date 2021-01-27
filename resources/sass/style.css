@@ -293,4 +293,11 @@ footer {
     margin-bottom: 25px !important;
   }
 }
+
+@media only screen and (max-width: 425px) {
+  .img-fluid-extension {
+    width: 50px !important;
+    height: 50px !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */
