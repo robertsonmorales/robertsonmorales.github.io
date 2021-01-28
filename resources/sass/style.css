@@ -153,6 +153,11 @@ body {
   background-color: rgba(53, 61, 47, 0.8);
 }
 
+.card-deck .card:hover {
+  -webkit-transform: translateY(-2%);
+          transform: translateY(-2%);
+}
+
 .card-deck .card:hover .card-body-extension {
   -webkit-clip-path: circle(100% at 50% 50%) !important;
           clip-path: circle(100% at 50% 50%) !important;
