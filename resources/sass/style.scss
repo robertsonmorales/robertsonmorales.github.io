@@ -166,9 +166,9 @@ body{
             background-color: rgba(53, 61, 47, 0.8); 
         }
 
-        // &:hover{
-        //     transform: translateY(-2%);
-        // }
+        &:hover{
+            transform: translateY(-2%);
+        }
 
         &:hover .card-body-extension{
             clip-path: circle(100% at 50% 50%) !important;
