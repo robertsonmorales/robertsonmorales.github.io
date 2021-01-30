@@ -31,8 +31,8 @@ $(() => {
     });
 
     $(document).on('scroll', function () {
-        $("#navbar").toggleClass('shadow-sm', $(this).scrollTop() > $("#navbar").height());
-        $("#navbar").toggleClass('fixed-top', $(this).scrollTop() > $("#navbar").height());
+        // $("#navbar").toggleClass('shadow-sm', $(this).scrollTop() > $("#navbar").height());
+        $("#navbar").toggleClass('sticky-top', $(this).scrollTop() > $("#navbar").height());
 
         if($("#navbar").hasClass('bg-white')){
             $("#navbar").removeClass('bg-dark');

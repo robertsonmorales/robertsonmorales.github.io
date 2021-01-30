@@ -73,6 +73,14 @@ body{
     font-weight: 300;
 }
 
+.bg-1{
+    background-color: #6ba36821 !important;
+}
+
+.bg-2{
+    background-color: #9cfc9745 !important;
+}
+
 .bg-white{
     background-color: #fefefe !important;
 }
@@ -107,6 +115,10 @@ body{
 
 .text-dark{
     color: $dark-color !important;
+}
+
+.btn{
+    border-radius: 0 !important;
 }
 
 .btn-new-primary{
@@ -147,33 +159,31 @@ body{
     .card{
         overflow: hidden;
         transition: all .2s ease-in !important;
-        border-radius: 4px !important;// $radius !important;
-        box-shadow: $dropdown-shadow !important;
-        padding: 10px !important;
+        border-radius: 0 !important;
 
-        .card-body-extension{        
-            transition: all .6s ease;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            opacity: 0;
-            clip-path: circle(0% at 50% 50%);
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            background-color: rgba(53, 61, 47, 0.8); 
-        }
+        // .card-body-extension{        
+        //     transition: all .6s ease;
+        //     width: 100%;
+        //     height: 100%;
+        //     position: absolute;
+        //     bottom: 0;
+        //     left: 0;
+        //     opacity: 0;
+        //     clip-path: circle(0% at 50% 50%);
+        //     display: flex;
+        //     flex-direction: column;
+        //     justify-content: flex-end;
+        //     background-color: rgba(53, 61, 47, 0.8); 
+        // }
 
         &:hover{
             transform: translateY(-2%);
         }
 
-        &:hover .card-body-extension{
-            clip-path: circle(100% at 50% 50%) !important;
-            opacity: 1 !important;
-        }
+        // &:hover .card-body-extension{
+        //     clip-path: circle(100% at 50% 50%) !important;
+        //     opacity: 1 !important;
+        // }
     }
 }
 
@@ -182,6 +192,7 @@ body{
     transition: all 2s ease;
 
     &:hover{
+        color: #fff !important;
         animation-name: float;
         animation-duration: 2s;
         animation-iteration-count: infinite;
@@ -199,6 +210,7 @@ body{
     color: $dark-color;
 
     &:hover{
+        color: #fff !important;
         animation-name: float;
         animation-duration: 2s;
         animation-iteration-count: infinite;
