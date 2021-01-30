@@ -19,7 +19,7 @@
     <link rel="preload" href="resources/images/me/58919933.jpg" as="image">
     <link rel="preload" href="resources/images/svg/services/UI Design.svg" as="image">
     <link rel="preload" href="resources/images/svg/services/Website Responsive Design.svg" as="image">
-    <link rel="preload" href="resources/images/svg/services/Web Maintenance & Enchancement.svg" as="image">
+    <link rel="preload" href="resources/images/svg/services/Web Application.svg" as="image">
     <link rel="preload" href="resources/images/svg/services/Convert Prototypes to HTML.svg" as="image">
     <link rel="preload" href="resources/images/projects/login-forms.JPG" as="image">
     <link rel="preload" href="resources/images/projects/music-player-main.jpg" as="image">
@@ -33,43 +33,45 @@
     <link rel="stylesheet" href="resources/sass/style.css">
 </head>
 <body>
-    <div class="container-fluid p-0">
-        <nav class="navbar navbar-expand-md navbar-light px-4 py-3 py-md-2 bg-white" id="navbar">
-            <a class="navbar-brand" href="/">
-                <span class="text-dark-mode">Robertson Morales</span>
-            </a>
-            
-            <button class="navbar-toggler text-dark-mode" type="button" data-toggle="collapse" data-target="#toggleNavbar" aria-controls="toggleNavbar" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
-              <i data-feather="menu"></i>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="toggleNavbar">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
-    
-                <div class="navbar-text">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-xs-100">
-                        <li class="nav-item mr-3">
-                            <a class="nav-link text-dark-mode navbar active" href="#" id="nav-about-me" onclick="navSelected('nav-about-me')">About Me</a>
-                        </li>
-                        <li class="nav-item mr-3">
-                            <a class="nav-link text-dark-mode navbar" href="#skills" id="nav-skills" onclick="navSelected('nav-skills')">Skills</a>
-                        </li>
-                        <li class="nav-item mr-3">
-                            <a class="nav-link text-dark-mode navbar" href="#services" id="nav-services" onclick="navSelected('nav-services')">Services</a>
-                        </li>
-                        <li class="nav-item mr-3">
-                            <a class="nav-link text-dark-mode navbar" href="#projects" id="nav-projects" onclick="navSelected('nav-projects')">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <button class="nav-link text-dark-mode navbar btn" id="dark-light-mode" title="Dark Mode" >
-                                <span class="dark-theme"><i data-feather="moon"></i></span>
-                                <span class="light-theme d-none"><i data-feather="sun"></i></span>
-                            </button>
-                        </li>
-                    </ul>
+    <div class="container">
+        <header id="navbar">
+            <nav class="navbar navbar-expand-md navbar-light px-4 py-3 py-md-2 bg-white">
+                <a class="navbar-brand" href="/">
+                    <span class="text-dark-mode">Robertson Morales</span>
+                </a>
+                
+                <button class="navbar-toggler text-dark-mode" type="button" data-toggle="collapse" data-target="#toggleNavbar" aria-controls="toggleNavbar" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
+                  <i data-feather="menu"></i>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="toggleNavbar">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+        
+                    <div class="navbar-text">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-xs-100">
+                            <li class="nav-item mr-3">
+                                <a class="nav-link text-dark-mode navbar active" href="#" id="nav-about-me" onclick="navSelected('nav-about-me')">About Me</a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link text-dark-mode navbar" href="#skills" id="nav-skills" onclick="navSelected('nav-skills')">Skills</a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link text-dark-mode navbar" href="#services" id="nav-services" onclick="navSelected('nav-services')">Services</a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link text-dark-mode navbar" href="#projects" id="nav-projects" onclick="navSelected('nav-projects')">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link text-dark-mode navbar btn" id="dark-light-mode" title="Dark Mode" >
+                                    <span class="dark-theme"><i data-feather="moon"></i></span>
+                                    <span class="light-theme d-none"><i data-feather="sun"></i></span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
         
         <main class="row no-gutters flex-column px-4 py-3">
             <section class="col row no-gutters flex-column flex-lg-row align-items-center justify-content-center my-4 my-md-5" id="about-me">
@@ -88,15 +90,15 @@
                 </div>
 
                 <div class="col-8 col-md-5 d-flex justify-content-center align-items-center mb-4 mb-lg-0 mr-0 mr-lg-5">
-                    <div class="p-2 bg-primary rounded-circle">
-                        <div class="p-2 bg-light rounded-circle">
+                    <div class="p-3 bg-1 rounded-circle">
+                        <div class="p-3 bg-2 rounded-circle">
                             <img src="resources/images/me/58919933.jpg" class="img-fluid img-dark-mode rounded-circle" alt="avatar" id="avatar">
                         </div>
                     </div>
                 </div>
     
                 <div class="col">
-                    <div class="mb-4 p-1 bg-primary w-25 d-none d-lg-block bg-mode rounded"></div>
+                    <div class="mb-4 p-1 bg-primary w-25 d-none d-lg-block bg-mode"></div>
                     <div class="mb-4 font-raleway text-dark-mode h1">Let's <span class="text-primary text-mode shrink">design</span> & <span class="text-primary text-mode">develop</span> things on the internet.</div>
                     <div class="mb-4 font-prompt text-muted text-dark-mode">Hi, I'm Robertson Morales a Web Developer & Designer. I pretty much enjoy doing this job and love to deliver this to my possible clients/customers. So that I'll discover new opportunities to strongly develop my skills and expertise.</div>
                     <div class="d-flex flex-column flex-md-row">
@@ -136,7 +138,7 @@
                     <div class="card-deck mt-4">
                         <div class="row no-gutters flex-column card card-dark">
                             <div class="col d-flex align-items-center justify-content-center">
-                                <img class="img-fluid w-100 px-5 py-3 mt-3" src="resources/images/svg/services/UI Design.svg" alt="UI Design" width="150" height="auto">
+                                <img class="img-fluid w-100 px-5 py-3 mt-3" src="resources/images/svg/services/UI Design.svg" alt="UI Design" width="250" height="auto">
                             </div>
                             <div class="col d-flex justify-content-end">
                                 <div class="card-body d-flex flex-column justify-content-end">
@@ -147,7 +149,7 @@
 
                         <div class="row no-gutters flex-column card card-dark">
                             <div class="col d-flex align-items-center justify-content-center">
-                                <img class="img-fluid w-100 px-5 py-3 mt-3" src="resources/images/svg/services/Website Responsive Design.svg" alt="Website Responsive Design" width="150" height="auto">
+                                <img class="img-fluid w-100 px-5 py-3 mt-3" src="resources/images/svg/services/Website Responsive Design.svg" alt="Website Responsive Design" width="250" height="auto">
                             </div>                            
                             
                             <div class="col d-flex justify-content-end">
@@ -157,15 +159,27 @@
                             </div>
                         </div>
 
-                        <div class="d-none d-md-block d-lg-none w-100 mb-md-4 mb-lg-0 tablet-mode-md"></div>
+                        <div class="row no-gutters flex-column card card-dark">
+                            <div class="col d-flex align-items-center justify-content-center">
+                                <img class="img-fluid w-100 px-5 py-3 mt-3" src="resources/images/svg/services/Cross Browser Compatibility.svg" alt="Website Responsive Design" width="250" height="auto">
+                            </div>                            
+                            
+                            <div class="col d-flex justify-content-end">
+                                <div class="card-body d-flex flex-column justify-content-end">
+                                    <div class="h6 card-title card-title-ext">Cross Browser Compatibility</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-none d-md-block w-100 mb-md-4 tablet-mode-md"></div>
 
                         <div class="row no-gutters flex-column card card-dark">
                             <div class="col d-flex align-items-center justify-content-center">
-                                <img class="img-fluid w-100 px-5 py-3 mt-3" src="resources/images/svg/services/Web Maintenance & Enchancement.svg" alt="Web Maintenance & Enchancement" width="150" height="auto">
+                                <img class="img-fluid w-100 px-5 py-3 mt-3" src="resources/images/svg/services/Bug Fixing.svg" alt="Bug Fixing" width="250" height="auto">
                             </div>
                             <div class="col d-flex justify-content-end">
                                 <div class="card-body d-flex flex-column justify-content-end">
-                                    <div class="h6 card-title card-title-ext">Web Maintenance & Enchancement</div>
+                                    <div class="h6 card-title card-title-ext">Bug Fixing</div>
                                 </div>
                             </div>                                                    
                         </div>
@@ -180,6 +194,17 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="row no-gutters flex-column card card-dark">
+                            <div class="col d-flex align-items-center justify-content-center">
+                                <img class="img-fluid w-100 px-5 py-3 mt-3" src="resources/images/svg/services/Web Application.svg" alt="Web Application" width="250" height="auto">
+                            </div>
+                            <div class="col d-flex justify-content-end">
+                                <div class="card-body d-flex flex-column justify-content-end">
+                                    <div class="h6 card-title card-title-ext">Website Application</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -190,129 +215,131 @@
     
                     <div class="card-deck mt-4">
 
-                        <a href="https://robertsonmorales.github.io/login_forms" class="card card-dark" target="_blank" rel="noopener">
+                        <div class="card card-dark">
                             <img class="img-fluid w-100" src="resources/images/projects/login-forms.JPG" alt="Login Form UI Designs" sizes="50vw">
                             
                             <div class="card-body card-body-extension text-left">
-                                <div class="h4 card-title card-title-ext text-white">Login Form UI Designs</div>
-                                <p class="card-text card-text-ext text-white">This is a different type of approach in creating a login form, it's actually pretty basic but good for starter/beginners.</p>
-                                <!-- <div class="d-flex flex-column flex-lg-row">
+                                <div class="h4 card-title">Login Form UI Designs</div>
+                                <p class="card-text">This is a different type of approach in creating a login form, it's actually pretty basic but good for starter/beginners.</p>
+                                <div class="d-flex flex-column flex-lg-row">
                                     <a href="https://robertsonmorales.github.io/login_forms" class="btn btn-new-primary mr-0 mr-lg-2 mb-2 mb-lg-0" target="_blank" rel="noopener">Preview</a>
                                     <a href="https://github.com/robertsonmorales/login_forms" class="btn btn-secondary" target="_blank" rel="noopener">Source Code</a>
-                                </div> -->
+                                </div>
                             </div>
-                        </a>
+                        </div>
     
-                        <a href="https://robertsonmorales.github.io/music_player/" class="card card-dark" target="_blank" rel="noopener">
+                        <div class="card card-dark">
                             <img class="img-fluid w-100" src="resources/images/projects/music-player-main.jpg" alt="Music Player with Neumorphism Effects">
                             
                             <div class="card-body card-body-extension text-left">
-                                <div class="h4 card-title card-title-ext text-white">Music Player</div>
-                                <p class="card-text card-text-ext text-white">This is a music player, with static audio files. It has its basic functionalities such as shuffle, loop, next, prev, volume, play, and stop.</p>
-                                <!-- <div class="d-flex flex-column flex-lg-row">
+                                <div class="h4 card-title">Music Player</div>
+                                <p class="card-text">This is a music player, with static audio files. It has its basic functionalities such as shuffle, loop, next, prev, volume, play, and stop.</p>
+                                <div class="d-flex flex-column flex-lg-row">
                                     <a href="https://robertsonmorales.github.io/music_player/" class="btn btn-new-primary mr-0 mr-lg-2 mb-2 mb-lg-0" target="_blank" rel="noopener">Preview</a>
                                     <a href="https://github.com/robertsonmorales/music_player" class="btn btn-secondary" target="_blank" rel="noopener">Source Code</a>
-                                </div> -->
+                                </div>
                             </div>
-                        </a>                    
+                        </div>
+
+                        <div class="w-100 d-none d-md-block d-lg-none mb-md-3"></div>              
     
-                        <a href="https://robertsonmorales.github.io/profile_cards" class="card card-dark" target="_blank" rel="noopener">
+                        <div class="card card-dark">
                             <img class="img-fluid w-100" src="resources/images/projects/profile-cards.JPG" alt="Profile Cards with Hover Effect">
                             
                             <div class="card-body card-body-extension text-left">
-                                <div class="h4 card-title card-title-ext text-white">Profile Cards</div>
-                                <p class="card-text card-text-ext text-white">This is a professional profile card with hover animations.</p>
-                                <!-- <div class="d-flex flex-column flex-lg-row">
+                                <div class="h4 card-title">Profile Cards</div>
+                                <p class="card-text">This is a professional profile card with hover animations.</p>
+                                <div class="d-flex flex-column flex-lg-row">
                                     <a href="https://robertsonmorales.github.io/profile_cards" class="btn btn-new-primary mr-0 mr-lg-2 mb-2 mb-lg-0" target="_blank" rel="noopener">Preview</a>
                                     <a href="https://github.com/robertsonmorales/profile_cards" class="btn btn-secondary" target="_blank" rel="noopener">Source Code</a>
-                                </div> -->
+                                </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
+    </div>
 
-        <footer class="row no-gutters flex-column justify-content-between py-3" id="contact-me">
-            <div class="col text-center pb-5 px-5">
-                <div class="row no-gutters text-white text-left flex-column flex-md-row">
-                    <div class="col">
-                        <div class="row no-gutters text-center text-md-left flex-column flex-md-row">
-        
-                            <div class="col col-md-2 mb-3 mb-md-0">
-                                <ul class="list-group">
-                                    <li class="list-group-item font-weight-bold">MENU</li>
-                                    <li class="list-group-item">
-                                        <a href="#" onclick="navSelected('nav-about-me')">About Me</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#skills" onclick="navSelected('nav-skills')">Skills</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#services" onclick="navSelected('nav-services')">Services</a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="#projects" onclick="navSelected('nav-projects')">Projects</a>
-                                    </li>
-                                </ul>
-                            </div>
-        
-                            <div class="col col-md-3 mb-3 mb-md-0">
-                                <ul class="list-group">
-                                    <li class="list-group-item font-weight-bold">SERVICES</li>
-                                    <li class="list-group-item">UI Design</li>
-                                    <li class="list-group-item">Responsive Website Design</li>
-                                    <li class="list-group-item">Web Maintenance & Enchancement</li>
-                                    <li class="list-group-item">Convert Prototypes to HTML</li>
-                                </ul>
-                            </div>
-        
-                            <div class="col mb-3 mb-md-0 d-flex flex-column flex-lg-row">
-                                <ul class="list-group">
-                                    <li class="list-group-item font-weight-bold">CONTACT ME</li>
-                                    <li class="list-group-item d-flex align-items-center justify-content-center justify-content-md-start">
-                                        <span class="mr-2"><i data-feather="phone"></i></span>
-                                        <span>(+63) 955 280 8438</span>    
-                                    </li>
-                                    <li class="list-group-item d-flex align-items-center justify-content-center justify-content-md-start">
-                                        <span class="mr-2"><i data-feather="mail"></i></span>
-                                        <span>moralesso152842@gmail.com</span>    
-                                    </li>
-                                    <li class="list-group-item d-flex align-items-start justify-content-center justify-content-md-start">
-                                        <span class="mr-2"><i data-feather="map-pin"></i></span>
-                                        <span>San Jose Del Monte City, Bulacan, Central Luzon, Philippines.</span>    
-                                    </li>
-                                </ul>
-                                <ul class="list-group">
-                                    <li class="list-group-item">
-                                        <div class="font-weight-bold">FOLLOW ME</div>
-                                        <div class="d-flex align-items-center justify-content-center justify-content-md-start">
-                                            <a href="https://web.facebook.com/profile.php?id=100004962736826" target="_blank" title="Connect with me at facebook" rel="noopener" class="mb-2 media-icons media-icon-facebook text-white">
-                                                <span><i data-feather="facebook"></i></span>
-                                            </a>
-                                            <a href="http://www.linkedin.com/in/robert-morales-517a721bb" target="_blank" title="Connect with me at linkedin" rel="noopener" class="mb-2 media-icons media-icon-linkedin text-white">
-                                                <span><i data-feather="linkedin"></i></span>
-                                            </a>
-                                            <a href="https://github.com/robertsonmorales" target="_blank" title="Follow me at github" rel="noopener" class="mb-2 media-icons media-icon-github text-white">
-                                                <span><i data-feather="github"></i></span>
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+    <footer class="row no-gutters flex-column justify-content-between py-3" id="contact-me">
+        <div class="col text-center pb-5 px-5">
+            <div class="row no-gutters text-white text-left flex-column flex-md-row">
+                <div class="col">
+                    <div class="row no-gutters text-center text-md-left flex-column flex-md-row">
+    
+                        <div class="col col-md-2 mb-3 mb-md-0">
+                            <ul class="list-group">
+                                <li class="list-group-item font-weight-bold">MENU</li>
+                                <li class="list-group-item">
+                                    <a href="#" class="text-muted" onclick="navSelected('nav-about-me')">About Me</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#skills" class="text-muted" onclick="navSelected('nav-skills')">Skills</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#services" class="text-muted" onclick="navSelected('nav-services')">Services</a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="#projects" class="text-muted" onclick="navSelected('nav-projects')">Projects</a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="col col-md-3 mb-3 mb-md-0">
+                            <ul class="list-group">
+                                <li class="list-group-item font-weight-bold">SERVICES</li>
+                                <li class="list-group-item text-muted">UI Design</li>
+                                <li class="list-group-item text-muted">Responsive Website Design</li>
+                                <li class="list-group-item text-muted">Web Maintenance & Enchancement</li>
+                                <li class="list-group-item text-muted">Convert Prototypes to HTML</li>
+                            </ul>
+                        </div>
+    
+                        <div class="col mb-3 mb-md-0 d-flex flex-column flex-lg-row">
+                            <ul class="list-group">
+                                <li class="list-group-item font-weight-bold">CONTACT ME</li>
+                                <li class="list-group-item d-flex align-items-center justify-content-center justify-content-md-start text-muted">
+                                    <span class="mr-2"><i data-feather="phone"></i></span>
+                                    <span>(+63) 955 280 8438</span>    
+                                </li>
+                                <li class="list-group-item d-flex align-items-center justify-content-center justify-content-md-start text-muted">
+                                    <span class="mr-2"><i data-feather="mail"></i></span>
+                                    <span>moralesso152842@gmail.com</span>    
+                                </li>
+                                <li class="list-group-item d-flex align-items-start justify-content-center justify-content-md-start text-muted">
+                                    <span class="mr-2"><i data-feather="map-pin"></i></span>
+                                    <span>San Jose Del Monte City, Bulacan, Central Luzon, Philippines.</span>    
+                                </li>
+                            </ul>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="font-weight-bold">FOLLOW ME</div>
+                                    <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+                                        <a href="https://web.facebook.com/profile.php?id=100004962736826" target="_blank" title="Connect with me at facebook" rel="noopener" class="mb-2 media-icons media-icon-facebook text-muted">
+                                            <span><i data-feather="facebook"></i></span>
+                                        </a>
+                                        <a href="http://www.linkedin.com/in/robert-morales-517a721bb" target="_blank" title="Connect with me at linkedin" rel="noopener" class="mb-2 media-icons media-icon-linkedin text-muted">
+                                            <span><i data-feather="linkedin"></i></span>
+                                        </a>
+                                        <a href="https://github.com/robertsonmorales" target="_blank" title="Follow me at github" rel="noopener" class="mb-2 media-icons media-icon-github text-muted">
+                                            <span><i data-feather="github"></i></span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <!-- <div class="col col-md-3 mr-0 mr-md-3 mt-1 d-flex justify-content-start align-items-end flex-column">
-                        <div class="h5 font-raleway font-raleway-override">Design is not just what it looks like and feels like. Design is how it works.</div>
-                        <p>- Steve Jobs</p>                        
-                    </div> -->
                 </div>
+                <!-- <div class="col col-md-3 mr-0 mr-md-3 mt-1 d-flex justify-content-start align-items-end flex-column">
+                    <div class="h5 font-raleway font-raleway-override">Design is not just what it looks like and feels like. Design is how it works.</div>
+                    <p>- Steve Jobs</p>                        
+                </div> -->
             </div>
-            <div class="col py-1 text-muted text-center">
-                <span>Copyright © <span class="year"></span> Robertson Morales</span>
-            </div>
-        </footer>
-    </div>
+        </div>
+        <div class="col py-1 text-muted text-center">
+            <span>Copyright © <span class="year"></span> Robertson Morales</span>
+        </div>
+    </footer>
 
     <script defer src="plugins/jquery/dist/jquery.min.js"></script>
     <script defer src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
