@@ -34,44 +34,42 @@
 </head>
 <body>
     <div class="container">
-        <header id="navbar">
-            <nav class="navbar navbar-expand-md navbar-light px-4 py-3 py-md-2 bg-white">
-                <a class="navbar-brand" href="/">
-                    <span class="text-dark-mode">Robertson Morales</span>
-                </a>
-                
-                <button class="navbar-toggler text-dark-mode" type="button" data-toggle="collapse" data-target="#toggleNavbar" aria-controls="toggleNavbar" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
-                  <i data-feather="menu"></i>
-                </button>
-              
-                <div class="collapse navbar-collapse" id="toggleNavbar">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
-        
-                    <div class="navbar-text">
-                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-xs-100">
-                            <li class="nav-item mr-3">
-                                <a class="nav-link text-dark-mode navbar active" href="#" id="nav-about-me" onclick="navSelected('nav-about-me')">About Me</a>
-                            </li>
-                            <li class="nav-item mr-3">
-                                <a class="nav-link text-dark-mode navbar" href="#skills" id="nav-skills" onclick="navSelected('nav-skills')">Skills</a>
-                            </li>
-                            <li class="nav-item mr-3">
-                                <a class="nav-link text-dark-mode navbar" href="#services" id="nav-services" onclick="navSelected('nav-services')">Services</a>
-                            </li>
-                            <li class="nav-item mr-3">
-                                <a class="nav-link text-dark-mode navbar" href="#projects" id="nav-projects" onclick="navSelected('nav-projects')">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <button class="nav-link text-dark-mode navbar btn" id="dark-light-mode" title="Dark Mode" >
-                                    <span class="dark-theme"><i data-feather="moon"></i></span>
-                                    <span class="light-theme d-none"><i data-feather="sun"></i></span>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
+        <nav class="navbar navbar-expand-md navbar-light px-4 py-3 py-md-2 bg-white" id="navbar">
+            <a class="navbar-brand" href="/">
+                <span class="text-dark-mode">Robertson Morales</span>
+            </a>
+            
+            <button class="navbar-toggler text-dark-mode" type="button" data-toggle="collapse" data-target="#toggleNavbar" aria-controls="toggleNavbar" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
+              <i data-feather="menu"></i>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="toggleNavbar">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+    
+                <div class="navbar-text">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-xs-100">
+                        <li class="nav-item mr-3">
+                            <a class="nav-link text-dark-mode navbar active" href="#" id="nav-about-me" onclick="navSelected('nav-about-me')">About Me</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link text-dark-mode navbar" href="#skills" id="nav-skills" onclick="navSelected('nav-skills')">Skills</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link text-dark-mode navbar" href="#services" id="nav-services" onclick="navSelected('nav-services')">Services</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link text-dark-mode navbar" href="#projects" id="nav-projects" onclick="navSelected('nav-projects')">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link text-dark-mode navbar btn" id="dark-light-mode" title="Dark Mode" >
+                                <span class="dark-theme"><i data-feather="moon"></i></span>
+                                <span class="light-theme d-none"><i data-feather="sun"></i></span>
+                            </button>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
         
         <main class="row no-gutters flex-column px-4 py-3">
             <section class="col row no-gutters flex-column flex-lg-row align-items-center justify-content-center my-4 my-md-5" id="about-me">
@@ -219,8 +217,8 @@
                             <img class="img-fluid w-100" src="resources/images/projects/login-forms.JPG" alt="Login Form UI Designs" sizes="50vw">
                             
                             <div class="card-body card-body-extension text-left">
-                                <div class="h4 card-title">Login Form UI Designs</div>
-                                <p class="card-text">This is a different type of approach in creating a login form, it's actually pretty basic but good for starter/beginners.</p>
+                                <div class="h4 card-title card-title-ext">Login Form UI Designs</div>
+                                <p class="card-text card-title-ext">This is a different type of approach in creating a login form, it's actually pretty basic but good for starter/beginners.</p>
                                 <div class="d-flex flex-column flex-lg-row">
                                     <a href="https://robertsonmorales.github.io/login_forms" class="btn btn-new-primary mr-0 mr-lg-2 mb-2 mb-lg-0" target="_blank" rel="noopener">Preview</a>
                                     <a href="https://github.com/robertsonmorales/login_forms" class="btn btn-secondary" target="_blank" rel="noopener">Source Code</a>
@@ -232,8 +230,8 @@
                             <img class="img-fluid w-100" src="resources/images/projects/music-player-main.jpg" alt="Music Player with Neumorphism Effects">
                             
                             <div class="card-body card-body-extension text-left">
-                                <div class="h4 card-title">Music Player</div>
-                                <p class="card-text">This is a music player, with static audio files. It has its basic functionalities such as shuffle, loop, next, prev, volume, play, and stop.</p>
+                                <div class="h4 card-title card-title-ext">Music Player</div>
+                                <p class="card-text card-title-ext">This is a music player, with static audio files. It has its basic functionalities such as shuffle, loop, next, prev, volume, play, and stop.</p>
                                 <div class="d-flex flex-column flex-lg-row">
                                     <a href="https://robertsonmorales.github.io/music_player/" class="btn btn-new-primary mr-0 mr-lg-2 mb-2 mb-lg-0" target="_blank" rel="noopener">Preview</a>
                                     <a href="https://github.com/robertsonmorales/music_player" class="btn btn-secondary" target="_blank" rel="noopener">Source Code</a>
@@ -247,8 +245,8 @@
                             <img class="img-fluid w-100" src="resources/images/projects/profile-cards.JPG" alt="Profile Cards with Hover Effect">
                             
                             <div class="card-body card-body-extension text-left">
-                                <div class="h4 card-title">Profile Cards</div>
-                                <p class="card-text">This is a professional profile card with hover animations.</p>
+                                <div class="h4 card-title card-title-ext">Profile Cards</div>
+                                <p class="card-text card-title-ext">This is a professional profile card with hover animations.</p>
                                 <div class="d-flex flex-column flex-lg-row">
                                     <a href="https://robertsonmorales.github.io/profile_cards" class="btn btn-new-primary mr-0 mr-lg-2 mb-2 mb-lg-0" target="_blank" rel="noopener">Preview</a>
                                     <a href="https://github.com/robertsonmorales/profile_cards" class="btn btn-secondary" target="_blank" rel="noopener">Source Code</a>
