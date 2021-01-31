@@ -117,10 +117,6 @@ body{
     color: $dark-color !important;
 }
 
-.btn{
-    border-radius: 0 !important;
-}
-
 .btn-new-primary{
     background-color: $primary-color !important;
     border: 1px solid $primary-color !important;
@@ -159,7 +155,6 @@ body{
     .card{
         overflow: hidden;
         transition: all .2s ease-in !important;
-        border-radius: 0 !important;
 
         // .card-body-extension{        
         //     transition: all .6s ease;
