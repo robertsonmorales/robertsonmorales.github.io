@@ -1,0 +1,31 @@
+$primary:       #0061f2 !default;
+$secondary:     #3f51b5 !default;
+$success:       #20c997 !default;
+$info:          #03a9f4 !default;
+$warning:       #ff9800 !default;
+$danger:        #dc3545 !default;
+$light:         #f8f9fa !default;
+$dark:          #131b23 !default;
+
+$theme-colors: (
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger,
+    'light': $light,
+    'dark': $dark,
+);
+
+$font-family: 'Poppins', sans-serif;
+// $font-family: 'Montserrat', sans-serif;
+$aclonica: 'Aclonica', sans-serif;
+
+$shadow: 10px 11px 30px 5px rgba(0,0,0,0.2);
+$shadow-sm: 1px 3px 5px rgba(0,0,0,0.05);
+$dropdown-shadow: 0 10px 40px 10px rgba(140,152,164,.175);
+$border: .0625rem solid rgba(231,234,243,.7);
+$radius: .75rem;
+$font-size-base: .9rem;
+$line-height-base: 1.6;
