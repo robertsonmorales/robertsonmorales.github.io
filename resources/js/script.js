@@ -1,5 +1,3 @@
-feather.replace();
-
 function navSelected(id){
     let navbar = document.getElementsByClassName('navbar');
     for (let i = 0; i < navbar.length; i++) {
@@ -9,11 +7,12 @@ function navSelected(id){
     }
 
     let el = document.getElementById(id);
-    if (id == 'nav-about') {
+    if (id == 'about') {
         window.scrollTop;
+    }else{
+        el.scrollIntoView();
     }
-
-    el.classList.add('active');
+    document.getElementById('nav-'+id).classList.add('active');
 }
 
 $(() => {
@@ -24,9 +23,13 @@ $(() => {
     });
 
     $(document).on('scroll', function () {
-        $("#navbar").toggleClass('nav-shadow', $(this).scrollTop() > $("#navbar").height());
-        // $("#navbar").toggleClass('fixed-top', $(this).scrollTop() > $("#navbar").height());
-        $("#btn-show-more").toggleClass('d-none', $(this).scrollTop() > $("#navbar").height());
+        // if($('#navbar').hasClass('bg-light')){
+        //     $("#navbar").toggleClass('nav-shadow', $(this).scrollTop() > $("#navbar").height());
+        // }
+        
+        // if($('#navbar').hasClass('bg-dark')){
+        //     $("#navbar").toggleClass('nav-shadow-dark', $(this).scrollTop() > $("#navbar").height());
+        // }
 
         if($("#navbar").hasClass('bg-light')){
             $("#navbar").removeClass('bg-dark');
@@ -49,7 +52,6 @@ $(() => {
         if($('#navbar').hasClass('bg-light')){ // to dark-mode
             $('#navbar').removeClass('bg-light');
             $('#navbar').addClass('bg-dark');
-            $('#navbar').addClass('nav-shadow-dark');
 
             $('.bg-mode').removeClass('bg-primary');
             $('.bg-mode').addClass('bg-light');
@@ -64,7 +66,6 @@ $(() => {
         }else if($('#navbar').hasClass('bg-dark')){ // to light-mode
             $('#navbar').removeClass('bg-dark');
             $('#navbar').addClass('bg-light');
-            $('#navbar').removeClass('nav-shadow-dark');
 
             $('.bg-mode').addClass('bg-primary');
             $('.bg-mode').removeClass('bg-light');

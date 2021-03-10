@@ -1,5 +1,5 @@
-$primary:       #0061f2 !default;
-$secondary:     #3f51b5 !default;
+$primary:       #fb9300 !default;
+$secondary:     #e2f3eb !default;
 $success:       #20c997 !default;
 $info:          #03a9f4 !default;
 $warning:       #ff9800 !default;
@@ -18,14 +18,18 @@ $theme-colors: (
     'dark': $dark,
 );
 
-$font-family: 'Poppins', sans-serif;
-// $font-family: 'Montserrat', sans-serif;
-$aclonica: 'Aclonica', sans-serif;
+// $font-family: 'Poppins', sans-serif;
+$font-family: 'Montserrat', sans-serif;
 
-$shadow: 10px 11px 30px 5px rgba(0,0,0,0.2);
-$shadow-sm: 1px 3px 5px rgba(0,0,0,0.05);
-$dropdown-shadow: 0 10px 40px 10px rgba(140,152,164,.175);
+$light-shadow: 20px 20px 60px #d3d4d5, -20px -20px 60px #ffffff;
+$dark-shadow: 20px 20px 60px #0e141a, -20px -20px 60px #18222c;
+
 $border: .0625rem solid rgba(231,234,243,.7);
 $radius: .75rem;
 $font-size-base: .9rem;
 $line-height-base: 1.6;
+
+$saturated-red: #ff781611;
+$saturated-blue: #2196f311;
+$saturated-violet: #563d7c11;
+$saturated-yellow: #f7df1e11;
