@@ -23,18 +23,12 @@ body{
     color: $dark;
 }
 
-.font-aclonica{
-    font-family: 'Aclonica', sans-serif !important;
-}
-
 .nav-shadow{
-    box-shadow:  20px 20px 60px #d3d4d5,
-        -20px -20px 60px #ffffff;
+    box-shadow: $light-shadow;
 }
 
 .nav-shadow-dark{
-    box-shadow:  20px 20px 60px #0e141a,
-        -20px -20px 60px #18222c;
+    box-shadow: $dark-shadow;
 }
 
 .navbar{
@@ -45,28 +39,21 @@ body{
     
     .nav-link{
         font-weight: 600 !important;
+        border: none !important;
+        background-color: transparent !important;
+        outline: none;
     }
 }
 
 .active{
     color: $primary !important;
+    border-bottom: 2px solid $primary;
 }
 
 .about-section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    .social-media-icons{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-
-        .feather{
-            width: 20px;
-            height: 20px;
-        }
-    }
 }
 
 .flexbox-center{
@@ -75,10 +62,32 @@ body{
     align-items: center;
 }
 
+.flexbox-start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .skills-section{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
+    .reddish{
+        background-color: $saturated-red !important;
+    }
+
+    .bluish{
+        background-color: $saturated-blue !important;
+    }
+
+    .violet{
+        background-color: $saturated-violet !important;
+    }
+
+    .yellowish{
+        background-color: $saturated-yellow !important;
+    }
 }
 
 .services-section{
@@ -90,11 +99,16 @@ body{
     filter: saturate(0);
 }
 
-.btn-actions{
-    .btn{
-        border-radius: 50px !important;
-        padding: 10px 20px !important;
-    }
+.btn-socials{
+    height: 42px !important;
+    width: 42px !important;
+    padding: 0 !important;
+}
+
+.btn{
+    border-radius: 15px !important;
+    padding: 10px 20px;
+    font-weight: 600;
 }
 
 .card-deck{
@@ -104,6 +118,8 @@ body{
 }
 
 .img-fluid-extension{
+    border-radius: 15px;
+    margin: 15px;
     object-fit: fill;
     width: 120px;
     height: 120px;
@@ -114,25 +130,18 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
 }
 
 .media-icon-facebook{
-    &:hover{
-        color: $primary !important;
-    }
+    color: #0061f2 !important;
 }
 
 .media-icon-linkedin{
-    &:hover{
-        color: $info !important;
-    }
+    color: $info !important;
 }
 
 .media-icon-github{
-    &:hover{
-        color: $dark !important;
-    }
+    color: $dark !important;
 }
 
 .font-weight-500{
@@ -179,12 +188,6 @@ body{
     background: #131b23;
     box-shadow:  20px 20px 60px #0e141a,
         -20px -20px 60px #18222c;
-}
-
-.float{
-    animation-name: float;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
 }
 
 .from-right-1{
@@ -241,52 +244,4 @@ body{
         opactiy: 1;
         transform: translateX(0);
     }
-}
-
-@keyframes float{
-    0%{
-        transform: translateY(-4%);
-    }
-
-    20%{
-        transform: translateY(-6%);
-    }
-
-    40%{
-        transform: translateY(-8%);
-    }
-
-    60%{
-        transform: translateY(-10%);
-    }
-
-    80%{
-        transform: translateY(-8%);
-    }
-
-    90%{
-        transform: translateY(-6%);
-    }
-
-    95%{
-        transform: translateY(-4%);
-    }
-
-    100%{
-        transform: translateY(-2%);
-    }
-}
-
-::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: $light;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: $secondary;
-    border-radius: $radius;
 }
