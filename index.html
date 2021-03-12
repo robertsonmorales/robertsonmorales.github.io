@@ -16,19 +16,16 @@
     <link rel="preload" href="plugins/bootstrap/dist/js/bootstrap.min.js" as="script">
     <link rel="preload" href="resources/js/script.js" as="script">
 
-    <!-- <link rel="preload" href="resources/images/svg/services/UI Design.svg" as="image">
-    <link rel="preload" href="resources/images/svg/services/Website Responsive Design.svg" as="image">
-    <link rel="preload" href="resources/images/svg/services/Web Application.svg" as="image">
-    <link rel="preload" href="resources/images/svg/services/Convert Prototypes to HTML.svg" as="image"> -->
+    <!-- <link rel="preload" href="resources/images/svg/*" as="image"> -->
     
     <link rel="preload" href="resources/images/projects/Login-Forms.png" as="image">
     <link rel="preload" href="resources/images/projects/Music-Player.png" as="image">
     <link rel="preload" href="resources/images/projects/Profile-Cards.png" as="image">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- <link rel="shortcut icon" href="resources/images/me/58919933.jpg" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="plugins/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/sass/style.css">
@@ -37,18 +34,18 @@
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" id="navbar">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <span class="text-dark-mode text-primary font-weight-bold h4">RM</span>
+                <span class="text-primary font-weight-bold h3">RM</span>
+                <!-- <img src="favicon.png" alt="favicon" width="50"> -->
             </a>
             
             <button class="btn navbar-toggler text-dark-mode border-0" type="button" data-toggle="collapse" data-target="#toggleNavbar" aria-controls="toggleNavbar" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
-                <i data-feather="menu"></i>
+                <i class="fas fa-bars"></i>
             </button>
         
-            <div class="collapse navbar-collapse" id="toggleNavbar">
+            <div class="collapse navbar-collapse" id="toggleNavbar">    
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
-    
                 <div class="navbar-text">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-xs-100">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item mr-2 mb-xs-2">
                             <button class="nav-link text-dark-mode navbar" id="nav-about" onclick="navSelected('about')">About</button>
                         </li>
@@ -58,10 +55,10 @@
                         <li class="nav-item mr-2 mb-xs-2">
                             <button class="nav-link text-dark-mode navbar" id="nav-portfolio" onclick="navSelected('portfolio')">Portfolio</button>
                         </li>
-                        <li class="nav-item mr-3">
+                        <li class="nav-item mr-3 mb-xs-2">
                             <button class="nav-link text-dark-mode navbar" id="nav-skills" onclick="navSelected('skills')">Skills</button>
                         </li>
-                        <li class="nav-item mr-2 mb-xs-2">
+                        <li class="nav-item mr-3 mb-xs-2">
                             <button class="nav-link text-dark-mode navbar" id="nav-contact" onclick="navSelected('contact')">Contact</button>
                         </li>
                         <li class="nav-item">
@@ -76,9 +73,9 @@
         </div>
     </nav>
     <div class="container">    
-        <main class="py-4">
-            <section class="row no-gutters about-section flex-md-row my-5 py-5" id="about">    
-                <div class="col col-md-5 mb-5 mb-md-0 flexbox-center">
+        <main class="py-0 py-md-5">
+            <section class="row no-gutters about-section flex-md-row-reverse my-5 py-md-5">
+                <div class="col col-md-5 flexbox-center">
                     <div class="p-5">
                         <img src="resources/images/me/IMG_20210305_130612.jpg" 
                         class="img-fluid rounded-circle saturate from-left-1" 
@@ -87,17 +84,15 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 pl-md-4 pl-lg-5">
-                    <div class="mb-3 text-dark-mode h1 font-weight-bold from-right-1" style="font-size: 2.5rem;">Hello! <br>I'm <span class="text-primary">Robertson Morales</span>.</div>
-                    <div class="mb-3 text-dark-mode h6 from-right-2">WEB DESIGNER & DEVELOPER</div>
-                    <div class="mb-3 text-muted text-dark-mode from-right-3">Specializes in UI Design, Responsive Web Design, <div class="d-none d-lg-block"></div> and Web Application.</div>
-                    <div class="mb-5 btn-actions from-right-4">
+                <div class="col-md-6 pr-md-4 pr-lg-5">
+                    <div class="mb-4 text-dark-mode h1 font-weight-bolder from-right-1" style="font-size: 2.5rem;">Hello, <br>I'm <span class="text-primary">Robertson Morales</span>.</div>
+                    <div class="text-dark-mode h6 font-weight-bold from-right-2">WEB DESIGNER & DEVELOPER</div>
+                    <div class="mb-4 text-muted text-dark-mode from-right-3">Specializes in UI Design, Responsive Web Design, <div class="d-none d-lg-block"></div> and Web Application.</div>
+
+                    <div class="mb-4 btn-actions from-right-4">
                         <a href="#portfolio" 
                         onclick="navSelected('nav-portfolio')"
-                        class="btn btn-primary mr-1 text-white">
-                            <span class="mr-2">My Works</span>
-                            <i class="fas fa-arrow-right fa-sm"></i>
-                        </a>
+                        class="btn btn-primary mr-1 text-white">My Works</a>
                         <a href="resources/attachment/resume.docx" 
                         download="Resume" 
                         class="btn btn-secondary">Download Resume</a>
@@ -109,7 +104,7 @@
                             target="_blank" 
                             title="Connect with me at facebook" 
                             rel="noopener" 
-                            class="btn btn-secondary btn-socials media-icons media-icon-facebook my-3">
+                            class="btn btn-secondary btn-socials flexbox-center media-icon-facebook my-3 card-title-ext">
                                 <i class="fab fa-facebook-f fa-lg"></i>
                             </a>
                         </div>
@@ -118,7 +113,7 @@
                             target="_blank"
                             title="Connect with me at linkedin" 
                             rel="noopener" 
-                            class="btn btn-secondary btn-socials media-icons media-icon-linkedin my-3">
+                            class="btn btn-secondary btn-socials flexbox-center media-icon-linkedin my-3">
                                 <i class="fab fa-linkedin-in fa-lg"></i>
                             </a>
                         </div>
@@ -126,7 +121,7 @@
                             <a href="https://github.com/robertsonmorales" 
                             target="_blank" title="Follow me at github" 
                             rel="noopener" 
-                            class="btn btn-secondary btn-socials media-icons media-icon-github my-3">
+                            class="btn btn-secondary btn-socials flexbox-center media-icon-github my-3">
                                 <i class="fab fa-github fa-lg"></i>
                             </a>
                         </div>
@@ -135,61 +130,87 @@
             </section>
 
             <section id="services"></section>
-            <section class="services-section mb-5">
+            <section class="services-section my-5">
                 <div class="flexbox-center flex-column">
                     <span class="text-primary font-weight-bold">WHAT I DO</span>
-                    <span class="mb-4 text-dark-mode h1 font-weight-bold">Specializing in</span>
+                    <span class="text-dark-mode h1 font-weight-bold">Specializing in</span>
                 </div>
-        
                 <div class="card-deck my-5">
-                    <div class="card card-dark img-dark-mode flat p-2">
-                        <div class="flexbox-center">
-                            <img class="img-fluid p-3 mt-3" src="resources/images/svg/services/undraw_Build_wireframe_re_ln7g.svg" alt="UI Design" width="250" height="auto">
-                            <!-- <img class="img-fluid p-3 mt-3" src="resources/images/svg/services/undraw_design_team_af2y.svg" alt="UI Design" width="250" height="auto"> -->
+                    <div class="card card-dark flexbox-start flex-row-reverse shadow-sm p-2">
+                        <div class="w-100 position-bottom-left">
+                            <div class="wave dark-wave d-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#182126 " fill-opacity="1" d="M0,160L48,149.3C96,139,192,117,288,117.3C384,117,480,139,576,170.7C672,203,768,245,864,245.3C960,245,1056,203,1152,192C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                            </div>
+                            <div class="wave light-wave">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,160L48,149.3C96,139,192,117,288,117.3C384,117,480,139,576,170.7C672,203,768,245,864,245.3C960,245,1056,203,1152,192C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                            </div>
                         </div>
+                        
+                        <img class="img-fluid p-3 z-index-from-position" src="resources/images/svg/services/ui-design.svg" alt="UI Design" width="250" height="auto">
 
-                        <div class="card-body text-center">
-                            <div class="h5 card-title card-title-ext">UI Design</div>
+                        <div class="card-body z-index-from-position">
+                            <div class="h5 card-title text-primary">UI Design</div>
                             <p class="card-text text-muted">Build interfaces that users will find easy to use and pleasureable.</p>
                         </div>
                     </div>
     
-                    <div class="card card-dark img-dark-mode flat p-2">
-                        <div class="flexbox-center">
-                            <!-- <img class="img-fluid p-3 mt-3" src="resources/images/svg/services/undraw_file_sync_ot38.svg" alt="Website Responsive Design" width="250" height="auto"> -->
-                            <img class="img-fluid p-3 mt-3" src="resources/images/svg/services/undraw_online_transactions_02ka.svg" alt="Website Responsive Design" width="250" height="auto">
+                    <div class="card card-dark flexbox-start flex-row-reverse shadow-sm p-2">
+                        <div class="w-100 position-bottom-left">
+                            <div class="wave dark-wave d-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#182126 " fill-opacity="1" d="M0,160L48,149.3C96,139,192,117,288,117.3C384,117,480,139,576,170.7C672,203,768,245,864,245.3C960,245,1056,203,1152,192C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                            </div>
+                            <div class="wave light-wave">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,160L48,149.3C96,139,192,117,288,117.3C384,117,480,139,576,170.7C672,203,768,245,864,245.3C960,245,1056,203,1152,192C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                            </div>
                         </div>
+
+                        <!-- <img class="img-fluid p-3 z-index-from-position" src="resources/images/svg/services/responsive-web-design-1.svg" alt="Website Responsive Design" width="250" height="auto"> -->
+                        <img class="img-fluid p-3 z-index-from-position" src="resources/images/svg/services/responsive-web-design-2.svg" alt="Website Responsive Design" width="250" height="auto">
                         
-                        <div class="card-body text-center">
-                            <div class="h5 card-title card-title-ext">Responsive Website Design</div>
+                        <div class="card-body z-index-from-position">
+                            <div class="h5 card-title text-primary">Responsive Website Design</div>
                             <p class="card-text text-muted">Create web pages that renders well on a different devices or screen sizes.</p>
                         </div>
                     </div>
 
                     <div class="w-100 d-none d-md-block my-3"></div>
-    
-                    <div class="card card-dark img-dark-mode flat p-2">
-                        <div class="flexbox-center">
-                            <img class="img-fluid p-3 mt-3" src="resources/images/svg/services/undraw_static_assets_rpm6.svg" alt="Convert Prototypes to HTML" width="250" height="auto">
-                        </div>
-                        
-                        <div class="card-body text-center">
-                            <div class="h5 card-title card-title-ext">Convert Prototypes to HTML</div>
-                            <p class="card-text text-muted">Creating web pages from prototypes into a brand new functional and interactive website.</p>
-                        </div>
-                    </div>
-    
-                    <div class="card card-dark img-dark-mode flat p-2">
-                        <div class="flexbox-center">
-                            <!-- <img class="img-fluid p-3 mt-3" src="resources/images/svg/services/undraw_progressive_app_m9ms.svg" alt="Web Application" width="250" height="auto"> -->
-                            <img class="img-fluid p-3 mt-3" src="resources/images/svg/services/undraw_real-time_sync_o57k.svg" alt="Web Application" width="250" height="auto">
+                    
+                    <div class="card card-dark flexbox-center flex-row-reverse shadow-sm p-2">
+                        <div class="w-100 position-bottom-left">
+                            <div class="wave dark-wave d-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#182126 " fill-opacity="1" d="M0,160L48,149.3C96,139,192,117,288,117.3C384,117,480,139,576,170.7C672,203,768,245,864,245.3C960,245,1056,203,1152,192C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                            </div>
+                            <div class="wave light-wave">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,160L48,149.3C96,139,192,117,288,117.3C384,117,480,139,576,170.7C672,203,768,245,864,245.3C960,245,1056,203,1152,192C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                            </div>
                         </div>
 
-                        <div class="card-body text-center">
-                            <div class="h5 card-title card-title-ext">Website Application</div>
+                        <img class="img-fluid p-3 z-index-from-position" src="resources/images/svg/services/web-application.svg" alt="Web Application" width="250" height="auto">
+
+                        <div class="card-body z-index-from-position">
+                            <div class="h5 card-title text-primary">Website Application</div>
                             <p class="card-text text-muted">Develop and design web apps that will give the customer/client's the ability to streamline their operations, increase efficiency, and reduce costs.</p>
                         </div>
                     </div>
+
+                    <div class="card card-dark flexbox-start flex-row-reverse shadow-sm p-2">
+                        <div class="w-100 position-bottom-left">
+                            <div class="wave dark-wave d-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#182126 " fill-opacity="1" d="M0,160L48,149.3C96,139,192,117,288,117.3C384,117,480,139,576,170.7C672,203,768,245,864,245.3C960,245,1056,203,1152,192C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                            </div>
+                            <div class="wave light-wave">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,160L48,149.3C96,139,192,117,288,117.3C384,117,480,139,576,170.7C672,203,768,245,864,245.3C960,245,1056,203,1152,192C1248,181,1344,203,1392,213.3L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                            </div>
+                        </div>
+
+                        <img class="img-fluid p-3 z-index-from-position" src="resources/images/svg/services/static-assets.svg" alt="Convert Prototypes to HTML" width="250" height="auto">
+                        
+                        <div class="card-body z-index-from-position">
+                            <div class="h5 card-title text-primary">Convert Prototypes to HTML</div>
+                            <p class="card-text text-muted">Creating web pages from prototypes into a brand new functional and interactive website.</p>
+                        </div>
+                    </div>
+
                 </div>
             </section>
             
@@ -197,12 +218,12 @@
             <section class="d-flex flex-column my-5">
                 <div class="flexbox-center flex-column">
                     <span class="text-primary font-weight-bold">PORTFOLIO</span>
-                    <span class="mb-4 text-dark-mode h1 font-weight-bold">Here's My Works</span>
+                    <span class="text-dark-mode h1 font-weight-bold">Here's My Works</span>
                 </div>
-                
+
                 <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row my-5">
                     <div class="col col-md-5">
-                        <div class="h5 card-title-ext">Profile Cards</div>
+                        <div class="h5 card-title-ext font-weight-bold">Profile Cards</div>
 
                         <div class="built-with mt-2">
                             <div class="badge text-muted p-2 mb-1">HTML</div>
@@ -212,78 +233,72 @@
 
                         <p class="text-muted font-weight-500 mt-3">This is a fully custom profile cards website that I designed from scratch. The aim was to put an simple animations to show media icons when hovering a specific profile card.</p>
 
-                        <div class="mt-3 flexbox-start">
-                            <a href="https://github.com/robertsonmorales/profile_cards" 
-                            target="_blank"
-                            title="Source code" 
-                            rel="noopener" 
-                            class="btn btn-secondary btn-socials media-icons media-icon-github">
-                                <i class="fab fa-github fa-lg"></i>
-                            </a>
-                        </div>
-                        <div class="mt-3 flexbox-start">
-                            <a href="https://robertsonmorales.github.io/profile_cards" 
+                        <div class="mt-3 flexbox-between">
+                            <a href="https://github.com/robertsonmorales/profile_cards"  
                             target="_blank" 
                             rel="noopener" 
-                            class="btn btn-primary text-white media-icons">
+                            class="btn btn-primary text-white">
                                 <span class="mr-2">Preview</span>
                                 <i class="fas fa-arrow-right fa-sm"></i>
                             </a>
+                            <a href="https://robertsonmorales.github.io/profile_cards" 
+                            target="_blank"
+                            title="Source code" 
+                            rel="noopener" 
+                            class="btn btn-secondary btn-socials media-icon-github flexbox-center">
+                                <i class="fab fa-github fa-lg"></i>
+                            </a>
                         </div>
                     </div>
-                    <div class="col col-md-1"></div>
-                    <div class="col col-md-6 mb-4 mb-md-0">
+                    <div class="col col-md-2"></div>
+                    <div class="col col-md-5 mb-4 mb-md-0">
                         <a href="https://robertsonmorales.github.io/profile_cards" target="_blank" rel="noopener">
-                            <img src="resources/images/projects/Profile-Cards.png" class="img-fluid img-dark-mode flat p-2" alt="Profile Cards with Hover Effect">
+                            <img src="resources/images/projects/Profile-Cards.png" class="img-fluid portfolio-item-link shadow-sm p-2" alt="Profile Cards with Hover Effect">
                         </a>
                     </div>
                 </div>
-
                 <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row my-5">
                     <div class="col col-md-5">
-                        <div class="h5 card-title-ext">Music Player</div>
+                        <div class="h5 card-title-ext font-weight-bold">Music Player</div>
 
                         <div class="built-with mt-2">
                             <div class="badge text-muted p-2 mb-1">HTML</div>
                             <div class="badge text-muted p-2 mb-1">CSS3</div>
                             <div class="badge text-muted p-2 mb-1">Sass</div>
                             <div class="badge text-muted p-2 mb-1">JavaScript</div>
-                            <div class="badge text-muted p-2 mb-1">JQuery</div>
+                            <div class="badge text-muted p-2 mb-1">jQuery</div>
                             <div class="badge text-muted p-2 mb-1">Bootstrap</div>
                         </div>
 
                         <p class="text-muted font-weight-500 mt-3">This is a simple music player using CSS Neumorphism Effect with static audio files. The aim is to smoothly function all music players basic actions such as shuffle, loop, next, prev, volume, play, and stop.</p>                        
 
-                        <div class="mt-3 flexbox-start">
+                        <div class="mt-3 flexbox-between">
+                            <a href="https://robertsonmorales.github.io/music_player" 
+                            target="_blank" 
+                            rel="noopener" 
+                            class="btn btn-primary text-white">
+                                <span class="mr-2">Preview</span>
+                                <i class="fas fa-arrow-right fa-sm"></i>
+                            </a>
                             <a href="https://github.com/robertsonmorales/music_player" 
                             target="_blank"
                             title="Source code" 
                             rel="noopener" 
-                            class="btn btn-secondary btn-socials media-icons media-icon-github">
+                            class="btn btn-secondary btn-socials media-icon-github flexbox-center">
                                 <i class="fab fa-github fa-lg"></i>
                             </a>
                         </div>
-                        <div class="mt-3 flexbox-start">
-                            <a href="https://robertsonmorales.github.io/music_player" 
-                            target="_blank" 
-                            rel="noopener" 
-                            class="btn btn-primary text-white media-icons">
-                                <span class="mr-2">Preview</span>
-                                <i class="fas fa-arrow-right fa-sm"></i>
-                            </a>
-                        </div>
                     </div>
-                    <div class="col col-md-1"></div>
-                    <div class="col col-md-6 mb-4 mb-md-0">
+                    <div class="col col-md-2"></div>
+                    <div class="col col-md-5 mb-4 mb-md-0">
                         <a href="https://robertsonmorales.github.io/music_player" target="_blank" rel="noopener">
-                            <img src="resources/images/projects/Music-Player.png" class="img-fluid img-dark-mode flat p-2" alt="Music Player with Neumorphism Effects">
+                            <img src="resources/images/projects/music-player-main.jpg" class="img-fluid portfolio-item-link shadow-sm p-2" alt="Music Player with Neumorphism Effects">
                         </a>
                     </div>
                 </div>
-
                 <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row my-5">
                     <div class="col col-md-5">
-                        <div class="h5 card-title-ext">Login Form UI Designs</div>
+                        <div class="h5 card-title-ext font-weight-bold">Login Form UI Design</div>
 
                         <div class="built-with mt-2">
                             <div class="badge text-muted p-2 mb-1">HTML</div>
@@ -294,62 +309,59 @@
 
                         <p class="text-muted font-weight-500 mt-3">Created Login Forms UI Designs from scratch with different type of UI approach. The aim is to develop many simple login forms as posible and share this to fellow web developers for educational and personal purposes.</p>
                         
-                        <div class="mt-3 flexbox-start">
+                        <div class="mt-3 flexbox-between">
                             <a href="https://github.com/robertsonmorales/login_forms" 
-                            target="_blank"
-                            title="Source code" 
-                            rel="noopener" 
-                            class="btn btn-secondary btn-socials media-icons media-icon-github">
-                                <i class="fab fa-github fa-lg"></i>
-                            </a>
-                        </div>
-                        <div class="mt-3 flexbox-start">
-                            <a href="https://robertsonmorales.github.io/login_forms" 
                             target="_blank" 
                             rel="noopener" 
-                            class="btn btn-primary text-white media-icons">
+                            class="btn btn-primary text-white">
                                 <span class="mr-2">Preview</span>
                                 <i class="fas fa-arrow-right fa-sm"></i>
                             </a>
+                            <a href="https://robertsonmorales.github.io/login_forms" 
+                            target="_blank"
+                            title="Source code" 
+                            rel="noopener" 
+                            class="btn btn-secondary btn-socials media-icon-github flexbox-center">
+                                <i class="fab fa-github fa-lg"></i>
+                            </a>
                         </div>
                     </div>
-                    <div class="col col-md-1"></div>
-                    <div class="col col-md-6 mb-4 mb-md-0">
+                    <div class="col col-md-2"></div>
+                    <div class="col col-md-5 mb-4 mb-md-0">
                         <a href="https://robertsonmorales.github.io/login_forms" target="_blank" rel="noopener">
-                            <img src="resources/images/projects/Login-Forms.png" class="img-fluid img-dark-mode flat p-2" alt="Login Form UI Designs">
+                            <img src="resources/images/projects/Login-Forms.png" class="img-fluid portfolio-item-link shadow-sm p-2" alt="Login Form UI Designs">
                         </a>
                     </div>
                 </div>
-
             </section>
 
             <section id="skills"></section>
             <section class="skills-section my-5">
                 <div class="flexbox-center flex-column">
                     <span class="text-primary font-weight-bold">ABOUT MY</span>
-                    <span class="mb-4 text-dark-mode h1 font-weight-bold">Skills & Expertise</span>
+                    <span class="text-dark-mode h1 font-weight-bold">Skills & Expertise</span>
                 </div>
         
                 <div class="text-center">
-                    <img src="resources/images/svg/skills/html.svg" alt="html 5" class="img-fluid img-fluid-extension p-4 reddish">
-                    <img src="resources/images/svg/skills/css3.svg" alt="css" class="img-fluid img-fluid-extension p-4 bluish">
+                    <img src="resources/images/svg/skills/html.svg" alt="html 5" class="img-fluid img-fluid-extension p-4 shadow-sm">
+                    <img src="resources/images/svg/skills/css3.svg" alt="css" class="img-fluid img-fluid-extension p-4 shadow-sm">
                     <!-- <div class="d-block d-sm-none w-100"></div> -->
-                    <img src="resources/images/svg/skills/sass.svg" alt="sass" class="img-fluid img-fluid-extension p-4 reddish">
-                    <img src="resources/images/svg/skills/javascript.svg" alt="javascript" class="img-fluid img-fluid-extension p-4 yellowish">
-                    <!-- <div class="d-block d-sm-none w-100"></div> -->
-                    <div class="d-none d-lg-block w-100"></div>
-                    <img src="resources/images/svg/skills/jquery.svg" alt="jquery" class="img-fluid img-fluid-extension p-4 bluish">
-                    <img src="resources/images/svg/skills/angular.svg" alt="angular" class="img-fluid img-fluid-extension p-4 reddish">
-                    <!-- <div class="d-block d-sm-none w-100"></div> -->
-                    <img src="resources/images/svg/skills/php.svg" alt="php" class="img-fluid img-fluid-extension p-4 violet">
-                    <img src="resources/images/svg/skills/laravel.svg" alt="laravel" class="img-fluid img-fluid-extension p-4 reddish">
+                    <img src="resources/images/svg/skills/sass.svg" alt="sass" class="img-fluid img-fluid-extension p-4 shadow-sm">
+                    <img src="resources/images/svg/skills/javascript.svg" alt="javascript" class="img-fluid img-fluid-extension p-4 shadow-sm">
                     <!-- <div class="d-block d-sm-none w-100"></div> -->
                     <div class="d-none d-lg-block w-100"></div>
-                    <img src="resources/images/svg/skills/mysql.svg" alt="mysql" class="img-fluid img-fluid-extension p-4 violet">
-                    <img src="resources/images/svg/skills/git.svg" alt="git" class="img-fluid img-fluid-extension p-4 reddish">
+                    <img src="resources/images/svg/skills/jquery.svg" alt="jquery" class="img-fluid img-fluid-extension p-4 shadow-sm">
+                    <img src="resources/images/svg/skills/angular.svg" alt="angular" class="img-fluid img-fluid-extension p-4 shadow-sm">
                     <!-- <div class="d-block d-sm-none w-100"></div> -->
-                    <img src="resources/images/svg/skills/bootstrap.svg" alt="bootstrap" class="img-fluid img-fluid-extension p-4 violet">
-                    <img src="resources/images/svg/skills/adobe-xd.svg" alt="adobe xd" class="img-fluid img-fluid-extension p-4 violet">
+                    <img src="resources/images/svg/skills/php.svg" alt="php" class="img-fluid img-fluid-extension p-4 shadow-sm">
+                    <img src="resources/images/svg/skills/laravel.svg" alt="laravel" class="img-fluid img-fluid-extension p-4 shadow-sm">
+                    <!-- <div class="d-block d-sm-none w-100"></div> -->
+                    <div class="d-none d-lg-block w-100"></div>
+                    <img src="resources/images/svg/skills/mysql.svg" alt="mysql" class="img-fluid img-fluid-extension p-4 shadow-sm">
+                    <img src="resources/images/svg/skills/git.svg" alt="git" class="img-fluid img-fluid-extension p-4 shadow-sm">
+                    <!-- <div class="d-block d-sm-none w-100"></div> -->
+                    <img src="resources/images/svg/skills/bootstrap.svg" alt="bootstrap" class="img-fluid img-fluid-extension p-4 shadow-sm">
+                    <img src="resources/images/svg/skills/adobe-xd.svg" alt="adobe xd" class="img-fluid img-fluid-extension p-4 shadow-sm">
                 </div>
             </section>
 
@@ -357,21 +369,10 @@
             <section class="d-flex flex-column my-5">
                 <div class="flexbox-center flex-column">
                     <span class="text-primary font-weight-bold">CONTACT ME</span>
-                    <span class="mb-4 text-dark-mode h1 font-weight-bold">Stay Connected</span>
+                    <span class="text-dark-mode h1 font-weight-bold">Stay Connected</span>
                 </div>
 
-                <div class="row no-gutters align-items-center">
-                    <!-- <div class="col">
-                        <iframe
-                        title="google map"
-                        id="g-map"
-                        width="100%"
-                        height="450"
-                        style="border-radius: 20px; border: 0;"
-                        allowfullscreen=""
-                        loading="lazy"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2525.3186060454163!2d121.03784252664568!3d14.810639929229726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397af38053d75ff%3A0xf6c25afb64fd7d30!2sSan%20Jose%20Del%20Monte%20Heights%2C%20Brgy.Muzon!5e0!3m2!1sen!2sph!4v1614951182287!5m2!1sen!2sph"></iframe>                
-                    </div> -->
+                <div class="row no-gutters align-items-center my-5">
                     <div class="col p-4">
                         <div class="flexbox-start align-items-start flex-column">
                             <div class="mb-3 font-weight-bold">Interested? Let's Talk.</div>
@@ -393,6 +394,9 @@
                             </div>
                             
                         </div>  
+                    </div>
+                    <div class="col">
+
                     </div>
                 </div>
             </section>

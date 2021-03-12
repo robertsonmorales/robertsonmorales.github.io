@@ -10888,6 +10888,18 @@ body {
           align-items: center;
 }
 
+.flexbox-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .skills-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10933,41 +10945,41 @@ body {
 }
 
 .btn-socials {
-  height: 42px !important;
   width: 42px !important;
-  padding: 0 !important;
 }
 
 .btn {
-  border-radius: 15px !important;
+  border-radius: 20px !important;
   padding: 10px 20px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .card-deck .card {
   border: none !important;
+  overflow: hidden;
+}
+
+.shadow-sm {
+  border-radius: 20px !important;
 }
 
 .img-fluid-extension {
-  border-radius: 15px;
-  margin: 15px;
+  border-radius: 20px;
+  margin: 20px;
   -o-object-fit: fill;
      object-fit: fill;
   width: 120px;
   height: 120px;
 }
 
-.media-icons {
-  text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.position-bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.z-index-from-position {
+  z-index: 1;
 }
 
 .media-icon-facebook {
@@ -10980,6 +10992,10 @@ body {
 
 .media-icon-github {
   color: #131b23 !important;
+}
+
+.font-weight-bolder {
+  font-weight: 800 !important;
 }
 
 .font-weight-500 {
@@ -11004,13 +11020,25 @@ body {
   background-color: #182126 !important;
 }
 
-.portfolio .portfolio-item-link {
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+.portfolio-item {
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
 }
 
-.portfolio .portfolio-item-link:hover {
-  opacity: .5;
+.portfolio-item-link {
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.portfolio-item-link:hover {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+  -webkit-box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.05) !important;
+          box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.05) !important;
 }
 
 .flat {
