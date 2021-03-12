@@ -68,6 +68,12 @@ body{
     align-items: center;
 }
 
+.flexbox-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .skills-section{
     display: flex;
     flex-direction: column;
@@ -100,36 +106,44 @@ body{
 }
 
 .btn-socials{
-    height: 42px !important;
     width: 42px !important;
-    padding: 0 !important;
+    // height: 42px !important;
+    // padding: 0 !important;
 }
 
 .btn{
-    border-radius: 15px !important;
+    border-radius: $radius !important;
     padding: 10px 20px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .card-deck{
     .card{
         border: none !important;
+        overflow: hidden;
     }
 }
 
+.shadow-sm{
+    border-radius: $radius !important;
+}
+
 .img-fluid-extension{
-    border-radius: 15px;
-    margin: 15px;
+    border-radius: $radius;
+    margin: 20px;
     object-fit: fill;
     width: 120px;
     height: 120px;
 }
 
-.media-icons{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.position-bottom-left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.z-index-from-position{
+    z-index: 1;
 }
 
 .media-icon-facebook{
@@ -142,6 +156,10 @@ body{
 
 .media-icon-github{
     color: $dark !important;
+}
+
+.font-weight-bolder{
+    font-weight: 800 !important;
 }
 
 .font-weight-500{
@@ -166,13 +184,17 @@ body{
     background-color: #182126 !important;
 }
 
-.portfolio{
-    .portfolio-item-link{
-        transition: all .4s ease;
+.portfolio-item{
+    align-items: center !important;
+}
 
-        &:hover{
-            opacity: .5;
-        }
+.portfolio-item-link{
+    transition: all .4s ease;
+    align-items: center !important;
+
+    &:hover{
+        transform: translateY(-5%);
+        box-shadow: 1px 10px 20px rgba(0, 0, 0, .05) !important;
     }
 }
 
