@@ -33,7 +33,9 @@
     <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" id="navbar">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <span class="text-primary font-weight-bold h3">RM</span>
+                <div class="font-weight-bold h5">
+                    <span class="text-primary">RM</span>
+                </div>
                 <!-- <img src="favicon.png" alt="favicon" width="50"> -->
             </a>
             
@@ -46,7 +48,7 @@
                 <div class="navbar-text">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item mr-2 mb-xs-2">
-                            <button class="nav-link text-dark-mode navbar" id="nav-about" onclick="navSelected('about')">About</button>
+                            <button class="nav-link text-dark-mode navbar active" id="nav-about" onclick="navSelected('about')">About</button>
                         </li>
                         <li class="nav-item mr-2 mb-xs-2">
                             <button class="nav-link text-dark-mode navbar" id="nav-services" onclick="navSelected('services')">Services</button>
@@ -73,7 +75,7 @@
     </nav>
     <div class="container">    
         <main class="py-0 py-md-5">
-            <section class="row no-gutters about-section flex-md-row-reverse my-5 py-md-5">
+            <section class="row no-gutters about-section flex-md-row my-5 py-md-5">
                 <div class="col col-md-5 flexbox-center">
                     <div class="p-5">
                         <img src="resources/images/me/IMG_20210305_130612.jpg" 
@@ -83,18 +85,18 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 pr-md-4 pr-lg-5">
-                    <div class="mb-4 text-dark-mode h1 font-weight-bolder from-right-1" style="font-size: 2.5rem;">Hello, <br>I'm <span class="text-primary">Robertson Morales</span>.</div>
-                    <div class="text-dark-mode h6 font-weight-bold from-right-2">WEB DESIGNER & DEVELOPER</div>
+                <div class="col-md-6 pl-md-4 pl-lg-5">
+                    <div class="mb-4 text-dark-mode h1 font-weight-bolder from-right-1">Hello, <br>I'm <span class="text-primary">Robertson Morales</span>.</div>
+                    <div class="text-muted h6 font-weight-bold from-right-2">WEB DESIGNER & DEVELOPER</div>
                     <div class="mb-4 text-muted text-dark-mode from-right-3">Specializes in UI Design, Responsive Web Design, <div class="d-none d-lg-block"></div> and Web Application.</div>
 
                     <div class="mb-4 btn-actions from-right-4">
                         <a href="#portfolio" 
-                        onclick="navSelected('nav-portfolio')"
-                        class="btn btn-primary mr-1 text-white">My Works</a>
+                        onclick="navSelected('portfolio')"
+                        class="btn btn-primary mr-1 text-white">My Portfolio</a>
                         <a href="resources/attachment/resume.docx" 
                         download="Resume" 
-                        class="btn btn-secondary">Download Resume</a>
+                        class="btn btn-outline-primary">Download Resume</a>
                     </div>
                     
                     <div class="flexbox-start">
@@ -148,7 +150,7 @@
                         <img class="img-fluid p-3 z-index-from-position" src="resources/images/svg/services/ui-design.svg" alt="UI Design" width="250" height="auto">
 
                         <div class="card-body z-index-from-position">
-                            <div class="h5 card-title text-primary">UI Design</div>
+                            <div class="h5 card-title text-primary">User Interface Design</div>
                             <p class="card-text text-muted">Build interfaces that users will find easy to use and pleasureable.</p>
                         </div>
                     </div>
@@ -230,7 +232,7 @@
                             <div class="badge text-muted p-2 mb-1">Sass</div>
                         </div>
 
-                        <p class="text-muted font-weight-500 mt-3">This is a fully custom profile cards website that I designed from scratch. The aim was to put an simple animations to show media icons when hovering a specific profile card.</p>
+                        <p class="text-muted font-weight-500 mt-3">This is a fully custom profile cards website that I designed from scratch. The aim was to put a simple animations to show media icons when hovering a specific profile card.</p>
 
                         <div class="mt-3 flexbox-between">
                             <a href="https://github.com/robertsonmorales/profile_cards"  
@@ -372,9 +374,9 @@
                 </div>
 
                 <div class="row no-gutters align-items-center my-5">
-                    <div class="col p-4">
+                    <div class="col">
                         <div class="flexbox-start align-items-start flex-column">
-                            <div class="mb-3 font-weight-bold">Interested? Let's Talk.</div>
+                            <div class="mb-3 card-title-ext font-weight-bold">Interested? Let's Talk.</div>
                             <div class="d-flex text-muted mb-3">
                                 <!-- <span class="mr-2"><i class="fas fa-map-marker-alt fa-lg"></i></span> -->
                                 <span>San Jose Del Monte Heights, <br> Brgy. Muzon, San Jose Del Monte, <br> Bulacan, Philippines</span>

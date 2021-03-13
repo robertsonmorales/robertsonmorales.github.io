@@ -10815,11 +10815,11 @@ html {
 
 body {
   background-color: #f8f9fa;
+  background-size: cover;
   line-height: 1.6 !important;
   font-family: "Montserrat", sans-serif !important;
   font-size: 0.9rem !important;
   font-weight: normal !important;
-  position: relative;
   overflow-x: hidden;
   color: #131b23;
 }
@@ -10952,6 +10952,10 @@ body {
   border-radius: 20px !important;
   padding: 10px 20px;
   font-weight: 500;
+}
+
+.btn-outline-primary:hover {
+  color: #fff !important;
 }
 
 .card-deck .card {
