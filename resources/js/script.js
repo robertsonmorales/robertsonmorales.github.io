@@ -90,10 +90,10 @@ $(() => {
     });
 
     function navBarHeight(){
-        $('#skills').css('height', ($('#navbar').height()) + 'px');
-        $('#services').css('height', ($('#navbar').height()) + 'px');
-        $('#portfolio').css('height', ($('#navbar').height()) + 'px');
-        $('#contact').css('height', ($('#navbar').height()) + 'px');
+        $('#skills').css('height', $('#navbar').height());
+        $('#services').css('height', $('#navbar').height());
+        $('#portfolio').css('height', $('#navbar').height());
+        $('#contact').css('height', $('#navbar').height());
     }   
 
     navBarHeight(); 

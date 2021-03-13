@@ -13,12 +13,13 @@ html{
 }
 
 body{
-    background-color: $light;    
+    background-color: $light;   
+    // background-image: url('../images/svg/Dalmatian-Spots-Background.svg');
+    background-size: cover;
     line-height: $line-height-base !important;
     font-family: $font-family !important;
     font-size: $font-size-base !important;
     font-weight: normal !important;
-    position: relative;
     overflow-x: hidden;
     color: $dark;
 }
@@ -107,14 +108,18 @@ body{
 
 .btn-socials{
     width: 42px !important;
-    // height: 42px !important;
-    // padding: 0 !important;
 }
 
 .btn{
     border-radius: $radius !important;
     padding: 10px 20px;
     font-weight: 500;
+}
+
+.btn-outline-primary{
+    &:hover{
+        color: #fff !important;
+    }
 }
 
 .card-deck{
