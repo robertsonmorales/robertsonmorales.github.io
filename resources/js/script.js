@@ -50,9 +50,13 @@ $(() => {
 
         $('.badge').toggleClass('dark-badge');
 
+        $('form.card').toggleClass('contact-card-dark');
+        $('.form-control').toggleClass('form-control-dark');
+
         if($('#navbar').hasClass('bg-light')){ // to dark-mode
             $('#navbar').removeClass('bg-light');
             $('#navbar').addClass('bg-dark');
+            $('.nav-link').addClass('text-muted');
 
             $('.bg-mode').removeClass('bg-primary');
             $('.bg-mode').addClass('bg-light');
@@ -69,6 +73,7 @@ $(() => {
         }else if($('#navbar').hasClass('bg-dark')){ // to light-mode
             $('#navbar').removeClass('bg-dark');
             $('#navbar').addClass('bg-light');
+            $('.nav-link').removeClass('text-muted');
 
             $('.bg-mode').addClass('bg-primary');
             $('.bg-mode').removeClass('bg-light');

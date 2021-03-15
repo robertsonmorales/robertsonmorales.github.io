@@ -112,7 +112,6 @@ body{
 
 .btn{
     border-radius: $radius !important;
-    padding: 10px 20px;
     font-weight: 500;
 }
 
@@ -122,11 +121,9 @@ body{
     }
 }
 
-.card-deck{
-    .card{
-        border: none !important;
-        overflow: hidden;
-    }
+.card{
+    border: none !important;
+    overflow: hidden;
 }
 
 .shadow-sm{
@@ -200,6 +197,38 @@ body{
     &:hover{
         transform: translateY(-5%);
         box-shadow: 1px 10px 20px rgba(0, 0, 0, .05) !important;
+    }
+}
+
+.contact-card-dark{
+    background-color: #182126 !important;
+}
+
+.input-group{
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    label{
+        margin-bottom: 3px !important;
+        font-size: .9em !important;
+    }
+
+    .form-control{
+        width: 100%;
+        border-radius: $radius !important;
+        font-weight: 600 !important;
+        border: 1px solid #ddd !important;
+    }
+
+    .form-control-dark{
+        background-color: $dark !important;
+        border: 1px solid $dark !important;
+        color: $light;
+    }
+
+    .invalid-feedback{
+        font-size: .9em !important;
+        font-weight: 500 !important;
     }
 }
 

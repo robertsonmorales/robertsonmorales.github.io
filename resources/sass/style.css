@@ -10949,8 +10949,7 @@ body {
 }
 
 .btn {
-  border-radius: 20px !important;
-  padding: 10px 20px;
+  border-radius: 10px !important;
   font-weight: 500;
 }
 
@@ -10958,17 +10957,17 @@ body {
   color: #fff !important;
 }
 
-.card-deck .card {
+.card {
   border: none !important;
   overflow: hidden;
 }
 
 .shadow-sm {
-  border-radius: 20px !important;
+  border-radius: 10px !important;
 }
 
 .img-fluid-extension {
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 20px;
   -o-object-fit: fill;
      object-fit: fill;
@@ -11043,6 +11042,41 @@ body {
           transform: translateY(-5%);
   -webkit-box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.05) !important;
           box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+.contact-card-dark {
+  background-color: #182126 !important;
+}
+
+.input-group {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  margin-bottom: 3px !important;
+  font-size: .9em !important;
+}
+
+.input-group .form-control {
+  width: 100%;
+  border-radius: 10px !important;
+  font-weight: 600 !important;
+  border: 1px solid #ddd !important;
+}
+
+.input-group .form-control-dark {
+  background-color: #131b23 !important;
+  border: 1px solid #131b23 !important;
+  color: #f8f9fa;
+}
+
+.input-group .invalid-feedback {
+  font-size: .9em !important;
+  font-weight: 500 !important;
 }
 
 .flat {
