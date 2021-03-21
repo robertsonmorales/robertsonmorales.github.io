@@ -10974,18 +10974,6 @@ body {
   z-index: 1 !important;
 }
 
-.media-icon-facebook {
-  color: #0061f2 !important;
-}
-
-.media-icon-linkedin {
-  color: #03a9f4 !important;
-}
-
-.media-icon-github {
-  color: #131b23 !important;
-}
-
 .font-weight-bolder {
   font-weight: 800 !important;
 }
@@ -11054,13 +11042,16 @@ body {
   width: 100%;
   border-radius: 10px !important;
   font-weight: 600 !important;
-  border: 1px solid #ddd !important;
 }
 
 .input-group .form-control-dark {
   background-color: #182126 !important;
-  border: 1px solid #333333 !important;
+  border: 1px solid #6C757D;
   color: #f8f9fa;
+}
+
+.input-group .form-control-dark:focus {
+  border: 1px solid #fb9300 !important;
 }
 
 .input-group .invalid-feedback {

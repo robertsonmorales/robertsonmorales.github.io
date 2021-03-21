@@ -137,18 +137,6 @@ body{
     z-index: 1 !important;
 }
 
-.media-icon-facebook{
-    color: #0061f2 !important;
-}
-
-.media-icon-linkedin{
-    color: $info !important;
-}
-
-.media-icon-github{
-    color: $dark !important;
-}
-
 .font-weight-bolder{
     font-weight: 800 !important;
 }
@@ -206,13 +194,16 @@ body{
         width: 100%;
         border-radius: $radius !important;
         font-weight: 600 !important;
-        border: 1px solid #ddd !important;
     }
 
     .form-control-dark{
         background-color: #182126 !important;
-        border: 1px solid #333333 !important;
+        border: 1px solid #6C757D;
         color: $light;
+
+        &:focus{
+            border: 1px solid $primary !important;
+        }
     }
 
     .invalid-feedback{
