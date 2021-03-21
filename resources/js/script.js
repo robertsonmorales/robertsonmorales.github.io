@@ -44,7 +44,7 @@ $(() => {
     $('#dark-light-mode').on('click', function(){
         $('body').toggleClass('bg-dark');       
 
-        $('.card-dark').toggleClass('bg-dark');
+        $('.card').toggleClass('card-dark');
         $('.card-title-ext').toggleClass('text-light');
         $('.card-text-ext').toggleClass('text-light');
 
