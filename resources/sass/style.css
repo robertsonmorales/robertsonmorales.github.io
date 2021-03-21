@@ -10822,6 +10822,7 @@ body {
   font-weight: normal !important;
   overflow-x: hidden;
   color: #131b23;
+  letter-spacing: .4px;
 }
 
 .nav-shadow {
@@ -10840,15 +10841,15 @@ body {
 }
 
 .navbar .nav-link {
-  font-weight: 600 !important;
-  border: none !important;
+  font-size: .9em !important;
+  border: none;
   background-color: transparent !important;
   outline: none;
 }
 
 .active {
   color: #fb9300 !important;
-  border-bottom: 2px solid #fb9300;
+  border-bottom: 2px solid #fb9300 !important;
 }
 
 .about-section {
@@ -10913,22 +10914,6 @@ body {
           justify-content: flex-start;
 }
 
-.skills-section .reddish {
-  background-color: #ff781611 !important;
-}
-
-.skills-section .bluish {
-  background-color: #2196f311 !important;
-}
-
-.skills-section .violet {
-  background-color: #563d7c11 !important;
-}
-
-.skills-section .yellowish {
-  background-color: #f7df1e11 !important;
-}
-
 .services-section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10944,8 +10929,8 @@ body {
           filter: saturate(0);
 }
 
-.btn-socials {
-  width: 42px !important;
+.text-dark-mode {
+  color: #131b23;
 }
 
 .btn {
@@ -10960,6 +10945,10 @@ body {
 .card {
   border: none !important;
   overflow: hidden;
+}
+
+.card-dark {
+  background-color: #182126 !important;
 }
 
 .shadow-sm {
@@ -10977,7 +10966,7 @@ body {
 
 .position-bottom-left {
   position: absolute !important;
-  bottom: 0 !important;
+  bottom: -30px !important;
   left: 0 !important;
 }
 
@@ -11069,8 +11058,8 @@ body {
 }
 
 .input-group .form-control-dark {
-  background-color: #131b23 !important;
-  border: 1px solid #131b23 !important;
+  background-color: #182126 !important;
+  border: 1px solid #333333 !important;
   color: #f8f9fa;
 }
 

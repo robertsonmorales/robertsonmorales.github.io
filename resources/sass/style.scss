@@ -22,6 +22,7 @@ body{
     font-weight: normal !important;
     overflow-x: hidden;
     color: $dark;
+    letter-spacing: .4px;
 }
 
 .nav-shadow{
@@ -39,8 +40,8 @@ body{
     }
     
     .nav-link{
-        font-weight: 600 !important;
-        border: none !important;
+        font-size: .9em !important;
+        border: none;
         background-color: transparent !important;
         outline: none;
     }
@@ -48,7 +49,7 @@ body{
 
 .active{
     color: $primary !important;
-    border-bottom: 2px solid $primary;
+    border-bottom: 2px solid $primary !important;
 }
 
 .about-section{
@@ -79,22 +80,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
-    .reddish{
-        background-color: $saturated-red !important;
-    }
-
-    .bluish{
-        background-color: $saturated-blue !important;
-    }
-
-    .violet{
-        background-color: $saturated-violet !important;
-    }
-
-    .yellowish{
-        background-color: $saturated-yellow !important;
-    }
 }
 
 .services-section{
@@ -106,8 +91,8 @@ body{
     filter: saturate(0);
 }
 
-.btn-socials{
-    width: 42px !important;
+.text-dark-mode{
+    color: $dark;
 }
 
 .btn{
@@ -126,6 +111,10 @@ body{
     overflow: hidden;
 }
 
+.card-dark{
+    background-color: #182126 !important;
+}
+
 .shadow-sm{
     border-radius: $radius !important;
 }
@@ -140,7 +129,7 @@ body{
 
 .position-bottom-left{
     position: absolute !important;
-    bottom: 0 !important;
+    bottom: -30px !important;
     left: 0 !important;
 }
 
@@ -221,8 +210,8 @@ body{
     }
 
     .form-control-dark{
-        background-color: $dark !important;
-        border: 1px solid $dark !important;
+        background-color: #182126 !important;
+        border: 1px solid #333333 !important;
         color: $light;
     }
 
