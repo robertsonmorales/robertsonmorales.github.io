@@ -10957,11 +10957,10 @@ body {
 
 .img-fluid-extension {
   border-radius: 10px;
-  margin: 20px;
   -o-object-fit: fill;
      object-fit: fill;
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
 }
 
 .position-bottom-left {
@@ -11102,8 +11101,8 @@ body {
 }
 
 .from-left-1 {
-  -webkit-animation-name: fromLeft;
-          animation-name: fromLeft;
+  -webkit-animation-name: backInLeft;
+          animation-name: backInLeft;
   -webkit-animation-duration: 1.4s;
           animation-duration: 1.4s;
 }

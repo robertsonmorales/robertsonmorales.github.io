@@ -121,10 +121,10 @@ body{
 
 .img-fluid-extension{
     border-radius: $radius;
-    margin: 20px;
+    // margin: 20px;
     object-fit: fill;
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
 }
 
 .position-bottom-left{
@@ -244,7 +244,7 @@ body{
 }
 
 .from-left-1{
-    animation-name: fromLeft;
+    animation-name: backInLeft;
     animation-duration: 1.4s;
 }
 .from-left-2{
