@@ -1,10 +1,18 @@
 $(() => {
   'use strict';
 
-  $('#btn-submit').on('click', function(){
-    let input = $('.form-control');
-    for (let i = 0; i < input.length; i++) {
-        isEmpty(input[i].value, input[i].id, input[i].name);
+  $('#contact-form').on('submit', function(event){
+    event.preventDefault();
+
+    let name = isEmpty($('#name').val(), $('#name').attr('id'), $('#name').attr('name'));
+    let emailAddress = isEmpty($('#email_address').val(), $('#email_address').attr('id'), $('#email_address').attr('name'));
+    let subject = isEmpty($('#subject').val(), $('#subject').attr('id'), $('#subject').attr('name'));
+    let message = isEmpty($('#message').val(), $('#message').attr('id'), $('#message').attr('name'));
+
+    let validateEmailAddress = validateEmail($('#email_address').val());
+
+    if(!name && !emailAddress && !subject && !message && !validateEmailAddress){
+      $('#btn-submit .mr-2').html('SENDING..');
     }
   });
 
@@ -13,18 +21,23 @@ $(() => {
     if  (input == "" || input == null || input == undefined){
       $('#validate-'+id).addClass('d-block');
       $('#validate-'+id).html('The ' + newName + ' is a required field.');
+      return true;
     }else{
       $('#validate-'+id).removeClass('d-block');
+      return false;
     }
   }
 
-  function ValidateEmail(mail) {
-    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(myForm.emailAddr.value)){
+  function validateEmail(email) {
+    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (!email.match(regexEmail)) {
+      $('#validate-email_address').addClass('d-block');
+      $('#validate-email_address').html('Invalid email address.');
+
       return true;
     }else{
-      alert("You have entered an invalid email address!");
-      return (false);
+      $('#validate-email_address').removeClass('d-block');
+      return false;
     }
-      
   }
 });
