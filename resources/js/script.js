@@ -19,14 +19,17 @@ function navSelected(id){
 $(() => {
     'use strict';
 
+    var date = new Date();
+    $('#year').html(date.getFullYear());
+
     $(document).on('load', function(){
         $(this).scrollTop();
     });
 
     $(document).on('scroll', function () {
-        // if($('#navbar').hasClass('bg-light')){
-        //     $("#navbar").toggleClass('nav-shadow', $(this).scrollTop() > $("#navbar").height());
-        // }
+        if($('#navbar').hasClass('bg-light')){
+            $("#navbar").toggleClass('shadow', $(this).scrollTop() > $("#navbar").height());
+        }
         
         // if($('#navbar').hasClass('bg-dark')){
         //     $("#navbar").toggleClass('nav-shadow-dark', $(this).scrollTop() > $("#navbar").height());
