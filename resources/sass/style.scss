@@ -1,4 +1,4 @@
-@import 'variables';
+@import '_variables.scss';
 
 @import '../../plugins/bootstrap/scss/bootstrap.scss';
 
@@ -13,9 +13,7 @@ html{
 }
 
 body{
-    background-color: $light;   
-    // background-image: url('../images/svg/Dalmatian-Spots-Background.svg');
-    background-size: cover;
+    background-color: #fff;   
     line-height: $line-height-base !important;
     font-family: $font-family !important;
     font-size: $font-size-base !important;
@@ -23,6 +21,18 @@ body{
     overflow-x: hidden;
     color: $dark;
     letter-spacing: .4px;
+}
+
+.h1{
+    font-size: 3rem !important;
+}
+
+.font-size-sm{
+    font-size: .8em !important;
+}
+
+.rounded{
+    border-radius: $radius !important;
 }
 
 .nav-shadow{
@@ -44,6 +54,11 @@ body{
         border: none;
         background-color: transparent !important;
         outline: none;
+        color: #555 !important;
+
+        &:hover{
+            color: #333 !important;
+        }
     }
 }
 
@@ -91,6 +106,15 @@ body{
     filter: saturate(0);
 }
 
+.saturate-skills{
+    filter: saturate(0);
+    transition: filter .4s ease;
+
+    &:hover{
+        filter: saturate(1);
+    }
+}
+
 .text-dark-mode{
     color: $dark;
 }
@@ -100,6 +124,24 @@ body{
     font-weight: 500;
 }
 
+
+// .btn-primary {background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%)}
+// .btn-primary {
+//    text-align: center;
+//    transition: 0.5s;
+//    background-size: 200% auto;
+//    color: white;
+//    border-radius: $radius;
+//    display: block;
+//    border: none;
+
+//     &:hover {
+//         background-position: right center; /* change the direction of the change here */
+//         color: #fff;
+//         text-decoration: none;
+//     }
+// }
+
 .btn-outline-primary{
     &:hover{
         color: #fff !important;
@@ -107,16 +149,28 @@ body{
 }
 
 .card{
+    border-radius: $radius !important;
     border: none !important;
-    overflow: hidden;
+    // overflow: hidden;
+    background-color: transparent !important;
+    transition: box-shadow 1s ease;
+
+    // &:nth-child(odd){
+    //     box-shadow: $light-shadow;
+    // }
 }
 
 .card-dark{
     background-color: #182126 !important;
 }
 
-.shadow-sm{
-    border-radius: $radius !important;    
+// .shadow-sm{
+//     border-radius: $radius !important;    
+// }
+
+.shadow-lg{
+    border-radius: $radius !important;
+    box-shadow: $light-shadow !important;
 }
 
 .img-fluid-extension{
@@ -142,7 +196,11 @@ body{
 }
 
 .font-weight-500{
-    font-weight: 500 !important;
+    font-weight: 500;
+}
+
+.font-weight-600{
+    font-weight: 600;
 }
 
 .list-group-item{
@@ -165,16 +223,6 @@ body{
 
 .portfolio-item{
     align-items: center !important;
-}
-
-.portfolio-item-link{
-    transition: all .4s ease;
-    align-items: center !important;
-
-    &:hover{
-        transform: translateY(-5%);
-        box-shadow: 1px 10px 20px rgba(0, 0, 0, .05) !important;
-    }
 }
 
 .contact-card-dark{
@@ -224,60 +272,4 @@ body{
     background: #131b23;
     box-shadow:  20px 20px 60px #0e141a,
         -20px -20px 60px #18222c;
-}
-
-.from-right-1{
-    animation-name: fromRight;
-    animation-duration: 1.4s;
-}
-.from-right-2{
-    animation-name: fromRight;
-    animation-duration: 1.8s;
-}
-.from-right-3{
-    animation-name: fromRight;
-    animation-duration: 2.2s;
-}
-.from-right-4{
-    animation-name: fromRight;
-    animation-duration: 2.6s;
-}
-
-.from-left-1{
-    animation-name: backInLeft;
-    animation-duration: 1.4s;
-}
-.from-left-2{
-    animation-name: fromLeft;
-    animation-duration: 1.6s;
-}
-.from-left-3{
-    animation-name: fromLeft;
-    animation-duration: 1.8s;
-}
-.from-left-4{
-    animation-name: fromLeft;
-    animation-duration: 2s;
-}
-
-@keyframes fromRight{
-    from {
-        opacity: 0;
-        transform: translateX(25%);
-    }
-    to {
-        opactiy: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fromLeft{
-    from {
-        opacity: 0;
-        transform: translateX(-25%);
-    }
-    to {
-        opactiy: 1;
-        transform: translateX(0);
-    }
 }
