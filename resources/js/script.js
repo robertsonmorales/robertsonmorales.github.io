@@ -7,8 +7,8 @@ function navSelected(id){
     }
 
     let el = document.getElementById(id);
-    if (id == 'about') {
-        document.getElementById('nav-about').classList.add('active');
+    if (id == 'home') {
+        document.getElementById('nav-home').classList.add('active');
         window.scrollTo(0,0);
     }else{
         el.scrollIntoView();
@@ -22,14 +22,14 @@ $(() => {
     var date = new Date();
     $('#year').html(date.getFullYear());
 
-    $(document).on('load', function(){
-        $(this).scrollTop();
-    });
+    $(this).scrollTop();
 
     $(document).on('scroll', function () {
-        if($('#navbar').hasClass('bg-light')){
-            $("#navbar").toggleClass('shadow', $(this).scrollTop() > $("#navbar").height());
-        }
+        // if($('#navbar').hasClass('bg-light')){
+            
+        // }
+
+        $("#navbar").toggleClass('shadow-sm', $(this).scrollTop() > $("#navbar").height());
         
         // if($('#navbar').hasClass('bg-dark')){
         //     $("#navbar").toggleClass('nav-shadow-dark', $(this).scrollTop() > $("#navbar").height());
