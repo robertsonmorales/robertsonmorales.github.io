@@ -43,10 +43,10 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top" id="navbar">
-            <div class="container px-3 px-md-3">
+            <div class="container px-3 px-md-0">
                 <button class="navbar-brand border-0"
-                onclick="navSelected('home')"
-                style="background-color: transparent; outline: none;">
+                    onclick="navSelected('home')"
+                    style="background-color: transparent; outline: none;">
                     <div class="h5 mb-0 font-weight-bold">robertson.</div>
                 </button>
                 
@@ -95,7 +95,7 @@
                                 id="nav-skills"
                                 onclick="navSelected('skills')">skills</button>
                             </li>
-                            <li class="nav-item mr-0 mr-md-5 mb-2 mb-md-0">
+                            <li class="nav-item mr-0 mb-2 mb-md-0"> <!-- mr-md-5 -->
                                 <button class="nav-link navbar font-weight-600"
                                 id="nav-contact"
                                 onclick="navSelected('contact')">contact me</button>
@@ -113,7 +113,7 @@
             </div>
         </nav>
         <main>
-            <div class="container py-0 py-md-5">
+            <div class="container py-0 py-md-5 px-0">
                 <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column-reverse flex-md-row my-md-5 px-3 px-md-0 py-5">
 
                     <div class="col pr-lg-5 animate__animated animate__fadeIn animate__delay-1s">
@@ -586,7 +586,7 @@
                     <span class="h2 text-dark-mode font-weight-500 text-center">Stay Connected</span>
                 </div>
 
-                <div class="container">
+                <div class="container px-0">
                     <div class="row no-gutters flex-column flex-md-row my-5">
                         <div class="col col-md-7 mb-5 mb-md-0">
                             <div class="d-flex flex-column text-center text-md-left">
