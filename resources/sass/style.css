@@ -10864,7 +10864,7 @@ body {
 }
 
 .active {
-  border-bottom: 2px solid #00A218 !important;
+  border-bottom: 3px solid #00A218 !important;
 }
 
 .about-section {
@@ -11032,7 +11032,7 @@ body {
 }
 
 .badge {
-  background-color: #ededed !important;
+  background-color: #00A21811 !important;
 }
 
 .dark-badge {

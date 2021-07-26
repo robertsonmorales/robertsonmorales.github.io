@@ -21,7 +21,7 @@
     <!-- ends here -->
 
     <!-- images -->
-    <link rel="preload" href="resources/images/me/profile-picture-transparent.png" as="image">
+    <link rel="preload" href="resources/images/me/profile-picture-transparent-1.png" as="image">
     <link rel="preload" href="resources/images/projects/login-forms.png" as="image">
     <link rel="preload" href="resources/images/projects/music-player-in-mobile.jpg" as="image">
     <link rel="preload" href="resources/images/projects/profile-cards.png" as="image">
@@ -59,11 +59,6 @@
                     aria-label="Toggle navigation"
                     style="outline: none;">
                     <i class="fas fa-bars"></i>
-                    <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.75 12C19.75 11.5858 19.4142 11.25 19 11.25H5C4.58579 11.25 4.25 11.5858 4.25 12C4.25 12.4142 4.58579 12.75 5 12.75H19C19.4142 12.75 19.75 12.4142 19.75 12Z" fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.75 7C19.75 6.58579 19.4142 6.25 19 6.25H5C4.58579 6.25 4.25 6.58579 4.25 7C4.25 7.41421 4.58579 7.75 5 7.75H19C19.4142 7.75 19.75 7.41421 19.75 7Z" fill="black"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M19.75 17C19.75 16.5858 19.4142 16.25 19 16.25H5C4.58579 16.25 4.25 16.5858 4.25 17C4.25 17.4142 4.58579 17.75 5 17.75H19C19.4142 17.75 19.75 17.4142 19.75 17Z" fill="black"/>
-                    </svg> -->
                 </button>
             
                 <div class="collapse navbar-collapse" id="toggleNavbar">    
@@ -78,7 +73,7 @@
                             <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
                                 <button class="nav-link navbar font-weight-600"
                                 id="nav-about" 
-                                onclick="navSelected('about')">about</button>
+                                onclick="navSelected('about')">about me</button>
                             </li>
                             <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
                                 <button class="nav-link navbar font-weight-600"
@@ -113,17 +108,18 @@
             </div>
         </nav>
         <main>
-            <div class="container py-0 py-md-5 px-0">
+            <!-- HERO SECTION -->
+            <div class="container py-0 py-md-5 px-3 px-md-0">
                 <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column-reverse flex-md-row my-md-5 px-3 px-md-0 py-5">
 
-                    <div class="col pr-lg-5 animate__animated animate__fadeIn animate__delay-1s">
-                        <div class="h6 font-weight-500 mb-2">Hi there, I am</div>
+                    <div class="col pr-lg-5 animate__animated animate__fadeInDown animate__delay-1s">
+                        <div class="h6 font-weight-500 mb-2">Hi there,</div>
                         
-                        <div class="h1 text-dark-mode font-weight-bold">Robertson Morales</div>
+                        <div class="h1 text-dark-mode font-weight-bold"> I am Robertson</div>
                         
                         <div class="h3 font-weight-600">Web Designer & Developer</div>
 
-                        <p class="mb-4 text-dark-mode font-weight-500 w-75">Specializes in UI Design, Responsive Web Design, and Web Application.</p>
+                        <p class="mb-4 text-dark-mode font-weight-600 w-75">Specializes in UI Design, Responsive Web Design, and Web Application.</p>
     
                         <div class="mb-5 flexbox-start">
                             <button onclick="navSelected('projects')"
@@ -136,50 +132,54 @@
                     </div>
     
                     <div class="col">
-                        <img src="resources/images/svg/circle.svg"
-                        class="position-absolute animate__animated animate__backInRight"
-                        alt="backround svg">
+                        <div class="animate__animated animate__backInRight">
+                            <img src="resources/images/svg/circle.svg"
+                            class="position-absolute"
+                            alt="background svg"
+                            style="z-index: -1;">
 
-                        <div class="p-3 p-md-0 p-lg-3 mb-2 mb-md-0 text-center">
-                            <img src="resources/images/me/profile-picture-transparent-1.png" 
-                            class="img-fluid rounded-circle animate__animated animate__backInLeft animate__delay-1s" 
-                            alt="avatar" 
-                            id="avatar">
+                            <div class="p-3 p-md-0 p-lg-3 mb-2 mb-md-0 text-center">
+                                <img src="resources/images/me/profile-picture-transparent-1.png" 
+                                class="img-fluid rounded-circle" 
+                                alt="avatar" 
+                                id="avatar">
+                            </div>
                         </div>
                     </div>
                         
                 </div>
             </div>
+            <!-- ENDS HERE -->
 
+            <!-- ABOUT ME -->
             <div id="about"></div>
             <div class="bg-light services-section my-5 py-5">
                 <div class="container">
                     
-                    <div class="row no-gutters flex-column flex-md-row px-3 px-md-0 py-5">
-                        <div class="col">
+                    <div class="row no-gutters flex-column flex-md-row align-items-md-center px-3 px-md-0 py-5">
+                        <div class="col p-3 p-md-0 p-lg-3 mb-2 mb-md-0 text-center">
                             <img class="img-fluid rounded-circle lazyload"
                                 data-src="resources/images/me/profile-picture-transparent-1.png"
                                 alt="avatar">
                         </div>
         
                         <div class="col">
-                            <div class="d-flex flex-column mb-4">
-                                <span class="h2 text-dark-mode font-weight-500">About Me</span>
+                            <div class="d-flex flex-column align-items-center align-items-md-start mb-4">
+                                <span class="h2 text-dark-mode font-weight-600">About Me</span>
                             </div>
 
-                            <div class="mb-3">
-                                <p class="font-weight-500">Hello, my name is Robertson Morales. A self-taught web designer & developer. I grew up in Catubig, Northern Samar and currently living in San Jose Del Monte City, Bulacan.</p>
-
-                                <p class="font-weight-500">I started my career by watching videos and articles on the internet. It was hard at first. But after just a few months of studying and patience. I had built static websites, web-based information systems as I improve in getting better and better. I'm also interested in people where I can excel, learn or absorb and give my best to become an expert or professional.</p>
+                            <div class="mb-4">
+                                <p class="font-weight-500 text-justify">Hello, my name is Robertson Morales. A self-taught web designer & developer. I grew up in Catubig, Northern Samar and currently living in San Jose Del Monte City, Bulacan.</p>
+                                <p class="font-weight-500 text-justify">I started my career by watching videos and articles on the internet. It was hard at first. But after just a few months of studying and patience. I had built static websites, web-based information systems as I improve in getting better and better. I'm also interested in people where I can excel, learn or absorb and give my best to become an expert or professional.</p>
                             </div>
 
                             <div class="text-left mb-5">
                                 <a href="resources/attachment/resume.docx"
                                 download="Resume"
-                                class="btn btn-outline-primary py-2 px-4">Download Resume</a>
+                                class="btn btn-primary py-2 px-4">Download Resume</a>
                             </div>
 
-                            <div class="h4 mb-4">Social Networks</div>
+                            <!-- <div class="h4 mb-4">Social Networks</div>
 
                             <div class="flexbox-start mb-4">
 
@@ -217,7 +217,8 @@
                                         <span class="ml-2 font-size-sm">github</span>
                                     </a>
                                 </div>
-                            </div>
+
+                            </div> -->
 
                         </div>
                     </div>
@@ -227,17 +228,16 @@
 
             <div id="services"></div>
             <div class="services-section my-5 py-5">
-                <div class="flexbox-center flex-column">
-                    <span class="text-primary font-weight-600">SERVICES</span>
-                    <span class="h2 text-dark-mode font-weight-500 text-center">Specializing in</span>
+                <div class="flexbox-center flex-column font-weight-600">
+                    <span class="text-primary">SERVICES</span>
+                    <span class="h2 text-dark-mode text-center">Specializing in</span>
                 </div>
                 <div class="container px-3 px-md-0">
                     <div class="card-deck px-3 px-md-0 my-3 my-md-5">
 
-                        <div class="card text-center mb-sm-3">
+                        <div class="card text-center mb-sm-3 shadow-lg rounded">
     
-                            <div class="text-center rounded mb-2 shadow-sm"
-                            style="background-color: #A2690011 !important;">
+                            <div class="text-center mb-2">
                                 <img class="p-3 z-index-from-position" 
                                 src="resources/images/svg/services/undraw_mobile_prototyping_grmd.svg"
                                 alt="User Interface Design"
@@ -246,7 +246,7 @@
                             </div>
     
                             <div class="card-body z-index-from-position">
-                                <div class="text-center">
+                                <div class="h-100 text-center d-flex flex-column justify-content-around">
                                     <h5 class="card-title font-weight-500">User Interface Design</h5>
                                     <p class="card-text font-weight-normal">Build interfaces that users will find easy to use and pleasureable.</p>
                                 </div>
@@ -256,8 +256,7 @@
 
                         <div class="card text-center mb-sm-3">
     
-                            <div class="text-center rounded mb-2 shadow-sm"
-                            style="background-color: #00A21811 !important;">
+                            <div class="text-center mb-2">
                                 <img class="p-3 z-index-from-position" 
                                 src="resources/images/svg/services/undraw_Sync_re_492g.svg"
                                 alt="Responsive Website Design"
@@ -266,7 +265,7 @@
                             </div>
     
                             <div class="card-body z-index-from-position">
-                                <div class="text-center">
+                                <div class="h-100 text-center d-flex flex-column justify-content-around">
                                     <h5 class="card-title font-weight-500">Responsive Website Design</h5>
                                     <p class="card-text font-weight-normal">Create web pages that renders well on a different devices or screen sizes.</p>
                                 </div>
@@ -276,10 +275,9 @@
 
                         <div class="d-none d-sm-block d-lg-none w-100"></div>
 
-                        <div class="card text-center mb-sm-3">
+                        <div class="card text-center mb-sm-3 shadow-lg rounded">
     
-                            <div class="text-center rounded mb-2 shadow-sm"
-                            style="background-color: #0039A211 !important;">
+                            <div class="text-center mb-2">
                                 <img class="p-3 z-index-from-position" 
                                 src="resources/images/svg/services/undraw_progressive_app_m9ms.svg"
                                 alt="Website Application"
@@ -288,7 +286,7 @@
                             </div>
     
                             <div class="card-body z-index-from-position">
-                                <div class="text-center">
+                                <div class="h-100 text-center d-flex flex-column justify-content-around">
                                     <h5 class="card-title font-weight-500">Website Application</h5>
                                     <p class="card-text font-weight-normal">Streamline your operations, increase efficiency, and reduce costs.</p>
                                 </div>
@@ -298,8 +296,7 @@
 
                         <div class="card text-center mb-sm-3">
     
-                            <div class="text-center rounded mb-2 shadow-sm"
-                            style="background-color: #A2008A11 !important;">
+                            <div class="text-center mb-2">
                                 <img class="p-3 z-index-from-position" 
                                 src="resources/images/svg/services/undraw_static_assets_rpm6.svg"
                                 alt="Convert Prototypes to HTML"
@@ -308,7 +305,7 @@
                             </div>
     
                             <div class="card-body z-index-from-position">
-                                <div class="text-center">
+                                <div class="h-100 text-center d-flex flex-column justify-content-around">
                                     <h5 class="card-title font-weight-500">Convert Prototypes to HTML</h5>
                                     <p class="card-text font-weight-normal">Creating web pages from prototypes into a brand new functional and interactive website.</p>
                                 </div>
@@ -323,11 +320,11 @@
             <div class="bg-light d-flex flex-column my-5 py-5">
                 <div class="flexbox-center flex-column">
                     <span class="text-primary font-weight-600">PROJECTS</span>
-                    <span class="h2 text-dark-mode font-weight-500 text-center">My Works</span>
+                    <span class="h2 text-dark-mode font-weight-600 text-center">My Works</span>
                 </div>
-                <div class="container px-3 px-md-0">
+                <div class="container px-4 px-md-0">
 
-                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row my-5">
+                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row my-5 mx-2">
                         <div class="col">
                             <div class="h2 text-primary font-weight-600">01</div>
 
@@ -345,14 +342,14 @@
                                 </div>
                             </div>
 
-                            <p class="mt-3 font-weight-500">This is a fully custom profile cards website page that I designed from scratch. The aim was to put simple animations when hovering a specific card to show social network icons and adjust its background image profile.</p>
+                            <p class="mt-3 font-weight-normal">This is a fully custom profile cards website page that I designed from scratch. The aim was to put simple animations when hovering a specific card to show social network icons and adjust its background image profile.</p>
                             
                             <div class="mt-3 flexbox-start">
                                 <a href="https://robertsonmorales.github.io/profile_cards" 
                                 target="_blank"
                                 title="Check Live" 
                                 rel="noopener" 
-                                class="flexbox-center py-2 px-3 mr-2 btn btn-outline-primary">
+                                class="flexbox-center py-2 px-3 mr-2 btn btn-primary">
                                     <span>View Live</span>
                                 </a>
 
@@ -377,7 +374,7 @@
                         </div>
                     </div>
 
-                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row-reverse my-5">
+                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row-reverse my-5 mx-2">
                         <div class="col">
                             <div class="h2 text-primary font-weight-600">02</div>
 
@@ -404,14 +401,14 @@
                                 </div>
                             </div>
 
-                            <p class="mt-3 font-weight-500">This is a simple music player using CSS neumorphism effect with static audio files. The aim is to smoothly function all music players basic actions such as shuffle, loop, next, previous, volume, play, and stop.</p>
+                            <p class="mt-3 font-weight-normal">This is a simple music player using CSS neumorphism effect with static audio files. The aim is to smoothly function all music players basic actions such as shuffle, loop, next, previous, volume, play, and stop.</p>
                             
                             <div class="mt-3 flexbox-start">
                                 <a href="https://robertsonmorales.github.io/music_player" 
                                 target="_blank"
                                 title="Check Live" 
                                 rel="noopener" 
-                                class="flexbox-center py-2 px-3 mr-2 btn btn-outline-primary">
+                                class="flexbox-center py-2 px-3 mr-2 btn btn-primary">
                                     <span>View Live</span>
                                 </a>
 
@@ -436,7 +433,7 @@
                         </div>
                     </div>
 
-                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row my-5">
+                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row my-5 mx-2">
                         <div class="col">
                             <div class="h2 text-primary font-weight-600">03</div>
 
@@ -457,14 +454,14 @@
                                 </div>
                             </div>
 
-                            <p class="mt-3 font-weight-500">Created login form user interface designs from scratch with a different type of user interface approach. The aim is to develop as many simple login forms as possible and share this with fellow web developers for educational and personal purposes.</p>
+                            <p class="mt-3 font-weight-normal">Created login form user interface designs from scratch with a different type of user interface approach. The aim is to develop as many simple login forms as possible and share this with fellow web developers for educational and personal purposes.</p>
                             
                             <div class="mt-3 flexbox-start">
                                 <a href="https://robertsonmorales.github.io/login_forms" 
                                 target="_blank"
                                 title="Check Live" 
                                 rel="noopener" 
-                                class="flexbox-center py-2 px-3 mr-2 btn btn-outline-primary">
+                                class="flexbox-center py-2 px-3 mr-2 btn btn-primary">
                                     <span>View Live</span>
                                 </a>
 
@@ -489,7 +486,7 @@
                         </div>
                     </div>
 
-                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row-reverse my-5">
+                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row-reverse my-5 mx-2">
                         <div class="col">
                             <div class="h2 text-primary font-weight-600">03</div>
 
@@ -516,14 +513,14 @@
                                 </div>
                             </div>
 
-                            <p class="mt-3 font-weight-500">A messaging web application that I designed with a dark-themed user interface. It has static images which are for samples only. The aim was to communicate or respond to the chat of someone's inquiry in a smooth and fast way (performance and optimization). It has many highlighted functionalities like in other well-known social network media applications.</p>
+                            <p class="mt-3 font-weight-normal">A messaging web application that I designed with a dark-themed user interface. It has static images which are for samples only. The aim was to communicate or respond to the chat of someone's inquiry in a smooth and fast way (performance and optimization). It has many highlighted functionalities like in other well-known social network media applications.</p>
                             
                             <div class="mt-3 flexbox-start">
                                 <a href="https://robertsonmorales.github.io/chatbox" 
                                 target="_blank"
                                 title="Check Live" 
                                 rel="noopener" 
-                                class="flexbox-center py-2 px-3 mr-2 btn btn-outline-primary">
+                                class="flexbox-center py-2 px-3 mr-2 btn btn-primary">
                                     <span>View Live</span>
                                 </a>
 
@@ -555,7 +552,7 @@
             <div class="skills-section my-5 py-5">
                 <div class="flexbox-center flex-column">
                     <span class="text-primary font-weight-600">ABOUT MY</span>
-                    <span class="h2 text-dark-mode font-weight-500 text-center">Skills and Expertise</span>
+                    <span class="h2 text-dark-mode font-weight-600 text-center">Skills and Expertise</span>
                 </div>
         
                 <div class="container flexbox-center">
@@ -566,14 +563,14 @@
 
                         <img data-src="resources/images/svg/skills/javascript.svg" alt="javascript" class="img-fluid img-fluid-extension p-4 lazyload">
                         <img data-src="resources/images/svg/skills/jquery.svg" alt="jquery" class="img-fluid img-fluid-extension p-4 lazyload">
-                        <img data-src="resources/images/svg/skills/angular.svg" alt="angular" class="img-fluid img-fluid-extension p-4 lazyload">
+                        <img data-src="resources/images/svg/skills/bootstrap.svg" alt="bootstrap" class="img-fluid img-fluid-extension p-4 lazyload">
 
+                        <img data-src="resources/images/svg/skills/angular.svg" alt="angular" class="img-fluid img-fluid-extension p-4 lazyload">
                         <img data-src="resources/images/svg/skills/php.svg" alt="php" class="img-fluid img-fluid-extension p-4 lazyload">
-                        <img data-src="resources/images/svg/skills/laravel.svg" alt="laravel" class="img-fluid img-fluid-extension p-4 lazyload">
                         <img data-src="resources/images/svg/skills/mysql.svg" alt="mysql" class="img-fluid img-fluid-extension p-4 lazyload">
 
+                        <img data-src="resources/images/svg/skills/laravel.svg" alt="laravel" class="img-fluid img-fluid-extension p-4 lazyload">
                         <img data-src="resources/images/svg/skills/git.svg" alt="git" class="img-fluid img-fluid-extension p-4 lazyload">
-                        <img data-src="resources/images/svg/skills/bootstrap.svg" alt="bootstrap" class="img-fluid img-fluid-extension p-4 lazyload">
                         <img data-src="resources/images/svg/skills/adobe-xd.svg" alt="adobe xd" class="img-fluid img-fluid-extension p-4 lazyload">
                     </div>
                 </div>
@@ -583,34 +580,11 @@
             <div class="bg-light d-flex flex-column mt-5 pt-5 pb-2">
                 <div class="flexbox-center flex-column">
                     <span class="text-primary font-weight-600">CONTACT ME</span>
-                    <span class="h2 text-dark-mode font-weight-500 text-center">Stay Connected</span>
+                    <span class="h2 text-dark-mode font-weight-600 text-center">Stay Connected</span>
                 </div>
 
                 <div class="container px-0">
-                    <div class="row no-gutters flex-column flex-md-row my-5">
-                        <div class="col col-md-7 mb-5 mb-md-0">
-                            <div class="d-flex flex-column text-center text-md-left">
-                                <div class="mb-3 font-weight-600">INTERESTED? LET'S TALK.</div>
-
-                                <div class="d-flex mb-3 justify-content-center justify-content-md-start">
-                                    <span class="mr-2"><i class="fas fa-map-marker-alt fa-lg"></i></span>
-                                    <span>Brgy. Muzon, San Jose Del Monte, Bulacan, Philippines</span>
-                                </div>
-
-                                <div class="d-flex mb-3 justify-content-center justify-content-md-start">
-                                    <a href="mailto:trebormoralesson@gmail.com?subject=Let's%20talk%20about..."
-                                    class="text-dark">
-                                        <span class="mr-2"><i class="fas fa-envelope fa-lg"></i></span>
-                                        <span id="my-email">trebormoralesson@gmail.com</span>
-                                    </a>
-                                </div>
-
-                                <div class="d-flex mb-3 justify-content-center justify-content-md-start">
-                                    <span class="mr-2"><i class="fas fa-phone-alt fa-lg"></i></span>
-                                    <span>+6395-5280-8438</span>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row no-gutters justify-content-center flex-column flex-md-row my-5">
                         <div class="col col-md-5 shadow-lg bg-white p-4">
                             <div class="d-flex justify-content-start flex-column text-center text-md-left">
                                 <div class="mb-3 font-weight-600">SEND A MESSAGE</div>
