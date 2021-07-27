@@ -42,7 +42,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top" id="navbar">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
             <div class="container px-3 px-md-0">
                 <button class="navbar-brand border-0"
                     onclick="navSelected('home')"
@@ -108,6 +108,10 @@
             </div>
         </nav>
         <main>
+            <img src="resources/images/svg/circle.svg"
+            class="position-absolute"
+            alt="background svg"
+            style="z-index: -1; transform: translate(40%, -35%);">
             <!-- HERO SECTION -->
             <div class="container py-0 py-md-5 px-3 px-md-0">
                 <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column-reverse flex-md-row my-md-5 px-3 px-md-0 py-5">
@@ -117,7 +121,7 @@
                         
                         <div class="h1 text-dark-mode font-weight-bold"> I am Robertson</div>
                         
-                        <div class="h3 font-weight-bold">Web Designer & Developer</div>
+                        <div class="h3 font-weight-600">Web Designer & Developer</div>
 
                         <p class="mb-4 text-dark-mode w-75">Specializes in UI Design, Responsive Web Design, and Web Application.</p>
     
@@ -133,11 +137,6 @@
     
                     <div class="col">
                         <div class="animate__animated animate__backInRight">
-                            <img src="resources/images/svg/circle.svg"
-                            class="position-absolute"
-                            alt="background svg"
-                            style="z-index: -1;">
-
                             <div class="p-3 p-md-0 p-lg-3 mb-2 mb-md-0 text-center">
                                 <img src="resources/images/me/profile-picture-transparent-1.png" 
                                 class="img-fluid" 
@@ -152,8 +151,8 @@
             <!-- ENDS HERE -->
 
             <!-- ABOUT ME -->
-            <div id="about"></div>
             <div class="bg-light services-section my-5 py-5">
+                <div id="about"></div>
                 <div class="container">
                     
                     <div class="row no-gutters flex-column flex-md-row align-items-md-center px-3 px-md-0 py-5">
@@ -169,8 +168,8 @@
                             </div>
 
                             <div class="mb-4">
-                                <p class="font-weight-500 text-justify">Hello, my name is Robertson Morales. A self-taught web designer & developer. I grew up in Catubig, Northern Samar and currently living in San Jose Del Monte City, Bulacan.</p>
-                                <p class="font-weight-500 text-justify">I started my career by watching videos and articles on the internet. It was hard at first. But after just a few months of studying and patience. I had built static websites, web-based information systems as I improve in getting better and better. I'm also interested in people where I can excel, learn or absorb and give my best to become an expert or professional.</p>
+                                <p class="font-weight-500">Hello, my name is Robertson Morales. A self-taught web designer & developer. I grew up in Catubig, Northern Samar and currently living in San Jose Del Monte City, Bulacan.</p>
+                                <p class="font-weight-500">I started my career by watching videos and articles on the internet. It was hard at first. But after just a few months of studying and patience. I had built static websites, web-based information systems as I improve in getting better and better. I'm also interested in people where I can excel, learn or absorb and give my best to become an expert or professional.</p>
                             </div>
 
                             <div class="text-left mb-5">
@@ -229,88 +228,83 @@
             <div id="services"></div>
             <div class="services-section my-5 py-5">
                 <div class="flexbox-center flex-column font-weight-600">
-                    <span class="text-primary">SERVICES</span>
-                    <span class="h2 text-dark-mode text-center">Specializing in</span>
+                    <span class="text-primary font-weight-600">SERVICES</span>
+                    <span class="h2 text-dark-mode text-center font-weight-600">Specializing in</span>
                 </div>
                 <div class="container px-3 px-md-0">
                     <div class="card-deck px-3 px-md-0 my-3 my-md-5">
 
-                        <div class="card text-center mb-sm-3 shadow-lg rounded">
-    
-                            <div class="text-center mb-2">
-                                <img class="p-3 z-index-from-position" 
+                        <div class="card mb-sm-3">
+                            <div class="mb-2 p-3">
+                                <!-- <img class="p-3 z-index-from-position" 
                                 src="resources/images/svg/services/undraw_mobile_prototyping_grmd.svg"
                                 alt="User Interface Design"
                                 width="200"
-                                height="150">
+                                height="150"> -->
+                                <i class="fas fa-columns fa-3x"></i>
                             </div>
-    
                             <div class="card-body z-index-from-position">
-                                <div class="h-100 text-center d-flex flex-column justify-content-around">
-                                    <h5 class="card-title font-weight-500">User Interface Design</h5>
+                                <div class="h-100 d-flex flex-column">
+                                    <h5 class="card-title font-weight-500">UI/UX Design</h5>
                                     <p class="card-text font-weight-normal">Build interfaces that users will find easy to use and pleasureable.</p>
                                 </div>
                             </div>
-
                         </div>
 
-                        <div class="card text-center mb-sm-3">
-    
-                            <div class="text-center mb-2">
-                                <img class="p-3 z-index-from-position" 
+                        <div class="card mb-sm-3">
+                            <div class="mb-2 p-3">
+                                <!-- <img class="p-3 z-index-from-position" 
                                 src="resources/images/svg/services/undraw_Sync_re_492g.svg"
                                 alt="Responsive Website Design"
                                 width="200"
-                                height="150">
+                                height="150"> -->
+
+                                <i class="fas fa-mobile-alt fa-3x"></i>
                             </div>
-    
                             <div class="card-body z-index-from-position">
-                                <div class="h-100 text-center d-flex flex-column justify-content-around">
+                                <div class="h-100 d-flex flex-column">
                                     <h5 class="card-title font-weight-500">Responsive Website Design</h5>
                                     <p class="card-text font-weight-normal">Create web pages that renders well on a different devices or screen sizes.</p>
                                 </div>
                             </div>
-                            
                         </div>
 
                         <div class="d-none d-sm-block d-lg-none w-100"></div>
 
-                        <div class="card text-center mb-sm-3 shadow-lg rounded">
-    
-                            <div class="text-center mb-2">
-                                <img class="p-3 z-index-from-position" 
+                        <div class="card mb-sm-3">
+                            <div class="mb-2 p-3">
+                                <!-- <img class="p-3 z-index-from-position" 
                                 src="resources/images/svg/services/undraw_progressive_app_m9ms.svg"
                                 alt="Website Application"
                                 width="200"
-                                height="150">
+                                height="150"> -->
+
+                                <i class="fas fa-project-diagram fa-3x"></i>
                             </div>
-    
                             <div class="card-body z-index-from-position">
-                                <div class="h-100 text-center d-flex flex-column justify-content-around">
-                                    <h5 class="card-title font-weight-500">Website Application</h5>
+                                <div class="h-100 d-flex flex-column">
+                                    <h5 class="card-title font-weight-500">Website Application System</h5>
                                     <p class="card-text font-weight-normal">Streamline your operations, increase efficiency, and reduce costs.</p>
                                 </div>
                             </div>
-                            
                         </div>
-
-                        <div class="card text-center mb-sm-3">
-    
-                            <div class="text-center mb-2">
-                                <img class="p-3 z-index-from-position" 
+                        
+                        <div class="card mb-sm-3">
+                            <div class="mb-2 p-3">
+                                <!-- <img class="p-3 z-index-from-position" 
                                 src="resources/images/svg/services/undraw_static_assets_rpm6.svg"
                                 alt="Convert Prototypes to HTML"
                                 width="200"
-                                height="150">
+                                height="150"> -->
+
+                                <i class="fas fa-file-code fa-3x"></i>
                             </div>
-    
                             <div class="card-body z-index-from-position">
-                                <div class="h-100 text-center d-flex flex-column justify-content-around">
-                                    <h5 class="card-title font-weight-500">Convert Prototypes to HTML</h5>
+                                <div class="h-100 d-flex flex-column">
+                                    <h5 class="card-title font-weight-500">Convert Prototypes to HTML pages</h5>
                                     <p class="card-text font-weight-normal">Creating web pages from prototypes into a brand new functional and interactive website.</p>
                                 </div>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
@@ -318,6 +312,7 @@
 
             <div id="projects"></div>
             <div class="bg-light d-flex flex-column my-5 py-5">
+                
                 <div class="flexbox-center flex-column">
                     <span class="text-primary font-weight-600">PROJECTS</span>
                     <span class="h2 text-dark-mode font-weight-600 text-center">My Works</span>
@@ -326,7 +321,7 @@
 
                     <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row my-5 mx-2">
                         <div class="col">
-                            <div class="h2 text-primary font-weight-600">01</div>
+                            <div class="d-none d-md-block h2 text-primary font-weight-600">01</div>
 
                             <div class="h4 font-weight-500 text-dark">Profile Cards UI Design</div>
 
@@ -368,7 +363,7 @@
                             target="_blank" 
                             rel="noopener">
                                 <img data-src="resources/images/projects/profile-cards.png" 
-                                class="img-fluid shadow-lg lazyload" 
+                                class="img-fluid shadow rounded lazyload" 
                                 alt="Profile Cards UI Design">
                             </a>
                         </div>
@@ -376,7 +371,7 @@
 
                     <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row-reverse my-5 mx-2">
                         <div class="col">
-                            <div class="h2 text-primary font-weight-600">02</div>
+                            <div class="d-none d-md-block h2 text-primary font-weight-600">02</div>
 
                             <div class="h4 font-weight-500 text-dark">Music Player with Neumorphism Effects</div>
 
@@ -427,7 +422,7 @@
                             target="_blank" 
                             rel="noopener">
                                 <img data-src="resources/images/projects/music-player-in-mobile.jpg" 
-                                class="img-fluid shadow-lg lazyload" 
+                                class="img-fluid shadow rounded lazyload" 
                                 alt="Music Player with Neumorphism Effects">
                             </a>
                         </div>
@@ -435,7 +430,7 @@
 
                     <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row my-5 mx-2">
                         <div class="col">
-                            <div class="h2 text-primary font-weight-600">03</div>
+                            <div class="d-none d-md-block h2 text-primary font-weight-600">03</div>
 
                             <div class="h4 font-weight-500 text-dark">Login Forms UI Design</div>
 
@@ -479,8 +474,8 @@
                             <a href="https://robertsonmorales.github.io/login_forms"
                             target="_blank" 
                             rel="noopener">
-                                <img data-src="resources/images/projects/login-forms-1.png" 
-                                class="img-fluid shadow-lg lazyload" 
+                                <img data-src="resources/images/projects/login-forms.png" 
+                                class="img-fluid shadow rounded lazyload" 
                                 alt="Login Forms UI Design">
                             </a>
                         </div>
@@ -488,7 +483,7 @@
 
                     <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row-reverse my-5 mx-2">
                         <div class="col">
-                            <div class="h2 text-primary font-weight-600">03</div>
+                            <div class="d-none d-md-block h2 text-primary font-weight-600">03</div>
 
                             <div class="h4 font-weight-500 text-dark">Chatbox Messaging UI Design</div>
 
@@ -539,7 +534,7 @@
                             target="_blank" 
                             rel="noopener">
                                 <img data-src="resources/images/projects/chatbox.png" 
-                                class="img-fluid shadow-lg lazyload" 
+                                class="img-fluid shadow rounded lazyload" 
                                 alt="Chatbox Messaging UI Design">
                             </a>
                         </div>
