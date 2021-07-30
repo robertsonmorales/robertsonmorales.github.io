@@ -10816,7 +10816,7 @@ html {
 body {
   background-color: #fff;
   line-height: 1.6;
-  font-family: "Roboto", "Poppins", "Montserrat", sans-serif;
+  font-family: "Poppins", "Roboto", "Montserrat", sans-serif;
   font-size: 0.9rem;
   font-weight: normal;
   overflow-x: hidden;
@@ -11091,7 +11091,7 @@ body {
 }
 
 .secondary-font {
-  font-family: "Libre Baskerville", "Source Serif Pro", "Arvo", serif !important;
+  font-family: "Libre Baskerville", "Arvo", serif !important;
 }
 
 /* SHADOW SECTION */
