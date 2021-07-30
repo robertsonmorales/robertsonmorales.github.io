@@ -25,7 +25,7 @@ $(() => {
     $('#year').html(date.getFullYear());
 
     $(document).on('scroll', function () {
-        $("#navbar").toggleClass('shadow-sm', $(this).scrollTop() > $("#navbar").height());
+        $("#navbar").toggleClass('border-bottom', $(this).scrollTop() > $("#navbar").height());
         $("#navbar").toggleClass('bg-white', $(this).scrollTop() > $("#navbar").height());
 	});
 
