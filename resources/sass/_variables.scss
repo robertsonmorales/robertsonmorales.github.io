@@ -1,4 +1,4 @@
-$primary:       #00A218 !default;
+$primary:       #14a800 !default;
 $light:         #f8f9fa !default;
 $dark:          #131b23 !default;
 
@@ -8,7 +8,8 @@ $theme-colors: (
     'dark': $dark
 );
 
-$font-family: 'Poppins', 'Montserrat', sans-serif;
+$font-family: 'Roboto', 'Poppins', 'Montserrat', sans-serif;
+$secondary-font: 'Libre Baskerville', 'Source Serif Pro', 'Arvo', serif;
 
 $light-shadow: 20px 20px 60px #d3d4d5, -20px -20px 60px #ffffff;
 $dark-shadow: 20px 20px 60px #0e141a, -20px -20px 60px #18222c;
@@ -17,3 +18,9 @@ $border: .0625rem solid rgba(231,234,243,.7);
 $radius: .75rem;
 $font-size-base: .9rem;
 $line-height-base: 1.6;
+
+$drop-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+$drop-shadow__hovered: 5px 5px 0 rgba(0,0,0,0.2);
+$drop-shadow__active: 1px 1px 0 rgba(0,0,0,0.2);
+
+$text-shadow: 3px 8px 4px rgba(0, 0, 0, 0.2);

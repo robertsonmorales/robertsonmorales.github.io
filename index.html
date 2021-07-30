@@ -28,9 +28,13 @@
     <!-- ends here -->
     <!-- preloads ends here -->
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Libre+Baskerville:wght@400&family=Source+Serif+Pro:wght@600&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 
     <link rel="stylesheet" href="plugins/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
@@ -47,10 +51,10 @@
                 <button class="navbar-brand border-0"
                     onclick="navSelected('home')"
                     style="background-color: transparent; outline: none;">
-                    <div class="h5 mb-0 font-weight-bold">robertson.</div>
+                    <span class="h5 mb-0 font-weight-bold secondary-font">robertson.</span>
                 </button>
                 
-                <button class="btn navbar-toggler text-dark-mode border-0"
+                <button class="btn navbar-toggler border-0"
                     type="button" 
                     data-toggle="collapse"
                     data-target="#toggleNavbar" 
@@ -66,32 +70,32 @@
                     <div class="navbar-text">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                             <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                                <button class="nav-link navbar font-weight-600 active"
+                                <button class="nav-link navbar font-weight-500 active"
                                 id="nav-home" 
                                 onclick="navSelected('home')">Home</button>
                             </li>
                             <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                                <button class="nav-link navbar font-weight-600"
+                                <button class="nav-link navbar font-weight-500"
                                 id="nav-about" 
                                 onclick="navSelected('about')">About me</button>
                             </li>
                             <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                                <button class="nav-link navbar font-weight-600"
+                                <button class="nav-link navbar font-weight-500"
                                 id="nav-services"
                                 onclick="navSelected('services')">Services</button>
                             </li>
                             <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                                <button class="nav-link navbar font-weight-600"
+                                <button class="nav-link navbar font-weight-500"
                                 id="nav-projects"
                                 onclick="navSelected('projects')">Projects</button>
                             </li>
                             <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                                <button class="nav-link navbar font-weight-600"
+                                <button class="nav-link navbar font-weight-500"
                                 id="nav-skills"
                                 onclick="navSelected('skills')">Skills</button>
                             </li>
                             <li class="nav-item mr-0 mb-2 mb-md-0"> <!-- mr-md-5 -->
-                                <button class="nav-link navbar font-weight-600"
+                                <button class="nav-link navbar font-weight-500"
                                 id="nav-contact"
                                 onclick="navSelected('contact')">Contact me</button>
                             </li>
@@ -108,36 +112,30 @@
             </div>
         </nav>
         <main>
-            <img src="resources/images/svg/circle.svg"
+            <!-- <img src="resources/images/svg/circle.svg"
             class="position-absolute"
-            alt="background svg"
-            style="z-index: -1; transform: translate(40%, -35%);">
+            alt="background"
+            style="z-index: -1; transform: translate(-40%, -30%);"> -->
             <!-- HERO SECTION -->
-            <div class="container py-0 py-md-5 px-3 px-md-0">
-                <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column-reverse flex-md-row my-md-5 px-3 px-md-0 py-5">
+            <div class="container pt-0 pt-md-5 px-3 px-md-0">
+                <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column-reverse flex-md-row mt-md-5 px-3 px-md-0">
 
-                    <div class="col pr-lg-5 animate__animated animate__fadeInDown animate__delay-1s">
-                        <div class="h6 font-weight-500 mb-2">Hi there,</div>
-                        
-                        <div class="h1 text-dark-mode font-weight-bold"> I am Robertson</div>
-                        
-                        <div class="h3 font-weight-600">Web Designer & Developer</div>
-
-                        <p class="mb-4 text-dark-mode w-75">Specializes in UI Design, Responsive Web Design, and Web Application.</p>
+                    <div class="col animate__animated animate__fadeIn animate__delay-1s">
+                        <div class="mb-2 font-weight-bold">Hi there,</div>
+                        <div class="h1 font-weight-bold secondary-font">I'm Robertson a Web <span class="text-primary text-shadow">Designer</span> & <span class="text-primary text-shadow">Developer</span></div>
+                        <p class="mb-4 w-75">Specializes in UI Design, Responsive Web Design, and Web Application.</p>
     
-                        <div class="mb-5 flexbox-start">
-                            <button onclick="navSelected('projects')"
-                            class="btn btn-primary mr-2 py-2 px-4" >
-                            <span>My projects</span>
-                            <!-- <i class="fas fa-long-arrow-alt-right ml-3"></i> -->
+                        <button class="btn btn-primary py-2 px-4"
+                            onclick="navSelected('projects')">
+                            <span class="mr-2">My Projects</span>
+                            <i class="fas fa-search"></i>
                         </button>
-                        </div>
                         
                     </div>
     
                     <div class="col">
-                        <div class="animate__animated animate__backInRight">
-                            <div class="p-3 p-md-0 p-lg-3 mb-2 mb-md-0 text-center">
+                        <div class="px-3 px-md-0 px-lg-3 mb-2 mb-md-0 text-center">
+                            <div class="animate__animated animate__fadeIn animate__delay-1s">
                                 <img src="resources/images/me/profile-picture-transparent-1.png" 
                                 class="img-fluid" 
                                 alt="avatar" 
@@ -151,34 +149,40 @@
             <!-- ENDS HERE -->
 
             <!-- ABOUT ME -->
-            <div class="bg-light services-section my-5 py-5">
-                <div id="about"></div>
+            <div id="about" class="bg-light"></div>
+            <div class="bg-light services-section">
                 <div class="container">
                     
-                    <div class="row no-gutters flex-column flex-md-row align-items-md-center px-3 px-md-0 py-5">
-                        <div class="col p-3 p-md-0 p-lg-3 mb-2 mb-md-0 text-center">
-                            <img class="img-fluid rounded-circle lazyload"
-                                data-src="resources/images/me/profile-picture-transparent-1.png"
-                                alt="avatar">
+                    <div class="row flex-column flex-md-row align-items-md-center px-3 px-md-0 pt-5">
+                        <div class="col">
+                            <div class="px-3 px-md-0 px-lg-3 mb-2 mb-md-0 text-center">
+                                <img class="img-fluid lazyload"
+                                    data-src="resources/images/me/profile-picture-transparent-1.png"
+                                    alt="avatar">
+                            </div>
                         </div>
         
                         <div class="col">
                             <div class="d-flex flex-column align-items-center align-items-md-start mb-4">
-                                <span class="h2 text-dark-mode font-weight-600">About Me</span>
+                                <span class="h2 font-weight-600 secondary-font">About Me</span>
                             </div>
 
                             <div class="mb-4">
-                                <p class="font-weight-500">Hello, my name is Robertson Morales. A self-taught web designer & developer. I grew up in Catubig, Northern Samar and currently living in San Jose Del Monte City, Bulacan.</p>
-                                <p class="font-weight-500">I started my career by watching videos and articles on the internet. It was hard at first. But after just a few months of studying and patience. I had built static websites, web-based information systems as I improve in getting better and better. I'm also interested in people where I can excel, learn or absorb and give my best to become an expert or professional.</p>
+                                <p>Hello, my name is Robertson Morales. A self-taught web designer & developer. I grew up in Catubig, Northern Samar and currently living in San Jose Del Monte City, Bulacan.</p>
+                                <p>I started my career by watching videos and articles on the internet. It was hard at first. But after just a few months of studying and patience. I had built static websites, web-based information systems as I improve in getting better and better. I'm also interested in people where I can excel, learn or absorb and give my best to become an expert or professional.</p>
                             </div>
 
                             <div class="text-left mb-5">
                                 <a href="resources/attachment/resume.docx"
                                 download="Resume"
-                                class="btn btn-primary py-2 px-4">Download Resume</a>
+                                class="btn btn-primary py-2 px-4">
+                                <span class="mr-2">Download Resume</span>
+                                <i class="fas fa-arrow-alt-circle-down"></i>
+                            </a>
                             </div>
 
-                            <!-- <div class="h4 mb-4">Social Networks</div>
+                            <span class="h5">Social Networks</span>
+                            <div class="mb-4"></div>
 
                             <div class="flexbox-start mb-4">
 
@@ -190,7 +194,7 @@
                                     class="flexbox-center"
                                     style="color: #4267B2 !important;">
                                         <i class="fab fa-facebook-f fa-lg"></i>
-                                        <span class="ml-2 font-size-sm">facebook</span>
+                                        <!-- <span class="ml-2 font-size-sm">facebook</span> -->
                                     </a>
                                 </div>
 
@@ -202,7 +206,7 @@
                                     class="flexbox-center"
                                     style="color: rgb(10, 102, 194) !important;">
                                         <i class="fab fa-linkedin-in fa-lg"></i>
-                                        <span class="ml-2 font-size-sm">linkedin</span>
+                                        <!-- <span class="ml-2 font-size-sm">linkedin</span> -->
                                     </a>
                                 </div>
 
@@ -211,13 +215,13 @@
                                     target="_blank" 
                                     title="Follow me at github" 
                                     rel="noopener" 
-                                    class="flexbox-center text-dark-mode">
+                                    class="flexbox-center text-dark">
                                         <i class="fab fa-github fa-lg"></i>
-                                        <span class="ml-2 font-size-sm">github</span>
+                                        <!-- <span class="ml-2 font-size-sm">github</span> -->
                                     </a>
                                 </div>
 
-                            </div> -->
+                            </div>
 
                         </div>
                     </div>
@@ -229,21 +233,19 @@
             <div class="services-section my-5 py-5">
                 <div class="flexbox-center flex-column font-weight-600">
                     <span class="text-primary font-weight-600">SERVICES</span>
-                    <span class="h2 text-dark-mode text-center font-weight-600">Specializing in</span>
+                    <span class="h2 text-center font-weight-600 secondary-font">Specializing In</span>
                 </div>
                 <div class="container px-3 px-md-0">
                     <div class="card-deck px-3 px-md-0 my-3 my-md-5">
 
                         <div class="card mb-sm-3">
                             <div class="mb-2 p-3">
-                                <!-- <img class="p-3 z-index-from-position" 
-                                src="resources/images/svg/services/undraw_mobile_prototyping_grmd.svg"
-                                alt="User Interface Design"
-                                width="200"
-                                height="150"> -->
-                                <i class="fas fa-columns fa-3x"></i>
+                                <img class="drop-shadow" 
+                                src="resources/images/svg/services/ui-ux-colored.svg"
+                                alt="UI/UX Design"
+                                width="80">
                             </div>
-                            <div class="card-body z-index-from-position">
+                            <div class="card-body">
                                 <div class="h-100 d-flex flex-column">
                                     <h5 class="card-title font-weight-500">UI/UX Design</h5>
                                     <p class="card-text font-weight-normal">Build interfaces that users will find easy to use and pleasureable.</p>
@@ -253,15 +255,12 @@
 
                         <div class="card mb-sm-3">
                             <div class="mb-2 p-3">
-                                <!-- <img class="p-3 z-index-from-position" 
-                                src="resources/images/svg/services/undraw_Sync_re_492g.svg"
+                                <img class="drop-shadow" 
+                                src="resources/images/svg/services/rwd-colored.svg"
                                 alt="Responsive Website Design"
-                                width="200"
-                                height="150"> -->
-
-                                <i class="fas fa-mobile-alt fa-3x"></i>
+                                width="80">
                             </div>
-                            <div class="card-body z-index-from-position">
+                            <div class="card-body">
                                 <div class="h-100 d-flex flex-column">
                                     <h5 class="card-title font-weight-500">Responsive Website Design</h5>
                                     <p class="card-text font-weight-normal">Create web pages that renders well on a different devices or screen sizes.</p>
@@ -273,17 +272,14 @@
 
                         <div class="card mb-sm-3">
                             <div class="mb-2 p-3">
-                                <!-- <img class="p-3 z-index-from-position" 
-                                src="resources/images/svg/services/undraw_progressive_app_m9ms.svg"
+                                <img class="drop-shadow" 
+                                src="resources/images/svg/services/web-app-colored.svg"
                                 alt="Website Application"
-                                width="200"
-                                height="150"> -->
-
-                                <i class="fas fa-project-diagram fa-3x"></i>
+                                width="80">
                             </div>
-                            <div class="card-body z-index-from-position">
+                            <div class="card-body">
                                 <div class="h-100 d-flex flex-column">
-                                    <h5 class="card-title font-weight-500">Website Application System</h5>
+                                    <h5 class="card-title font-weight-500">Website Application</h5>
                                     <p class="card-text font-weight-normal">Streamline your operations, increase efficiency, and reduce costs.</p>
                                 </div>
                             </div>
@@ -291,17 +287,14 @@
                         
                         <div class="card mb-sm-3">
                             <div class="mb-2 p-3">
-                                <!-- <img class="p-3 z-index-from-position" 
-                                src="resources/images/svg/services/undraw_static_assets_rpm6.svg"
-                                alt="Convert Prototypes to HTML"
-                                width="200"
-                                height="150"> -->
-
-                                <i class="fas fa-file-code fa-3x"></i>
+                                <img class="drop-shadow" 
+                                src="resources/images/svg/services/html-colored.svg"
+                                alt="Convert Prototypes to HTML pages"
+                                width="80">
                             </div>
-                            <div class="card-body z-index-from-position">
+                            <div class="card-body">
                                 <div class="h-100 d-flex flex-column">
-                                    <h5 class="card-title font-weight-500">Convert Prototypes to HTML pages</h5>
+                                    <h5 class="card-title font-weight-500">Prototypes to HTML</h5>
                                     <p class="card-text font-weight-normal">Creating web pages from prototypes into a brand new functional and interactive website.</p>
                                 </div>
                             </div>
@@ -315,11 +308,11 @@
                 
                 <div class="flexbox-center flex-column">
                     <span class="text-primary font-weight-600">PROJECTS</span>
-                    <span class="h2 text-dark-mode font-weight-600 text-center">My Works</span>
+                    <span class="h2 font-weight-600 text-center secondary-font">My Works</span>
                 </div>
                 <div class="container px-4 px-md-0">
 
-                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row my-5 mx-2">
+                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row my-5 mx-2 py-5">
                         <div class="col">
                             <div class="d-none d-md-block h2 text-primary font-weight-600">01</div>
 
@@ -369,7 +362,7 @@
                         </div>
                     </div>
 
-                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row-reverse my-5 mx-2">
+                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row-reverse my-5 mx-2 py-5">
                         <div class="col">
                             <div class="d-none d-md-block h2 text-primary font-weight-600">02</div>
 
@@ -428,7 +421,7 @@
                         </div>
                     </div>
 
-                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row my-5 mx-2">
+                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row my-5 mx-2 py-5">
                         <div class="col">
                             <div class="d-none d-md-block h2 text-primary font-weight-600">03</div>
 
@@ -481,7 +474,7 @@
                         </div>
                     </div>
 
-                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row-reverse my-5 mx-2">
+                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row-reverse my-5 mx-2 py-5">
                         <div class="col">
                             <div class="d-none d-md-block h2 text-primary font-weight-600">03</div>
 
@@ -547,26 +540,23 @@
             <div class="skills-section my-5 py-5">
                 <div class="flexbox-center flex-column">
                     <span class="text-primary font-weight-600">ABOUT MY</span>
-                    <span class="h2 text-dark-mode font-weight-600 text-center">Skills and Expertise</span>
+                    <span class="h2 font-weight-600 text-center secondary-font">Skills and Expertise</span>
                 </div>
         
                 <div class="container flexbox-center">
                     <div class="text-center my-3 my-md-5 w-100 w-md-50">
-                        <img data-src="resources/images/svg/skills/html.svg" alt="html 5" class="img-fluid img-fluid-extension p-4 lazyload">
-                        <img data-src="resources/images/svg/skills/css3.svg" alt="css" class="img-fluid img-fluid-extension p-4 lazyload">
-                        <img data-src="resources/images/svg/skills/sass.svg" alt="sass" class="img-fluid img-fluid-extension p-4 lazyload">
-
-                        <img data-src="resources/images/svg/skills/javascript.svg" alt="javascript" class="img-fluid img-fluid-extension p-4 lazyload">
-                        <img data-src="resources/images/svg/skills/jquery.svg" alt="jquery" class="img-fluid img-fluid-extension p-4 lazyload">
-                        <img data-src="resources/images/svg/skills/bootstrap.svg" alt="bootstrap" class="img-fluid img-fluid-extension p-4 lazyload">
-
-                        <img data-src="resources/images/svg/skills/angular.svg" alt="angular" class="img-fluid img-fluid-extension p-4 lazyload">
-                        <img data-src="resources/images/svg/skills/php.svg" alt="php" class="img-fluid img-fluid-extension p-4 lazyload">
-                        <img data-src="resources/images/svg/skills/mysql.svg" alt="mysql" class="img-fluid img-fluid-extension p-4 lazyload">
-
-                        <img data-src="resources/images/svg/skills/laravel.svg" alt="laravel" class="img-fluid img-fluid-extension p-4 lazyload">
-                        <img data-src="resources/images/svg/skills/git.svg" alt="git" class="img-fluid img-fluid-extension p-4 lazyload">
-                        <img data-src="resources/images/svg/skills/adobe-xd.svg" alt="adobe xd" class="img-fluid img-fluid-extension p-4 lazyload">
+                        <img data-src="resources/images/svg/skills/html.svg" alt="HTML 5" class="img-fluid img-fluid-extension p-4 lazyload" title="HTML 5">
+                        <img data-src="resources/images/svg/skills/css3.svg" alt="CSS 3" class="img-fluid img-fluid-extension p-4 lazyload" title="CSS 3">
+                        <img data-src="resources/images/svg/skills/sass.svg" alt="Sass" class="img-fluid img-fluid-extension p-4 lazyload" title="Sass">
+                        <img data-src="resources/images/svg/skills/javascript.svg" alt="JavaScript" class="img-fluid img-fluid-extension p-4 lazyload" title="JavaScript">
+                        <img data-src="resources/images/svg/skills/jquery.svg" alt="JQuery" class="img-fluid img-fluid-extension p-4 lazyload" title="JQuery">
+                        <img data-src="resources/images/svg/skills/bootstrap.svg" alt="Bootstrap" class="img-fluid img-fluid-extension p-4 lazyload" title="Bootstrap">
+                        <img data-src="resources/images/svg/skills/angular.svg" alt="AngularJS" class="img-fluid img-fluid-extension p-4 lazyload" title="AngularJS">
+                        <img data-src="resources/images/svg/skills/php.svg" alt="PHP" class="img-fluid img-fluid-extension p-4 lazyload" title="PHP">
+                        <img data-src="resources/images/svg/skills/mysql.svg" alt="MySQL" class="img-fluid img-fluid-extension p-4 lazyload" title="MySQL">
+                        <img data-src="resources/images/svg/skills/laravel.svg" alt="Laravel" class="img-fluid img-fluid-extension p-4 lazyload" title="Laravel">
+                        <img data-src="resources/images/svg/skills/git.svg" alt="git" class="img-fluid img-fluid-extension p-4 lazyload" title="git">
+                        <img data-src="resources/images/svg/skills/adobe-xd.svg" alt="Adobe XD" class="img-fluid img-fluid-extension p-4 lazyload" title="Adobe XD">
                     </div>
                 </div>
             </div>
@@ -575,16 +565,16 @@
             <div class="bg-light d-flex flex-column mt-5 pt-5 pb-2">
                 <div class="flexbox-center flex-column">
                     <span class="text-primary font-weight-600">CONTACT ME</span>
-                    <span class="h2 text-dark-mode font-weight-600 text-center">Stay Connected</span>
+                    <span class="h2 font-weight-600 text-center secondary-font">Stay Connected</span>
                 </div>
 
                 <div class="container px-0">
                     <div class="row no-gutters justify-content-center flex-column flex-md-row my-5">
-                        <div class="col col-md-5 shadow-lg bg-white p-4">
+                        <div class="col col-md-5 shadow rounded bg-white p-4">
                             <div class="d-flex justify-content-start flex-column text-center text-md-left">
-                                <div class="mb-3 font-weight-600">SEND A MESSAGE</div>
+                                <span class="mb-3 font-weight-600 h6">SEND A MESSAGE</span>
                             </div>
-
+                            
                             <form action="#"
                             method="get" 
                             id="contact-form">
@@ -645,7 +635,7 @@
                 </div>
 
                 <footer>
-                    <p class="text-center font-size-sm">© <span id="year"></span> | Robertson Morales</p>
+                    <p class="text-center font-size-sm">© All rights reserved | <span id="year"></span></p>
                 </footer>
             </div>
         </main>
