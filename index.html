@@ -46,202 +46,207 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
-            <div class="container px-3 px-md-0">
-                <button class="navbar-brand border-0"
-                    onclick="navSelected('home')"
-                    style="background-color: transparent; outline: none;">
-                    <span class="h5 mb-0 font-weight-bold secondary-font">robertson.</span>
-                </button>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
+                <div class="container">
+                    <button class="navbar-brand border-0"
+                        onclick="navSelected('home')"
+                        style="background-color: transparent; outline: none;">
+                        <span class="h5 mb-0 font-weight-bold secondary-font">robertson.</span>
+                    </button>
+                    
+                    <button class="btn navbar-toggler border-0"
+                        type="button" 
+                        data-toggle="collapse"
+                        data-target="#toggleNavbar" 
+                        aria-controls="toggleNavbar" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation"
+                        style="outline: none;">
+                        <i class="fas fa-bars"></i>
+                    </button>
                 
-                <button class="btn navbar-toggler border-0"
-                    type="button" 
-                    data-toggle="collapse"
-                    data-target="#toggleNavbar" 
-                    aria-controls="toggleNavbar" 
-                    aria-expanded="false" 
-                    aria-label="Toggle navigation"
-                    style="outline: none;">
-                    <i class="fas fa-bars"></i>
-                </button>
-            
-                <div class="collapse navbar-collapse" id="toggleNavbar">    
-                    <ul class="navbar-nav mr-auto"></ul>
-                    <div class="navbar-text">
-                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                            <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                                <button class="nav-link navbar font-weight-500 active"
-                                id="nav-home" 
-                                onclick="navSelected('home')">Home</button>
-                            </li>
-                            <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                                <button class="nav-link navbar font-weight-500"
-                                id="nav-about" 
-                                onclick="navSelected('about')">About me</button>
-                            </li>
-                            <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                                <button class="nav-link navbar font-weight-500"
-                                id="nav-services"
-                                onclick="navSelected('services')">Services</button>
-                            </li>
-                            <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                                <button class="nav-link navbar font-weight-500"
-                                id="nav-projects"
-                                onclick="navSelected('projects')">Projects</button>
-                            </li>
-                            <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
-                                <button class="nav-link navbar font-weight-500"
-                                id="nav-skills"
-                                onclick="navSelected('skills')">Skills</button>
-                            </li>
-                            <li class="nav-item mr-0 mb-2 mb-md-0"> <!-- mr-md-5 -->
-                                <button class="nav-link navbar font-weight-500"
-                                id="nav-contact"
-                                onclick="navSelected('contact')">Contact me</button>
-                            </li>
-                            
-                            <!-- <li class="nav-item">
-                                <button class="nav-link navbar" id="dark-light-mode" title="Dark Mode">
-                                    <span class="dark-theme"><i class="fas fa-moon"></i></span>
-                                    <span class="light-theme d-none"><i class="fas fa-sun"></i></span>
-                                </button>
-                            </li> -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <main>
-            <!-- <img src="resources/images/svg/circle.svg"
-            class="position-absolute"
-            alt="background"
-            style="z-index: -1; transform: translate(-40%, -30%);"> -->
-            <!-- HERO SECTION -->
-            <div class="container pt-0 pt-md-5 px-3 px-md-0">
-                <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column-reverse flex-md-row mt-md-5 px-3 px-md-0">
-
-                    <div class="col animate__animated animate__fadeIn animate__delay-1s">
-                        <div class="mb-2 font-weight-bold">Hi there,</div>
-                        <div class="h1 font-weight-bold secondary-font">I'm Robertson a Web <span class="text-primary text-shadow">Designer</span> & <span class="text-primary text-shadow">Developer</span></div>
-                        <p class="mb-4 w-75">Specializes in UI Design, Responsive Web Design, and Web Application.</p>
-    
-                        <button class="btn btn-primary py-2 px-4"
-                            onclick="navSelected('projects')">
-                            <span class="mr-2">My Projects</span>
-                            <i class="fas fa-search"></i>
-                        </button>
-                        
-                    </div>
-    
-                    <div class="col">
-                        <div class="px-3 px-md-0 px-lg-3 mb-2 mb-md-0 text-center">
-                            <div class="animate__animated animate__fadeIn animate__delay-1s">
-                                <img src="resources/images/me/profile-picture-transparent-1.png" 
-                                class="img-fluid" 
-                                alt="avatar" 
-                                id="avatar">
-                            </div>
+                    <div class="collapse navbar-collapse" id="toggleNavbar">    
+                        <ul class="navbar-nav mr-auto"></ul>
+                        <div class="navbar-text">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
+                                    <button class="nav-link navbar font-weight-500 active"
+                                    id="nav-home" 
+                                    onclick="navSelected('home')">Home</button>
+                                </li>
+                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
+                                    <button class="nav-link navbar font-weight-500"
+                                    id="nav-about" 
+                                    onclick="navSelected('about')">About me</button>
+                                </li>
+                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
+                                    <button class="nav-link navbar font-weight-500"
+                                    id="nav-services"
+                                    onclick="navSelected('services')">Services</button>
+                                </li>
+                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
+                                    <button class="nav-link navbar font-weight-500"
+                                    id="nav-projects"
+                                    onclick="navSelected('projects')">Projects</button>
+                                </li>
+                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
+                                    <button class="nav-link navbar font-weight-500"
+                                    id="nav-skills"
+                                    onclick="navSelected('skills')">Skills</button>
+                                </li>
+                                <li class="nav-item mr-0 mb-2 mb-md-0"> <!-- mr-md-5 -->
+                                    <button class="nav-link navbar font-weight-500"
+                                    id="nav-contact"
+                                    onclick="navSelected('contact')">Contact me</button>
+                                </li>
+                                
+                                <!-- <li class="nav-item">
+                                    <button class="nav-link navbar" id="dark-light-mode" title="Dark Mode">
+                                        <span class="dark-theme"><i class="fas fa-moon"></i></span>
+                                        <span class="light-theme d-none"><i class="fas fa-sun"></i></span>
+                                    </button>
+                                </li> -->
+                            </ul>
                         </div>
                     </div>
-                        
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- HERO SECTION -->
+            <div class="container">
+                <div class="pt-0 pt-md-5 px-3 px-md-0">
+                    <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column-reverse flex-md-row mt-md-5 px-3 px-md-0">
+    
+                        <div class="col animate__animated animate__fadeIn animate__delay-1s">
+                            <span class="mb-3 font-weight-bold">Hi there,</span>
+    
+                            <div class="mb-3 h1 font-weight-bold secondary-font">I'm Robertson, a Web <span class="text-primary">Designer</span> & <span class="text-primary">Developer</span></div>
+    
+                            <p class="mb-4">Specializes in User Interface Design, Responsive Web Design, and Web Applications.</p>
+        
+                            <button class="btn btn-primary py-2 px-4"
+                                onclick="navSelected('projects')">
+                                <span class="mr-2">My Projects</span>
+                                <i class="fas fa-search"></i>
+                            </button>
+                            
+                        </div>
+        
+                        <div class="col-7">
+                            <div class="px-3 px-md-0 mb-2 mb-md-0 text-center">
+                                <div class="animate__animated animate__fadeIn animate__delay-1s">
+                                    <img src="resources/images/squigly-line.png" class="squigly-line">
+                                    <img src="resources/images/s-spiral.png" class="s-spiral">
+
+                                    <img src="resources/images/me/christian-buehner.png" 
+                                    class="img-fluid" 
+                                    alt="avatar" 
+                                    id="avatar">
+                                </div>
+                            </div>
+                        </div>
+                            
+                    </div>
                 </div>
             </div>
             <!-- ENDS HERE -->
 
-            <!-- ABOUT ME -->
-            <div id="about" class="bg-light"></div>
-            <div class="bg-light services-section">
+            <!-- ABOUT ME --> 
+            <div class="py-5" style="background: linear-gradient(to right top, #14a800ee, #0ea816ee, #09a823ee, #04a82dee, #01A838ee, #19a836ee, #26a835ee, #30a835ee, #41a82cee, #50a821ee, #5ca814ee, #68a800ee), url('resources/images/me/christian-buehner.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;">
+                <div id="about"></div>
                 <div class="container">
-                    
-                    <div class="row flex-column flex-md-row align-items-md-center px-3 px-md-0 pt-5">
-                        <div class="col">
-                            <div class="px-3 px-md-0 px-lg-3 mb-2 mb-md-0 text-center">
-                                <img class="img-fluid lazyload"
-                                    data-src="resources/images/me/profile-picture-transparent-1.png"
-                                    alt="avatar">
+
+                    <div class="row no-gutters flex-column flex-md-row align-items-md-center my-5 py-5">
+                        <div class="col col-md-5">
+                            <div class="mb-2 mb-md-0 text-center overflow-hidden">
+                                <img class="img-fluid bg-white shadow rounded-circle ls-is-cached lazyloaded" data-src="resources/images/me/christian-buehner.png" alt="avatar" src="resources/images/me/christian-buehner.png">
                             </div>
                         </div>
-        
+                        
+                        <div class="col-1"></div>
+    
                         <div class="col">
                             <div class="d-flex flex-column align-items-center align-items-md-start mb-4">
-                                <span class="h2 font-weight-600 secondary-font">About Me</span>
+                                <span class="h2 font-weight-600 secondary-font text-light">About Me</span>
                             </div>
-
-                            <div class="mb-4">
-                                <p>Hello, my name is Robertson Morales. A self-taught web designer & developer. I grew up in Catubig, Northern Samar and currently living in San Jose Del Monte City, Bulacan.</p>
+    
+                            <div class="mb-4 text-light">
+                                <p>Hello, my name is Robertson Morales. A self-taught web designer &amp; developer. I grew up in Catubig, Northern Samar and currently living in San Jose Del Monte City, Bulacan.</p>
                                 <p>I started my career by watching videos and articles on the internet. It was hard at first. But after just a few months of studying and patience. I had built static websites, web-based information systems as I improve in getting better and better. I'm also interested in people where I can excel, learn or absorb and give my best to become an expert or professional.</p>
                             </div>
-
+    
                             <div class="text-left mb-5">
-                                <a href="resources/attachment/resume.docx"
-                                download="Resume"
-                                class="btn btn-primary py-2 px-4">
-                                <span class="mr-2">Download Resume</span>
-                                <i class="fas fa-arrow-alt-circle-down"></i>
-                            </a>
+                                <a href="resources/attachment/resume.docx" download="Resume" class="btn btn-light py-2 px-4">
+                                    <span class="mr-2">Download Resume</span>
+                                    <i class="fas fa-arrow-alt-circle-down"></i>
+                                </a>
                             </div>
 
-                            <span class="h5">Social Networks</span>
-                            <div class="mb-4"></div>
+                            <span class="h5 text-white">Social Networks</span>
+                            <div class="mb-3"></div>
 
                             <div class="flexbox-start mb-4">
-
-                                <div class="pr-2 pr-md-4">
+                                <div class="pr-2">
                                     <a href="https://web.facebook.com/profile.php?id=100004962736826" 
                                     target="_blank" 
                                     title="Connect with me at facebook" 
                                     rel="noopener" 
-                                    class="flexbox-center"
-                                    style="color: #4267B2 !important;">
+                                    class="btn flexbox-center text-white"
+                                    style="background-color: #4267B2 !important;">
                                         <i class="fab fa-facebook-f fa-lg"></i>
-                                        <!-- <span class="ml-2 font-size-sm">facebook</span> -->
+                                        <span class="ml-2 font-size-sm">facebook</span>
                                     </a>
                                 </div>
 
-                                <div class="px-2 px-md-4 border-right border-left">
+                                <div class="pr-2">
                                     <a href="http://www.linkedin.com/in/robert-morales-517a721bb" 
                                     target="_blank" 
                                     title="Connect with me at linkedin" 
                                     rel="noopener" 
-                                    class="flexbox-center"
-                                    style="color: rgb(10, 102, 194) !important;">
+                                    class="btn flexbox-center text-light"
+                                    style="background-color: rgb(10, 102, 194) !important;">
                                         <i class="fab fa-linkedin-in fa-lg"></i>
-                                        <!-- <span class="ml-2 font-size-sm">linkedin</span> -->
+                                        <span class="ml-2 font-size-sm">linkedin</span>
                                     </a>
                                 </div>
 
-                                <div class="pl-2 pl-md-4">
+                                <div class="pr-2">
                                     <a href="https://github.com/robertsonmorales" 
                                     target="_blank" 
                                     title="Follow me at github" 
                                     rel="noopener" 
-                                    class="flexbox-center text-dark">
+                                    class="btn flexbox-center text-white"
+                                    style="background-color: rgba(0, 0, 0, 0.8) !important;">
                                         <i class="fab fa-github fa-lg"></i>
-                                        <!-- <span class="ml-2 font-size-sm">github</span> -->
+                                        <span class="ml-2 font-size-sm">github</span>
                                     </a>
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
                 </div>
-
             </div>
+            <!-- ENDS HERE -->
 
+            <!-- SERVICES -->
             <div id="services"></div>
-            <div class="services-section my-5 py-5">
-                <div class="flexbox-center flex-column font-weight-600">
-                    <span class="text-primary font-weight-600">SERVICES</span>
-                    <span class="h2 text-center font-weight-600 secondary-font">Specializing In</span>
+            <div class="my-5 py-5">
+                <div class="text-center">
+                    <div class="text-primary font-weight-600">SERVICES</div>
+                    <div class="h2 font-weight-600 secondary-font">Specializing In</div>
                 </div>
                 <div class="container px-3 px-md-0">
                     <div class="card-deck px-3 px-md-0 my-3 my-md-5">
 
                         <div class="card mb-sm-3">
                             <div class="mb-2 p-3">
-                                <img class="drop-shadow" 
-                                src="resources/images/svg/services/ui-ux-colored.svg"
+                                <img src="resources/images/svg/services/ui-ux-colored.svg"
                                 alt="UI/UX Design"
                                 width="80">
                             </div>
@@ -255,8 +260,7 @@
 
                         <div class="card mb-sm-3">
                             <div class="mb-2 p-3">
-                                <img class="drop-shadow" 
-                                src="resources/images/svg/services/rwd-colored.svg"
+                                <img src="resources/images/svg/services/rwd-colored.svg"
                                 alt="Responsive Website Design"
                                 width="80">
                             </div>
@@ -272,8 +276,7 @@
 
                         <div class="card mb-sm-3">
                             <div class="mb-2 p-3">
-                                <img class="drop-shadow" 
-                                src="resources/images/svg/services/web-app-colored.svg"
+                                <img src="resources/images/svg/services/web-app-colored.svg"
                                 alt="Website Application"
                                 width="80">
                             </div>
@@ -287,8 +290,7 @@
                         
                         <div class="card mb-sm-3">
                             <div class="mb-2 p-3">
-                                <img class="drop-shadow" 
-                                src="resources/images/svg/services/html-colored.svg"
+                                <img src="resources/images/svg/services/html-colored.svg"
                                 alt="Convert Prototypes to HTML pages"
                                 width="80">
                             </div>
@@ -302,17 +304,18 @@
                     </div>
                 </div>
             </div>
+            <!-- ENDS HERE -->
 
+            <!-- PROJECTS -->            
             <div id="projects"></div>
-            <div class="bg-light d-flex flex-column my-5 py-5">
-                
-                <div class="flexbox-center flex-column">
-                    <span class="text-primary font-weight-600">PROJECTS</span>
-                    <span class="h2 font-weight-600 text-center secondary-font">My Works</span>
+            <div class="bg-light my-5 py-5">
+                <div class="text-center">
+                    <div class="text-primary font-weight-600">PROJECTS</div>
+                    <div class="h2 font-weight-600 secondary-font">My Works</div>
                 </div>
-                <div class="container px-4 px-md-0">
+                <div class="container">
 
-                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row my-5 py-5">
+                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row my-3 py-5">
                         <div class="col">
                             <div class="d-none d-md-block h2 text-primary font-weight-600">01</div>
 
@@ -362,7 +365,7 @@
                         </div>
                     </div>
 
-                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row-reverse my-5 py-5">
+                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row-reverse my-3 py-5">
                         <div class="col">
                             <div class="d-none d-md-block h2 text-primary font-weight-600">02</div>
 
@@ -421,7 +424,7 @@
                         </div>
                     </div>
 
-                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row my-5 py-5">
+                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row my-3 py-5">
                         <div class="col">
                             <div class="d-none d-md-block h2 text-primary font-weight-600">03</div>
 
@@ -474,7 +477,7 @@
                         </div>
                     </div>
 
-                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row-reverse my-5 py-5">
+                    <div class="row no-gutters portfolio-item flex-column-reverse flex-md-row-reverse my-3 py-5">
                         <div class="col">
                             <div class="d-none d-md-block h2 text-primary font-weight-600">03</div>
 
@@ -535,14 +538,16 @@
 
                 </div>
             </div>
-            
+            <!-- ENDS HERE -->
+
+            <!-- SKILLS -->
             <div id="skills"></div>
-            <div class="skills-section my-5 py-5">
-                <div class="flexbox-center flex-column">
-                    <span class="text-primary font-weight-600">ABOUT MY</span>
-                    <span class="h2 font-weight-600 text-center secondary-font">Skills and Expertise</span>
+            <div class="my-5 py-5">
+                <div class="text-center">
+                    <div class="text-primary font-weight-600">ABOUT MY</div>
+                    <div class="h2 font-weight-600 secondary-font">Skills and Expertise</div>
                 </div>
-        
+
                 <div class="container flexbox-center">
                     <div class="text-center my-3 my-md-5 w-100 w-md-50">
                         <img data-src="resources/images/svg/skills/html.svg" alt="HTML 5" class="img-fluid img-fluid-extension p-4 lazyload" title="HTML 5">
@@ -560,12 +565,14 @@
                     </div>
                 </div>
             </div>
+            <!-- ENDS HERE -->
 
+            <!-- CONTACT ME -->
             <div id="contact"></div>
             <div class="bg-light d-flex flex-column mt-5 pt-5 pb-2">
-                <div class="flexbox-center flex-column">
-                    <span class="text-primary font-weight-600">CONTACT ME</span>
-                    <span class="h2 font-weight-600 text-center secondary-font">Stay Connected</span>
+                <div class="text-center">
+                    <div class="text-primary font-weight-600">CONTACT ME</div>
+                    <div class="h2 font-weight-600 secondary-font">Stay Connected</div>
                 </div>
 
                 <div class="container px-0">
@@ -624,7 +631,9 @@
                                     <a href="" class="trigger-email" target="_blank"></a>
                                     <button class="btn btn-primary text-white py-2 px-4 w-100"
                                     id="btn-submit" 
-                                    type="submit">
+                                    type="submit"
+                                    data-toggle="modal"
+                                    data-target="#modal">
                                         <span class="mr-2">SEND</span>
                                         <i class="fas fa-paper-plane fa-lg"></i>
                                     </button>
@@ -633,12 +642,34 @@
                         </div>
                     </div>
                 </div>
-
-                <footer>
-                    <p class="text-center font-size-sm">© All rights reserved | <span id="year"></span></p>
-                </footer>
             </div>
+            <!-- ENDS HERE -->
         </main>
+        <footer class="bg-light">
+            <p class="text-center font-size-sm">© <span id="year"></span> | Robertson Morales</p>
+        </footer>
+    </div>
+
+    <div class="modal fade" 
+        id="modal" 
+        tabindex="-1" 
+        role="dialog" 
+        aria-labelledby="modalTitle" 
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom">
+                    <h5 class="modal-title font-weight-600 secondary-font" id="modalTitle">robertson.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <p>Hi! I'm sorry but this service is under maintenance, thank you for understanding. You can contact me directly to <a href="mailto:trebormoralesson@gmail.com">trebormoralesson@gmail.com</a>.</p>
+                </div>
+                <div class="modal-footer justify-content-center bg-light">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Ok, I understand</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script defer src="plugins/@fortawesome/fontawesome-free/js/all.min.js"></script>

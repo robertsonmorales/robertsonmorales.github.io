@@ -8,7 +8,6 @@ $(() => {
     let emailAddress = isEmpty($('#email_address').val(), $('#email_address').attr('id'), $('#email_address').attr('name'));
     let subject = isEmpty($('#subject').val(), $('#subject').attr('id'), $('#subject').attr('name'));
     let message = isEmpty($('#message').val(), $('#message').attr('id'), $('#message').attr('name'));
-
     let validateEmailAddress = validateEmail($('#email_address').val());
 
     if(!name && !emailAddress && !subject && !message && !validateEmailAddress){
@@ -27,12 +26,12 @@ $(() => {
   function isEmpty(input, id, name){
     let newName = name.replace('_', ' ');
     if  (input == "" || input == null || input == undefined){
+      $('#'+id).addClass('is-invalid');
       $('#validate-'+id).addClass('d-block');
       $('#validate-'+id).html('The ' + newName + ' is a required field.');
-      return true;
     }else{
+      $('#'+id).removeClass('is-invalid');
       $('#validate-'+id).removeClass('d-block');
-      return false;
     }
   }
 
@@ -45,6 +44,7 @@ $(() => {
       return true;
     }else{
       $('#validate-email_address').removeClass('d-block');
+
       return false;
     }
   }
