@@ -1,0 +1,93 @@
+@keyframes floatForSquigly{
+    0%{
+        transform: translateY(-54%);
+        filter: drop-shadow(4px 6px 3px rgba(0,0,0,0.2));
+    }
+    10%{
+        transform: translateY(-55%);
+        filter: drop-shadow(5px 7px 4px rgba(0,0,0,0.2));
+    }
+    20%{
+        transform: translateY(-56%);
+        filter: drop-shadow(6px 8px 5px rgba(0,0,0,0.2));
+    }
+    30%{
+        transform: translateY(-57%);
+        filter: drop-shadow(7px 8px 6px rgba(0,0,0,0.2));
+    }
+    40%{
+        transform: translateY(-58%);
+        filter: drop-shadow(8px 9px 7px rgba(0,0,0,0.2));
+    }
+    50%{
+        transform: translateY(-59%);
+        filter: drop-shadow(9px 10px 8px rgba(0,0,0,0.2));
+    }
+    60%{
+        transform: translateY(-60%);
+        filter: drop-shadow(10px 11px 9px rgba(0,0,0,0.2));
+    }
+    70%{
+        transform: translateY(-58%);
+        filter: drop-shadow(8px 9px 7px rgba(0,0,0,0.2));
+    }
+    80%{
+        transform: translateY(-57%);
+        filter: drop-shadow(7px 8px 6px rgba(0,0,0,0.2));
+    }
+    90%{
+        transform: translateY(-55%);
+        filter: drop-shadow(5px 7px 4px rgba(0,0,0,0.2));
+    }
+    100%{
+        transform: translateY(-54%);
+        filter: drop-shadow(4px 6px 3px rgba(0,0,0,0.2));
+    }
+}
+
+@keyframes floatForSSpiral{
+    0%{
+        transform: translateY(0%);
+        filter: drop-shadow(2px 6px 2px rgba(0,0,0,0.2));
+    }
+    10%{
+        transform: translateY(-1%);
+        filter: drop-shadow(3px 7px 3px rgba(0,0,0,0.2));
+    }
+    20%{
+        transform: translateY(-2%);
+        filter: drop-shadow(4px 8px 4px rgba(0,0,0,0.2));
+    }
+    30%{
+        transform: translateY(-3%);
+        filter: drop-shadow(5px 9px 5px rgba(0,0,0,0.2));
+    }
+    40%{
+        transform: translateY(-4%);
+        filter: drop-shadow(6px 10px 6px rgba(0,0,0,0.2));
+    }
+    50%{
+        transform: translateY(-5%);
+        filter: drop-shadow(7px 11px 7px rgba(0,0,0,0.2));
+    }
+    60%{
+        transform: translateY(-6%);
+        filter: drop-shadow(8px 12px 8px rgba(0,0,0,0.2));
+    }
+    70%{
+        transform: translateY(-4%);
+        filter: drop-shadow(6px 10px 6px rgba(0,0,0,0.2));
+    }
+    80%{
+        transform: translateY(-3%);
+        filter: drop-shadow(5px 9px 5px rgba(0,0,0,0.2));
+    }
+    90%{
+        transform: translateY(-1%);
+        filter: drop-shadow(3px 7px 3px rgba(0,0,0,0.2));
+    }
+    100%{
+        transform: translateY(0%);
+        filter: drop-shadow(2px 6px 2px rgba(0,0,0,0.2));
+    }
+}

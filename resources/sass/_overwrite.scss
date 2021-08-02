@@ -1,0 +1,113 @@
+// HEADINGS
+.h1{
+    font-size: 2.8rem !important;
+    line-height: 60px;
+}
+// HEADINGS
+
+// BORDERS
+.rounded{
+    border-radius: $radius !important;
+}
+
+.rounded-top{
+    border-top-left-radius: 50% !important;
+    border-top-right-radius: 50% !important;
+}
+// ENDS HERE
+
+// NAVIGATION
+.navbar{
+    .navbar-brand{
+        font-weight: 600 !important;
+        font-size: 1rem !important;
+    }
+    
+    .nav-link{
+        outline: none;
+        border: none;
+        background-color: transparent;
+        color: #555 !important;
+        font-size: .8rem !important;
+
+        &:hover{
+            color: #000 !important;
+        }
+    }
+}
+
+.active{
+    border-bottom: 3px solid $primary !important;
+    font-weight: 600 !important;
+    color: $primary !important;
+}
+// ENDS HERE
+
+// BUTTONS
+.btn{
+    border-radius: $radius !important;
+    font-weight: 500;
+    box-shadow: $drop-shadow;
+    transition: all .2s ease-out;
+
+    &:hover{
+        box-shadow: $drop-shadow__hovered !important;
+        transform: translateY(-2px);
+    }
+
+    &:active{
+        box-shadow: $drop-shadow__active !important;
+        transform: translateY(0);
+    }
+
+    &:focus{
+        box-shadow: $drop-shadow__active !important;
+        transform: translateY(0);
+    }
+}
+
+.btn-outline-primary{
+    &:hover{
+        color: #fff !important;
+    }
+}
+// ENDS HERE
+
+// CARDS
+.card{
+    border-radius: $radius !important;
+    border: none !important;
+    background-color: transparent !important;
+}
+// ENDS HERE
+
+// FONT
+.font-weight-bolder{
+    font-weight: 800 !important;
+}
+// ENDS HERE
+
+// BADGE
+.badge{
+    background-color: #d1d2d2 !important; // #ededed
+}
+// ENDS HERE
+
+// FORMS
+.input-group{
+    .form-control{
+        width: 100%;
+        border-radius: $radius !important;
+    }
+    
+    .invalid-feedback{
+        font-weight: 500 !important;
+    }
+}
+// ENDS HERE
+
+// SHADOW
+.shadow-lg{
+    box-shadow: $light-shadow !important;
+}
+// ENDS HERE
