@@ -1,0 +1,96 @@
+/* FLEXBOX */ 
+.flexbox-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox-start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flexbox-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ENDS HERE*/
+
+/* IMAGES */
+.img-fluid-extension{
+    border-radius: $radius;
+    object-fit: fill;
+    width: 110px;
+    height: 110px;
+}
+/* ENDS HERE */
+
+/* FORMS */
+.input-group{
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    label{
+        font-size: .9em !important;
+        margin-bottom: 3px !important;
+    }
+}
+/* ENDS HERE */
+
+/* FONT */
+.secondary-font{
+    font-family: $secondary-font !important;
+}
+
+.font-weight-500{
+    font-weight: 500;
+}
+
+.font-weight-600{
+    font-weight: 600;
+}
+
+.font-size-sm{
+    font-size: 1em !important;
+}
+/* ENDS HERE */
+
+/* CUSTOM SHADOW */
+.drop-shadow{
+    filter: drop-shadow($drop-shadow);
+}
+
+.text-shadow{
+    text-shadow: $text-shadow;
+}
+/* ENDS HERE */
+
+/* ICONS 3Ds */
+.squigly-line{
+    transform: translate(-31%, -54%);
+    position: absolute;
+    // z-index: -1;
+    width: 100px;
+    filter: drop-shadow(4px 6px 3px rgba(0,0,0,0.2));
+    animation-name: floatForSquigly;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.s-spiral{
+    transform: translate(0%, 0%);
+    position: absolute;
+    // z-index: -1;
+    width: 110px;
+    filter: drop-shadow(2px 6px 2px rgba(0,0,0,0.2));
+    right: 0;
+    animation-name: floatForSSpiral;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+/* ENDS HERE */
