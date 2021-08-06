@@ -10816,11 +10816,41 @@ html {
 body {
   background-color: #fff;
   line-height: 1.6;
-  font-family: "Poppins", "Roboto", "Montserrat", sans-serif;
+  font-family: "Poppins", "Montserrat", sans-serif;
   font-size: 0.9rem;
   font-weight: normal;
   overflow-x: hidden;
   color: #131b23;
+}
+
+.animate__delay-100ms {
+  -webkit-animation-delay: .1s !important;
+          animation-delay: .1s !important;
+}
+
+.animate__delay-200ms {
+  -webkit-animation-delay: .2s !important;
+          animation-delay: .2s !important;
+}
+
+.animate__delay-300ms {
+  -webkit-animation-delay: .3s !important;
+          animation-delay: .3s !important;
+}
+
+.animate__delay-400ms {
+  -webkit-animation-delay: .4s !important;
+          animation-delay: .4s !important;
+}
+
+.animate__delay-500ms {
+  -webkit-animation-delay: .5s !important;
+          animation-delay: .5s !important;
+}
+
+.animate__delay-600ms {
+  -webkit-animation-delay: .6s !important;
+          animation-delay: .6s !important;
 }
 
 .h1 {
@@ -10987,7 +11017,7 @@ body {
 /* ENDS HERE */
 /* FONT */
 .secondary-font {
-  font-family: "Libre Baskerville", "Arvo", serif !important;
+  font-family: "Libre Baskerville", serif !important;
 }
 
 .font-weight-500 {
