@@ -28,13 +28,12 @@
     <!-- ends here -->
     <!-- preloads ends here -->
 
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet"> -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Libre+Baskerville:wght@400&family=Source+Serif+Pro:wght@600&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" 
+        href="https://fonts.googleapis.com">
+    <link rel="preconnect" 
+        href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400&family=Poppins:wght@400;500;600;700;800;900&&family=Montserrat:wght@400;500;600;700;800;900&display=swap"> 
 
     <link rel="stylesheet" href="plugins/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
@@ -49,7 +48,7 @@
         <header>
             <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
                 <div class="container">
-                    <button class="navbar-brand border-0"
+                    <button class="animate__animated animate__fadeInDown navbar-brand border-0"
                         onclick="navSelected('home')"
                         style="background-color: transparent; outline: none;">
                         <span class="h5 mb-0 font-weight-bold secondary-font">robertson.</span>
@@ -70,43 +69,36 @@
                         <ul class="navbar-nav mr-auto"></ul>
                         <div class="navbar-text">
                             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
+                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-100ms">
                                     <button class="nav-link navbar font-weight-500 active"
                                     id="nav-home" 
                                     onclick="navSelected('home')">Home</button>
                                 </li>
-                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
+                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-200ms">
                                     <button class="nav-link navbar font-weight-500"
                                     id="nav-about" 
                                     onclick="navSelected('about')">About me</button>
                                 </li>
-                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
+                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-300ms">
                                     <button class="nav-link navbar font-weight-500"
                                     id="nav-services"
                                     onclick="navSelected('services')">Services</button>
                                 </li>
-                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
+                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-400ms">
                                     <button class="nav-link navbar font-weight-500"
                                     id="nav-projects"
                                     onclick="navSelected('projects')">Projects</button>
                                 </li>
-                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
+                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-500ms">
                                     <button class="nav-link navbar font-weight-500"
                                     id="nav-skills"
                                     onclick="navSelected('skills')">Skills</button>
                                 </li>
-                                <li class="nav-item mr-0 mb-2 mb-md-0"> <!-- mr-md-5 -->
+                                <li class="nav-item mr-0 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-600ms"> <!-- mr-md-5 -->
                                     <button class="nav-link navbar font-weight-500"
                                     id="nav-contact"
                                     onclick="navSelected('contact')">Contact me</button>
                                 </li>
-                                
-                                <!-- <li class="nav-item">
-                                    <button class="nav-link navbar" id="dark-light-mode" title="Dark Mode">
-                                        <span class="dark-theme"><i class="fas fa-moon"></i></span>
-                                        <span class="light-theme d-none"><i class="fas fa-sun"></i></span>
-                                    </button>
-                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -120,28 +112,31 @@
                     <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column-reverse flex-md-row mt-md-5 px-3 px-md-0">
     
                         <div class="col">
-                            <div class="animate__animated animate__fadeIn animate__delay-1s pr-lg-5">
-                                <span class="mb-3 font-weight-bold">Hi there,</span>
+                            <div class="pr-lg-5">
+                                <div class="mb-3 font-weight-600 animate__animated animate__fadeInLeft">Hi there,</div>
     
-                                <div class="mb-3 h1 font-weight-bold secondary-font">I'm Robertson, a Web <span class="text-primary">Designer</span> & <span class="text-primary">Developer</span></div>
+                                <div class="mb-3 h1 font-weight-bold secondary-font animate__animated animate__fadeInLeft animate__delay-100ms">I'm Robertson, a Web <span class="text-primary">Designer</span> & <span class="text-primary">Developer</span></div>
         
-                                <p class="mb-4">Specializes in User Interface Design, Responsive Web Design, and Web Applications.</p>
-            
-                                <button class="btn btn-primary py-2 px-4"
-                                    onclick="navSelected('projects')">
-                                    <span>View My Works</span>
-                                </button>
+                                <p class="mb-4 animate__animated animate__fadeInLeft animate__delay-200ms">Specializes in User Interface Design, Responsive Web Design, and Web Applications.</p>
+                                
+                                <div class="animate__animated animate__fadeInLeft animate__delay-300ms">
+                                    <button class="btn btn-primary py-2 px-4"
+                                        onclick="navSelected('projects')">
+                                        <span>View My Works</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
                         <div class="col-7">
-                            <div class="animate__animated animate__fadeIn animate__delay-1s">
+                            <div class="animate__animated animate__fadeInDown animate__delay-400ms">
                                 <img src="resources/images/squigly-line.png" class="squigly-line">
-                                <img src="resources/images/s-spiral.png" class="s-spiral">
-                                <img src="resources/images/me/christian-buehner.png" 
-                                class="img-fluid bg-light rounded-top" 
-                                alt="avatar" 
-                                id="avatar">
+                            </div>
+                            <div class="animate__animated animate__fadeInRight animate__delay-300ms">
+                                <img src="resources/images/creative-bulb.png" class="s-spiral">
+                            </div>
+                            <div class="animate__animated animate__fadeInUp animate__delay-200ms">
+                                <img src="resources/images/me/christian-buehner.png" class="img-fluid bg-light rounded-top" alt="avatar" id="avatar">
                             </div>
                         </div>
                             
