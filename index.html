@@ -47,14 +47,14 @@
     <div id="app">
         <header>
             <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
-                <div class="container">
+                <div class="container px-3">
                     <button class="animate__animated animate__fadeInDown navbar-brand border-0"
                         onclick="navSelected('home')"
                         style="background-color: transparent; outline: none;">
                         <span class="h5 mb-0 font-weight-bold secondary-font">robertson.</span>
                     </button>
                     
-                    <button class="btn navbar-toggler border-0"
+                    <button class="navbar-toggler border-0"
                         type="button" 
                         data-toggle="collapse"
                         data-target="#toggleNavbar" 
@@ -108,16 +108,16 @@
         <main>
             <!-- HERO SECTION -->
             <div class="container">
-                <div class="pt-0 pt-md-5 px-3 px-md-0">
-                    <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column-reverse flex-md-row mt-md-5 px-3 px-md-0">
+                <div class="pt-5 pb-5 pb-md-0 px-3 px-md-0">
+                    <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column-reverse flex-md-row mt-md-5">
     
                         <div class="col">
-                            <div class="pr-lg-5">
-                                <div class="mb-3 font-weight-600 animate__animated animate__fadeInLeft">Hi there,</div>
+                            <div class="pr-md-2 pr-lg-5">
+                                <div class="font-weight-600 animate__animated animate__fadeInLeft">Hi there,</div>
     
-                                <div class="mb-3 h1 font-weight-bold secondary-font animate__animated animate__fadeInLeft animate__delay-100ms">I'm Robertson, a Web <span class="text-primary">Designer</span> & <span class="text-primary">Developer</span></div>
+                                <div class="h1 font-weight-bold secondary-font animate__animated animate__fadeInLeft animate__delay-100ms">I'm Robertson, a Web <span class="text-primary">Designer</span> & <span class="text-primary">Developer</span></div>
         
-                                <p class="mb-4 animate__animated animate__fadeInLeft animate__delay-200ms">Specializes in User Interface Design, Responsive Web Design, and Web Applications.</p>
+                                <p class="mb-4 w-100 w-lg-75 animate__animated animate__fadeInLeft animate__delay-200ms">Specializes in User Interface Design, Responsive Web Design, and Web Applications.</p>
                                 
                                 <div class="animate__animated animate__fadeInLeft animate__delay-300ms">
                                     <button class="btn btn-primary py-2 px-4"
@@ -128,15 +128,28 @@
                             </div>
                         </div>
 
-                        <div class="col-7">
-                            <div class="animate__animated animate__fadeInDown animate__delay-400ms">
-                                <img src="resources/images/squigly-line.png" class="squigly-line">
+                        <div class="col-12 col-md-7 mb-3 mb-md-0">
+                            <div class="animate__animated animate__fadeInDown animate__delay-400ms position-inherit d-none d-md-block">
+                                <img src="resources/images/squigly-line.png" 
+                                    class="squigly-line"
+                                    alt="float"
+                                    width="60"
+                                    height="60">
                             </div>
-                            <div class="animate__animated animate__fadeInRight animate__delay-300ms">
-                                <img src="resources/images/creative-bulb.png" class="s-spiral">
+                            <div class="animate__animated animate__fadeInRight animate__delay-300ms position-inherit d-none d-md-block">
+                                <img src="resources/images/creative-bulb.png" 
+                                    class="s-spiral"
+                                    alt="float"
+                                    width="60"
+                                    height="60">
                             </div>
                             <div class="animate__animated animate__fadeInUp animate__delay-200ms">
-                                <img src="resources/images/me/christian-buehner.png" class="img-fluid bg-light rounded-top" alt="avatar" id="avatar">
+                                <img src="resources/images/me/christian-buehner.png" 
+                                    class="img-fluid bg-light rounded-top" 
+                                    width="650"
+                                    height="620"
+                                    alt="avatar" 
+                                    id="avatar">
                             </div>
                         </div>
                             
@@ -152,21 +165,33 @@
 
                     <div class="row no-gutters flex-column flex-md-row align-items-md-center my-5 py-5">
                         <div class="col col-md-5">
+                            <div class="animate__animated animate__fadeInDown animate__delay-400ms">
+                                <img src="resources/images/chat.png" 
+                                    class="squigly-line"
+                                    width="60"
+                                    height="60">
+                            </div>
                             <div class="mb-2 mb-md-0 text-center overflow-hidden">
-                                <img class="img-fluid bg-white rounded-circle lazyload" 
+                                <img class="img-fluid rounded-circle lazyload" 
                                 data-src="resources/images/me/christian-buehner.png" 
-                                alt="avatar" 
-                                src="resources/images/me/christian-buehner.png">
+                                alt="avatar">
                             </div>
                         </div>
                         
                         <div class="col-1"></div>
     
                         <div class="col">
-                            <div class="d-flex flex-column align-items-center align-items-md-start mb-4">
-                                <span class="h1 font-weight-600 secondary-font">About Me</span>
+                            <div class="animate__animated animate__fadeInRight animate__delay-300ms">
+                                <img src="resources/images/s-spiral.png" 
+                                    class="s-spiral"
+                                    width="60"
+                                    height="60">
                             </div>
-    
+
+                            <div class="d-flex flex-column align-items-center align-items-md-start mb-4">
+                                <span class="h1 font-weight-600">About Me</span>
+                            </div>
+                            
                             <div class="mb-4">
                                 <p>Hello, my name is Robertson Morales. A self-taught web designer &amp; developer. I grew up in Catubig, Northern Samar and currently living in San Jose Del Monte City, Bulacan.</p>
                                 <p>I started my career by watching videos and articles on the internet. It was hard at first. But after just a few months of studying and patience. I had built static websites, web-based information systems as I improve in getting better and better. I'm also interested in people where I can excel, learn or absorb and give my best to become an expert or professional.</p>
@@ -188,8 +213,8 @@
                                     target="_blank" 
                                     title="Connect with me at facebook" 
                                     rel="noopener" 
-                                    class="btn flexbox-center text-white"
-                                    style="background-color: #4267B2 !important;">
+                                    class="btn btn-light flexbox-center"
+                                    style="color: #4267B2 !important;">
                                         <i class="fab fa-facebook-f fa-lg"></i>
                                         <span class="ml-2 font-size-sm">facebook</span>
                                     </a>
@@ -200,8 +225,8 @@
                                     target="_blank" 
                                     title="Connect with me at linkedin" 
                                     rel="noopener" 
-                                    class="btn flexbox-center text-light"
-                                    style="background-color: rgb(10, 102, 194) !important;">
+                                    class="btn btn-light flexbox-center"
+                                    style="color: rgb(10, 102, 194) !important;">
                                         <i class="fab fa-linkedin-in fa-lg"></i>
                                         <span class="ml-2 font-size-sm">linkedin</span>
                                     </a>
@@ -212,13 +237,13 @@
                                     target="_blank" 
                                     title="Follow me at github" 
                                     rel="noopener" 
-                                    class="btn flexbox-center text-white"
-                                    style="background-color: rgba(0, 0, 0, 0.8) !important;">
+                                    class="btn btn-light flexbox-center"
+                                    style="color: rgba(0, 0, 0, 0.8) !important;">
                                         <i class="fab fa-github fa-lg"></i>
                                         <span class="ml-2 font-size-sm">github</span>
                                     </a>
-                                </div> -->
-                            </div>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -230,7 +255,7 @@
             <div class="my-5 py-5">
                 <div class="text-center">
                     <div class="text-primary font-weight-600">SERVICES</div>
-                    <div class="h2 font-weight-600 secondary-font">Specializing In</div>
+                    <div class="h2 font-weight-600">Specializing In</div>
                 </div>
                 <div class="container px-3 px-md-0">
                     <div class="card-deck px-3 px-md-0 my-3 my-md-5">
@@ -302,7 +327,7 @@
             <div class="my-5 py-5 bg-light">
                 <div class="text-center">
                     <div class="text-primary font-weight-600">PROJECTS</div>
-                    <div class="h2 font-weight-600 secondary-font">My Works</div>
+                    <div class="h2 font-weight-600">My Works</div>
                 </div>
                 <div class="container">
 
@@ -536,7 +561,7 @@
             <div class="my-5 py-5">
                 <div class="text-center">
                     <div class="text-primary font-weight-600">ABOUT MY</div>
-                    <div class="h2 font-weight-600 secondary-font">Skills and Expertise</div>
+                    <div class="h2 font-weight-600">Skills and Expertise</div>
                 </div>
 
                 <div class="container flexbox-center">
@@ -563,7 +588,7 @@
             <div class="mt-5 pt-5 pb-2 bg-light">
                 <div class="text-center">
                     <div class="text-primary font-weight-600">CONTACT ME</div>
-                    <div class="h2 font-weight-600 secondary-font">Stay Connected</div>
+                    <div class="h2 font-weight-600">Stay Connected</div>
                 </div>
 
                 <div class="container px-0">
@@ -637,7 +662,7 @@
             <!-- ENDS HERE -->
         </main>
         <footer class="bg-light">
-            <p class="text-center font-size-sm">© <span id="year"></span> | Robertson Morales</p>
+            <p class="text-center font-size-sm m-0">© <span id="year"></span> | Robertson Morales</p>
         </footer>
     </div>
 
@@ -650,7 +675,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header border-bottom">
-                    <h5 class="modal-title font-weight-600 secondary-font" id="modalTitle">robertson.</h5>
+                    <h5 class="modal-title font-weight-600" id="modalTitle">robertson.</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 </div>
                 <div class="modal-body">

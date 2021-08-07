@@ -26,8 +26,8 @@
 
 // HEADINGS
 .h1{
-    font-size: 2.8rem !important;
-    line-height: 60px;
+    font-size: clamp(2rem, 4vw, 2.6rem) !important;
+    // line-height: 60px;
 }
 // HEADINGS
 
