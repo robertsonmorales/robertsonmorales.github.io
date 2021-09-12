@@ -1,3 +1,5 @@
+feather.replace();
+
 window.scrollTo(0,0);
 
 function navSelected(id){
@@ -15,6 +17,7 @@ function navSelected(id){
     }else{
         el.scrollIntoView();
     }
+    
     document.getElementById('nav-'+id).classList.add('active');
 }
 
@@ -30,11 +33,12 @@ $(() => {
 	});
 
     function navBarHeight(){
-        $('#about').css('height', $('#navbar').height() + "px");
-        $('#services').css('height', $('#navbar').height() + "px");
-        $('#projects').css('height', $('#navbar').height() + "px");       
-        $('#skills').css('height', $('#navbar').height() + "px");
-        $('#contact').css('height', $('#navbar').height() + "px");
+        var set_height = $('#navbar').height() * 2;
+        $('#about').css('margin-top', set_height + "px");
+        $('#services').css('margin-top', set_height + "px");
+        $('#projects').css('margin-top', set_height + "px");
+        $('#skills').css('margin-top', set_height + "px");
+        $('#contact').css('margin-top', set_height + "px");
     }   
 
     navBarHeight(); 

@@ -22,20 +22,15 @@
 
     <!-- images -->
     <link rel="preload" href="resources/images/me/profile-picture-transparent-1.png" as="image">
-    <link rel="preload" href="resources/images/projects/login-forms.png" as="image">
-    <link rel="preload" href="resources/images/projects/music-player-in-mobile.jpg" as="image">
-    <link rel="preload" href="resources/images/projects/profile-cards.png" as="image">
+    <link rel="preload" href="resources/images/projects/elainejoy/thumbnail.png" as="image">
+    <link rel="preload" href="resources/images/projects/resume-template/thumbnail.png" as="image">
     <!-- ends here -->
     <!-- preloads ends here -->
 
-    <link rel="preconnect" 
-        href="https://fonts.googleapis.com">
-    <link rel="preconnect" 
-        href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400&family=Poppins:wght@400;500;600;700;800;900&&family=Montserrat:wght@400;500;600;700;800;900&display=swap"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400&family=Poppins:wght@400;500;600;700;800;900&&family=Montserrat:wght@400;500;600;700;800;900&display=swap"> 
 
-    <link rel="stylesheet" href="plugins/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="plugins/animate.css/animate.css">
     <link rel="stylesheet" href="resources/sass/style.css">
@@ -45,624 +40,419 @@
 </head>
 <body>
     <div id="app">
-        <header>
-            <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
-                <div class="container px-3">
-                    <button class="animate__animated animate__fadeInDown navbar-brand border-0"
-                        onclick="navSelected('home')"
-                        style="background-color: transparent; outline: none;">
-                        <span class="h5 mb-0 font-weight-bold secondary-font">robertson.</span>
-                    </button>
-                    
-                    <button class="navbar-toggler border-0"
-                        type="button" 
-                        data-toggle="collapse"
-                        data-target="#toggleNavbar" 
-                        aria-controls="toggleNavbar" 
-                        aria-expanded="false" 
-                        aria-label="Toggle navigation"
-                        style="outline: none;">
-                        <i class="fas fa-bars"></i>
-                    </button>
+        <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
+            <div class="container px-3">
+                <button class="animate__animated animate__fadeInDown navbar-brand border-0"
+                    onclick="navSelected('home')"
+                    style="background-color: transparent; outline: none;">
+                    <span class="h5 mb-0 font-weight-bold secondary-font">robertson.</span>
+                </button>
                 
-                    <div class="collapse navbar-collapse" id="toggleNavbar">    
-                        <ul class="navbar-nav mr-auto"></ul>
-                        <div class="navbar-text">
-                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-100ms">
-                                    <button class="nav-link navbar font-weight-500 active"
-                                    id="nav-home" 
-                                    onclick="navSelected('home')">Home</button>
-                                </li>
-                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-200ms">
-                                    <button class="nav-link navbar font-weight-500"
-                                    id="nav-about" 
-                                    onclick="navSelected('about')">About me</button>
-                                </li>
-                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-300ms">
-                                    <button class="nav-link navbar font-weight-500"
-                                    id="nav-services"
-                                    onclick="navSelected('services')">Services</button>
-                                </li>
-                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-400ms">
-                                    <button class="nav-link navbar font-weight-500"
-                                    id="nav-projects"
-                                    onclick="navSelected('projects')">Projects</button>
-                                </li>
-                                <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-500ms">
-                                    <button class="nav-link navbar font-weight-500"
-                                    id="nav-skills"
-                                    onclick="navSelected('skills')">Skills</button>
-                                </li>
-                                <li class="nav-item mr-0 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-600ms"> <!-- mr-md-5 -->
-                                    <button class="nav-link navbar font-weight-500"
-                                    id="nav-contact"
-                                    onclick="navSelected('contact')">Contact me</button>
-                                </li>
-                            </ul>
-                        </div>
+                <button class="navbar-toggler border-0"
+                    type="button" 
+                    data-toggle="collapse"
+                    data-target="#toggleNavbar" 
+                    aria-controls="toggleNavbar" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation"
+                    style="outline: none;">
+                    <i class="fas fa-bars"></i>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="toggleNavbar">    
+                    <ul class="navbar-nav mr-auto"></ul>
+                    <div class="navbar-text">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-100ms">
+                                <button class="nav-link navbar font-weight-500 active"
+                                id="nav-home" 
+                                onclick="navSelected('home')">Home</button>
+                            </li>
+                            <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-300ms">
+                                <button class="nav-link navbar font-weight-500"
+                                id="nav-services"
+                                onclick="navSelected('services')">Services</button>
+                            </li>
+                            <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-200ms">
+                                <button class="nav-link navbar font-weight-500"
+                                id="nav-about" 
+                                onclick="navSelected('about')">About me</button>
+                            </li>
+                            <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-400ms">
+                                <button class="nav-link navbar font-weight-500"
+                                id="nav-projects"
+                                onclick="navSelected('projects')">Projects</button>
+                            </li>
+                            <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-500ms">
+                                <button class="nav-link navbar font-weight-500"
+                                id="nav-skills"
+                                onclick="navSelected('skills')">Skills</button>
+                            </li>
+                            <li class="nav-item mr-0 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-600ms"> <!-- mr-md-5 -->
+                                <button class="nav-link navbar font-weight-500"
+                                id="nav-contact"
+                                onclick="navSelected('contact')">Contact me</button>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
+
+        <header id="hero">
+            <div class="container py-3">
+                <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column-reverse flex-md-row mt-md-5">
+    
+                    <div class="col">
+                        <div class="pr-md-2 pr-lg-5">
+                            <h1 class="h1 font-weight-bold secondary-font animate__animated animate__fadeInLeft animate__delay-100ms">Let's build custom websites to help your business <span class="text-primary">grow</span>.</h1>
+
+                            <div class="mb-2"></div>
+
+                            <p class="w-100 w-lg-75 animate__animated animate__fadeInLeft animate__delay-200ms">Specializes in User Interface Design, Responsive Web Design, and Web Applications.</p>
+
+                            <div class="mb-4"></div>
+
+                            <div class="animate__animated animate__fadeInLeft animate__delay-300ms">
+                                <button class="btn btn-primary py-2 px-4" onclick="navSelected('projects')">View Works</button>
+                                <button class="btn btn-outline-primary py-2 px-4">Download Resume</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-7 mb-3 mb-md-0">
+                        <div class="animate__animated animate__fadeInUp animate__delay-200ms">
+                            <img src="resources/images/hero-image.svg" 
+                                class="img-fluid" 
+                                width="650"
+                                height="620"
+                                alt="avatar" 
+                                id="avatar">
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
         </header>
-        <main>
-            <!-- HERO SECTION -->
-            <div class="container">
-                <div class="pt-5 pb-5 pb-md-0 px-3 px-md-0">
-                    <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column-reverse flex-md-row mt-md-5">
+
+        <section id="services" class="pt-5">
+            <div class="container my-5 py-5">
+                <div class="text-left">
+                    <h1 class="h1 secondary-font font-weight-600">What can I offer to my clients?</h1>
+                    <p class="w-50">Helping businesses with design and development testing of custom websites, and together let’s bring those projects to life.</p>
+                </div>
+
+                <div class="py-3"></div>
+
+                <div class="card-deck">
+                    <div class="card card-service">
+                        <div class="card-service-child">
+                            <div class="p-3">
+                                <i data-feather="layout"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="mb-4 secondary-font card-title font-weight-500">UI/UX <br>Design</h3>
+                                <p class="card-text">Build user interfaces that are user-friendly and responsive to all media devices that users will find easy to use and pleasureable.</p>
+
+                                <a href="#read-more" class="btn btn-light mt-3">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-service">
+                        <div class="card-service-child">
+                            <div class="p-3">
+                                <i data-feather="code"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="mb-4 secondary-font card-title font-weight-500">Prototypes to HTML</h3>
+                                <p class="card-text font-weight-normal">Creating web pages from prototypes into a brand new functional and interactive website.</p>
+
+                                <a href="#read-more" class="btn btn-light mt-3">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-service">
+                        <div class="card-service-child">
+                            <div class="p-3">
+                                <i data-feather="monitor"></i>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="mb-4 secondary-font card-title font-weight-500">Website Application</h3>
+                                <p class="card-text">Build Single page application to manage your business operations, increase efficiency, and reduce costs.</p>
     
-                        <div class="col">
-                            <div class="pr-md-2 pr-lg-5">
-                                <div class="font-weight-600 animate__animated animate__fadeInLeft">Hi there,</div>
-    
-                                <div class="h1 font-weight-bold secondary-font animate__animated animate__fadeInLeft animate__delay-100ms">I'm Robertson, a Web <span class="text-primary">Designer</span> & <span class="text-primary">Developer</span></div>
+                                <a href="#read-more" class="btn btn-light mt-3">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container my-3 py-5">
         
-                                <p class="mb-4 w-100 w-lg-75 animate__animated animate__fadeInLeft animate__delay-200ms">Specializes in User Interface Design, Responsive Web Design, and Web Applications.</p>
-                                
-                                <div class="animate__animated animate__fadeInLeft animate__delay-300ms">
-                                    <button class="btn btn-primary py-2 px-4"
-                                        onclick="navSelected('projects')">
-                                        <span>View My Works</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-7 mb-3 mb-md-0">
-                            <div class="animate__animated animate__fadeInDown animate__delay-400ms position-inherit d-none d-md-block">
-                                <img src="resources/images/squigly-line.png" 
-                                    class="squigly-line"
-                                    alt="float"
-                                    width="60"
-                                    height="60">
-                            </div>
-                            <div class="animate__animated animate__fadeInRight animate__delay-300ms position-inherit d-none d-md-block">
-                                <img src="resources/images/creative-bulb.png" 
-                                    class="s-spiral"
-                                    alt="float"
-                                    width="60"
-                                    height="60">
-                            </div>
-                            <div class="animate__animated animate__fadeInUp animate__delay-200ms">
-                                <img src="resources/images/me/christian-buehner.png" 
-                                    class="img-fluid bg-light rounded-top" 
-                                    width="650"
-                                    height="620"
-                                    alt="avatar" 
-                                    id="avatar">
-                            </div>
-                        </div>
-                            
-                    </div>
-                </div>
-            </div>
-            <!-- ENDS HERE -->
-
-            <!-- ABOUT ME --> 
-            <div class="py-5 bg-light">
-                <div id="about"></div>
-                <div class="container">
-
-                    <div class="row no-gutters flex-column flex-md-row align-items-md-center my-5 py-5">
-                        <div class="col col-md-5">
-                            <div class="animate__animated animate__fadeInDown animate__delay-400ms">
-                                <img src="resources/images/chat.png" 
-                                    class="squigly-line"
-                                    width="60"
-                                    height="60">
-                            </div>
-                            <div class="mb-2 mb-md-0 text-center overflow-hidden">
-                                <img class="img-fluid rounded-circle lazyload" 
-                                data-src="resources/images/me/christian-buehner.png" 
+                <div class="row no-gutters flex-column flex-md-row align-items-md-center my-5 py-5">
+                    <div class="col col-md-5">
+                        <div class="mb-2 mb-md-0 text-center overflow-hidden">
+                            <img class="img-fluid rounded-circle bg-light p-1 lazyload" 
+                                data-src="resources/images/me/profile-transparent.png" 
+                                width="450"
+                                height="450"
                                 alt="avatar">
-                            </div>
-                        </div>
-                        
-                        <div class="col-1"></div>
-    
-                        <div class="col">
-                            <div class="animate__animated animate__fadeInRight animate__delay-300ms">
-                                <img src="resources/images/s-spiral.png" 
-                                    class="s-spiral"
-                                    width="60"
-                                    height="60">
-                            </div>
-
-                            <div class="d-flex flex-column align-items-center align-items-md-start mb-4">
-                                <span class="h1 font-weight-600">About Me</span>
-                            </div>
-                            
-                            <div class="mb-4">
-                                <p>Hello, my name is Robertson Morales. A self-taught web designer &amp; developer. I grew up in Catubig, Northern Samar and currently living in San Jose Del Monte City, Bulacan.</p>
-                                <p>I started my career by watching videos and articles on the internet. It was hard at first. But after just a few months of studying and patience. I had built static websites, web-based information systems as I improve in getting better and better. I'm also interested in people where I can excel, learn or absorb and give my best to become an expert or professional.</p>
-                            </div>
-    
-                            <div class="text-left mb-5">
-                                <a href="resources/attachment/resume.docx" download="Resume" class="btn btn-primary py-2 px-4">
-                                    <span class="mr-2">Download Resume</span>
-                                    <i class="fas fa-arrow-alt-circle-down"></i>
-                                </a>
-                            </div>
-
-                            <!-- <span class="h5">Social Networks</span>
-                            <div class="mb-3"></div>
-
-                            <div class="flexbox-start mb-4">
-                                <div class="pr-2">
-                                    <a href="https://web.facebook.com/profile.php?id=100004962736826" 
-                                    target="_blank" 
-                                    title="Connect with me at facebook" 
-                                    rel="noopener" 
-                                    class="btn btn-light flexbox-center"
-                                    style="color: #4267B2 !important;">
-                                        <i class="fab fa-facebook-f fa-lg"></i>
-                                        <span class="ml-2 font-size-sm">facebook</span>
-                                    </a>
-                                </div>
-
-                                <div class="pr-2">
-                                    <a href="http://www.linkedin.com/in/robert-morales-517a721bb" 
-                                    target="_blank" 
-                                    title="Connect with me at linkedin" 
-                                    rel="noopener" 
-                                    class="btn btn-light flexbox-center"
-                                    style="color: rgb(10, 102, 194) !important;">
-                                        <i class="fab fa-linkedin-in fa-lg"></i>
-                                        <span class="ml-2 font-size-sm">linkedin</span>
-                                    </a>
-                                </div>
-
-                                <div class="pr-2">
-                                    <a href="https://github.com/robertsonmorales" 
-                                    target="_blank" 
-                                    title="Follow me at github" 
-                                    rel="noopener" 
-                                    class="btn btn-light flexbox-center"
-                                    style="color: rgba(0, 0, 0, 0.8) !important;">
-                                        <i class="fab fa-github fa-lg"></i>
-                                        <span class="ml-2 font-size-sm">github</span>
-                                    </a>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
+                    
+                    <div class="col-1"></div>
+        
+                    <div class="col">
+        
+                        <h2 class="h1 secondary-font font-weight-600">Hi there, My name is Robertson Morales</h2>
+                        <div class="mb-2"></div>
+                        <p>A self-taught Web Designer & Developer. I grew up in Catubig, Northern Samar and currently living in San Jose Del Monte City, Bulacan. I started my career by watching videos and articles on the internet, it was hard at first but after just a few months of studying and patience I had built static websites, web-based information systems as I improve in getting better and better. I'm also interested in people where I can excel, learn or absorb and give my best to make an impact on the organization that I am in.</p>
+                        <div class="mb-4"></div>
+                        <div class="text-left">
+                            <a href="resources/attachment/resume.docx"
+                                download="Resume" 
+                                class="btn btn-outline-primary py-2 px-4">Download Resume</a>
+                        </div>
+        
+                        <!-- <span class="h5">Social Networks</span>
+                        <div class="mb-3"></div>
+        
+                        <div class="flexbox-start mb-4">
+                            <div class="pr-2">
+                                <a href="https://web.facebook.com/profile.php?id=100004962736826" 
+                                target="_blank" 
+                                title="Connect with me at facebook" 
+                                rel="noopener" 
+                                class="btn btn-light flexbox-center"
+                                style="color: #4267B2 !important;">
+                                    <i class="fab fa-facebook-f fa-lg"></i>
+                                    <span class="ml-2 font-size-sm">facebook</span>
+                                </a>
+                            </div>
+        
+                            <div class="pr-2">
+                                <a href="http://www.linkedin.com/in/robert-morales-517a721bb" 
+                                target="_blank" 
+                                title="Connect with me at linkedin" 
+                                rel="noopener" 
+                                class="btn btn-light flexbox-center"
+                                style="color: rgb(10, 102, 194) !important;">
+                                    <i class="fab fa-linkedin-in fa-lg"></i>
+                                    <span class="ml-2 font-size-sm">linkedin</span>
+                                </a>
+                            </div>
+        
+                            <div class="pr-2">
+                                <a href="https://github.com/robertsonmorales" 
+                                target="_blank" 
+                                title="Follow me at github" 
+                                rel="noopener" 
+                                class="btn btn-light flexbox-center"
+                                style="color: rgba(0, 0, 0, 0.8) !important;">
+                                    <i class="fab fa-github fa-lg"></i>
+                                    <span class="ml-2 font-size-sm">github</span>
+                                </a>
+                            </div>
+                        </div> -->
+                    </div>
                 </div>
+        
             </div>
-            <!-- ENDS HERE -->
+        </section>
 
-            <!-- SERVICES -->
-            <div id="services"></div>
-            <div class="my-5 py-5">
+        <section id="projects">
+            <div class="container my-5 py-5">
                 <div class="text-center">
-                    <div class="text-primary font-weight-600">SERVICES</div>
-                    <div class="h2 font-weight-600">Specializing In</div>
+                    <div class="text-primary font-weight-600">WORKS</div>
+                    <div class="h2 secondary-font font-weight-600">My Best Projects</div>
                 </div>
-                <div class="container px-3 px-md-0">
-                    <div class="card-deck px-3 px-md-0 my-3 my-md-5">
-
-                        <div class="card mb-sm-3">
-                            <div class="mb-2 p-3">
-                                <img src="resources/images/svg/services/ui-ux-colored.svg"
-                                alt="UI/UX Design"
-                                width="80">
+        
+                <div class="row no-gutters align-items-start flex-column-reverse flex-md-row-reverse my-3 py-5">
+                    <div class="col">
+                        <div class="d-none d-md-block h2 text-primary font-weight-600">01</div>
+        
+                        <div class="h5 font-weight-500 text-dark">Landing Page Portfolio</div>
+        
+                        <div class="d-flex flex-wrap">
+                            <div class="built-with mt-2 mr-2">
+                                <div class="badge p-2">UI/UX Design</div>
                             </div>
-                            <div class="card-body">
-                                <div class="h-100 d-flex flex-column">
-                                    <h5 class="card-title font-weight-500">UI/UX Design</h5>
-                                    <p class="card-text font-weight-normal">Build interfaces that users will find easy to use and pleasureable.</p>
-                                </div>
+                            <div class="built-with mt-2 mr-2">
+                                <div class="badge p-2">Figma</div>
                             </div>
-                        </div>
-
-                        <div class="card mb-sm-3">
-                            <div class="mb-2 p-3">
-                                <img src="resources/images/svg/services/rwd-colored.svg"
-                                alt="Responsive Website Design"
-                                width="80">
-                            </div>
-                            <div class="card-body">
-                                <div class="h-100 d-flex flex-column">
-                                    <h5 class="card-title font-weight-500">Responsive Website Design</h5>
-                                    <p class="card-text font-weight-normal">Create web pages that renders well on a different devices or screen sizes.</p>
-                                </div>
+                            <div class="built-with mt-2 mr-2">
+                                <div class="badge p-2">Webflow</div>
                             </div>
                         </div>
-
-                        <div class="d-none d-sm-block d-lg-none w-100"></div>
-
-                        <div class="card mb-sm-3">
-                            <div class="mb-2 p-3">
-                                <img src="resources/images/svg/services/web-app-colored.svg"
-                                alt="Website Application"
-                                width="80">
-                            </div>
-                            <div class="card-body">
-                                <div class="h-100 d-flex flex-column">
-                                    <h5 class="card-title font-weight-500">Website Application</h5>
-                                    <p class="card-text font-weight-normal">Streamline your operations, increase efficiency, and reduce costs.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="card mb-sm-3">
-                            <div class="mb-2 p-3">
-                                <img src="resources/images/svg/services/html-colored.svg"
-                                alt="Convert Prototypes to HTML pages"
-                                width="80">
-                            </div>
-                            <div class="card-body">
-                                <div class="h-100 d-flex flex-column">
-                                    <h5 class="card-title font-weight-500">Prototypes to HTML</h5>
-                                    <p class="card-text font-weight-normal">Creating web pages from prototypes into a brand new functional and interactive website.</p>
-                                </div>
-                            </div>
+        
+                        <p class="mt-3 font-weight-normal">A personal portfolio for a customer support specialist, the aim is to create a responsive and user-friendly web design.</p>
+        
+                        <div class="mt-3 flexbox-start">
+                            <a href="resources/images/projects/elainejoy/thumbnail.png" 
+                            target="_blank"
+                            title="Read More" 
+                            rel="noopener" 
+                            class="flexbox-center py-2 px-3 mr-2 btn btn-outline-primary">
+                                <span>Read More</span>
+                            </a>
                         </div>
                     </div>
+                    <div class="col col-md-1"></div>
+                    <div class="col mb-4 mb-md-0">
+                        <a href="https://elainejoyluna.webflow.io"
+                        target="_blank" 
+                        rel="noopener">
+                            <img data-src="resources/images/projects/elainejoy/thumbnail.png" 
+                            class="img-fluid shadow rounded lazyload" 
+                            alt="Landing Page Portfolio">
+                        </a>
+                    </div>
                 </div>
+        
+                <div class="row no-gutters align-items-start flex-column-reverse flex-md-row my-3 py-5">
+                    <div class="col">
+                        <div class="d-none d-md-block h2 text-primary font-weight-600">02</div>
+        
+                        <div class="h5 font-weight-500 text-dark">Resume/CV Template</div>
+        
+                        <div class="d-flex flex-wrap">
+                            <div class="built-with mt-2 mr-2">
+                                <div class="badge p-2">Figma</div>
+                            </div>
+                            <div class="built-with mt-2 mr-2">
+                                <div class="badge p-2">Graphic Design</div>
+                            </div>
+                        </div>
+        
+                        <p class="mt-3 font-weight-normal">This is a Resume/CV Template with minimalist design.</p>
+        
+                        <div class="mt-3 flexbox-start">
+                            <a href="resources/images/projects/resume-template/thumbnail.png" 
+                            target="_blank"
+                            title="More Information" 
+                            rel="noopener" 
+                            class="flexbox-center py-2 px-3 mr-2 btn btn-outline-primary">
+                                <span>Read More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col col-md-1"></div>
+                    <div class="col mb-4 mb-md-0">
+                        <a href="resources/images/projects/resume-template/thumbnail.png"
+                        target="_blank" 
+                        rel="noopener">
+                            <img data-src="resources/images/projects/resume-template/thumbnail.png" 
+                            class="img-fluid shadow rounded lazyload" 
+                            alt="Landing Page Portfolio UI/UX Design">
+                        </a>
+                    </div>
+                </div>
+        
             </div>
-            <!-- ENDS HERE -->
+        </section>
 
-            <!-- PROJECTS -->            
-            <div id="projects"></div>
-            <div class="my-5 py-5 bg-light">
-                <div class="text-center">
-                    <div class="text-primary font-weight-600">PROJECTS</div>
-                    <div class="h2 font-weight-600">My Works</div>
-                </div>
-                <div class="container">
-
-                    <div class="row no-gutters align-items-center flex-column-reverse flex-md-row my-3 py-5">
-                        <div class="col">
-                            <div class="d-none d-md-block h2 text-primary font-weight-600">01</div>
-
-                            <div class="h4 font-weight-500 text-dark">Profile Cards UI Design</div>
-
-                            <div class="d-flex flex-wrap">
-                                <div class="built-with mt-2 mr-2">
-                                    <div class="badge p-2">HTML5</div>
-                                </div>
-                                <div class="built-with mt-2 mr-2">
-                                    <div class="badge p-2">CSS3</div>
-                                </div>
-                                <div class="built-with mt-2 mr-2">
-                                    <div class="badge p-2">Sass</div>
-                                </div>
-                            </div>
-
-                            <p class="mt-3 font-weight-normal">This is a fully custom profile cards website page that I designed from scratch. The aim was to put simple animations when hovering a specific card to show social network icons and adjust its background image profile.</p>
-                            
-                            <div class="mt-3 flexbox-start">
-                                <a href="https://robertsonmorales.github.io/profile_cards" 
-                                target="_blank"
-                                title="Check Live" 
-                                rel="noopener" 
-                                class="flexbox-center py-2 px-3 mr-2 btn btn-primary">
-                                    <span>View Live</span>
-                                </a>
-
-                                <a href="https://github.com/robertsonmorales/profile_cards" 
-                                target="_blank"
-                                title="Source code" 
-                                rel="noopener" 
-                                class="flexbox-center py-2 px-3 btn btn-link text-dark">
-                                    <i class="fab fa-github fa-lg"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col col-md-1"></div>
-                        <div class="col mb-4 mb-md-0">
-                            <a href="https://robertsonmorales.github.io/profile_cards"
-                            target="_blank" 
-                            rel="noopener">
-                                <img data-src="resources/images/projects/profile-cards.png" 
-                                class="img-fluid shadow rounded lazyload" 
-                                alt="Profile Cards UI Design">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="row no-gutters align-items-center flex-column-reverse flex-md-row-reverse my-3 py-5">
-                        <div class="col">
-                            <div class="d-none d-md-block h2 text-primary font-weight-600">02</div>
-
-                            <div class="h4 font-weight-500 text-dark">Music Player with Neumorphism Effects</div>
-
-                            <div class="d-flex flex-wrap">
-                                <div class="built-with mt-2 mr-2">
-                                    <div class="badge p-2">HTML5</div>
-                                </div>
-                                <div class="built-with mt-2 mr-2">
-                                    <div class="badge p-2">CSS3</div>
-                                </div>
-                                <div class="built-with mt-2 mr-2">
-                                    <div class="badge p-2">Sass</div>
-                                </div>
-                                <div class="built-with mt-2 mr-2">
-                                    <div class="badge p-2">JavaScript</div>
-                                </div>
-                                <div class="built-with mt-2 mr-2">
-                                    <div class="badge p-2">JQuery</div>
-                                </div>
-                                <div class="built-with mt-2 mr-2">
-                                    <div class="badge p-2">Bootstrap</div>
-                                </div>
-                            </div>
-
-                            <p class="mt-3 font-weight-normal">This is a simple music player using CSS neumorphism effect with static audio files. The aim is to smoothly function all music players basic actions such as shuffle, loop, next, previous, volume, play, and stop.</p>
-                            
-                            <div class="mt-3 flexbox-start">
-                                <a href="https://robertsonmorales.github.io/music_player" 
-                                target="_blank"
-                                title="Check Live" 
-                                rel="noopener" 
-                                class="flexbox-center py-2 px-3 mr-2 btn btn-primary">
-                                    <span>View Live</span>
-                                </a>
-
-                                <a href="https://github.com/robertsonmorales/music_player" 
-                                target="_blank"
-                                title="Source code" 
-                                rel="noopener" 
-                                class="flexbox-center py-2 px-3 btn btn-link text-dark">
-                                    <i class="fab fa-github fa-lg"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col col-md-1"></div>
-                        <div class="col mb-4 mb-md-0">
-                            <a href="https://robertsonmorales.github.io/music_player"
-                            target="_blank" 
-                            rel="noopener">
-                                <img data-src="resources/images/projects/music-player-in-mobile.jpg" 
-                                class="img-fluid shadow rounded lazyload" 
-                                alt="Music Player with Neumorphism Effects">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="row no-gutters align-items-center flex-column-reverse flex-md-row my-3 py-5">
-                        <div class="col">
-                            <div class="d-none d-md-block h2 text-primary font-weight-600">03</div>
-
-                            <div class="h4 font-weight-500 text-dark">Login Forms UI Design</div>
-
-                            <div class="d-flex flex-wrap">
-                                <div class="built-with mt-2 mr-2">
-                                    <div class="badge p-2">HTML5</div>
-                                </div>
-                                <div class="built-with mt-2 mr-2">
-                                    <div class="badge p-2">CSS3</div>
-                                </div>
-                                <div class="built-with mt-2 mr-2">
-                                    <div class="badge p-2">Sass</div>
-                                </div>
-                                <div class="built-with mt-2 mr-2">
-                                    <div class="badge p-2">JavaScript</div>
-                                </div>
-                            </div>
-
-                            <p class="mt-3 font-weight-normal">Created login form user interface designs from scratch with a different type of user interface approach. The aim is to develop as many simple login forms as possible and share this with fellow web developers for educational and personal purposes.</p>
-                            
-                            <div class="mt-3 flexbox-start">
-                                <a href="https://robertsonmorales.github.io/login_forms" 
-                                target="_blank"
-                                title="Check Live" 
-                                rel="noopener" 
-                                class="flexbox-center py-2 px-3 mr-2 btn btn-primary">
-                                    <span>View Live</span>
-                                </a>
-
-                                <a href="https://github.com/robertsonmorales/login_forms" 
-                                target="_blank"
-                                title="Source code" 
-                                rel="noopener" 
-                                class="flexbox-center py-2 px-3 btn btn-link text-dark">
-                                    <i class="fab fa-github fa-lg"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col col-md-1"></div>
-                        <div class="col mb-4 mb-md-0">
-                            <a href="https://robertsonmorales.github.io/login_forms"
-                            target="_blank" 
-                            rel="noopener">
-                                <img data-src="resources/images/projects/login-forms.png" 
-                                class="img-fluid shadow rounded lazyload" 
-                                alt="Login Forms UI Design">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="row no-gutters align-items-center flex-column-reverse flex-md-row-reverse my-3 py-5">
-                        <div class="col">
-                            <div class="d-none d-md-block h2 text-primary font-weight-600">03</div>
-
-                            <div class="h4 font-weight-500 text-dark">Chatbox Messaging UI Design</div>
-
-                            <div class="d-flex flex-wrap">
-                                <div class="built-with mt-2 mr-2">
-                                    <div class="badge p-2">HTML5</div>
-                                </div>
-                                <div class="built-with mt-2 mr-2">
-                                    <div class="badge p-2">CSS3</div>
-                                </div>
-                                <div class="built-with mt-2 mr-2">
-                                    <div class="badge p-2">Sass</div>
-                                </div>
-                                <div class="built-with mt-2 mr-2">
-                                    <div class="badge p-2">JavaScript</div>
-                                </div>
-                                <div class="built-with mt-2 mr-2">
-                                    <div class="badge p-2">JQuery</div>
-                                </div>
-                                <div class="built-with mt-2 mr-2">
-                                    <div class="badge p-2">Bootstrap</div>
-                                </div>
-                            </div>
-
-                            <p class="mt-3 font-weight-normal">A messaging web application that I designed with a dark-themed user interface. It has static images which are for samples only. The aim was to communicate or respond to the chat of someone's inquiry in a smooth and fast way (performance and optimization). It has many highlighted functionalities like in other well-known social network media applications.</p>
-                            
-                            <div class="mt-3 flexbox-start">
-                                <a href="https://robertsonmorales.github.io/chatbox" 
-                                target="_blank"
-                                title="Check Live" 
-                                rel="noopener" 
-                                class="flexbox-center py-2 px-3 mr-2 btn btn-primary">
-                                    <span>View Live</span>
-                                </a>
-
-                                <a href="https://github.com/robertsonmorales/chatbox" 
-                                target="_blank"
-                                title="Source code" 
-                                rel="noopener" 
-                                class="flexbox-center py-2 px-3 btn btn-link text-dark">
-                                    <i class="fab fa-github fa-lg"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col col-md-1"></div>
-                        <div class="col mb-4 mb-md-0">
-                            <a href="https://robertsonmorales.github.io/chatbox"
-                            target="_blank" 
-                            rel="noopener">
-                                <img data-src="resources/images/projects/chatbox.png" 
-                                class="img-fluid shadow rounded lazyload" 
-                                alt="Chatbox Messaging UI Design">
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- ENDS HERE -->
-
-            <!-- SKILLS -->
-            <div id="skills"></div>
-            <div class="my-5 py-5">
+        <section id="skills">
+            <div class="container my-5 py-5">
                 <div class="text-center">
                     <div class="text-primary font-weight-600">ABOUT MY</div>
-                    <div class="h2 font-weight-600">Skills and Expertise</div>
+                    <div class="h2 secondary-font font-weight-600">Skills & Expertise</div>
                 </div>
-
-                <div class="container flexbox-center">
-                    <div class="text-center my-3 my-md-5 w-100 w-md-50">
-                        <img data-src="resources/images/svg/skills/html.svg" alt="HTML 5" class="img-fluid img-fluid-extension p-4 lazyload" title="HTML 5">
-                        <img data-src="resources/images/svg/skills/css3.svg" alt="CSS 3" class="img-fluid img-fluid-extension p-4 lazyload" title="CSS 3">
-                        <img data-src="resources/images/svg/skills/sass.svg" alt="Sass" class="img-fluid img-fluid-extension p-4 lazyload" title="Sass">
-                        <img data-src="resources/images/svg/skills/javascript.svg" alt="JavaScript" class="img-fluid img-fluid-extension p-4 lazyload" title="JavaScript">
-                        <img data-src="resources/images/svg/skills/jquery.svg" alt="JQuery" class="img-fluid img-fluid-extension p-4 lazyload" title="JQuery">
-                        <img data-src="resources/images/svg/skills/bootstrap.svg" alt="Bootstrap" class="img-fluid img-fluid-extension p-4 lazyload" title="Bootstrap">
-                        <img data-src="resources/images/svg/skills/angular.svg" alt="AngularJS" class="img-fluid img-fluid-extension p-4 lazyload" title="AngularJS">
-                        <img data-src="resources/images/svg/skills/php.svg" alt="PHP" class="img-fluid img-fluid-extension p-4 lazyload" title="PHP">
-                        <img data-src="resources/images/svg/skills/mysql.svg" alt="MySQL" class="img-fluid img-fluid-extension p-4 lazyload" title="MySQL">
-                        <img data-src="resources/images/svg/skills/laravel.svg" alt="Laravel" class="img-fluid img-fluid-extension p-4 lazyload" title="Laravel">
-                        <img data-src="resources/images/svg/skills/git.svg" alt="git" class="img-fluid img-fluid-extension p-4 lazyload" title="git">
-                        <img data-src="resources/images/svg/skills/adobe-xd.svg" alt="Adobe XD" class="img-fluid img-fluid-extension p-4 lazyload" title="Adobe XD">
-                    </div>
+                <div class="text-center my-3 my-md-5 w-100 w-md-50">
+                    <img src="resources/images/svg/skills/html.svg" alt="HTML 5" class="img-fluid img-fluid-extension p-4 lazyload" title="HTML 5" loading="lazy">
+                    <img src="resources/images/svg/skills/css3.svg" alt="CSS 3" class="img-fluid img-fluid-extension p-4 lazyload" title="CSS 3" loading="lazy">
+                    <img src="resources/images/svg/skills/sass.svg" alt="Sass" class="img-fluid img-fluid-extension p-4 lazyload" title="Sass" loading="lazy">
+                    <img src="resources/images/svg/skills/javascript.svg" alt="JavaScript" class="img-fluid img-fluid-extension p-4 lazyload" title="JavaScript" loading="lazy">
+                    <img src="resources/images/svg/skills/jquery.svg" alt="JQuery" class="img-fluid img-fluid-extension p-4 lazyload" title="JQuery" loading="lazy">
+                    <img src="resources/images/svg/skills/bootstrap.svg" alt="Bootstrap" class="img-fluid img-fluid-extension p-4 lazyload" title="Bootstrap" loading="lazy">
+                    <img src="resources/images/svg/skills/angular.svg" alt="AngularJS" class="img-fluid img-fluid-extension p-4 lazyload" title="AngularJS" loading="lazy">
+                    <img src="resources/images/svg/skills/php.svg" alt="PHP" class="img-fluid img-fluid-extension p-4 lazyload" title="PHP" loading="lazy">
+                    <img src="resources/images/svg/skills/mysql.svg" alt="MySQL" class="img-fluid img-fluid-extension p-4 lazyload" title="MySQL" loading="lazy">
+                    <img src="resources/images/svg/skills/laravel.svg" alt="Laravel" class="img-fluid img-fluid-extension p-4 lazyload" title="Laravel" loading="lazy">
+                    <img src="resources/images/svg/skills/git.svg" alt="git" class="img-fluid img-fluid-extension p-4 lazyload" title="git" loading="lazy">
+                    <img src="resources/images/svg/skills/adobe-xd.svg" alt="Adobe XD" class="img-fluid img-fluid-extension p-4 lazyload" title="Adobe XD" loading="lazy">
+                    <img src="resources/images/svg/skills/webflow.svg" alt="webflow" class="img-fluid img-fluid-extension p-4 lazyload" title="webflow" loading="lazy">
+                    <!-- <img src="resources/images/svg/skills/figma.svg" alt="figma" class="img-fluid img-fluid-extension p-4 lazyload" title="figma" loading="lazy"> -->
+                    <svg viewBox="0 0 38 57" class="figma-77e5ie img-fluid img-fluid-extension p-4" aria-label="Homepage"><path fill="#1abcfe" d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0z"></path><path fill="#0acf83" d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0z"></path><path fill="#ff7262" d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19H19z"></path><path fill="#f24e1e" d="M0 9.5A9.5 9.5 0 0 0 9.5 19H19V0H9.5A9.5 9.5 0 0 0 0 9.5z"></path><path fill="#a259ff" d="M0 28.5A9.5 9.5 0 0 0 9.5 38H19V19H9.5A9.5 9.5 0 0 0 0 28.5z"></path></svg>
                 </div>
             </div>
-            <!-- ENDS HERE -->
+        </section>
 
-            <!-- CONTACT ME -->
-            <div id="contact"></div>
-            <div class="mt-5 pt-5 pb-2 bg-light">
+        <section id="contact">
+            <div class="container">
                 <div class="text-center">
                     <div class="text-primary font-weight-600">CONTACT ME</div>
-                    <div class="h2 font-weight-600">Stay Connected</div>
+                    <div class="h2 secondary-font font-weight-600">Stay Connected</div>
                 </div>
 
-                <div class="container px-0">
-                    <div class="row no-gutters justify-content-center flex-column flex-md-row my-5">
-                        <div class="col col-md-5 shadow rounded bg-white p-4">
-                            <div class="d-flex justify-content-start flex-column text-center text-md-left">
-                                <span class="mb-3 font-weight-600 h6">SEND A MESSAGE</span>
+                <div class="row no-gutters justify-content-center flex-column flex-md-row my-5">
+                    <div class="col col-md-5 shadow rounded bg-white p-4">
+                        <div class="d-flex justify-content-start flex-column text-center text-md-left">
+                            <span class="mb-3 font-weight-600 h6">SEND A MESSAGE</span>
+                        </div>
+                        
+                        <form action="#"
+                        method="get" 
+                        id="contact-form">
+                            <div class="input-group">
+                                <label for="name">Name</label>
+                                <input type="text" 
+                                name="name" 
+                                id="name" 
+                                class="form-control" 
+                                autocomplete="off">
+                                <span class="invalid-feedback" 
+                                id="validate-name"></span>
                             </div>
-                            
-                            <form action="#"
-                            method="get" 
-                            id="contact-form">
-                                <div class="input-group">
-                                    <label for="name">Name</label>
-                                    <input type="text" 
-                                    name="name" 
-                                    id="name" 
-                                    class="form-control" 
-                                    autocomplete="off">
-                                    <span class="invalid-feedback" 
-                                    id="validate-name"></span>
-                                </div>
-                                <div class="input-group">
-                                    <label for="email_address">Email Address</label>
-                                    <input type="email" 
-                                    name="email_address"
-                                    id="email_address" 
-                                    class="form-control" 
-                                    autocomplete="off">
-                                    <span class="invalid-feedback" 
-                                    id="validate-email_address"></span>
-                                </div>
-                                <div class="input-group">
-                                    <label for="subject">Subject</label>
-                                    <input type="text" 
-                                    name="subject" 
-                                    id="subject" 
-                                    class="form-control" 
-                                    autocomplete="off">
-                                    <span class="invalid-feedback" 
-                                    id="validate-subject"></span>
-                                </div>
-                                <div class="input-group">
-                                    <label for="message">Your message here</label>
-                                    <textarea name="message" 
-                                    id="message" 
-                                    cols="30" 
-                                    rows="3" 
-                                    class="form-control" 
-                                    autocomplete="off"></textarea>
-                                    <span class="invalid-feedback" 
-                                    id="validate-message"></span>
-                                </div>
+                            <div class="input-group">
+                                <label for="email_address">Email Address</label>
+                                <input type="email" 
+                                name="email_address"
+                                id="email_address" 
+                                class="form-control" 
+                                autocomplete="off">
+                                <span class="invalid-feedback" 
+                                id="validate-email_address"></span>
+                            </div>
+                            <div class="input-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" 
+                                name="subject" 
+                                id="subject" 
+                                class="form-control" 
+                                autocomplete="off">
+                                <span class="invalid-feedback" 
+                                id="validate-subject"></span>
+                            </div>
+                            <div class="input-group">
+                                <label for="message">Your message here</label>
+                                <textarea name="message" 
+                                id="message" 
+                                cols="30" 
+                                rows="3" 
+                                class="form-control" 
+                                autocomplete="off"></textarea>
+                                <span class="invalid-feedback" 
+                                id="validate-message"></span>
+                            </div>
 
-                                <div class="flexbox-center">
-                                    <a href="" class="trigger-email" target="_blank"></a>
-                                    <button class="btn btn-primary text-white py-2 px-4 w-100"
+                            <div class="flexbox-center">
+                                <button class="btn btn-primary text-white py-2 px-4 w-100"
                                     id="btn-submit" 
                                     type="submit"
                                     data-toggle="modal"
-                                    data-target="#modal">
-                                        <span class="mr-2">SEND</span>
-                                        <i class="fas fa-paper-plane fa-lg"></i>
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
+                                    data-target="#modal">SEND</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-            <!-- ENDS HERE -->
-        </main>
-        <footer class="bg-light">
-            <p class="text-center font-size-sm m-0">© <span id="year"></span> | Robertson Morales</p>
+        </section>
+        <footer>
+            <p class="text-center font-size-sm">© <span id="year"></span> | Robertson Morales</p>
         </footer>
     </div>
 
@@ -688,13 +478,12 @@
         </div>
     </div>
 
-    <script defer src="plugins/@fortawesome/fontawesome-free/js/all.min.js"></script>
     <script defer src="plugins/jquery/dist/jquery.min.js"></script>
     <script defer src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
     <script defer src="plugins/lazysizes/lazysizes.min.js"></script>
+    <script defer src="plugins/feather-icons/dist/feather.min.js"></script>
 
     <script defer src="resources/js/script.js"></script>
     <script defer src="resources/js/contact.js"></script>
-
 </body>
 </html>
