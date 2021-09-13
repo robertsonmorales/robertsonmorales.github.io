@@ -70,23 +70,23 @@
 // BUTTONS
 .btn{
     border-radius: $radius !important;
-    box-shadow: $drop-shadow;
     transition: all .1s linear;
+    // box-shadow: $drop-shadow;
 
-    &:hover{
-        box-shadow: $drop-shadow__hovered !important;
-        transform: translateY(-2px);
-    }
+    // &:hover{
+    //     box-shadow: $drop-shadow__hovered !important;
+    //     transform: translateY(-2px);
+    // }
 
-    &:active{
-        box-shadow: $drop-shadow__active !important;
-        transform: translateY(0);
-    }
+    // &:active{
+    //     box-shadow: $drop-shadow__active !important;
+    //     transform: translateY(0);
+    // }
 
-    &:focus{
-        box-shadow: $drop-shadow__active !important;
-        transform: translateY(0);
-    }
+    // &:focus{
+    //     box-shadow: $drop-shadow__active !important;
+    //     transform: translateY(0);
+    // }
 }
 
 .btn-outline-primary{
@@ -99,7 +99,12 @@
 // CARDS
 .card{
     border-radius: $radius !important;
-    border: none !important;
+    border: 1px solid #eee !important;
+
+    .card-footer{
+        border-top: 0 solid transparent;
+        background-color: transparent;
+    }
 }
 // ENDS HERE
 

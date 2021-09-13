@@ -53,7 +53,7 @@
 }
 
 .font-size-sm{
-    font-size: .9em !important;
+    font-size: .8em !important;
 }
 /* ENDS HERE */
 
@@ -75,22 +75,22 @@
 /* ENDS HERE */
 
 .card-service{
-    background-color: $light;
-    transition: all .1s linear;
+    transition: all .4s ease;
 
     .card-service-child{
         padding: 20px !important;        
     }
 
-    .btn-light{
-        color: $primary;
-        border: 1px solid $primary;
-    }
-
     &:hover {   
-        background: $primary !important;
-        background: linear-gradient(45deg, rgba(20,168,0,1) 37%, rgba(26,219,0,1) 100%) !important;
-        color: #fff;
-        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
+        box-shadow: 0 0 20px rgba(20, 16, 0, .05);
+        transform: scale(1.05);
+    }
+}
+
+.img-fluid-hovered{
+    transition: transform .4s ease;
+
+    &:hover{
+        transform: scale(1.1);
     }
 }
