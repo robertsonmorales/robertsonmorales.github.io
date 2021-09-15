@@ -9427,7 +9427,6 @@ body {
 
 .card {
   border-radius: 0.75rem !important;
-  border: 1px solid #eee !important;
 }
 
 .card .card-footer {
@@ -9569,8 +9568,6 @@ body {
 .card-service:hover {
   -webkit-box-shadow: 0 0 20px rgba(20, 16, 0, 0.05);
           box-shadow: 0 0 20px rgba(20, 16, 0, 0.05);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
 }
 
 .img-fluid-hovered {
