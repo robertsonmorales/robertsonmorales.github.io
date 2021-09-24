@@ -26,8 +26,7 @@
 
 // HEADINGS
 .h1{
-    font-size: 3rem !important;
-    line-height: 60px;
+    font-size: 2.8rem !important;
     letter-spacing: .4px;
 }
 // HEADINGS
@@ -70,23 +69,6 @@
 // BUTTONS
 .btn{
     border-radius: $radius !important;
-    transition: all .1s linear;
-    // box-shadow: $drop-shadow;
-
-    // &:hover{
-    //     box-shadow: $drop-shadow__hovered !important;
-    //     transform: translateY(-2px);
-    // }
-
-    // &:active{
-    //     box-shadow: $drop-shadow__active !important;
-    //     transform: translateY(0);
-    // }
-
-    // &:focus{
-    //     box-shadow: $drop-shadow__active !important;
-    //     transform: translateY(0);
-    // }
 }
 
 .btn-outline-primary{
@@ -99,7 +81,7 @@
 // CARDS
 .card{
     border-radius: $radius !important;
-    // border: 1px solid #eee !important;
+    border: none;
 
     .card-footer{
         border-top: 0 solid transparent;
@@ -136,6 +118,6 @@
 
 // SHADOW
 .shadow-lg{
-    box-shadow: $light-shadow !important;
+    box-shadow: $shadow !important;
 }
 // ENDS HERE
