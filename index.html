@@ -21,8 +21,8 @@
     <!-- ends here -->
 
     <!-- images -->
-    <link rel="preload" href="resources/images/hero-image.svg" as="image">
-    <link rel="preload" href="resources/images/me/profile-picture-transparent-1.png" as="image">
+    <link rel="preload" href="resources/images/hero-image-1.svg" as="image">
+    <link rel="preload" href="resources/images/me/me.jpg" as="image">
     <link rel="preload" href="resources/images/projects/elainejoy/thumbnail.png" as="image">
     <link rel="preload" href="resources/images/projects/resume-template/thumbnail.png" as="image">
     <!-- ends here -->
@@ -30,7 +30,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400&family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&display=swap"> 
 
     <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="plugins/animate.css/animate.css">
@@ -45,7 +45,7 @@
             <button class="animate__animated animate__fadeInDown navbar-brand border-0"
                 onclick="navSelected('home')"
                 style="background-color: transparent; outline: none;">
-                <span class="h5 mb-0 font-weight-bold secondary-font">robertson.</span>
+                <div class="h5 mb-0 font-weight-600">robertson<span class="text-primary">.</span></div>
             </button>
             
             <button class="navbar-toggler border-0"
@@ -99,12 +99,12 @@
         </div>
     </nav>
 
-    <header id="hero">
+    <header id="hero" class="screen-height">
         <div class="container py-3">
             <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column-reverse flex-md-row mt-md-5">
 
                 <div class="col">
-                    <h1 class="font-weight-bold secondary-font animate__animated animate__fadeInLeft animate__delay-100ms">I develop custom websites to help your business <span class="text-primary">grow</span>.</h1>
+                    <h1 class="h1 font-weight-600 animate__animated animate__fadeInLeft animate__delay-100ms">I develop custom websites to help your business <span class="text-primary">grow</span>.</h1>
 
                     <div class="mb-3"></div>
 
@@ -120,7 +120,7 @@
 
                 <div class="col-12 col-md-7 mb-3 mb-md-0">
                     <div class="animate__animated animate__fadeInUp animate__delay-200ms">
-                        <img src="resources/images/hero-image.svg" 
+                        <img src="resources/images/hero-image-1.svg" 
                             class="img-fluid" 
                             width="650"
                             height="620"
@@ -133,7 +133,7 @@
         </div>
     </header>
 
-    <section id="services" class="pt-5">
+    <section id="services" class="screen-height">
         <div class="container my-3 py-5">
             <div class="text-center">
                 <div class="text-primary font-weight-600">SERVICES</div>
@@ -145,7 +145,7 @@
             <div class="card-deck">
                 <div class="card card-service">
                     <div class="card-service-child d-flex flex-column h-100">
-                        <div class="p-3">
+                        <div class="m-3 card-icon">
                             <i data-feather="layout"></i>
                         </div>
                         <div class="card-body">
@@ -160,7 +160,7 @@
 
                 <div class="card card-service">
                     <div class="card-service-child d-flex flex-column h-100">
-                        <div class="p-3">
+                        <div class="m-3 card-icon">
                             <i data-feather="code"></i>
                         </div>
                         <div class="card-body">
@@ -175,7 +175,7 @@
 
                 <div class="card card-service">
                     <div class="card-service-child d-flex flex-column h-100">
-                        <div class="p-3">
+                        <div class="m-3 card-icon">
                             <i data-feather="monitor"></i>
                         </div>
                         <div class="card-body">
@@ -191,7 +191,7 @@
         </div>
     </section>
 
-    <section id="works" class="pt-5">
+    <section id="works" class="screen-height">
         <div class="container my-3 py-5">
             <div class="text-center">
                 <div class="text-primary font-weight-600">WORKS</div>
@@ -230,7 +230,7 @@
                 </div>
                 <div class="col col-md-1"></div>
                 <div class="col mb-4 mb-md-0">
-                    <div class="shadow rounded bg-white p-2 overflow-hidden">
+                    <div class="shadow-lg rounded bg-white p-2 overflow-hidden">
                         <a href="https://elainejoyluna.webflow.io"
                             target="_blank" 
                             rel="noopener">
@@ -272,7 +272,7 @@
                 </div>
                 <div class="col col-md-1"></div>
                 <div class="col mb-4 mb-md-0">
-                    <div class="shadow rounded bg-white p-2 overflow-hidden">
+                    <div class="shadow-lg rounded bg-white p-2 overflow-hidden">
                         <a href="resources/images/projects/resume-template/thumbnail.png"
                             target="_blank" 
                             rel="noopener">
@@ -288,7 +288,7 @@
         </div>
     </section>
 
-    <section id="skills" class="pt-5">
+    <section id="skills" class="screen-height">
         <div class="container my-3 py-5">
             <div class="text-center">
                 <div class="text-primary font-weight-600">ABOUT MY</div>
@@ -314,14 +314,14 @@
         </div>
     </section>
 
-    <section id="about" class="pt-5">
+    <section id="about" class="screen-height">
         <div class="container my-3 py-5">
             <div class="text-center">
                 <div class="text-primary font-weight-600">KNOW A BIT</div>
                 <h2>About Me</h2>
             </div>
 
-            <div class="row no-gutters flex-column flex-md-row my-5 py-5">
+            <div class="row no-gutters flex-column flex-md-row my-3 py-5">
                 <div class="col col-md-5">
                     <div class="mb-2 mb-md-0 text-left overflow-hidden">
                         <img class="img-fluid rounded" 
@@ -355,7 +355,7 @@
         </div>
     </section>
 
-    <section id="contact" class="pt-5">
+    <section id="contact">
         <div class="container my-3 py-5">
             <div class="text-center">
                 <div class="text-primary font-weight-600">CONTACT ME</div>

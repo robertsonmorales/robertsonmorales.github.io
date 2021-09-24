@@ -1,6 +1,11 @@
-$primary:       #14a800 !default;
+$primary:       #4285f4 !default; // 14a800
 $light:         #f8f9fa !default;
 $dark:          #131b23 !default;
+
+// blue : 4285f4;
+// green: 34a853;
+//  red: ea4335
+// yellow: fbbc05
 
 $theme-colors: (
     'primary': $primary,
@@ -8,20 +13,12 @@ $theme-colors: (
     'dark': $dark
 );
 
-$font-family: 'Poppins', 'Montserrat', sans-serif;
-$secondary-font: 'Libre Baskerville', 'Poppins', 'Montserrat', sans-serif;
+$font-family: 'Poppins', 'Montserrat', 'Arial', sans-serif;
 
-$light-shadow: 20px 20px 60px #d3d4d5, -20px -20px 60px #ffffff;
-$dark-shadow: 20px 20px 60px #0e141a, -20px -20px 60px #18222c;
 
 $border: .0625rem solid rgba(231,234,243,.7);
 $radius: .75rem;
 $line-height-base: 1.6;
 
+$shadow: 4px 4px 19px #e9e9e9, -4px -4px 19px #ffffff;
 $drop-shadow: 1px 3px 0 rgba(0, 0, 0, 0.2);
-$drop-shadow__hovered: 1px 5px 0 rgba(0,0,0,0.2);
-$drop-shadow__active: 1px 1px 0 rgba(0,0,0,0.2);
-
-$text-shadow: 3px 8px 4px rgba(0, 0, 0, 0.2);
-
-$saturated-primary: #eff9ee;
