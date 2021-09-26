@@ -11,15 +11,44 @@ function navSelected(id){
     }
 
     let el = document.getElementById(id);
-    if (id == 'home') {
-        document.getElementById('nav-home').classList.add('active');
+    if (id == 'hero') {
+        document.getElementById('nav-hero').classList.add('active');
         window.scrollTo(0,0);
+    }else if(id == 'contact'){
+        document.getElementById('nav-contact').classList.add('text-white');
+        el.scrollIntoView();
     }else{
+        document.getElementById('nav-'+id).classList.add('active');
         el.scrollIntoView();
     }
-    
-    document.getElementById('nav-'+id).classList.add('active');
 }
+
+function visibleToViewport(el){
+    var rect = el.getBoundingClientRect();
+
+    // return rect;
+    return (
+        rect.top == 0 &&
+        rect.left == 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+// const navs = ['hero', 'services', 'works', 'skills', 'about', 'contact'];
+
+var message = {};
+
+document.addEventListener('scroll', () => {
+    message = {
+        visibiliy: visibleToViewport(document.getElementById('works')) 
+            ? 'Visible to viewport'
+            : 'Not Visible to viewport',
+        rect: document.getElementById('services').getBoundingClientRect()
+    }
+
+    // console.log(message);
+});
 
 $(() => {
     'use strict';
@@ -41,5 +70,5 @@ $(() => {
         $('#contact').css('margin-top', set_height + "px");
     }   
 
-    navBarHeight(); 
+    // navBarHeight(); 
 });
