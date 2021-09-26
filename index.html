@@ -22,7 +22,7 @@
 
     <!-- images -->
     <link rel="preload" href="resources/images/hero-image-1.svg" as="image">
-    <link rel="preload" href="resources/images/me/me.jpg" as="image">
+    <link rel="preload" href="resources/images/me/profile.jpg" as="image">
     <link rel="preload" href="resources/images/projects/elainejoy/thumbnail.png" as="image">
     <link rel="preload" href="resources/images/projects/resume-template/thumbnail.png" as="image">
     <!-- ends here -->
@@ -36,14 +36,16 @@
     <link rel="stylesheet" href="plugins/animate.css/animate.css">
     <link rel="stylesheet" href="resources/sass/style.css">
 
+    <link rel="canonical" href="https://robertsonmorales.github.io">
+    <link rel="canonical" href="https://robertsonmorales.github.io/index.html">
     <!-- <link rel="shortcut icon" href="favicon.png"> -->
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top" id="navbar">
-        <div class="container px-3">
+    <nav class="navbar navbar-expand-md navbar-light bg-sm-light fixed-top" id="navbar">
+        <div class="container">
             <button class="animate__animated animate__fadeInDown navbar-brand border-0"
-                onclick="navSelected('home')"
+                onclick="navSelected('hero')"
                 style="background-color: transparent; outline: none;">
                 <div class="h5 mb-0 font-weight-600">robertson<span class="text-primary">.</span></div>
             </button>
@@ -56,42 +58,43 @@
                 aria-expanded="false" 
                 aria-label="Toggle navigation"
                 style="outline: none;">
-                <i class="fas fa-bars"></i>
+                <i data-feather="menu"></i>
             </button>
         
             <div class="collapse navbar-collapse" id="toggleNavbar">    
                 <ul class="navbar-nav mr-auto"></ul>
+                
                 <div class="navbar-text">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-100ms">
+                        <li class="nav-item mr-0 mr-md-2 mb-3 mb-md-0 animate__animated animate__fadeInDown animate__delay-100ms">
                             <button class="nav-link navbar font-weight-500 active"
-                            id="nav-home" 
-                            onclick="navSelected('home')">Home</button>
+                            id="nav-hero" 
+                            onclick="navSelected('hero')">Home</button>
                         </li>
-                        <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-300ms">
+                        <li class="nav-item mr-0 mr-md-2 mb-3 mb-md-0 animate__animated animate__fadeInDown animate__delay-200ms">
                             <button class="nav-link navbar font-weight-500"
                             id="nav-services"
                             onclick="navSelected('services')">Services</button>
                         </li>
-                        <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-400ms">
+                        <li class="nav-item mr-0 mr-md-2 mb-3 mb-md-0 animate__animated animate__fadeInDown animate__delay-300ms">
                             <button class="nav-link navbar font-weight-500"
                             id="nav-works"
                             onclick="navSelected('works')">Works</button>
                         </li>
-                        <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-500ms">
+                        <li class="nav-item mr-0 mr-md-2 mb-3 mb-md-0 animate__animated animate__fadeInDown animate__delay-400ms">
                             <button class="nav-link navbar font-weight-500"
                             id="nav-skills"
                             onclick="navSelected('skills')">Skills</button>
                         </li>
-                        <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-200ms">
+                        <li class="nav-item mr-0 mr-md-2 mb-3 mb-md-0 animate__animated animate__fadeInDown animate__delay-500ms">
                             <button class="nav-link navbar font-weight-500"
                             id="nav-about" 
                             onclick="navSelected('about')">About me</button>
                         </li>
-                        <li class="nav-item mr-0 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-600ms"> <!-- mr-md-5 -->
-                            <button class="nav-link navbar font-weight-500"
+                        <li class="nav-item ml-md-4 animate__animated animate__fadeInRight animate__delay-600ms"> <!-- mr-md-5 -->
+                            <button class="btn btn-primary py-2 px-4"
                             id="nav-contact"
-                            onclick="navSelected('contact')">Contact me</button>
+                            onclick="navSelected('contact')">Get in touch</button>
                         </li>
                     </ul>
                 </div>
@@ -100,8 +103,8 @@
     </nav>
 
     <header id="hero" class="screen-height">
-        <div class="container py-3">
-            <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column-reverse flex-md-row mt-md-5">
+        <div class="container is-mobile-mt-5">
+            <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column-reverse flex-md-row">
 
                 <div class="col">
                     <h1 class="h1 font-weight-600 animate__animated animate__fadeInLeft animate__delay-100ms">I develop custom websites to help your business <span class="text-primary">grow</span>.</h1>
@@ -113,19 +116,35 @@
                     <div class="mb-4"></div>
 
                     <div class="animate__animated animate__fadeInLeft animate__delay-300ms">
-                        <button class="btn btn-primary py-2 px-4" onclick="navSelected('works')">View My Works</button>
-                        <button class="btn btn-outline-primary py-2 px-4">Download Resume</button>
+                        <button class="btn btn-primary py-3 py-md-2 px-4 mb-1 mb-md-0 is-mobile-w-100" onclick="navSelected('works')">View My Works</button>
+                        <div class="d-block d-md-none w-100"></div>
+                        <button class="btn btn-outline-primary py-3 py-md-2 px-4 is-mobile-w-100">
+                            <div class="d-flex align-items-center justify-content-center">
+                                <span class="mr-2">Download Resume</span><i data-feather="download" style="width: 16px; height: 16px;"></i>
+                            </div>
+                        </button>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-7 mb-3 mb-md-0">
+                <!-- <div class="col-2"></div> -->
+                <div class="col col-md-5 col-lg-7">
                     <div class="animate__animated animate__fadeInUp animate__delay-200ms">
-                        <img src="resources/images/hero-image-1.svg" 
-                            class="img-fluid" 
-                            width="650"
-                            height="620"
-                            alt="avatar" 
-                            id="avatar">
+                        
+                        <div class="is-mobile-text-center">
+                            <!-- <img class="img-fluid saturate rounded is-mobile-img-fluid" 
+                                src="resources/images/me/profile-1.jpg" 
+                                loading="lazy"
+                                width="462"
+                                height="462"
+                                alt="avatar"> -->
+                            <img src="resources/images/hero-image-1.svg" 
+                                class="img-fluid is-mobile-img-fluid" 
+                                width="647"
+                                height="647"
+                                alt="avatar" 
+                                id="avatar">
+                        </div>
+                        <div class="mb-3"></div>
                     </div>
                 </div>
                     
@@ -144,7 +163,7 @@
 
             <div class="card-deck">
                 <div class="card card-service">
-                    <div class="card-service-child d-flex flex-column h-100">
+                    <div class="card-service-child d-flex flex-column h-100 p-2">
                         <div class="m-3 card-icon">
                             <i data-feather="layout"></i>
                         </div>
@@ -159,7 +178,7 @@
                 </div>
 
                 <div class="card card-service">
-                    <div class="card-service-child d-flex flex-column h-100">
+                    <div class="card-service-child d-flex flex-column h-100 p-2">
                         <div class="m-3 card-icon">
                             <i data-feather="code"></i>
                         </div>
@@ -174,7 +193,7 @@
                 </div>
 
                 <div class="card card-service">
-                    <div class="card-service-child d-flex flex-column h-100">
+                    <div class="card-service-child d-flex flex-column h-100 p-2">
                         <div class="m-3 card-icon">
                             <i data-feather="monitor"></i>
                         </div>
@@ -194,7 +213,7 @@
     <section id="works" class="screen-height">
         <div class="container my-3 py-5">
             <div class="text-center">
-                <div class="text-primary font-weight-600">WORKS</div>
+                <div class="text-primary font-weight-600 mt-4">WORKS</div>
                 <h2>My Best Projects</h2>
             </div>
     
@@ -223,19 +242,19 @@
                             target="_blank"
                             title="Read More" 
                             rel="noopener" 
-                            class="btn btn-outline-primary py-2 px-4">
+                            class="btn btn-outline-primary btn-sm py-2 px-4">
                             <span>Read More</span>
                         </a>
                     </div>
                 </div>
                 <div class="col col-md-1"></div>
                 <div class="col mb-4 mb-md-0">
-                    <div class="shadow-lg rounded bg-white p-2 overflow-hidden">
+                    <div class="shadow-lg rounded overflow-hidden">
                         <a href="https://elainejoyluna.webflow.io"
                             target="_blank" 
                             rel="noopener">
                             <img src="resources/images/projects/elainejoy/thumbnail.png" 
-                                class="img-fluid img-fluid-hovered"
+                                class="img-fluid rounded img-fluid-hovered"
                                 loading="lazy" 
                                 alt="Landing Page Portfolio">
                         </a>
@@ -265,19 +284,19 @@
                             target="_blank"
                             title="More Information" 
                             rel="noopener" 
-                            class="btn btn-outline-primary py-2 px-4">
+                            class="btn btn-outline-primary btn-sm py-2 px-4">
                             <span>Read More</span>
                         </a>
                     </div>
                 </div>
                 <div class="col col-md-1"></div>
                 <div class="col mb-4 mb-md-0">
-                    <div class="shadow-lg rounded bg-white p-2 overflow-hidden">
+                    <div class="shadow-lg rounded overflow-hidden">
                         <a href="resources/images/projects/resume-template/thumbnail.png"
                             target="_blank" 
                             rel="noopener">
                             <img src="resources/images/projects/resume-template/thumbnail.png" 
-                                class="img-fluid img-fluid-hovered" 
+                                class="img-fluid rounded img-fluid-hovered" 
                                 loading="lazy"
                                 alt="Resume/CV Template">
                         </a>
@@ -288,7 +307,7 @@
         </div>
     </section>
 
-    <section id="skills" class="screen-height">
+    <section id="skills" class="screen-height bg-light">
         <div class="container my-3 py-5">
             <div class="text-center">
                 <div class="text-primary font-weight-600">ABOUT MY</div>
@@ -316,37 +335,40 @@
 
     <section id="about" class="screen-height">
         <div class="container my-3 py-5">
-            <div class="text-center">
-                <div class="text-primary font-weight-600">KNOW A BIT</div>
-                <h2>About Me</h2>
-            </div>
-
             <div class="row no-gutters flex-column flex-md-row my-3 py-5">
                 <div class="col col-md-5">
-                    <div class="mb-2 mb-md-0 text-left overflow-hidden">
-                        <img class="img-fluid rounded" 
-                            src="resources/images/me/me.jpg" 
-                            loading="lazy"
-                            width="450"
-                            height="450"
-                            alt="avatar">
+                    <div class="mb-2 mb-md-0 text-center">
+                        <div class="rounded overflow-hidden shadow-lg">
+                            <img class="img-fluid rounded img-fluid-hovered saturate" 
+                                src="resources/images/me/profile-1.jpg" 
+                                loading="lazy"
+                                width="462"
+                                height="462"
+                                alt="avatar">
+                        </div>
                     </div>
                 </div>
             
                 <div class="col">
-                    <div class="px-5">
-                        <p class="text-primary font-weight-500">HI THERE MY NAME IS</p>
+                    <div class="px-md-5">
+                        <div class="text-primary font-weight-600">A BIT ABOUT ME</div>
 
-                        <h1 class="mb-3 font-weight-600">ROBERTSON MORALES</h1>
+                        <div class="mb-3"></div>
 
-                        <p>A self-taught Web Designer & Developer. I grew up in Catubig, Northern Samar and currently living in San Jose Del Monte City, Bulacan. I started my career by watching videos and articles on the internet, it was hard at first but after just a few months of studying and patience I had built static websites, web-based information systems as I improve in getting better and better. I'm also interested in people where I can excel, learn or absorb and give my best to make an impact on the organization that I am in.</p>
+                        <h2 class="mb-3 font-weight-600">I'M ROBERTSON MORALES</h2>
+
+                        <p class="text-muted">A self-taught Web Designer & Developer. I grew up in Catubig, Northern Samar and currently living in San Jose Del Monte City, Bulacan. I started my career by watching videos and articles on the internet, it was hard at first but after just a few months of studying and patience I had built static websites, web-based information systems as I improve in getting better and better. I'm also interested in people where I can excel, learn or absorb and give my best to make an impact on the organization that I am in.</p>
 
                         <div class="mb-4"></div>
 
                         <div class="text-left">
                             <a href="resources/attachment/resume.docx"
                                 download="Resume" 
-                                class="btn btn-primary py-2 px-4">Download Resume</a>
+                                class="btn btn-primary py-2 px-4">
+                                <div class="d-flex align-items-center">
+                                    <span class="mr-2">Download Resume</span><i data-feather="download" style="width: 16px; height: 16px;"></i>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -355,55 +377,68 @@
         </div>
     </section>
 
-    <section id="contact">
+    <footer id="contact">
         <div class="container my-3 py-5">
             <div class="text-center">
-                <div class="text-primary font-weight-600">CONTACT ME</div>
+                <div class="text-primary font-weight-600">GET IN TOUCH</div>
                 <h2>Stay Connected</h2>
             </div>
 
             <div class="row no-gutters my-5">
                 <div class="col">
-                    <h4 class="font-weight-600 mb-4">Get in touch</h4>
+                    <h5 class="font-weight-600 mb-4">Contact Me</h5>
                     <div class="paragraph">
                         <p>San Jose Del Monte Ciy, Bulacan, Philippines</p>
                         <p>+(63)9552-808-438</p>
-                        <p>
-                            <a href="mailto:trebormoralesson@gmail.com?subject=Good Day Robertson!" class="text-decodartion-none">
-                                <span class="mr-2 font-weight-600">trebormoralesson@gmail.com</span><i data-feather="arrow-right"></i>
-                            </a>
-                        </p>
+                        <a href="mailto:trebormoralesson@gmail.com?subject=Good Day Robertson!" class="text-decodartion-none">
+                            <div class="d-flex align-items-center">
+                                <span class="mr-2 font-weight-600">trebormoralesson@gmail.com</span>
+                                <span id="arrow-right"><i data-feather="arrow-right" style="width:16px; height:16px;"></i></span>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="flexbox-center mb-4">
-                        <div class="pr-2">
+                    <div class="flexbox-center">
+                        <div class="mr-2">
                             <a href="https://web.facebook.com/profile.php?id=100004962736826" 
                             target="_blank" 
                             title="Connect with me at facebook" 
                             rel="noopener" 
-                            class="flexbox-center">
-                                <img src="resources/images/svg/facebook.svg" width="42" height="42" alt="facebook">
+                            class="btn py-2 px-4 facebook">
+                                <!-- <img src="resources/images/svg/facebook.svg" width="42" height="42" alt="facebook"> -->
+                                <div class="d-flex align-items-center">
+                                    <i data-feather="facebook"></i>
+                                    <span class="ml-2">Facebook</span>
+                                </div>
                             </a>
                         </div>
     
-                        <div class="pr-2">
+                        <div class="mr-2">
                             <a href="https://www.linkedin.com/in/robertson-morales-517a721bb" 
                             target="_blank" 
                             title="Connect with me at linkedin" 
                             rel="noopener" 
-                            class="flexbox-center">
-                                <img src="resources/images/svg/linkedin.svg" width="42" height="42" alt="linkedin">
+                            class="btn py-2 px-4 linkedin">
+                                <!-- <img src="resources/images/svg/linkedin.svg" width="42" height="42" alt="linkedin"> -->
+                                <div class="d-flex align-items-center">
+                                    <i data-feather="linkedin"></i>
+                                    <span class="ml-2">Linkedin</span>
+                                </div>
                             </a>
                         </div>
     
-                        <div class="pr-2">
+                        <div class="mr-2">
                             <a href="https://github.com/robertsonmorales" 
                             target="_blank" 
                             title="Follow me at github" 
                             rel="noopener" 
-                            class="flexbox-center">
-                                <img src="resources/images/svg/github.svg" width="42" height="42" alt="github">
+                            class="btn py-2 px-4 text-dark github">
+                                <!-- <img src="resources/images/svg/github.svg" width="42" height="42" alt="github"> -->
+                                <div class="d-flex align-items-center">
+                                    <i data-feather="github"></i>
+                                    <span class="ml-2">Github</span>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -471,10 +506,9 @@
                 </div>
             </div> -->
         </div>
-    </section>
 
-    <footer>
         <p class="text-center font-size-sm">© <span id="year"></span> Powered by Github, Inc | Robertson Morales</p>
+
     </footer>
 
     <!-- <div class="modal fade" 
@@ -501,7 +535,6 @@
 
     <script defer src="plugins/jquery/dist/jquery.min.js"></script>
     <script defer src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script defer src="plugins/lazysizes/lazysizes.min.js"></script>
     <script defer src="plugins/feather-icons/dist/feather.min.js"></script>
 
     <script defer src="resources/js/script.js"></script>

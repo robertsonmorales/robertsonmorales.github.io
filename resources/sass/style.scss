@@ -2,11 +2,11 @@
 
 @import '../../plugins/bootstrap/scss/bootstrap.scss';
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+// *{
+//     padding: 0;
+//     margin: 0;
+//     box-sizing: border-box;
+// }
 
 html{
     scroll-behavior: smooth;
@@ -16,11 +16,11 @@ body{
     background-color: #fbfbfb;   
     line-height: $line-height-base;
     font-family: $font-family;
-    font-size: 16px;
-    font-weight: normal;
     overflow-x: hidden;
     color: $dark;
 }
 
 @import '_overwrite.scss';
 @import '_custom.scss';
+
+@import '_breakpoint.scss';

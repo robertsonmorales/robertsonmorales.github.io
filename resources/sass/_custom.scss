@@ -71,16 +71,14 @@
     box-shadow:  $shadow;
     transition: all .4s ease;
 
-    .card-service-child{
-        padding: 20px !important;       
-
+    .card-service-child{     
         .card-icon{
             width: 55px;
             height: 55px;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #4285f4;
+            background-color: $primary;
             border-radius: 50%;
             color: #fff;
         } 
@@ -104,4 +102,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.saturate{
+    filter: saturate(0.2);
+}
+
+.facebook{
+    color: #1877f2 !important;
+    border: 1px solid #1877f2 !important;
+}
+
+.linkedin{
+    color: #0a66c2 !important;
+    border: 1px solid #0a66c2 !important;
+}
+
+.github{
+    border: 1px solid $dark !important;
 }
