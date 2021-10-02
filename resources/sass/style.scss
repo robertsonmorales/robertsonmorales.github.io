@@ -2,11 +2,11 @@
 
 @import '../../plugins/bootstrap/scss/bootstrap.scss';
 
-// *{
-//     padding: 0;
-//     margin: 0;
-//     box-sizing: border-box;
-// }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 html{
     scroll-behavior: smooth;
@@ -14,7 +14,6 @@ html{
 
 body{
     background-color: #fbfbfb;   
-    line-height: $line-height-base;
     font-family: $font-family;
     overflow-x: hidden;
     color: $dark;
