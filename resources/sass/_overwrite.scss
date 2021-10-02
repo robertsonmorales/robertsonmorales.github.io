@@ -47,6 +47,9 @@
     .navbar-brand{
         font-weight: 600 !important;
         font-size: 1rem !important;
+        border: none;
+        background-color: transparent;
+        outline: none;
     }
     
     .nav-link{
@@ -122,3 +125,7 @@
     box-shadow: $shadow !important;
 }
 // ENDS HERE
+
+.text-muted{
+    color: #333 !important;
+}

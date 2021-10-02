@@ -21,6 +21,12 @@
 
 }
 
+@include media-breakpoint-between(xs, sm) {
+    .is-mobile-bg-white{
+        background-color: #fbfbfb;
+    }
+}
+
 @include media-breakpoint-only(md) {
     
 }
