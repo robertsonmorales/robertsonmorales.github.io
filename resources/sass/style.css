@@ -9418,6 +9418,11 @@ body {
   border-radius: 40px !important;
 }
 
+.btn-primary {
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
 .btn-outline-primary:hover {
   color: #fff !important;
 }
@@ -9580,6 +9585,7 @@ body {
 }
 
 .img-fluid-hovered {
+  width: 100%;
   -webkit-transition: -webkit-transform .4s ease;
   transition: -webkit-transform .4s ease;
   transition: transform .4s ease;
@@ -9587,8 +9593,9 @@ body {
 }
 
 .img-fluid-hovered:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  opacity: .9;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .screen-height {

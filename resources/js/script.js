@@ -14,9 +14,6 @@ function navSelected(id){
     if (id == 'hero') {
         document.getElementById('nav-hero').classList.add('active');
         window.scrollTo(0,0);
-    }else if(id == 'contact'){
-        document.getElementById('nav-contact').classList.add('text-white');
-        el.scrollIntoView();
     }else{
         document.getElementById('nav-'+id).classList.add('active');
         el.scrollIntoView();
