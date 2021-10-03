@@ -89,10 +89,12 @@
 }
 
 .img-fluid-hovered{
+    width: 100%;
     transition: transform .4s ease;
 
     &:hover{
-        transform: scale(1.1);
+        opacity: .9;
+        transform: scale(1.05);
     }
 }
 
