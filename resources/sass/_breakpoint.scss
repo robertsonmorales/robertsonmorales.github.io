@@ -25,6 +25,14 @@
     .is-mobile-bg-white{
         background-color: #fbfbfb;
     }
+
+    .h1{
+        font-size: 1.8rem !important;
+    }
+
+    .h2{
+        font-size: 1.6rem !important;
+    }
 }
 
 @include media-breakpoint-only(md) {
