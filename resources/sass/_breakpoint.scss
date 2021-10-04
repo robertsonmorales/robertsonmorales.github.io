@@ -22,6 +22,11 @@
 }
 
 @include media-breakpoint-between(xs, sm) {
+    .is-mobile-padding{
+        padding-right: 30px !important;
+        padding-left: 30px !important;
+    }
+
     .is-mobile-bg-white{
         background-color: #fbfbfb;
     }

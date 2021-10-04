@@ -9378,6 +9378,8 @@ body {
 }
 
 .h1 {
+  font-weight: 700;
+  letter-spacing: -0.4px !important;
   font-size: clamp(2.3rem, 5vw, 2.8rem) !important;
 }
 
@@ -9416,11 +9418,8 @@ body {
 
 .btn {
   border-radius: 40px !important;
-}
-
-.btn-primary {
-  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  font-weight: 500;
 }
 
 .btn-outline-primary:hover {
@@ -9432,8 +9431,13 @@ body {
   border: none;
 }
 
+.card .card-header {
+  border: none;
+  background-color: transparent;
+}
+
 .card .card-footer {
-  border-top: 0 solid transparent;
+  border: none;
   background-color: transparent;
 }
 
@@ -9647,6 +9651,10 @@ body {
 }
 
 @media (max-width: 767.98px) {
+  .is-mobile-padding {
+    padding-right: 30px !important;
+    padding-left: 30px !important;
+  }
   .is-mobile-bg-white {
     background-color: #fbfbfb;
   }
