@@ -26,9 +26,8 @@
 
 // HEADINGS
 .h1{
-    font-weight: 700;
     letter-spacing: -0.4px !important;
-    font-size: clamp(2.3rem, 5vw, 2.8rem) !important;
+    font-size: clamp(2.3rem, 5vw, 3rem) !important;
 }
 // HEADINGS
 
@@ -58,7 +57,6 @@
         border: none;
         background-color: transparent;
         font-size: .9rem !important;
-        font-weight: normal !important;
 
         &:hover{
             color: #000 !important;
@@ -73,9 +71,8 @@
 
 // BUTTONS
 .btn{
-    border-radius: $radius !important;
+    border-radius: $card-radius !important;
     padding: 10px 20px;
-    font-weight: 500;
 }
 
 // .btn-primary{
