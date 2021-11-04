@@ -66,11 +66,17 @@
 /* ENDS HERE */
 
 .card-service{
-    background: #fbfbfb;
+    background: $body-bg;
     box-shadow:  $shadow;
     transition: all .4s ease;
 
-    .card-service-child{     
+    .card-service-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
         .card-icon{
             width: 55px;
             height: 55px;

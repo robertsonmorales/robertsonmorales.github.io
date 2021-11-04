@@ -10,10 +10,11 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body{
-    background-color: #fbfbfb;   
+    background-color: $body-bg;   
     font-family: $font-family;
     overflow-x: hidden;
     color: $dark;

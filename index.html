@@ -44,7 +44,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-light is-mobile-bg-white fixed-top" id="navbar">
         <div class="container">
-            <button class="animate__animated animate__fadeInDown navbar-brand border-0"
+            <button class="navbar-brand border-0"
                 onclick="navSelected('hero')"
                 style="background-color: transparent; outline: none;">
                 <div class="h5 mb-0">robertson<span class="text-primary">.</span></div>
@@ -66,32 +66,32 @@
                 
                 <div class="navbar-text">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item mr-0 mr-md-2 mb-3 mb-md-0 animate__animated animate__fadeInDown animate__delay-100ms">
+                        <li class="nav-item mr-0 mr-md-2 mb-3 mb-md-0">
                             <button class="nav-link navbar font-weight-500 active"
                             id="nav-hero" 
                             onclick="navSelected('hero')">Home</button>
                         </li>
-                        <li class="nav-item mr-0 mr-md-2 mb-3 mb-md-0 animate__animated animate__fadeInDown animate__delay-200ms">
+                        <li class="nav-item mr-0 mr-md-2 mb-3 mb-md-0">
                             <button class="nav-link navbar font-weight-500"
                             id="nav-services"
                             onclick="navSelected('services')">Services</button>
                         </li>
-                        <li class="nav-item mr-0 mr-md-2 mb-3 mb-md-0 animate__animated animate__fadeInDown animate__delay-300ms">
+                        <li class="nav-item mr-0 mr-md-2 mb-3 mb-md-0">
                             <button class="nav-link navbar font-weight-500"
                             id="nav-works"
                             onclick="navSelected('works')">Works</button>
                         </li>
-                        <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-400ms">
+                        <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
                             <button class="nav-link navbar font-weight-500"
                             id="nav-skills"
                             onclick="navSelected('skills')">Skills</button>
                         </li>
-                        <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0 animate__animated animate__fadeInDown animate__delay-500ms">
+                        <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
                             <button class="nav-link navbar font-weight-500"
                             id="nav-about" 
                             onclick="navSelected('about')">About</button>
                         </li>
-                        <li class="nav-item animate__animated animate__fadeInRight animate__delay-600ms"> <!-- mr-md-5 -->
+                        <li class="nav-item"> <!-- mr-md-5 -->
                             <button class="nav-link navbar font-weight-500"
                             id="nav-contact"
                             onclick="navSelected('contact')">Contact Me</button>
@@ -107,63 +107,67 @@
             <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column flex-lg-row">
 
                 <div class="col">
-                    <h1 class="h1 animate__animated animate__fadeInLeft animate__delay-100ms">Develop Custom Websites To Help Your Business <span class="text-primary">Grow</span>.</h1>
+                    <h1 class="h1" 
+                        id="catch-phrase">Develop Custom Websites To Help Your Business <span class="text-primary">Grow</span>.</h1>
 
                     <div class="mb-3"></div>
 
-                    <p class="w-100 text-muted animate__animated animate__fadeInLeft animate__delay-200ms">Specializes in User Interface Design, Responsive Web Design, and Web Applications.</p>
+                    <p class="w-100 text-muted" id="specialize">Specializes in User Interface Design, Responsive Web Design, and Web Applications.</p>
 
                     <div class="mb-4"></div>
 
-                    <div class="animate__animated animate__fadeInLeft animate__delay-300ms">
-                        <button class="btn btn-primary mb-1 mb-md-0 is-mobile-w-100" onclick="navSelected('works')">View My Works</button>
+                    <div class="call-to-actions">
+                        <button class="btn btn-primary mb-1 mb-md-0 is-mobile-w-100"
+                            onclick="navSelected('works')"
+                            id="btn-my-works">View My Works</button>
                         <div class="d-block d-md-none w-100"></div>
-                        <button class="btn btn-outline-primary is-mobile-w-100">
+                        <a class="btn btn-outline-primary is-mobile-w-100"
+                            href="resources/attachment/resume.pdf"
+                            download="Resume"
+                            id="btn-download-resume">
                             <div class="d-flex align-items-center justify-content-center">
-                                <span class="mr-2">Download Resume</span><i data-feather="download" style="width: 16px; height: 16px;"></i>
+                                <span class="mr-2">Download Resume</span>
+                                <i data-feather="download" style="width: 16px; height: 16px;"></i>
                             </div>
-                        </button>
+                        </a>
                     </div>
                 </div>
 
                 <!-- <div class="col-2"></div> -->
                 <div class="col col-md-5 col-lg-6">
-                    <div class="animate__animated animate__fadeInUp animate__delay-200ms">
-                        
-                        <div class="is-mobile-text-center mt-3 mt-md-0">
-                            <!-- <img class="img-fluid saturate rounded is-mobile-img-fluid" 
-                                src="resources/images/me/profile-1.jpg" 
-                                loading="lazy"
-                                width="462"
-                                height="462"
-                                alt="avatar"> -->
-                            <img src="resources/images/hero-image-1.svg" 
-                                class="img-fluid is-mobile-img-fluid" 
-                                width="647"
-                                height="647"
-                                alt="avatar" 
-                                id="avatar">
-                        </div>
-                        <div class="mb-3"></div>
+                    <div class="is-mobile-text-center mt-3 mt-md-0">
+                        <!-- <img class="img-fluid saturate rounded is-mobile-img-fluid" 
+                            src="resources/images/me/profile-1.jpg" 
+                            loading="lazy"
+                            width="462"
+                            height="462"
+                            alt="avatar"> -->
+                        <img src="resources/images/hero-image-1.svg" 
+                            class="img-fluid is-mobile-img-fluid" 
+                            width="647"
+                            height="647"
+                            alt="avatar" 
+                            id="avatar">
                     </div>
+                    <div class="mb-3"></div>
                 </div>
                     
             </div>
         </div>
     </header>
 
-    <section id="services" class="screen-height bg-light">
+    <section id="services" class="screen-height">
         <div class="container my-3 py-5 is-mobile-padding">
             <div class="text-center">
-                <div class="text-primary font-weight-500">SERVICES</div>
-                <h2 class="h2">Specializing In</h2>
+                <div class="text-primary font-weight-600">SERVICES</div>
+                <h2 class="h2 font-weight-500">Specializing In</h2>
             </div>
 
             <div class="py-3"></div>
 
             <div class="card-deck">
                 <div class="card card-service">
-                    <div class="card-service-child d-flex flex-column h-100 px-2 py-4">
+                    <div class="card-service-child px-2 py-4">
                         <div class="m-3 card-icon">
                             <i data-feather="layout"></i>
                         </div>
@@ -178,7 +182,7 @@
                 </div>
 
                 <div class="card card-service">
-                    <div class="card-service-child d-flex flex-column h-100 px-2 py-4">
+                    <div class="card-service-child px-2 py-4">
                         <div class="m-3 card-icon">
                             <i data-feather="code"></i>
                         </div>
@@ -193,7 +197,7 @@
                 </div>
 
                 <div class="card card-service">
-                    <div class="card-service-child d-flex flex-column h-100 px-2 py-4">
+                    <div class="card-service-child px-2 py-4">
                         <div class="m-3 card-icon">
                             <i data-feather="monitor"></i>
                         </div>
@@ -213,8 +217,8 @@
     <section id="works" class="screen-height">
         <div class="container my-3 py-5 is-mobile-padding">
             <div class="text-center">
-                <div class="text-primary font-weight-500 mt-4">WORKS</div>
-                <h2 class="h2">My Best Projects</h2>
+                <div class="text-primary font-weight-600 mt-4">WORKS</div>
+                <h2 class="h2 font-weight-500">My Best Projects</h2>
             </div>
     
             <div class="row no-gutters align-items-start flex-column-reverse flex-md-row-reverse my-3 py-5">
@@ -410,11 +414,11 @@
         </div>
     </section>
 
-    <section id="skills" class="screen-height bg-light">
+    <section id="skills" class="screen-height">
         <div class="container my-3 py-5">
             <div class="text-center">
-                <div class="text-primary font-weight-500">ABOUT MY</div>
-                <h2 class="h2">Skills & Expertise</h2>
+                <div class="text-primary font-weight-600">ABOUT MY</div>
+                <h2 class="h2 font-weight-500">Skills & Expertise</h2>
             </div>
             <div class="text-center my-3 my-md-5 w-100 w-md-50">
                 <img src="resources/images/svg/skills/html.svg" alt="HTML 5" class="img-fluid img-fluid-extension p-4" title="HTML 5" loading="lazy">
@@ -440,19 +444,6 @@
         <div class="container my-3 py-5 is-mobile-padding">
             <div class="row no-gutters flex-column flex-md-row my-3 py-5">
                 <div class="col">
-                    <div class="mb-2 mb-md-0">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid rounded shadow-lg w-100 saturate" 
-                                src="resources/images/me/profile-1.jpg" 
-                                loading="lazy"
-                                width="462"
-                                height="462"
-                                alt="avatar">
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-md-1"></div>
-                <div class="col">
                     <div class="text-primary font-weight-500 mt-4">A BIT ABOUT ME</div>
 
                     <div class="mb-1"></div>
@@ -464,7 +455,7 @@
                     <div class="mb-4"></div>
 
                     <div class="text-left">
-                        <a href="resources/attachment/resume.docx"
+                        <a href="resources/attachment/resume.pdf"
                             download="Resume" 
                             class="btn btn-outline-primary">
                             <div class="d-flex align-items-center">
@@ -473,23 +464,36 @@
                         </a>
                     </div>
                 </div>
+                <div class="col col-md-1"></div>
+                <div class="col">
+                    <div class="mb-2 mb-md-0">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid rounded shadow-lg w-100 saturate" 
+                                src="resources/images/me/profile-1.jpg" 
+                                loading="lazy"
+                                width="462"
+                                height="462"
+                                alt="avatar">
+                        </div>
+                    </div>
+                </div>
             </div>
     
         </div>
     </section>
 
-    <footer id="contact" class="bg-light">
+    <footer id="contact">
         <div class="container my-3 py-5 is-mobile-padding">
             <div class="text-center">
-                <div class="text-primary font-weight-500">CONTACT ME</div>
-                <h2 class="h2">Stay Connected</h2>
+                <div class="text-primary font-weight-600">CONTACT ME</div>
+                <h2 class="h2 font-weight-500">Stay Connected</h2>
             </div>
 
             <div class="row no-gutters flex-column flex-md-row my-5">
                 <div class="col col-lg-7">
-                    <div class="card px-2 py-4 shadow-lg">
+                    <div class="card px-2 py-4 bg-light">
                         <div class="card-header">
-                            <h5 class="font-weight-600">Contact Me</h5>
+                            <h5 class="font-weight-600">You can reach me at</h5>
                         </div>
                         <div class="card-body">
                             <p class="d-flex">
@@ -615,10 +619,13 @@
         <div class="text-center text-muted font-size-sm mb-1">© <span id="year"></span> Powered by Github, Inc</div>
     </footer>
 
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
     <script defer src="plugins/jquery/dist/jquery.min.js"></script>
     <script defer src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
     <script defer src="plugins/feather-icons/dist/feather.min.js"></script>
 
+    <script defer src="resources/js/scroll.js"></script>
     <script defer src="resources/js/script.js"></script>
     <!-- <script defer src="resources/js/contact.js"></script> -->
 </body>

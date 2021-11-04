@@ -1,6 +1,7 @@
-$primary:       #336bc8 !default; // 14a800
-$light:         #f3f3f3 !default;
-$dark:          #131b23 !default;
+$body-bg: #fbfbfb;
+$primary: #336bc8 !default; // 14a800
+$light: #f3f3f3 !default;
+$dark: #131b23 !default;
 
 // blue : 4285f4;
 // green: 34a853;
@@ -14,7 +15,6 @@ $theme-colors: (
 );
 
 $font-family: 'Poppins', 'Montserrat', 'Arial', sans-serif;
-
 
 $border: .0625rem solid rgba(231,234,243,.7);
 $card-radius: 10px;
