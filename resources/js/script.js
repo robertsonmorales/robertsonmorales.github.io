@@ -1,6 +1,6 @@
 feather.replace();
 
-// window.scrollTo(0,0);
+window.scrollTo(0,0);
 
 function navSelected(id){
     let navbar = document.getElementsByClassName('navbar');
