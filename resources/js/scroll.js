@@ -111,3 +111,33 @@ ScrollReveal().reveal('.img-fluid-extension', {
     easing: 'ease'
 });
 // ENDS HERE
+
+// ABOUT ME
+ScrollReveal().reveal('.my-name', {
+    delay: 300,
+    distance: '10%',
+    origin: 'left',
+    easing: 'ease'
+});
+
+ScrollReveal().reveal('.about-me', {
+    delay: 400,
+    distance: '10%',
+    origin: 'left',
+    easing: 'ease'
+});
+
+ScrollReveal().reveal('#btn-download-resume', {
+    delay: 500,
+    distance: '10%',
+    origin: 'left',
+    easing: 'ease'
+});
+
+ScrollReveal().reveal('#my-avatar', {
+    delay: 500,
+    distance: '10%',
+    origin: 'right',
+    easing: 'ease'
+});
+// ENDS HERE
