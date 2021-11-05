@@ -115,6 +115,37 @@
     filter: saturate(0.2);
 }
 
+.text-title{
+    font-weight: 600;
+    color: $primary;
+}
+
+.flexbox-works{
+    align-items: start;
+    flex-direction: column-reverse;
+}
+
+.work-heading-1{
+    color: $primary;
+    font-weight: 600;
+}
+
+.work-heading-5{
+    font-weight: 500;
+    color: $dark;
+}
+
+.built-with{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-img-wrapper{
+    box-shadow: $shadow;
+    border-radius: $card-radius;
+    overflow: hidden;
+}
+
 .facebook{
     color: #1877f2 !important;
     border: 1px solid #1877f2 !important;

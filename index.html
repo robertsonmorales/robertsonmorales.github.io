@@ -159,14 +159,15 @@
     <section id="services" class="screen-height">
         <div class="container my-3 py-5 is-mobile-padding">
             <div class="text-center">
-                <div class="text-primary font-weight-600">SERVICES</div>
-                <h2 class="h2 font-weight-500">Specializing In</h2>
+                <div class="text-title">SERVICES</div>
+                <h2 class="h2">Specializing In</h2>
             </div>
 
             <div class="py-3"></div>
 
             <div class="card-deck">
-                <div class="card card-service">
+                <div class="card card-service" 
+                    id="ui-ux-design">
                     <div class="card-service-child px-2 py-4">
                         <div class="m-3 card-icon">
                             <i data-feather="layout"></i>
@@ -176,12 +177,13 @@
                             <p class="card-text text-muted">Build user interfaces that are user-friendly and responsive to all media devices that users will find easy to use and pleasureable.</p>
                         </div>
                         <div class="card-footer">
-                            <a href="#read-more" class="btn btn-outline-primary btn-sm">Read more</a>
+                            <!-- <a href="#read-more" class="btn btn-outline-primary btn-sm">Read more</a> -->
                         </div>
                     </div>
                 </div>
 
-                <div class="card card-service">
+                <div class="card card-service" 
+                    id="prototypes-to-html">
                     <div class="card-service-child px-2 py-4">
                         <div class="m-3 card-icon">
                             <i data-feather="code"></i>
@@ -191,12 +193,13 @@
                             <p class="card-text text-muted">Creating web pages from wireframes/prototypes into a brand new functional and interactive website.</p>
                         </div>
                         <div class="card-footer">
-                            <a href="#read-more" class="btn btn-outline-primary btn-sm">Read more</a>
+                            <!-- <a href="#read-more" class="btn btn-outline-primary btn-sm">Read more</a> -->
                         </div>
                     </div>
                 </div>
 
-                <div class="card card-service">
+                <div class="card card-service" 
+                    id="web-app">
                     <div class="card-service-child px-2 py-4">
                         <div class="m-3 card-icon">
                             <i data-feather="monitor"></i>
@@ -206,7 +209,7 @@
                             <p class="card-text text-muted">Build Single page application to manage your business operations, increase efficiency, and reduce costs.</p>
                         </div>
                         <div class="card-footer">
-                            <a href="#read-more" class="btn btn-outline-primary btn-sm">Read more</a>
+                            <!-- <a href="#read-more" class="btn btn-outline-primary btn-sm">Read more</a> -->
                         </div>
                     </div>
                 </div>
@@ -217,43 +220,44 @@
     <section id="works" class="screen-height">
         <div class="container my-3 py-5 is-mobile-padding">
             <div class="text-center">
-                <div class="text-primary font-weight-600 mt-4">WORKS</div>
-                <h2 class="h2 font-weight-500">My Best Projects</h2>
+                <div class="text-title mt-4">WORKS</div>
+                <h2 class="h2">My Best Projects</h2>
             </div>
     
-            <div class="row no-gutters align-items-start flex-column-reverse flex-md-row-reverse my-3 py-5">
+            <div class="row no-gutters flexbox-works flex-md-row-reverse my-3 py-5">
                 <div class="col">
-                    <div class="d-none d-md-block h2 text-primary font-weight-600">01</div>
-    
-                    <div class="h5 font-weight-500 text-dark">Landing Page Portfolio</div>
-    
-                    <div class="d-flex flex-wrap">
-                        <div class="built-with mt-2 mr-2">
-                            <div class="badge p-2">UI/UX Design</div>
+                    <div class="work-order-right">
+                        <h1 class="d-none d-md-block work-heading-1">01</h1>
+                        <h5 class="work-heading-5">Landing Page Portfolio</h5>
+        
+                        <div class="built-with">
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">UI/UX Design</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">Figma</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">Webflow</div>
+                            </div>
                         </div>
-                        <div class="built-with mt-2 mr-2">
-                            <div class="badge p-2">Figma</div>
+        
+                        <p class="mt-3">A personal portfolio for a customer support specialist, the aim is to create a responsive and user-friendly web design.</p>
+        
+                        <div class="mt-3 flexbox-start">
+                            <a href="https://elainejoyluna.webflow.io" 
+                                target="_blank"
+                                title="Read More" 
+                                rel="noopener" 
+                                class="btn btn-outline-primary">
+                                <span>View Live</span>
+                            </a>
                         </div>
-                        <div class="built-with mt-2 mr-2">
-                            <div class="badge p-2">Webflow</div>
-                        </div>
-                    </div>
-    
-                    <p class="mt-3 font-weight-normal">A personal portfolio for a customer support specialist, the aim is to create a responsive and user-friendly web design.</p>
-    
-                    <div class="mt-3 flexbox-start">
-                        <a href="https://elainejoyluna.webflow.io" 
-                            target="_blank"
-                            title="Read More" 
-                            rel="noopener" 
-                            class="btn btn-outline-primary">
-                            <span>View Live</span>
-                        </a>
                     </div>
                 </div>
                 <div class="col col-md-1"></div>
-                <div class="col mb-4 mb-md-0">
-                    <div class="shadow-lg rounded overflow-hidden">
+                <div class="col">
+                    <div class="work-order-left work-img-wrapper mb-4 mb-md-0">
                         <a href="https://elainejoyluna.webflow.io"
                             target="_blank" 
                             rel="noopener">
@@ -268,36 +272,37 @@
                 </div>
             </div>
     
-            <div class="row no-gutters align-items-start flex-column-reverse flex-md-row my-3 py-5">
+            <div class="row no-gutters work-order-2 flexbox-works flex-md-row my-3 py-5">
                 <div class="col">
-                    <div class="d-none d-md-block h2 text-primary font-weight-600">02</div>
-    
-                    <div class="h5 font-weight-500 text-dark">Profile Cards UI Design</div>
-    
-                    <div class="d-flex flex-wrap">
-                        <div class="built-with mt-2 mr-2">
-                            <div class="badge p-2">HTML</div>
+                    <div class="work-order-right">
+                        <h1 class="d-none d-md-block work-heading-1">02</h1>
+                        <h5 class="work-heading-5">Profile Cards UI Design</h5>
+        
+                        <div class="built-with">
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">HTML</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">CSS</div>
+                            </div>
                         </div>
-                        <div class="built-with mt-2 mr-2">
-                            <div class="badge p-2">CSS</div>
+        
+                        <p class="mt-3">This is a fully custom profile cards website page that I designed from scratch. The aim was to put simple animations when hovering a specific card to show social network icons and adjust its background image profile.</p>
+        
+                        <div class="mt-3 flexbox-start">
+                            <a href="https://robertsonmorales.github.io/profile_cards" 
+                                target="_blank"
+                                title="More Information" 
+                                rel="noopener" 
+                                class="btn btn-outline-primary">
+                                <span>View Live</span>
+                            </a>
                         </div>
-                    </div>
-    
-                    <p class="mt-3 font-weight-normal">This is a fully custom profile cards website page that I designed from scratch. The aim was to put simple animations when hovering a specific card to show social network icons and adjust its background image profile.</p>
-    
-                    <div class="mt-3 flexbox-start">
-                        <a href="https://robertsonmorales.github.io/profile_cards" 
-                            target="_blank"
-                            title="More Information" 
-                            rel="noopener" 
-                            class="btn btn-outline-primary">
-                            <span>View Live</span>
-                        </a>
                     </div>
                 </div>
                 <div class="col col-md-1"></div>
-                <div class="col mb-4 mb-md-0">
-                    <div class="shadow-lg rounded overflow-hidden">
+                <div class="col">
+                    <div class="work-order-left work-img-wrapper mb-4 mb-md-0">
                         <a href="https://robertsonmorales.github.io/profile_cards"
                             target="_blank" 
                             rel="noopener">
@@ -312,45 +317,46 @@
                 </div>
             </div>
             
-            <div class="row no-gutters align-items-start flex-column-reverse flex-md-row-reverse my-3 py-5">
+            <div class="row no-gutters work-order-3 flexbox-works flex-md-row-reverse my-3 py-5">
                 <div class="col">
-                    <div class="d-none d-md-block h2 text-primary font-weight-600">03</div>
-    
-                    <div class="h5 font-weight-500 text-dark">Music Player with Neumorphism Effects</div>
-    
-                    <div class="d-flex flex-wrap">
-                        <div class="built-with mt-2 mr-2">
-                            <div class="badge p-2">HTML</div>
+                    <div class="work-order-right">
+                        <h1 class="d-none d-md-block work-heading-1">03</h1>
+                        <h5 class="work-heading-5">Music Player with Neumorphism Effects</h5>
+        
+                        <div class="built-with">
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">HTML</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">CSS</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">JavaScript</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">JQuery</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">Bootstrap</div>
+                            </div>
                         </div>
-                        <div class="built-with mt-2 mr-2">
-                            <div class="badge p-2">CSS</div>
+        
+                        <p class="mt-3">This is a simple music player using CSS neumorphism effect with static audio files. The aim is to smoothly function all music players basic actions such as shuffle, loop, next, previous, volume, play, and stop.</p>
+        
+                        <div class="mt-3 flexbox-start">
+                            <a href="https://robertsonmorales.github.io/music_player" 
+                                target="_blank"
+                                title="Read More" 
+                                rel="noopener" 
+                                class="btn btn-outline-primary">
+                                <span>View Live</span>
+                            </a>
                         </div>
-                        <div class="built-with mt-2 mr-2">
-                            <div class="badge p-2">JavaScript</div>
-                        </div>
-                        <div class="built-with mt-2 mr-2">
-                            <div class="badge p-2">JQuery</div>
-                        </div>
-                        <div class="built-with mt-2 mr-2">
-                            <div class="badge p-2">Bootstrap</div>
-                        </div>
-                    </div>
-    
-                    <p class="mt-3 font-weight-normal">This is a simple music player using CSS neumorphism effect with static audio files. The aim is to smoothly function all music players basic actions such as shuffle, loop, next, previous, volume, play, and stop.</p>
-    
-                    <div class="mt-3 flexbox-start">
-                        <a href="https://robertsonmorales.github.io/music_player" 
-                            target="_blank"
-                            title="Read More" 
-                            rel="noopener" 
-                            class="btn btn-outline-primary">
-                            <span>View Live</span>
-                        </a>
                     </div>
                 </div>
                 <div class="col col-md-1"></div>
-                <div class="col mb-4 mb-md-0">
-                    <div class="shadow-lg rounded overflow-hidden">
+                <div class="col">
+                    <div class="work-order-left work-img-wrapper mb-4 mb-md-0">
                         <a href="https://robertsonmorales.github.io/music_player"
                             target="_blank" 
                             rel="noopener">
@@ -365,38 +371,42 @@
                 </div>
             </div>
 
-            <div class="row no-gutters align-items-start flex-column-reverse flex-md-row my-3 py-5">
+            <div class="row no-gutters work-order-4 flexbox-works flex-md-row my-3 py-5">
                 <div class="col">
-                    <div class="d-none d-md-block h2 text-primary font-weight-600">04</div>
-            
-                    <div class="h5 font-weight-500 text-dark">Nike Ecommerce Redesign</div>
-            
-                    <div class="d-flex flex-wrap">
-                        <div class="built-with mt-2 mr-2">
-                            <div class="badge p-2">UI/UX Design</div>
+                    <div class="work-order-right">
+                        <h1 class="d-none d-md-block work-heading-1">04</h1>
+                        <h5 class="work-heading-5">Nike Ecommerce Redesign</h5>
+
+                        <div class="built-with">
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">UI/UX Design</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">Figma</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">Vue.js</div>
+                            </div>
                         </div>
-                        <div class="built-with mt-2 mr-2">
-                            <div class="badge p-2">Figma</div>
+                
+                        <p class="mt-3">The current website is impressive and clean. But my personal issue is it's not an eCommerce-like website that users will find attractive to scroll sections of pages, so that's why I decided to make a redesign of the Nike website but for homepage and product preview only. 
+                        <!-- First, I gathered some resources and edit them to remove some of the backgrounds to make them transparent to make it an easy-focused image. Second, are the colours that I'll apply to reach what the users will feel or what kind of reaction they will express. Third, is the layout and composition of the website (this is the wireframing part). Fourth, is the application of all gathered resources and put them into a component-based group so that it will make it easy to change when it comes to testing. And lastly, the prototyping part is where the complete user interface design and its flow is displayed and is ready for testing. -->
+                        </p>
+                
+                        <div class="mt-3 flexbox-start">
+                            <a href="https://elainejoyluna.webflow.io" 
+                                target="_blank"
+                                title="Read More" 
+                                rel="noopener" 
+                                class="btn btn-outline-primary">
+                                <span>View Live</span>
+                            </a>
                         </div>
-                    </div>
-            
-                    <p class="mt-3 font-weight-normal">The current website is impressive and clean. But my personal issue is it's not an eCommerce-like website that users will find attractive to scroll sections of pages, so that's why I decided to make a redesign of the Nike website but for homepage and product preview only. 
-                    <!-- First, I gathered some resources and edit them to remove some of the backgrounds to make them transparent to make it an easy-focused image. Second, are the colours that I'll apply to reach what the users will feel or what kind of reaction they will express. Third, is the layout and composition of the website (this is the wireframing part). Fourth, is the application of all gathered resources and put them into a component-based group so that it will make it easy to change when it comes to testing. And lastly, the prototyping part is where the complete user interface design and its flow is displayed and is ready for testing. -->
-                    </p>
-            
-                    <div class="mt-3 flexbox-start">
-                        <a href="https://elainejoyluna.webflow.io" 
-                            target="_blank"
-                            title="Read More" 
-                            rel="noopener" 
-                            class="btn btn-outline-primary">
-                            <span>View Live</span>
-                        </a>
                     </div>
                 </div>
                 <div class="col col-md-1"></div>
-                <div class="col mb-4 mb-md-0">
-                    <div class="shadow-lg rounded overflow-hidden">
+                <div class="col">
+                    <div class="work-order-left work-img-wrapper mb-4 mb-md-0">
                         <a href="https://elainejoyluna.webflow.io"
                             target="_blank" 
                             rel="noopener">
@@ -417,9 +427,10 @@
     <section id="skills" class="screen-height">
         <div class="container my-3 py-5">
             <div class="text-center">
-                <div class="text-primary font-weight-600">ABOUT MY</div>
-                <h2 class="h2 font-weight-500">Skills & Expertise</h2>
+                <div class="text-title mt-4">ABOUT MY</div>
+                <h2 class="h2">Skills & Expertise</h2>
             </div>
+
             <div class="text-center my-3 my-md-5 w-100 w-md-50">
                 <img src="resources/images/svg/skills/html.svg" alt="HTML 5" class="img-fluid img-fluid-extension p-4" title="HTML 5" loading="lazy">
                 <img src="resources/images/svg/skills/css3.svg" alt="CSS 3" class="img-fluid img-fluid-extension p-4" title="CSS 3" loading="lazy">
@@ -619,7 +630,7 @@
         <div class="text-center text-muted font-size-sm mb-1">© <span id="year"></span> Powered by Github, Inc</div>
     </footer>
 
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="plugins/scrollreveal/scrollreveal.min.js"></script>
 
     <script defer src="plugins/jquery/dist/jquery.min.js"></script>
     <script defer src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
