@@ -41,3 +41,73 @@ ScrollReveal().reveal('#avatar', {
     origin: 'top',
     easing: 'ease'
 });
+// ENDS HERE
+
+// TITLE
+ScrollReveal().reveal('.text-title', {
+    delay: 200,
+    distance: '10%',
+    origin: 'top',
+    easing: 'ease'
+});
+
+ScrollReveal().reveal('.h2', {
+    delay: 300,
+    distance: '10%',
+    origin: 'top',
+    easing: 'ease'
+});
+// ENDS HERE
+
+// SERVICE CARDS
+ScrollReveal().reveal('.card-deck #ui-ux-design', {
+    delay: 200,
+    distance: '15%',
+    origin: 'bottom',
+    easing: 'ease'
+});
+
+ScrollReveal().reveal('.card-deck #prototypes-to-html', {
+    delay: 300,
+    distance: '15%',
+    origin: 'bottom',
+    easing: 'ease'
+});
+
+ScrollReveal().reveal('.card-deck #web-app', {
+    delay: 400,
+    distance: '15%',
+    origin: 'bottom',
+    easing: 'ease'
+});
+
+ScrollReveal().reveal('.card-deck .card .card-service-child', {
+    delay: 300,
+    duration: 1000,
+    easing: 'linear',
+});
+
+// ENDS HERE
+
+// WORKS
+ScrollReveal().reveal('.work-order-left', {
+    delay: 300,
+    distance: '15%',
+    origin: 'left',
+    easing: 'ease'
+});
+
+ScrollReveal().reveal('.work-order-right', {
+    delay: 300,
+    distance: '15%',
+    origin: 'right',
+    easing: 'ease'
+});
+// ENDS HERE
+
+// SKILLS
+ScrollReveal().reveal('.img-fluid-extension', {
+    delay: 300,
+    easing: 'ease'
+});
+// ENDS HERE

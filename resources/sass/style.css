@@ -9383,6 +9383,10 @@ body {
   font-size: clamp(2.3rem, 5vw, 3rem) !important;
 }
 
+.h2 {
+  font-weight: 500;
+}
+
 .rounded {
   border-radius: 10px !important;
 }
@@ -9633,6 +9637,46 @@ body {
 .saturate {
   -webkit-filter: saturate(0.2);
           filter: saturate(0.2);
+}
+
+.text-title {
+  font-weight: 600;
+  color: #336bc8;
+}
+
+.flexbox-works {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.work-heading-1 {
+  color: #336bc8;
+  font-weight: 600;
+}
+
+.work-heading-5 {
+  font-weight: 500;
+  color: #131b23;
+}
+
+.built-with {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.work-img-wrapper {
+  -webkit-box-shadow: 0px 0px 19px #e9e9e9, -4px -4px 19px #ffffff;
+          box-shadow: 0px 0px 19px #e9e9e9, -4px -4px 19px #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .facebook {
