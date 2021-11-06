@@ -10216,6 +10216,10 @@ body {
   border: 1px solid #131b23 !important;
 }
 
+.bg-color {
+  background-color: #fbfbfb;
+}
+
 @media (max-width: 575.98px) {
   .is-mobile-w-100 {
     width: 100% !important;

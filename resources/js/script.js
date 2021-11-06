@@ -55,7 +55,7 @@ $(() => {
 
     $(document).on('scroll', function () {
         $("#navbar").toggleClass('border-bottom', $(this).scrollTop() > $("#navbar").height());
-        $("#navbar").toggleClass('bg-white', $(this).scrollTop() > $("#navbar").height());
+        $("#navbar").toggleClass('bg-color', $(this).scrollTop() > $("#navbar").height());
 	});
 
     function navBarHeight(){
