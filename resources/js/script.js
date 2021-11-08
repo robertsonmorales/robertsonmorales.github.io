@@ -34,18 +34,18 @@ function visibleToViewport(el){
 
 // const navs = ['hero', 'services', 'works', 'skills', 'about', 'contact'];
 
-var message = {};
+// var message = {};
 
-document.addEventListener('scroll', () => {
-    message = {
-        visibiliy: visibleToViewport(document.getElementById('works')) 
-            ? 'Visible to viewport'
-            : 'Not Visible to viewport',
-        rect: document.getElementById('services').getBoundingClientRect()
-    }
+// document.addEventListener('scroll', () => {
+//     message = {
+//         visibiliy: visibleToViewport(document.getElementById('works')) 
+//             ? 'Visible to viewport'
+//             : 'Not Visible to viewport',
+//         rect: document.getElementById('services').getBoundingClientRect()
+//     }
 
-    // console.log(message);
-});
+//     // console.log(message);
+// });
 
 $(() => {
     'use strict';
