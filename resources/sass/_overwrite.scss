@@ -26,10 +26,7 @@
 
 // HEADINGS
 .h1{
-    letter-spacing: -0.4px !important;
-    font-size: clamp(2.3rem, 5vw, 3rem) !important;
-    font-family: $secondary-font;
-    font-weight: bold;
+    font-size: clamp(2.3rem, 5vw, 3.5rem) !important;
 }
 
 .h2{
@@ -51,8 +48,6 @@
 // NAVIGATION
 .navbar{
     .navbar-brand{
-        font-family: $secondary-font;
-        font-weight: bold !important;
         border: none;
         background-color: transparent;
         outline: none;
@@ -79,9 +74,14 @@
 .btn{
     border-radius: $card-radius !important;
     padding: 10px 20px;
+    font-weight: 500;
 }
 
 .btn-outline-primary{
+    background-color: unquote($primary + '33');
+    color: $primary;
+    border: none;
+
     &:hover{
         color: #fff !important;
     }
@@ -114,8 +114,8 @@
 // BADGE
 .badge{
     background-color: unquote($primary + "33") !important; // #ededed
-    font-weight: 500;
-    border: 1px soldi $primary;
+    color: $primary;
+    font-weight: 500 !important;
 }
 // ENDS HERE
 
