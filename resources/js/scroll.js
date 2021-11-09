@@ -106,10 +106,10 @@ ScrollReveal().reveal('.work-order-right', {
 // ENDS HERE
 
 // SKILLS
-ScrollReveal().reveal('.img-fluid-extension', {
-    delay: 300,
-    easing: 'ease'
-});
+// ScrollReveal().reveal('.img-fluid-extension', {
+//     delay: 300,
+//     easing: 'ease'
+// });
 // ENDS HERE
 
 // ABOUT ME
