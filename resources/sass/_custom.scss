@@ -67,7 +67,6 @@
 
 .card-service{
     background: $body-bg;
-    box-shadow:  $shadow;
     transition: all .4s ease;
 
     .card-service-child{
@@ -90,7 +89,7 @@
     }
 
     &:hover {   
-        box-shadow: 0px 0px 38px #e4e4e4;
+        box-shadow:  $shadow;
     }
 }
 
@@ -147,19 +146,59 @@
 }
 
 .facebook{
-    color: #1877f2 !important;
-    border: 1px solid #1877f2 !important;
+    @extend .flexbox-center;
+    background-color: #1877f233;
+    border: 1px solid #1877f244;
+    border-radius: $card-radius;
+
+    &:active{
+        background-color: #1877f255;
+    }
 }
 
 .linkedin{
-    color: #0a66c2 !important;
-    border: 1px solid #0a66c2 !important;
+    @extend .flexbox-center;
+    background-color: #0a66c233;
+    border: 1px solid #0a66c244;
+    border-radius: $card-radius;
+
+    &:active{
+        background-color: #0a66c255;
+    }
 }
 
 .github{
-    border: 1px solid $dark !important;
+    @extend .flexbox-center;
+    background-color: unquote($dark + "33");
+    border: 1px solid unquote($dark + "44");
+    border-radius: $card-radius;
+
+    &:active{
+        background-color: unquote($dark + "55");
+    }
 }
 
 .bg-color{
     background-color: $body-bg;
+}
+
+.my-avatar{
+    border-radius: 50% 50% 50% 0 !important;
+}
+
+.icon-wrapper{
+    width: 55px;
+    height: 55px;
+    @extend .flexbox-center;
+}
+
+.custom-underline{
+    background: url("../images/svg/underline_beautiful.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.text-primary__underline{
+    @extend .custom-underline;
+    background-size: contain;
 }
