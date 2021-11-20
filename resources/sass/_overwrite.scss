@@ -31,6 +31,7 @@
 
 .h2{
     font-weight: 500;
+    @extend .custom-underline;
 }
 // HEADINGS
 
@@ -113,7 +114,7 @@
 
 // BADGE
 .badge{
-    background-color: #aaa !important;
+    background-color: #ddd !important;
     color: $dark;
     font-weight: 500 !important;
 }

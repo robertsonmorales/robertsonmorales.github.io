@@ -10245,7 +10245,7 @@ body {
 }
 
 .badge {
-  background-color: #ededed !important;
+  background-color: #ddd !important;
   color: #131b23;
   font-weight: 500 !important;
 }
@@ -10269,7 +10269,7 @@ body {
 }
 
 /* FLEXBOX */
-.flexbox-center {
+.flexbox-center, .facebook, .linkedin, .github, .icon-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10360,8 +10360,6 @@ body {
 /* ENDS HERE */
 .card-service {
   background: #fbfbfb;
-  -webkit-box-shadow: 0px 0px 19px #e9e9e9, -4px -4px 19px #ffffff;
-          box-shadow: 0px 0px 19px #e9e9e9, -4px -4px 19px #ffffff;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
 }
@@ -10401,22 +10399,18 @@ body {
 }
 
 .card-service:hover {
-  -webkit-box-shadow: 0px 0px 38px #e4e4e4;
-          box-shadow: 0px 0px 38px #e4e4e4;
+  -webkit-box-shadow: 0px 0px 19px #e9e9e9, -4px -4px 19px #ffffff;
+          box-shadow: 0px 0px 19px #e9e9e9, -4px -4px 19px #ffffff;
 }
 
 .img-fluid-hovered {
   width: 100%;
-  -webkit-transition: -webkit-transform .4s ease;
-  transition: -webkit-transform .4s ease;
-  transition: transform .4s ease;
-  transition: transform .4s ease, -webkit-transform .4s ease;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
 }
 
 .img-fluid-hovered:hover {
   opacity: .9;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
 }
 
 .screen-height {
@@ -10478,21 +10472,56 @@ body {
 }
 
 .facebook {
-  color: #1877f2 !important;
-  border: 1px solid #1877f2 !important;
+  background-color: #1877f233;
+  border: 1px solid #1877f244;
+  border-radius: 10px;
+}
+
+.facebook:active {
+  background-color: #1877f255;
 }
 
 .linkedin {
-  color: #0a66c2 !important;
-  border: 1px solid #0a66c2 !important;
+  background-color: #0a66c233;
+  border: 1px solid #0a66c244;
+  border-radius: 10px;
+}
+
+.linkedin:active {
+  background-color: #0a66c255;
 }
 
 .github {
-  border: 1px solid #131b23 !important;
+  background-color: #131b2333;
+  border: 1px solid #131b2344;
+  border-radius: 10px;
+}
+
+.github:active {
+  background-color: #131b2355;
 }
 
 .bg-color {
   background-color: #fbfbfb;
+}
+
+.my-avatar {
+  border-radius: 50% 50% 50% 0 !important;
+}
+
+.icon-wrapper {
+  width: 55px;
+  height: 55px;
+}
+
+.custom-underline, .h2, .text-primary__underline {
+  background: url("../images/svg/underline_beautiful.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.text-primary__underline {
+  background-size: contain;
 }
 
 @media (max-width: 575.98px) {
