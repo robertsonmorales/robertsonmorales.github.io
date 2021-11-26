@@ -10514,16 +10514,6 @@ body {
   height: 55px;
 }
 
-.custom-underline, .h2, .text-primary__underline {
-  background: url("../images/svg/underline_beautiful.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
-
-.text-primary__underline {
-  background-size: contain;
-}
-
 @media (max-width: 575.98px) {
   .is-mobile-w-100 {
     width: 100% !important;

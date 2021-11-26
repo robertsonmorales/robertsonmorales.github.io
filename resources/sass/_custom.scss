@@ -191,14 +191,3 @@
     height: 55px;
     @extend .flexbox-center;
 }
-
-.custom-underline{
-    background: url("../images/svg/underline_beautiful.svg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-
-.text-primary__underline{
-    @extend .custom-underline;
-    background-size: contain;
-}
