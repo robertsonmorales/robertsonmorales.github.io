@@ -66,7 +66,7 @@
 /* ENDS HERE */
 
 .card-service{
-    background: $body-bg;
+    @extend .card;
     transition: all .4s ease;
 
     .card-service-child{
@@ -82,14 +82,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: unquote($primary + '33');
+            background-color: $primary;
             border-radius: 50%;
-            color: $primary;
+            color: #fff;
         } 
-    }
-
-    &:hover {   
-        box-shadow:  $shadow;
     }
 }
 
@@ -111,7 +107,7 @@
 }
 
 .saturate{
-    filter: saturate(0.2);
+    filter: saturate(0.1);
 }
 
 .text-title{
@@ -190,15 +186,4 @@
     width: 55px;
     height: 55px;
     @extend .flexbox-center;
-}
-
-.custom-underline{
-    background: url("../images/svg/underline_beautiful.svg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-
-.text-primary__underline{
-    @extend .custom-underline;
-    background-size: contain;
 }
