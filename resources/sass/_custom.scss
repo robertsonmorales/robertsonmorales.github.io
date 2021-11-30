@@ -141,37 +141,11 @@
     overflow: hidden;
 }
 
-.facebook{
-    @extend .flexbox-center;
-    background-color: #1877f233;
-    border: 1px solid #1877f244;
-    border-radius: $card-radius;
+.media-icon{
+    @extend .text-decoration-none;
 
-    &:active{
-        background-color: #1877f255;
-    }
-}
-
-.linkedin{
-    @extend .flexbox-center;
-    background-color: #0a66c233;
-    border: 1px solid #0a66c244;
-    border-radius: $card-radius;
-
-    &:active{
-        background-color: #0a66c255;
-    }
-}
-
-.github{
-    @extend .flexbox-center;
-    background-color: unquote($dark + "33");
-    border: 1px solid unquote($dark + "44");
-    border-radius: $card-radius;
-
-    &:active{
-        background-color: unquote($dark + "55");
-    }
+    background-color: unquote(#1877f2 + "33");
+    border: 1px solid unquote(#1877f2 + "44");
 }
 
 .bg-color{

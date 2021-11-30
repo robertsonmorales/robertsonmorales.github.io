@@ -10026,7 +10026,7 @@ a.text-dark:hover, a.text-dark:focus {
   border: 0;
 }
 
-.text-decoration-none {
+.text-decoration-none, .media-icon {
   text-decoration: none !important;
 }
 
@@ -10264,7 +10264,7 @@ body {
 }
 
 /* FLEXBOX */
-.flexbox-center, .facebook, .linkedin, .github, .icon-wrapper {
+.flexbox-center, .icon-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10460,34 +10460,9 @@ body {
   overflow: hidden;
 }
 
-.facebook {
+.media-icon {
   background-color: #1877f233;
   border: 1px solid #1877f244;
-  border-radius: 2px;
-}
-
-.facebook:active {
-  background-color: #1877f255;
-}
-
-.linkedin {
-  background-color: #0a66c233;
-  border: 1px solid #0a66c244;
-  border-radius: 2px;
-}
-
-.linkedin:active {
-  background-color: #0a66c255;
-}
-
-.github {
-  background-color: #131b2333;
-  border: 1px solid #131b2344;
-  border-radius: 2px;
-}
-
-.github:active {
-  background-color: #131b2355;
 }
 
 .bg-color {
