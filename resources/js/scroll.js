@@ -64,21 +64,24 @@ ScrollReveal().reveal('.card-deck #ui-ux-design', {
     delay: 200,
     distance: '15%',
     origin: 'bottom',
-    easing: 'ease'
+    easing: 'ease',
+    mobile: false
 });
 
 ScrollReveal().reveal('.card-deck #prototypes-to-html', {
     delay: 300,
     distance: '15%',
     origin: 'bottom',
-    easing: 'ease'
+    easing: 'ease',
+    mobile: false
 });
 
 ScrollReveal().reveal('.card-deck #web-app', {
     delay: 400,
     distance: '15%',
     origin: 'bottom',
-    easing: 'ease'
+    easing: 'ease',
+    mobile: false
 });
 
 ScrollReveal().reveal('.card-deck .card .card-service-child', {

@@ -67,25 +67,20 @@
 
 .card-service{
     @extend .card;
-    transition: all .4s ease;
 
-    .card-service-child{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    // .card-icon{
+    //     width: 55px;
+    //     height: 55px;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     background-color: $primary;
+    //     border-radius: 50%;
+    //     color: #fff;
+    // } 
 
-        .card-icon{
-            width: 55px;
-            height: 55px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: $primary;
-            border-radius: 50%;
-            color: #fff;
-        } 
+    &:last-child{
+        margin-right: 0px;
     }
 }
 
@@ -101,9 +96,7 @@
 
 .screen-height{
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend .flexbox-center;
 }
 
 .saturate{
