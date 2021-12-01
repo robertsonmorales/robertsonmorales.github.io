@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hi there, I am Robertson Morales. Web Designer and Developer">
+    <meta name="google-site-verification" content="2Et3XLvckUFiFi6rMhGa-lAHdTVqtpq0FRBf19-3QD8" />
+
+    <title>Robertson Morales</title>
+    <!-- preloads -->
+    
+
+    <!-- styles -->
+    <link rel="preload" href="plugins/bootstrap/dist/css/bootstrap.min.css" as="style">
+    <link rel="preload" href="plugins/animate.css/animate.css" as="style">
+    <link rel="preload" href="resources/sass/style.css" as="style">
+    <!-- ends here -->
+
+    <!-- javascripts -->
+    <link rel="preload" href="plugins/jquery/dist/jquery.min.js" as="script">
+    <link rel="preload" href="plugins/bootstrap/dist/js/bootstrap.min.js" as="script">
+    <link rel="preload" href="resources/js/script.js" as="script">
+    <!-- ends here -->
+
+    <!-- images -->
+    <link rel="preload" href="resources/images/projects/profile-cards/profile-cards-2.png" as="image">
+    <link rel="preload" href="resources/images/projects/music-player/music-player.png" as="image">
+    <!-- ends here -->
+    <!-- preloads ends here -->
+
+    <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="plugins/animate.css/animate.css">
+    <link rel="stylesheet" href="resources/sass/style.css">
+
+    <link rel="canonical" href="https://robertsonmorales.github.io">
+    <link rel="canonical" href="https://robertsonmorales.github.io/index.html">
+    <!-- <link rel="shortcut icon" href="favicon.png"> -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NCR2QZVRF6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-NCR2QZVRF6');
+    </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light is-mobile-bg-white fixed-top" id="navbar">
+        <div class="container">
+            <button class="navbar-brand border-0"
+                onclick="navSelected('hero')"
+                style="background-color: transparent; outline: none;">
+                <div class="font-weight-500">RM<span class="text-primary">.</span></div>
+            </button>
+            
+            <button class="navbar-toggler border-0"
+                type="button" 
+                data-toggle="collapse"
+                data-target="#toggleNavbar" 
+                aria-controls="toggleNavbar" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"
+                style="outline: none;">
+                <i data-feather="menu"></i>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="toggleNavbar">    
+                <ul class="navbar-nav mr-auto"></ul>
+                
+                <div class="navbar-text">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item mr-0 mr-md-2 mb-3 mb-md-0">
+                            <button class="nav-link navbar font-weight-500 active"
+                            id="nav-hero" 
+                            onclick="navSelected('hero')">Home</button>
+                        </li>
+                        <li class="nav-item mr-0 mr-md-2 mb-3 mb-md-0">
+                            <button class="nav-link navbar font-weight-500"
+                            id="nav-services"
+                            onclick="navSelected('services')">Services</button>
+                        </li>
+                        <li class="nav-item mr-0 mr-md-2 mb-3 mb-md-0">
+                            <button class="nav-link navbar font-weight-500"
+                            id="nav-works"
+                            onclick="navSelected('works')">Works</button>
+                        </li>
+                        <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
+                            <button class="nav-link navbar font-weight-500"
+                            id="nav-skills"
+                            onclick="navSelected('skills')">Skills</button>
+                        </li>
+                        <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
+                            <button class="nav-link navbar font-weight-500"
+                            id="nav-about" 
+                            onclick="navSelected('about')">About</button>
+                        </li>
+                        <li class="nav-item"> <!-- mr-md-5 -->
+                            <button class="nav-link navbar font-weight-500"
+                            id="nav-contact"
+                            onclick="navSelected('contact')">Contact Me</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="works" class="screen-height">
+        <div class="container my-3 py-5 is-mobile-padding">
+            <div class="text-center">
+                <div class="text-title mt-4">WORKS</div>
+                <h2 class="h2">My Best Projects</h2>
+            </div>
+
+            <div class="row no-gutters work-order-2 flexbox-works flex-md-row-reverse my-3 py-5">
+                <div class="col">
+                    <div class="work-order-right">
+                        <h1 class="d-none d-md-block work-heading-1">01</h1>
+                        <h4 class="work-heading-4">Profile Cards UI Design</h4>
+        
+                        <div class="built-with">
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">HTML</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">CSS</div>
+                            </div>
+                        </div>
+        
+                        <p class="mt-3">A fully custom profile cards website page that I designed from scratch. The aim was to put simple animations when hovering a specific card to show social network icons and adjust its background image profile.</p>
+        
+                        <div class="mt-3 flexbox-start">
+                            <a href="https://robertsonmorales.github.io/profile_cards" 
+                                target="_blank"
+                                title="More Information" 
+                                rel="noopener" 
+                                class="btn btn-primary">
+                                <span>Preview</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-1"></div>
+                <div class="col">
+                    <div class="work-order-left work-img-wrapper mb-4 mb-md-0">
+                        <a href="https://robertsonmorales.github.io/profile_cards"
+                            target="_blank" 
+                            rel="noopener">
+                            <img src="resources/images/projects/profile-cards/profile-cards-2.png" 
+                                class="img-fluid rounded img-fluid-hovered" 
+                                loading="lazy"
+                                alt="Profile Cards UI Design"
+                                width="500"
+                                height="380">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row no-gutters work-order-3 flexbox-works flex-md-row my-3 py-5">
+                <div class="col">
+                    <div class="work-order-right">
+                        <h1 class="d-none d-md-block work-heading-1">02</h1>
+                        <h4 class="work-heading-4">Music Player with Neumorphism Effects</h4>
+        
+                        <div class="built-with">
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">HTML</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">CSS</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">JavaScript</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">JQuery</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">Bootstrap</div>
+                            </div>
+                        </div>
+        
+                        <p class="mt-3">This is a simple music player using CSS neumorphism effect with static audio files. The aim is to smoothly function all music players basic actions such as shuffle, loop, next, previous, volume, play, and stop.</p>
+        
+                        <div class="mt-3 flexbox-start">
+                            <a href="https://robertsonmorales.github.io/music_player" 
+                                target="_blank"
+                                title="Read More" 
+                                rel="noopener" 
+                                class="btn btn-primary">
+                                <span>Preview</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-1"></div>
+                <div class="col">
+                    <div class="work-order-left work-img-wrapper mb-4 mb-md-0">
+                        <a href="https://robertsonmorales.github.io/music_player"
+                            target="_blank" 
+                            rel="noopener">
+                            <img src="resources/images/projects/music-player/music-player.png" 
+                                class="img-fluid rounded img-fluid-hovered"
+                                loading="lazy" 
+                                alt="Music Player with Neumorphism Effects"
+                                width="500"
+                                height="380">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters work-order-4 flexbox-works flex-md-row-reverse my-3 py-5">
+                <div class="col">
+                    <div class="work-order-right">
+                        <h1 class="d-none d-md-block work-heading-1">03</h1>
+                        <h4 class="work-heading-4">Nike eCommerce Re-design</h4>
+
+                        <div class="built-with">
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">UI/UX Design</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">Figma</div>
+                            </div>
+                            <!-- <div class="mt-2 mr-2">
+                                <div class="badge p-2">Vue.js</div>
+                            </div> -->
+                        </div>
+                
+                        <p class="mt-3">I created a re-design of some web pages of <span class="font-weight-500">Nike</span> that users will find them more eCommerce-like user interface. So I chose a vibrant and energetic color since Nike is best known for its sportswear, apparel, and equipment products.</p>
+                
+                        <div class="mt-3 flexbox-start">
+                            <a href="resources/images/projects/nike-redesign/thumbnail.png" 
+                                target="_blank"
+                                title="Read More" 
+                                rel="noopener" 
+                                class="btn btn-primary">
+                                <span>Preview</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-1"></div>
+                <div class="col">
+                    <div class="work-order-left work-img-wrapper mb-4 mb-md-0">
+                        <a href="resources/images/projects/nike-redesign/thumbnail.png"
+                            target="_blank" 
+                            rel="noopener">
+                            <img src="resources/images/projects/nike-redesign/thumbnail.png" 
+                                class="img-fluid rounded img-fluid-hovered"
+                                loading="lazy" 
+                                alt="Nike Ecommerce Redesign"
+                                width="500"
+                                height="380">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters work-order-3 flexbox-works flex-md-row my-3 py-5">
+                <div class="col">
+                    <div class="work-order-right">
+                        <h1 class="d-none d-md-block work-heading-1">04</h1>
+                        <h4 class="work-heading-4">Restaurant POS Design</h4>
+        
+                        <div class="built-with">
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">UI/UX Design</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">Figma</div>
+                            </div>
+                        </div>
+        
+                        <p class="mt-3">A simple restaurant POS UI/UX Design and a light-themed user interface. That's why I chose the light blue color because of its calm and refreshing effect on users. Perfect for restaurants that are near or located to a beach.</p>
+        
+                        <div class="mt-3 flexbox-start">
+                            <a href="#" 
+                                target="_blank"
+                                title="Read More" 
+                                rel="noopener" 
+                                class="btn btn-primary">
+                                <span>Preview</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-1"></div>
+                <div class="col">
+                    <div class="work-order-left work-img-wrapper mb-4 mb-md-0">
+                        <a href="resources/images/projects/restaurant-pos/thumbnail.png"
+                            target="_blank" 
+                            rel="noopener">
+                            <img src="resources/images/projects/restaurant-pos/thumbnail.png" 
+                                class="img-fluid rounded img-fluid-hovered"
+                                loading="lazy" 
+                                alt="Restaurant POS"
+                                width="500"
+                                height="380">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="projects.html" 
+                    class="btn btn-outline-primary"
+                    id="view-more-projects">View More Projects</a>
+            </div>
+
+        </div>
+    </section>
+    
+</body>
+</html>
