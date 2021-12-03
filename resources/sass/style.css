@@ -8941,7 +8941,7 @@ button.bg-dark:focus {
   .px-md-2 {
     padding-left: 0.5rem !important;
   }
-  .p-md-3 {
+  .p-md-3, .card-service {
     padding: 1rem !important;
   }
   .pt-md-3,
@@ -10268,36 +10268,36 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .flexbox-start {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .flexbox-between {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /* ENDS HERE*/
@@ -10353,6 +10353,59 @@ body {
 }
 
 /* ENDS HERE */
+.card-service {
+  border: 0.0625rem solid rgba(231, 234, 243, 0.7);
+  -webkit-box-shadow: 0 40px 100px 0 rgba(1, 1, 64, 0.08);
+          box-shadow: 0 40px 100px 0 rgba(1, 1, 64, 0.08);
+}
+
+.card-service .card-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.card-service .card-icon .feather {
+  width: 40px !important;
+  z-index: 1;
+  position: relative;
+  left: 10px;
+}
+
+.card-service .card-icon .blob {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-service .card-footer {
+  z-index: 1;
+}
+
+.card-service .waves {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  fill: #f3f3f3;
+  width: 100%;
+}
+
 .card-service:last-child {
   margin-right: 0px;
 }
@@ -10389,16 +10442,6 @@ body {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
-}
-
-.work-heading-1 {
-  color: #123;
-  font-weight: 600;
-}
-
-.work-heading-4 {
-  font-weight: 500;
-  color: #131b23;
 }
 
 .built-with {
