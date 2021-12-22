@@ -8074,7 +8074,9 @@ button.bg-dark:focus {
 }
 
 .mr-3,
-.mx-3 {
+.mx-3,
+.card .card-icon,
+.card-service .card-icon {
   margin-right: 1rem !important;
 }
 
@@ -8084,7 +8086,9 @@ button.bg-dark:focus {
 }
 
 .ml-3,
-.mx-3 {
+.mx-3,
+.card .card-icon,
+.card-service .card-icon {
   margin-left: 1rem !important;
 }
 
@@ -8093,7 +8097,9 @@ button.bg-dark:focus {
 }
 
 .mt-4,
-.my-4 {
+.my-4,
+.card .card-icon,
+.card-service .card-icon {
   margin-top: 1.5rem !important;
 }
 
@@ -8103,7 +8109,9 @@ button.bg-dark:focus {
 }
 
 .mb-4,
-.my-4 {
+.my-4,
+.card .card-icon,
+.card-service .card-icon {
   margin-bottom: 1.5rem !important;
 }
 
@@ -10505,17 +10513,9 @@ body {
   .is-mobile-bg-white {
     background-color: #fbfbfb;
   }
-  .is-mobile-card-deck {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    width: 100vw;
-  }
-  .card-service {
-    min-width: 85% !important;
-    margin-right: 15px;
+  .card-service .card-icon .blob {
+    left: -16px;
+    top: -25px;
   }
   .h1 {
     font-size: 1.8rem !important;
