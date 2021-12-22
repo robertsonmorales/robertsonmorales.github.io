@@ -36,15 +36,20 @@
         background-color: #fbfbfb;
     }
 
-    .is-mobile-card-deck{
-        display: flex;
-        flex-wrap: nowrap;
-        width: 100vw;
-    }
+    // .is-mobile-card-deck{
+    //     display: flex;
+    //     flex-wrap: nowrap;
+    //     width: 100vw;
+    // }
 
-    .card-service{
-        min-width: 85% !important;
-        margin-right: 15px;
+    // .card-service{
+    //     min-width: 85% !important;
+    //     margin-right: 15px;
+    // }
+
+    .card-service .card-icon .blob{
+        left: -16px;
+        top: -25px;
     }
 
     .h1{
