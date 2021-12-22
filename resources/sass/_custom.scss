@@ -153,7 +153,8 @@
 }
 
 .my-avatar{
-    border-radius: 50% 50% 50% 0 !important;
+    border-radius: 50% !important;
+    @extend .shadow;
 }
 
 .icon-wrapper{
