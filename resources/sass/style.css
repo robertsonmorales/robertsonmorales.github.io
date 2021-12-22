@@ -7913,7 +7913,7 @@ button.bg-dark:focus {
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
-.shadow {
+.shadow, .my-avatar {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
@@ -10141,7 +10141,7 @@ html {
 
 body {
   background-color: #fbfbfb;
-  font-family: "Google Sans", "Poppins", "Montserrat", sans-serif;
+  font-family: "Poppins", "Montserrat", "Google Sans", sans-serif;
   overflow-x: hidden;
   color: #131b23;
 }
@@ -10469,7 +10469,7 @@ body {
 }
 
 .my-avatar {
-  border-radius: 50% 50% 50% 0 !important;
+  border-radius: 50% !important;
 }
 
 .icon-wrapper {
