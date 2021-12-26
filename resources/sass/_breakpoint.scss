@@ -22,6 +22,11 @@
 }
 
 @include media-breakpoint-between(xs, sm) {
+    #services .container{
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
     .is-mobile-padding{
         padding-right: 30px !important;
         padding-left: 30px !important;
@@ -29,6 +34,22 @@
 
     .is-mobile-bg-white{
         background-color: #fbfbfb;
+    }
+
+    // .is-mobile-card-deck{
+    //     display: flex;
+    //     flex-wrap: nowrap;
+    //     width: 100vw;
+    // }
+
+    // .card-service{
+    //     min-width: 85% !important;
+    //     margin-right: 15px;
+    // }
+
+    .card-service .card-icon .blob{
+        left: -16px;
+        top: -25px;
     }
 
     .h1{

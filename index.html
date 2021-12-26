@@ -24,7 +24,6 @@
 
     <!-- images -->
     <link rel="preload" href="resources/images/me/profile-1.jpg" as="image">
-    <link rel="preload" href="resources/images/projects/elainejoy/thumbnail.png" as="image">
     <link rel="preload" href="resources/images/projects/profile-cards/profile-cards-2.png" as="image">
     <link rel="preload" href="resources/images/projects/music-player/music-player.png" as="image">
     <!-- ends here -->
@@ -54,7 +53,7 @@
             <button class="navbar-brand border-0"
                 onclick="navSelected('hero')"
                 style="background-color: transparent; outline: none;">
-                <div class="font-weight-600">RM<span class="text-primary">.</span></div>
+                <div class="font-weight-500">RM<span class="text-primary">.</span></div>
             </button>
             
             <button class="navbar-toggler border-0"
@@ -109,50 +108,56 @@
         </div>
     </nav>
 
-    <header id="hero" class="screen-height">
-        <div class="container mt-5 mt-md-0 pt-5 pt-md-0 is-mobile-padding">
+    <header id="hero" 
+        class="screen-height">
+        <div class="container pt-5 pt-md-0 is-mobile-padding">
             <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column flex-lg-row">
 
-                <div class="col text-center">
-                    <img src="resources/images/me/profile-1.jpg" 
+                <div class="col">
+                    <div class="img-wrapper text-center">
+                        <img src="resources/images/me/profile-1.jpg" 
                         class="saturate my-avatar mb-4" 
                         alt="My Profile Picture"
                         height="220"
                         width="220"
                         id="avatar">
+                    </div>
 
-                    <h1 class="h1" id="catch-phrase">Hi! I'm <span class="text-primary">Robertson</span>, <br> a Web Developer & Designer</h1>
+                    <div class="text-left text-md-center">
+                        <h1 class="h1" id="catch-phrase">Hi! I'm <span class="text-primary">Robertson</span>, <br> a Web Developer & Designer</h1>
 
-                    <div class="mb-3"></div>
+                        <div class="mb-3"></div>
 
-                    <p class="text-muted" id="specialize">Specializes in User Interface Design, Responsive Web Design, and Web Applications.</p>
+                        <p class="text-muted" id="specialize">Specializes in User Interface Design, Responsive Web Design, and Web Applications.</p>
 
-                    <div class="mb-4"></div>
+                        <div class="mb-4"></div>
 
-                    <div class="call-to-actions">
-                        <button class="btn btn-primary mb-1 mb-md-0 mr-1 is-mobile-w-100"
-                            onclick="navSelected('works')"
-                            id="btn-my-works">View My Works</button>
-
-                        <div class="d-block d-md-none w-100"></div>
-
-                        <a class="btn btn-outline-primary is-mobile-w-100"
-                            href="resources/attachment/resume.pdf"
-                            download="Resume"
-                            id="btn-download-resume">
-                            <div class="d-flex align-items-center justify-content-center">
-                                <span class="mr-2">Download Resume</span>
-                                <i data-feather="download" style="width: 16px; height: 16px;"></i>
-                            </div>
-                        </a>
+                        <div class="call-to-actions">
+                            <button class="btn btn-primary mb-1 mb-md-0 mr-1 is-mobile-w-100"
+                                onclick="navSelected('works')"
+                                id="btn-my-works">View Works</button>
+    
+                            <!-- <div class="d-block d-md-none w-100"></div>
+    
+                            <a class="btn btn-outline-primary is-mobile-w-100"
+                                href="resources/attachment/resume.pdf"
+                                download="Resume"
+                                id="btn-download-resume">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <span class="mr-2">Download Resume</span>
+                                    <i data-feather="download" style="width: 16px; height: 16px;"></i>
+                                </div>
+                            </a> -->
+                        </div>
+                        <div class="mb-4 mb-md-0"></div>
                     </div>
                 </div>  
                 
-                <!-- <div class="col-2"></div> -->
-                <!-- <div class="col col-md-5 col-lg-6">
+                <!-- <div class="col-2"></div>
+                <div class="col col-md-5 col-lg-6">
                     <div class="is-mobile-text-center mt-3 mt-md-0">
-                        <img src="resources/images/hero-image-1.svg" 
-                            class="img-fluid is-mobile-img-fluid" 
+                        <img src="resources/images/me/profile-1.jpg" 
+                            class="saturate my-avatar img-fluid is-mobile-img-fluid d-block d-md-none" 
                             width="647"
                             height="647"
                             alt="avatar" 
@@ -164,62 +169,66 @@
         </div>
     </header>
 
-    <section id="services" class="screen-height bg-primary">
-        <div class="container my-3 py-5 is-mobile-padding">
+    <section id="services" class="screen-height bg-light py-5">
+        <div class="container is-mobile-padding">
             <div class="text-center">
-                <div class="text-title text-white">SERVICES</div>
-                <h2 class="h2 text-white">Specializing In</h2>
+                <div class="text-title">SERVICES</div>
+                <h1 class="h2">Specializing In</h1>
             </div>
-
-            <div class="py-3"></div>
-
-            <div class="card-deck">
+    
+            <div class="card-deck my-5">
                 <div class="card-service" 
                     id="ui-ux-design">
-                    <div class="card-service-child px-2 py-4">
-                        <div class="m-3 card-icon">
+                    <div class="card-icon">
+                        <svg class="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#F3F3F3" d="M61,-18.7C67.1,-1.2,51.7,24.4,31.6,37.6C11.4,50.9,-13.4,51.8,-28.5,40.6C-43.5,29.3,-48.7,5.9,-42.3,-12C-36,-30,-18,-42.4,4.8,-43.9C27.5,-45.5,55,-36.1,61,-18.7Z" transform="translate(100 100)" />
                             <i data-feather="layout"></i>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="mb-4 card-title">UI/UX Design</h4>
-                            <p class="card-text text-muted">Build user interfaces that are user-friendly and responsive to all media devices that users will find easy to use and pleasureable.</p>
-                        </div>
-                        <div class="card-footer">
-                            <!-- <a href="#read-more" class="btn btn-outline-primary btn-sm">Read more</a> -->
-                        </div>
+                        </svg>
                     </div>
+                    <div class="card-body">
+                        <h4 class="mb-4 card-title">UI/UX Design</h4>
+                        <p class="card-text">Build user interfaces that are user-friendly and responsive to all media devices that users will find easy to use and pleasureable.</p>
+                    </div>
+                    <div class="card-footer">
+                        <!-- <a href="#read-more" class="btn btn-primary btn-sm">Read more</a> -->
+                    </div>
+                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,96L60,117.3C120,139,240,181,360,176C480,171,600,117,720,101.3C840,85,960,107,1080,133.3C1200,160,1320,192,1380,208L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
                 </div>
 
                 <div class="card-service" 
                     id="prototypes-to-html">
-                    <div class="card-service-child px-2 py-4">
-                        <div class="m-3 card-icon">
+                    <div class="card-icon">
+                        <svg class="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#F3F3F3" d="M61,-18.7C67.1,-1.2,51.7,24.4,31.6,37.6C11.4,50.9,-13.4,51.8,-28.5,40.6C-43.5,29.3,-48.7,5.9,-42.3,-12C-36,-30,-18,-42.4,4.8,-43.9C27.5,-45.5,55,-36.1,61,-18.7Z" transform="translate(100 100)" />
                             <i data-feather="code"></i>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="mb-4 card-title">Prototypes to HTML</h4>
-                            <p class="card-text text-muted">Creating web pages from wireframes/prototypes into a brand new functional and interactive website.</p>
-                        </div>
-                        <div class="card-footer">
-                            <!-- <a href="#read-more" class="btn btn-outline-primary btn-sm">Read more</a> -->
-                        </div>
+                        </svg>
                     </div>
+                    <div class="card-body">
+                        <h4 class="mb-4 card-title">Prototypes to HTML</h4>
+                        <p class="card-text">Creating web pages from wireframes/prototypes into a brand new functional and interactive website.</p>
+                    </div>
+                    <div class="card-footer">
+                        <!-- <a href="#read-more" class="btn btn-outline-primary btn-sm">Read more</a> -->
+                    </div>
+                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,96L60,117.3C120,139,240,181,360,176C480,171,600,117,720,101.3C840,85,960,107,1080,133.3C1200,160,1320,192,1380,208L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
                 </div>
 
                 <div class="card-service" 
                     id="web-app">
-                    <div class="card-service-child px-2 py-4">
-                        <div class="m-3 card-icon">
-                            <i data-feather="monitor"></i>
-                        </div>
-                        <div class="card-body">
-                            <h4 class="mb-4 card-title">Website Application</h4>
-                            <p class="card-text text-muted">Build Single page application to manage your business operations, increase efficiency, and reduce costs.</p>
-                        </div>
-                        <div class="card-footer">
-                            <!-- <a href="#read-more" class="btn btn-outline-primary btn-sm">Read more</a> -->
-                        </div>
+                    <div class="card-icon">
+                        <svg class="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#F3F3F3" d="M61,-18.7C67.1,-1.2,51.7,24.4,31.6,37.6C11.4,50.9,-13.4,51.8,-28.5,40.6C-43.5,29.3,-48.7,5.9,-42.3,-12C-36,-30,-18,-42.4,4.8,-43.9C27.5,-45.5,55,-36.1,61,-18.7Z" transform="translate(100 100)" />
+                        </svg>
+                        <i data-feather="monitor"></i>
                     </div>
+                    <div class="card-body">
+                        <h4 class="mb-4 card-title">Website Application</h4>
+                        <p class="card-text">Build Single page application to manage your business operations, increase efficiency, and reduce costs.</p>
+                    </div>
+                    <div class="card-footer">
+                        <!-- <a href="#read-more" class="btn btn-outline-primary btn-sm">Read more</a> -->
+                    </div>
+                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,96L60,117.3C120,139,240,181,360,176C480,171,600,117,720,101.3C840,85,960,107,1080,133.3C1200,160,1320,192,1380,208L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
                 </div>
             </div>
         </div>
@@ -229,14 +238,13 @@
         <div class="container my-3 py-5 is-mobile-padding">
             <div class="text-center">
                 <div class="text-title mt-4">WORKS</div>
-                <h2 class="h2">My Best Projects</h2>
+                <h2 class="h2">My Projects</h2>
             </div>
 
             <div class="row no-gutters work-order-2 flexbox-works flex-md-row-reverse my-3 py-5">
                 <div class="col">
                     <div class="work-order-right">
-                        <h1 class="d-none d-md-block work-heading-1">01</h1>
-                        <h4 class="work-heading-4">Profile Cards UI Design</h4>
+                        <h1 class="d-none d-md-block">Profile Cards UI Design</h1>
         
                         <div class="built-with">
                             <div class="mt-2 mr-2">
@@ -249,19 +257,19 @@
         
                         <p class="mt-3">A fully custom profile cards website page that I designed from scratch. The aim was to put simple animations when hovering a specific card to show social network icons and adjust its background image profile.</p>
         
-                        <div class="mt-3 flexbox-start">
+                        <div class="mt-4 flexbox-start">
                             <a href="https://robertsonmorales.github.io/profile_cards" 
                                 target="_blank"
                                 title="More Information" 
                                 rel="noopener" 
-                                class="btn btn-primary">
+                                class="btn btn-outline-primary">
                                 <span>Preview</span>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col col-md-1"></div>
-                <div class="col">
+                <div class="col col-md-7">
                     <div class="work-order-left work-img-wrapper mb-4 mb-md-0">
                         <a href="https://robertsonmorales.github.io/profile_cards"
                             target="_blank" 
@@ -280,8 +288,7 @@
             <div class="row no-gutters work-order-3 flexbox-works flex-md-row my-3 py-5">
                 <div class="col">
                     <div class="work-order-right">
-                        <h1 class="d-none d-md-block work-heading-1">02</h1>
-                        <h4 class="work-heading-4">Music Player with Neumorphism Effects</h4>
+                        <h1 class="d-none d-md-block ">Music Player with Neumorphism Effects</h1>
         
                         <div class="built-with">
                             <div class="mt-2 mr-2">
@@ -303,19 +310,19 @@
         
                         <p class="mt-3">This is a simple music player using CSS neumorphism effect with static audio files. The aim is to smoothly function all music players basic actions such as shuffle, loop, next, previous, volume, play, and stop.</p>
         
-                        <div class="mt-3 flexbox-start">
+                        <div class="mt-4 flexbox-start">
                             <a href="https://robertsonmorales.github.io/music_player" 
                                 target="_blank"
                                 title="Read More" 
                                 rel="noopener" 
-                                class="btn btn-primary">
+                                class="btn btn-outline-primary">
                                 <span>Preview</span>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col col-md-1"></div>
-                <div class="col">
+                <div class="col col-md-7">
                     <div class="work-order-left work-img-wrapper mb-4 mb-md-0">
                         <a href="https://robertsonmorales.github.io/music_player"
                             target="_blank" 
@@ -334,36 +341,47 @@
             <div class="row no-gutters work-order-4 flexbox-works flex-md-row-reverse my-3 py-5">
                 <div class="col">
                     <div class="work-order-right">
-                        <h1 class="d-none d-md-block work-heading-1">03</h1>
-                        <h4 class="work-heading-4">Nike eCommerce Re-design</h4>
+                        <h1 class="d-none d-md-block ">Nike eCommerce Re-design</h1>
 
                         <div class="built-with">
                             <div class="mt-2 mr-2">
-                                <div class="badge p-2">UI/UX Design</div>
+                                <div class="badge p-2">Wireframing</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">Prototyping</div>
                             </div>
                             <div class="mt-2 mr-2">
                                 <div class="badge p-2">Figma</div>
                             </div>
-                            <!-- <div class="mt-2 mr-2">
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">HTML</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">CSS3</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">Sass</div>
+                            </div>
+                            <div class="mt-2 mr-2">
                                 <div class="badge p-2">Vue.js</div>
-                            </div> -->
+                            </div>
                         </div>
                 
                         <p class="mt-3">I created a re-design of some web pages of <span class="font-weight-500">Nike</span> that users will find them more eCommerce-like user interface. So I chose a vibrant and energetic color since Nike is best known for its sportswear, apparel, and equipment products.</p>
                 
-                        <div class="mt-3 flexbox-start">
-                            <a href="resources/images/projects/nike-redesign/thumbnail.png" 
+                        <div class="mt-4 flexbox-start">
+                            <a href="https://robertsonmorales.github.io/ecommerce-nike" 
                                 target="_blank"
                                 title="Read More" 
                                 rel="noopener" 
-                                class="btn btn-primary">
+                                class="btn btn-outline-primary">
                                 <span>Preview</span>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col col-md-1"></div>
-                <div class="col">
+                <div class="col col-md-7">
                     <div class="work-order-left work-img-wrapper mb-4 mb-md-0">
                         <a href="resources/images/projects/nike-redesign/thumbnail.png"
                             target="_blank" 
@@ -382,12 +400,14 @@
             <div class="row no-gutters work-order-3 flexbox-works flex-md-row my-3 py-5">
                 <div class="col">
                     <div class="work-order-right">
-                        <h1 class="d-none d-md-block work-heading-1">04</h1>
-                        <h4 class="work-heading-4">Restaurant POS Design</h4>
+                        <h1 class="d-none d-md-block ">Restaurant POS Design</h1>
         
                         <div class="built-with">
                             <div class="mt-2 mr-2">
-                                <div class="badge p-2">UI/UX Design</div>
+                                <div class="badge p-2">Wireframing</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">Prototyping</div>
                             </div>
                             <div class="mt-2 mr-2">
                                 <div class="badge p-2">Figma</div>
@@ -396,19 +416,19 @@
         
                         <p class="mt-3">A simple restaurant POS UI/UX Design and a light-themed user interface. That's why I chose the light blue color because of its calm and refreshing effect on users. Perfect for restaurants that are near or located to a beach.</p>
         
-                        <div class="mt-3 flexbox-start">
-                            <a href="#" 
+                        <div class="mt-4 flexbox-start">
+                            <a href="resources/images/projects/restaurant-pos/thumbnail.png" 
                                 target="_blank"
                                 title="Read More" 
                                 rel="noopener" 
-                                class="btn btn-primary">
+                                class="btn btn-outline-primary">
                                 <span>Preview</span>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col col-md-1"></div>
-                <div class="col">
+                <div class="col col-md-7">
                     <div class="work-order-left work-img-wrapper mb-4 mb-md-0">
                         <a href="resources/images/projects/restaurant-pos/thumbnail.png"
                             target="_blank" 
@@ -424,16 +444,16 @@
                 </div>
             </div>
 
-            <div class="text-center mt-5">
-                <a href="#view-more" 
-                    class="btn btn-link" 
+            <!-- <div class="text-center mt-5">
+                <a href="#view-more-projects" 
+                    class="btn btn-outline-primary"
                     id="view-more-projects">View More Projects</a>
-            </div>
+            </div> -->
 
         </div>
     </section>
 
-    <section id="skills" class="screen-height">
+    <section id="skills" class="screen-height bg-light">
         <div class="container my-3 py-5">
             <div class="text-center">
                 <div class="text-title mt-4">ABOUT MY</div>
@@ -556,18 +576,19 @@
                     <p class="text-muted about-me">A passionate Web Developer & Designer, I started my career as a System Developer at Synermaxx Corporation. I gained the best hands-on coding practices in this company. I am responsible for the development operations and enhanced web applications by designing robust databases from the Back-End to the Front-End side of every assigned project. Also interested in people where I can learn or absorb their best approaches regarding web development. </p>
                     <p class="text-muted about-me">My hobbies are watching anime, tutorials videos, reading articles, and playing with my pets.</p>
 
-                    <!-- <div class="mb-4"></div>
+                    <div class="mb-4"></div>
 
-                    <div class="text-left">
-                        <a href="resources/attachment/resume.pdf"
-                            download="Resume" 
-                            class="btn btn-outline-primary"
-                            id="btn-download-resume">
-                            <div class="d-flex align-items-center">
-                                <span class="mr-2">Download Resume</span><i data-feather="download" style="width: 16px; height: 16px;"></i>
-                            </div>
-                        </a>
-                    </div> -->
+                    <a class="btn btn-outline-primary is-mobile-w-100"
+                        href="resources/attachment/resume.pdf"
+                        download="Resume"
+                        id="btn-download-resume">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <span class="mr-2">Download Resume</span>
+                            <i data-feather="download" style="width: 16px; height: 16px;"></i>
+                        </div>
+                    </a>
+
+                    <div class="mb-4 mb-md-0"></div>
                 </div>
                 <div class="col col-md-1"></div>
                 <div class="col">
@@ -586,22 +607,20 @@
         </div>
     </section>
 
-    <footer id="contact">
+    <footer id="contact" class="bg-dark">
         <div class="container my-3 py-5 is-mobile-padding">
             <div class="text-center">
-                <div class="text-primary font-weight-600">CONTACT ME</div>
-                <h2 class="h2 font-weight-500">Stay Connected</h2>
+                <div class="text-light font-weight-600">CONTACT ME</div>
+                <h2 class="text-light h2 font-weight-500">Stay Connected</h2>
             </div>
 
             <div class="row no-gutters flex-column align-items-center my-5">
                 <div class="col">
                     <div class="text-center">
-                        <p class="font-weight-500">San Jose Del Monte City, Bulacan, Philippines</p>
-                        <p class="font-weight-500">+(63)9552-808-438</p>
-                        <p class="font-weight-500">
-                            <a href="mailto:trebormoralesson@gmail.com?subject=Good Day!&cc=moralesso152842@gmail.com"
-                                class="text-decodartion-none">trebormoralesson@gmail.com</a>
-                        </p>
+                        <p class="text-light">San Jose Del Monte City, Bulacan, Philippines</p>
+                        <p class="text-light">+(63)9552-808-438</p>
+                        <a class="text-light"
+                        href="mailto:trebormoralesson@gmail.com?subject=Good Day!&cc=moralesso152842@gmail.com">trebormoralesson@gmail.com</a>
                     </div>
                 </div>
                 <div class="col">
@@ -610,7 +629,7 @@
                         target="_blank" 
                         title="Connect with me at facebook" 
                         rel="noopener" 
-                        class="mr-2 text-decoration-none facebook">
+                        class="mr-2 media-icon facebook">
                             <div class="icon-wrapper">
                                 <img src="resources/images/svg/facebook.svg"
                                 width="32"
@@ -623,7 +642,7 @@
                         target="_blank" 
                         title="Connect with me at linkedin" 
                         rel="noopener" 
-                        class="mr-2 text-decoration-none linkedin">
+                        class="mr-2 media-icon linkedin">
                             <div class="icon-wrapper">
                                 <img src="resources/images/svg/linkedin.svg" 
                                 width="32" 
@@ -636,7 +655,7 @@
                         target="_blank" 
                         title="Follow me at github" 
                         rel="noopener" 
-                        class="mr-2 text-decoration-none github">
+                        class="mr-2 media-icon github">
                             <div class="icon-wrapper">
                                 <img src="resources/images/svg/github.svg" 
                                 width="32" 
@@ -710,7 +729,7 @@
             </div> -->
         </div>
 
-        <div class="text-center text-muted font-size-sm mb-1">© <span id="year"></span> | Robertson Morales</div>
+        <div class="text-center text-light font-size-sm">&copy; <span id="year"></span> | Robertson Morales</div>
     </footer>
 
     <script src="plugins/scrollreveal/scrollreveal.min.js"></script>

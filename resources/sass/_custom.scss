@@ -1,20 +1,14 @@
 /* FLEXBOX */ 
 .flexbox-center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox(center);
 }
 
 .flexbox-start{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    @include flexbox(flex-start);
 }
 
 .flexbox-between{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexbox(space-between);
 }
 /* ENDS HERE*/
 
@@ -67,25 +61,43 @@
 
 .card-service{
     @extend .card;
-    transition: all .4s ease;
+    @extend .p-md-3;
+    border: $border;
+    box-shadow: $shadow;
 
-    .card-service-child{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    .card-icon{
+        @include flexbox(flex-start);
 
-        .card-icon{
-            width: 55px;
-            height: 55px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: $primary;
-            border-radius: 50%;
-            color: #fff;
-        } 
+        .feather{
+            width: 40px !important; 
+            z-index: 1;
+            position: relative;
+            left: 10px;
+        }
+
+        .blob{
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            left: 0;
+            @include flexbox(center);
+        }
+    } 
+
+    .card-footer{
+        z-index: 1;
+    }
+
+    .waves{
+        position: absolute;
+        left: 0%;
+        bottom: 0%;
+        fill: $light;
+        width: 100%;
+    }
+
+    &:last-child{
+        margin-right: 0px;
     }
 }
 
@@ -101,9 +113,7 @@
 
 .screen-height{
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend .flexbox-center;
 }
 
 .saturate{
@@ -120,16 +130,6 @@
     flex-direction: column-reverse;
 }
 
-.work-heading-1{
-    color: $primary;
-    font-weight: 600;
-}
-
-.work-heading-4{
-    font-weight: 500;
-    color: $dark;
-}
-
 .built-with{
     display: flex;
     flex-wrap: wrap;
@@ -141,37 +141,11 @@
     overflow: hidden;
 }
 
-.facebook{
-    @extend .flexbox-center;
-    background-color: #1877f233;
-    border: 1px solid #1877f244;
-    border-radius: $card-radius;
+.media-icon{
+    @extend .text-decoration-none;
 
-    &:active{
-        background-color: #1877f255;
-    }
-}
-
-.linkedin{
-    @extend .flexbox-center;
-    background-color: #0a66c233;
-    border: 1px solid #0a66c244;
-    border-radius: $card-radius;
-
-    &:active{
-        background-color: #0a66c255;
-    }
-}
-
-.github{
-    @extend .flexbox-center;
-    background-color: unquote($dark + "33");
-    border: 1px solid unquote($dark + "44");
-    border-radius: $card-radius;
-
-    &:active{
-        background-color: unquote($dark + "55");
-    }
+    background-color: unquote(#1877f2 + "33");
+    border: 1px solid unquote(#1877f2 + "44");
 }
 
 .bg-color{
@@ -179,7 +153,8 @@
 }
 
 .my-avatar{
-    border-radius: 50% 50% 50% 0 !important;
+    border-radius: 50% !important;
+    @extend .shadow;
 }
 
 .icon-wrapper{
