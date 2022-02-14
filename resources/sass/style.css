@@ -10185,7 +10185,7 @@ body {
 }
 
 .h1 {
-  font-size: clamp(2.3rem, 5vw, 3.5rem) !important;
+  font-size: clamp(1.8rem, 5vw, 3rem) !important;
 }
 
 .h2 {
@@ -10223,8 +10223,8 @@ body {
 }
 
 .btn {
-  border-radius: 20px !important;
-  padding: 10px 20px;
+  border-radius: 40px !important;
+  padding: 10px 25px;
   font-weight: 500;
 }
 
@@ -10503,42 +10503,29 @@ body {
 }
 
 @media (max-width: 575.98px) {
-  .is-mobile-w-100 {
+  .mobile-w-100 {
     width: 100% !important;
-  }
-  .is-mobile-mt-5 {
-    margin-top: 70px;
-  }
-  .is-mobile-img-fluid {
-    width: 200px !important;
-    height: 200px !important;
-  }
-  .is-mobile-text-center {
-    text-align: center;
   }
 }
 
 @media (max-width: 767.98px) {
-  #services .container {
-    overflow-x: auto;
-    overflow-y: hidden;
+  #avatar {
+    width: 150px;
+    height: 150px;
   }
-  .is-mobile-padding {
+  .mobile-padding, .container {
     padding-right: 30px !important;
     padding-left: 30px !important;
   }
-  .is-mobile-bg-white {
+  .mobile-bg-white {
     background-color: #fbfbfb;
   }
   .card-service .card-icon .blob {
     left: -16px;
     top: -25px;
   }
-  .h1 {
-    font-size: 1.8rem !important;
-  }
   .h2 {
-    font-size: 1.6rem !important;
+    font-size: 1.4rem !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
