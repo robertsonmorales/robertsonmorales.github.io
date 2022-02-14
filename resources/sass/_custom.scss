@@ -86,15 +86,15 @@
         }
 
         .blob-1{
-            fill: #7209B7;
+            fill: $c1;
         }
 
         .blob-2{
-            fill: #4895EF;
+            fill: $c2;
         }
 
         .blob-3{
-            fill: #B5179E;
+            fill: $c3;
         }
     } 
 
@@ -157,9 +157,10 @@
 
 .media-icon{
     @extend .text-decoration-none;
-
-    background-color: unquote(#1877f2 + "33");
-    border: 1px solid unquote(#1877f2 + "44");
+    // background-color: unquote(#1877f2 + "33");
+    // border: 1px solid unquote(#1877f2 + "44");
+    box-shadow: $shadow;
+    border-radius: $radius;
 }
 
 .bg-color{
