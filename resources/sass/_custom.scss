@@ -10,6 +10,10 @@
 .flexbox-between{
     @include flexbox(space-between);
 }
+
+.flexbox-end{
+    @include flexbox(flex-end);
+}
 /* ENDS HERE*/
 
 /* IMAGES */
@@ -62,8 +66,6 @@
 .card-service{
     @extend .card;
     @extend .p-md-3;
-    border: $border;
-    box-shadow: $shadow;
     overflow: hidden;
 
     .card-icon{

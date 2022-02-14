@@ -79,7 +79,7 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
-    
+
     <nav class="navbar navbar-expand-md navbar-light mobile-bg-white fixed-top" id="navbar">
         <div class="container">
             <button class="navbar-brand border-0"
@@ -104,27 +104,27 @@
                 
                 <div class="navbar-text">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item mr-0 mr-md-2 mb-3 mb-md-0">
+                        <li class="nav-item">
                             <button class="nav-link navbar font-weight-500 active"
                             id="nav-hero" 
                             onclick="navSelected('hero')">Home</button>
                         </li>
-                        <li class="nav-item mr-0 mr-md-2 mb-3 mb-md-0">
+                        <li class="nav-item">
                             <button class="nav-link navbar font-weight-500"
                             id="nav-services"
                             onclick="navSelected('services')">Services</button>
                         </li>
-                        <li class="nav-item mr-0 mr-md-2 mb-3 mb-md-0">
+                        <li class="nav-item">
                             <button class="nav-link navbar font-weight-500"
                             id="nav-works"
                             onclick="navSelected('works')">Works</button>
                         </li>
-                        <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
+                        <li class="nav-item">
                             <button class="nav-link navbar font-weight-500"
                             id="nav-skills"
                             onclick="navSelected('skills')">Skills</button>
                         </li>
-                        <li class="nav-item mr-0 mr-md-2 mb-2 mb-md-0">
+                        <li class="nav-item">
                             <button class="nav-link navbar font-weight-500"
                             id="nav-about" 
                             onclick="navSelected('about')">About</button>
@@ -640,66 +640,15 @@
                 <h2 class="h2 font-weight-500">Stay Connected</h2>
             </div>
 
-            <div class="row no-gutters flex-column align-items-center my-5">
-                <div class="col">
-                    <div class="text-center">
-                        <p>San Jose Del Monte City, Bulacan, Philippines</p>
-                        <p>+(63)9552-808-438</p>
-                        <a href="mailto:trebormoralesson@gmail.com?subject=Good Day!&cc=moralesso152842@gmail.com">trebormoralesson@gmail.com</a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="flexbox-center mt-4">
-                        <a href="https://web.facebook.com/profile.php?id=100004962736826" 
-                            target="_blank" 
-                            title="Connect with me at facebook" 
-                            rel="noopener" 
-                            class="mr-2 media-icon facebook">
-                            <div class="icon-wrapper">
-                                <img src="resources/images/svg/facebook.svg"
-                                width="32"
-                                height="32"
-                                alt="facebook">
-                            </div>
-                        </a>
-                        
-                        <a href="https://www.linkedin.com/in/robertson-morales-517a721bb" 
-                            target="_blank" 
-                            title="Connect with me at linkedin" 
-                            rel="noopener" 
-                            class="mr-2 media-icon linkedin">
-                            <div class="icon-wrapper">
-                                <img src="resources/images/svg/linkedin.svg" 
-                                width="32" 
-                                height="32" 
-                                alt="linkedin">
-                            </div>
-                        </a>
-                        
-                        <a href="https://github.com/robertsonmorales" 
-                            target="_blank" 
-                            title="Follow me at github" 
-                            rel="noopener" 
-                            class="mr-2 media-icon github">
-                            <div class="icon-wrapper">
-                                <img src="resources/images/svg/github.svg" 
-                                width="32" 
-                                height="32" 
-                                alt="github">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="row no-gutters justify-content-center flex-column flex-md-row my-5">
-                <div class="col col-md-5 shadow rounded bg-white p-4">
-                    <div class="d-flex justify-content-start flex-column text-center text-md-left">
-                        <span class="mb-3 font-weight-600 h6">SEND A MESSAGE</span>
-                    </div>
+            <!-- <div class="flexbox-center">
+                <div class="card shadow rounded p-4 my-5 mobile-w-100 w-50">
+                    <div class="font-weight-600 h6">SEND A MESSAGE</div>
                     
+                    <hr>
+
                     <form action="#"
-                    method="get" 
-                    id="contact-form">
+                        method="get" 
+                        id="contact-form">
                         <div class="input-group">
                             <label for="name">Name</label>
                             <input type="text" 
@@ -735,26 +684,75 @@
                             <textarea name="message" 
                             id="message" 
                             cols="30" 
-                            rows="3" 
+                            rows="5" 
                             class="form-control" 
                             autocomplete="off"></textarea>
                             <span class="invalid-feedback" 
                             id="validate-message"></span>
                         </div>
 
-                        <div class="flexbox-center">
-                            <button class="btn btn-primary text-white py-2 px-4 w-100"
+                        <div class="flexbox-end">
+                            <button class="btn btn-primary mobile-w-100"
                                 id="btn-submit" 
                                 type="submit"
                                 data-toggle="modal"
-                                data-target="#modal">SEND</button>
+                                data-target="#modal">Submit</button>
                         </div>
                     </form>
                 </div>
             </div> -->
+
+            <div class="flexbox-center flex-column my-5">
+                <div class="text-center">
+                    <p>San Jose Del Monte City, Bulacan, Philippines</p>
+                    <p>+(63)9552-808-438</p>
+                    <p><a href="mailto:trebormoralesson@gmail.com?subject=Good Day!&cc=moralesso152842@gmail.com">trebormoralesson@gmail.com</a></p>
+                </div>
+                
+                <div class="flexbox-center mt-4">
+                    <a href="https://web.facebook.com/profile.php?id=100004962736826" 
+                        target="_blank" 
+                        title="Connect with me at facebook" 
+                        rel="noopener" 
+                        class="mr-2 media-icon facebook">
+                        <div class="icon-wrapper">
+                            <img src="resources/images/svg/facebook.svg"
+                            width="32"
+                            height="32"
+                            alt="facebook">
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/robertson-morales-517a721bb" 
+                        target="_blank" 
+                        title="Connect with me at linkedin" 
+                        rel="noopener" 
+                        class="mr-2 media-icon linkedin">
+                        <div class="icon-wrapper">
+                            <img src="resources/images/svg/linkedin.svg" 
+                            width="32" 
+                            height="32" 
+                            alt="linkedin">
+                        </div>
+                    </a>
+                    
+                    <a href="https://github.com/robertsonmorales" 
+                        target="_blank" 
+                        title="Follow me at github" 
+                        rel="noopener" 
+                        class="mr-2 media-icon github">
+                        <div class="icon-wrapper">
+                            <img src="resources/images/svg/github.svg" 
+                            width="32" 
+                            height="32" 
+                            alt="github">
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <div class="text-center text-light font-size-sm">&copy; <span id="year"></span> | Robertson Morales</div>
+        <div class="text-center font-size-sm">&copy; <span id="year"></span> | Robertson Morales</div>
     </footer>
 
     <script src="plugins/scrollreveal/scrollreveal.min.js"></script>
