@@ -1,19 +1,6 @@
 @include media-breakpoint-only(xs) {
-    .is-mobile-w-100{
+    .mobile-w-100{
         width: 100% !important;
-    }
-
-    .is-mobile-mt-5{
-        margin-top: 70px;
-    }
-
-    .is-mobile-img-fluid{
-        width: 200px !important;
-        height: 200px !important;
-    }
-
-    .is-mobile-text-center{
-        text-align: center;
     }
 }
 
@@ -22,42 +9,31 @@
 }
 
 @include media-breakpoint-between(xs, sm) {
-    #services .container{
-        overflow-x: auto;
-        overflow-y: hidden;
+    .container{
+        @extend .mobile-padding;
     }
 
-    .is-mobile-padding{
+    #avatar{
+        width: 150px;
+        height: 150px;
+    }
+
+    .mobile-padding{
         padding-right: 30px !important;
         padding-left: 30px !important;
     }
 
-    .is-mobile-bg-white{
+    .mobile-bg-white{
         background-color: #fbfbfb;
     }
-
-    // .is-mobile-card-deck{
-    //     display: flex;
-    //     flex-wrap: nowrap;
-    //     width: 100vw;
-    // }
-
-    // .card-service{
-    //     min-width: 85% !important;
-    //     margin-right: 15px;
-    // }
 
     .card-service .card-icon .blob{
         left: -16px;
         top: -25px;
     }
 
-    .h1{
-        font-size: 1.8rem !important;
-    }
-
     .h2{
-        font-size: 1.6rem !important;
+        font-size: 1.4rem !important;
     }
 }
 

@@ -48,7 +48,7 @@
     </script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light is-mobile-bg-white fixed-top" id="navbar">
+    <nav class="navbar navbar-expand-md navbar-light mobile-bg-white fixed-top" id="navbar">
         <div class="container">
             <button class="navbar-brand border-0"
                 onclick="navSelected('hero')"
@@ -110,8 +110,8 @@
 
     <header id="hero" 
         class="screen-height">
-        <div class="container pt-5 pt-md-0 is-mobile-padding">
-            <div class="row no-gutters justify-content-md-between justify-content-lg-center align-items-center flex-column flex-lg-row">
+        <div class="container">
+            <div class="row no-gutters mt-5 mt-md-0">
 
                 <div class="col">
                     <div class="img-wrapper text-center">
@@ -124,7 +124,7 @@
                     </div>
 
                     <div class="text-left text-md-center">
-                        <h1 class="h1" id="catch-phrase">Hi! I'm <span class="text-primary">Robertson</span>, <br> a Web Developer & Designer</h1>
+                        <h1 class="h1">Hi! I'm Robertson, <br> a Web <strong>Developer</strong> and <strong>Designer</strong>.</h1>
 
                         <div class="mb-3"></div>
 
@@ -133,13 +133,13 @@
                         <div class="mb-4"></div>
 
                         <div class="call-to-actions">
-                            <button class="btn btn-primary mb-1 mb-md-0 mr-1 is-mobile-w-100"
+                            <button class="btn btn-primary mb-1 mb-md-0 mr-1 mobile-w-100"
                                 onclick="navSelected('works')"
                                 id="btn-my-works">View Works</button>
     
                             <div class="d-block d-md-none w-100"></div>
     
-                            <a class="btn btn-outline-primary is-mobile-w-100"
+                            <a class="btn btn-outline-primary mobile-w-100"
                                 href="resources/attachment/resume.pdf"
                                 download="Resume"
                                 id="btn-download-resume">
@@ -152,25 +152,12 @@
                         <div class="mb-4 mb-md-0"></div>
                     </div>
                 </div>  
-                
-                <!-- <div class="col-2"></div>
-                <div class="col col-md-5 col-lg-6">
-                    <div class="is-mobile-text-center mt-3 mt-md-0">
-                        <img src="resources/images/me/profile-1.jpg" 
-                            class="saturate my-avatar img-fluid is-mobile-img-fluid d-block d-md-none" 
-                            width="647"
-                            height="647"
-                            alt="avatar" 
-                            id="avatar">
-                    </div>
-                    <div class="mb-3"></div>
-                </div>                   -->
             </div>
         </div>
     </header>
 
     <section id="services" class="screen-height py-5">
-        <div class="container is-mobile-padding">
+        <div class="container">
             <div class="text-center">
                 <div class="text-title">SERVICES</div>
                 <h1 class="h2">Specializing In</h1>
@@ -192,7 +179,7 @@
                     <div class="card-footer">
                         <!-- <a href="#read-more" class="btn btn-primary btn-sm">Read more</a> -->
                     </div>
-                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,96L60,117.3C120,139,240,181,360,176C480,171,600,117,720,101.3C840,85,960,107,1080,133.3C1200,160,1320,192,1380,208L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+                    <!-- <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,96L60,117.3C120,139,240,181,360,176C480,171,600,117,720,101.3C840,85,960,107,1080,133.3C1200,160,1320,192,1380,208L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg> -->
                 </div>
 
                 <div class="card-service" 
@@ -210,7 +197,7 @@
                     <div class="card-footer">
                         <!-- <a href="#read-more" class="btn btn-outline-primary btn-sm">Read more</a> -->
                     </div>
-                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,96L60,117.3C120,139,240,181,360,176C480,171,600,117,720,101.3C840,85,960,107,1080,133.3C1200,160,1320,192,1380,208L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+                    <!-- <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,96L60,117.3C120,139,240,181,360,176C480,171,600,117,720,101.3C840,85,960,107,1080,133.3C1200,160,1320,192,1380,208L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg> -->
                 </div>
 
                 <div class="card-service" 
@@ -228,14 +215,14 @@
                     <div class="card-footer">
                         <!-- <a href="#read-more" class="btn btn-outline-primary btn-sm">Read more</a> -->
                     </div>
-                    <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,96L60,117.3C120,139,240,181,360,176C480,171,600,117,720,101.3C840,85,960,107,1080,133.3C1200,160,1320,192,1380,208L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+                    <!-- <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill-opacity="1" d="M0,96L60,117.3C120,139,240,181,360,176C480,171,600,117,720,101.3C840,85,960,107,1080,133.3C1200,160,1320,192,1380,208L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg> -->
                 </div>
             </div>
         </div>
     </section>
 
     <section id="works" class="screen-height">
-        <div class="container my-3 py-5 is-mobile-padding">
+        <div class="container my-3 py-5">
             <div class="text-center">
                 <div class="text-title mt-4">WORKS</div>
                 <h2 class="h2">My Projects</h2>
@@ -260,7 +247,7 @@
                             target="_blank"
                             title="More Information" 
                             rel="noopener" 
-                            class="btn btn-primary">
+                            class="btn btn-primary mobile-w-100">
                             <span>Preview</span>
                         </a>
                     </div>
@@ -311,7 +298,7 @@
                             target="_blank"
                             title="Preview" 
                             rel="noopener" 
-                            class="btn btn-primary">
+                            class="btn btn-primary mobile-w-100">
                             <span>Preview</span>
                         </a>
                     </div>
@@ -369,7 +356,7 @@
                                 target="_blank"
                                 title="Preview" 
                                 rel="noopener" 
-                                class="btn btn-primary">
+                                class="btn btn-primary mobile-w-100">
                                 <span>Preview</span>
                             </a>
                         </div>
@@ -428,7 +415,7 @@
                                 target="_blank"
                                 title="Preview" 
                                 rel="noopener" 
-                                class="btn btn-primary">
+                                class="btn btn-primary mobile-w-100">
                                 <span>Preview</span>
                             </a>
                         </div>
@@ -575,7 +562,7 @@
     </section>
 
     <section id="about" class="screen-height">
-        <div class="container my-3 py-5 is-mobile-padding">
+        <div class="container my-3 py-5">
             <div class="row no-gutters flex-column flex-md-row my-3 py-5">
                 <div class="col">
                     <div class="text-title mb-1">A BIT ABOUT ME</div>
@@ -585,7 +572,7 @@
 
                     <div class="mb-4"></div>
 
-                    <a class="btn btn-primary is-mobile-w-100"
+                    <a class="btn btn-primary mobile-w-100"
                         href="resources/attachment/resume.pdf"
                         download="Resume"
                         id="btn-download-resume">
@@ -615,7 +602,7 @@
     </section>
 
     <footer id="contact">
-        <div class="container my-3 py-5 is-mobile-padding">
+        <div class="container my-3 py-5">
             <div class="text-center">
                 <div class="text-primary font-weight-600">CONTACT ME</div>
                 <h2 class="h2 font-weight-500">Stay Connected</h2>
