@@ -115,8 +115,8 @@
 
                 <div class="col">
                     <div class="img-wrapper text-center">
-                        <img src="resources/images/me/profile-1.jpg" 
-                        class="saturate my-avatar mb-4" 
+                        <img src="resources/images/me/me.jpg" 
+                        class="my-avatar mb-4" 
                         alt="My Profile Picture"
                         height="220"
                         width="220"
@@ -137,7 +137,7 @@
                                 onclick="navSelected('works')"
                                 id="btn-my-works">View Works</button>
     
-                            <!-- <div class="d-block d-md-none w-100"></div>
+                            <div class="d-block d-md-none w-100"></div>
     
                             <a class="btn btn-outline-primary is-mobile-w-100"
                                 href="resources/attachment/resume.pdf"
@@ -147,7 +147,7 @@
                                     <span class="mr-2">Download Resume</span>
                                     <i data-feather="download" style="width: 16px; height: 16px;"></i>
                                 </div>
-                            </a> -->
+                            </a>
                         </div>
                         <div class="mb-4 mb-md-0"></div>
                     </div>
@@ -169,7 +169,7 @@
         </div>
     </header>
 
-    <section id="services" class="screen-height bg-light py-5">
+    <section id="services" class="screen-height py-5">
         <div class="container is-mobile-padding">
             <div class="text-center">
                 <div class="text-title">SERVICES</div>
@@ -180,10 +180,10 @@
                 <div class="card-service" 
                     id="ui-ux-design">
                     <div class="card-icon">
-                        <svg class="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#F3F3F3" d="M61,-18.7C67.1,-1.2,51.7,24.4,31.6,37.6C11.4,50.9,-13.4,51.8,-28.5,40.6C-43.5,29.3,-48.7,5.9,-42.3,-12C-36,-30,-18,-42.4,4.8,-43.9C27.5,-45.5,55,-36.1,61,-18.7Z" transform="translate(100 100)" />
-                            <i data-feather="layout"></i>
+                        <svg class="blob blob-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M61,-18.7C67.1,-1.2,51.7,24.4,31.6,37.6C11.4,50.9,-13.4,51.8,-28.5,40.6C-43.5,29.3,-48.7,5.9,-42.3,-12C-36,-30,-18,-42.4,4.8,-43.9C27.5,-45.5,55,-36.1,61,-18.7Z" transform="translate(100 100)" />
                         </svg>
+                        <i data-feather="layout"></i>
                     </div>
                     <div class="card-body">
                         <h4 class="mb-4 card-title">UI/UX Design</h4>
@@ -198,10 +198,10 @@
                 <div class="card-service" 
                     id="prototypes-to-html">
                     <div class="card-icon">
-                        <svg class="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#F3F3F3" d="M61,-18.7C67.1,-1.2,51.7,24.4,31.6,37.6C11.4,50.9,-13.4,51.8,-28.5,40.6C-43.5,29.3,-48.7,5.9,-42.3,-12C-36,-30,-18,-42.4,4.8,-43.9C27.5,-45.5,55,-36.1,61,-18.7Z" transform="translate(100 100)" />
-                            <i data-feather="code"></i>
+                        <svg class="blob blob-2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M61,-18.7C67.1,-1.2,51.7,24.4,31.6,37.6C11.4,50.9,-13.4,51.8,-28.5,40.6C-43.5,29.3,-48.7,5.9,-42.3,-12C-36,-30,-18,-42.4,4.8,-43.9C27.5,-45.5,55,-36.1,61,-18.7Z" transform="translate(100 100)" />                            
                         </svg>
+                        <i data-feather="code"></i>
                     </div>
                     <div class="card-body">
                         <h4 class="mb-4 card-title">Prototypes to HTML</h4>
@@ -216,8 +216,8 @@
                 <div class="card-service" 
                     id="web-app">
                     <div class="card-icon">
-                        <svg class="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#F3F3F3" d="M61,-18.7C67.1,-1.2,51.7,24.4,31.6,37.6C11.4,50.9,-13.4,51.8,-28.5,40.6C-43.5,29.3,-48.7,5.9,-42.3,-12C-36,-30,-18,-42.4,4.8,-43.9C27.5,-45.5,55,-36.1,61,-18.7Z" transform="translate(100 100)" />
+                        <svg class="blob blob-3" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M61,-18.7C67.1,-1.2,51.7,24.4,31.6,37.6C11.4,50.9,-13.4,51.8,-28.5,40.6C-43.5,29.3,-48.7,5.9,-42.3,-12C-36,-30,-18,-42.4,4.8,-43.9C27.5,-45.5,55,-36.1,61,-18.7Z" transform="translate(100 100)" />
                         </svg>
                         <i data-feather="monitor"></i>
                     </div>
@@ -400,24 +400,36 @@
             <div class="row no-gutters work-order-3 flexbox-works flex-md-row my-3 py-5">
                 <div class="col">
                     <div class="work-order-right">
-                        <h1 class="d-none d-md-block ">Restaurant POS Design</h1>
+                        <h1 class="d-none d-md-block">Food Ordering System</h1>
         
                         <div class="built-with">
                             <div class="mt-2 mr-2">
-                                <div class="badge p-2">Wireframing</div>
-                            </div>
-                            <div class="mt-2 mr-2">
-                                <div class="badge p-2">Prototyping</div>
-                            </div>
-                            <div class="mt-2 mr-2">
                                 <div class="badge p-2">Figma</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">HTML</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">CSS</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">JavaScript</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">JQuery</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">PHP</div>
+                            </div>
+                            <div class="mt-2 mr-2">
+                                <div class="badge p-2">Laravel</div>
                             </div>
                         </div>
         
                         <p class="mt-3">A simple restaurant POS UI/UX Design and a light-themed user interface. That's why I chose the light blue color because of its calm and refreshing effect on users. Perfect for restaurants that are near or located to a beach.</p>
         
                         <div class="mt-4 flexbox-start">
-                            <a href="resources/images/projects/restaurant-pos/thumbnail.png" 
+                            <a href="http://working-food-ordering-system.herokuapp.com/" 
                                 target="_blank"
                                 title="Read More" 
                                 rel="noopener" 
@@ -428,7 +440,7 @@
                     </div>
                 </div>
                 <div class="col col-md-1"></div>
-                <div class="col col-md-7">
+                <div class="col col-md-6">
                     <div class="work-order-left work-img-wrapper mb-4 mb-md-0">
                         <a href="resources/images/projects/restaurant-pos/thumbnail.png"
                             target="_blank" 
@@ -578,7 +590,7 @@
 
                     <div class="mb-4"></div>
 
-                    <a class="btn btn-outline-primary is-mobile-w-100"
+                    <a class="btn btn-primary is-mobile-w-100"
                         href="resources/attachment/resume.pdf"
                         download="Resume"
                         id="btn-download-resume">
@@ -590,11 +602,11 @@
 
                     <div class="mb-4 mb-md-0"></div>
                 </div>
-                <div class="col col-md-1"></div>
+                <div class="col col-md-2"></div>
                 <div class="col">
                     <div class="mb-2 mb-md-0">
-                        <img class="img-fluid w-100 saturate my-avatar" 
-                            src="resources/images/me/profile-1.jpg" 
+                        <img class="img-fluid my-avatar" 
+                            src="resources/images/me/me.jpg" 
                             loading="lazy"
                             width="462"
                             height="462"

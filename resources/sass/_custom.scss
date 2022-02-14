@@ -64,6 +64,7 @@
     @extend .p-md-3;
     border: $border;
     box-shadow: $shadow;
+    overflow: hidden;
 
     .card-icon{
         @include flexbox(flex-start);
@@ -73,6 +74,7 @@
             z-index: 1;
             position: relative;
             left: 10px;
+            color: $light !important;
         }
 
         .blob{
@@ -81,6 +83,18 @@
             position: absolute;
             left: 0;
             @include flexbox(center);
+        }
+
+        .blob-1{
+            fill: #7209B7;
+        }
+
+        .blob-2{
+            fill: #4895EF;
+        }
+
+        .blob-3{
+            fill: #B5179E;
         }
     } 
 
@@ -154,6 +168,7 @@
 
 .my-avatar{
     border-radius: 50% !important;
+    object-fit: cover;
     @extend .shadow;
 }
 
