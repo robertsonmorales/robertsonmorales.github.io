@@ -91,7 +91,8 @@
 // CARDS
 .card{
     border-radius: $card-radius !important;
-    border: none;
+    border: $border;
+    box-shadow: $shadow;
 
     .card-icon{
         @extend .mx-3, .my-4;
@@ -126,7 +127,7 @@
 .input-group{
     .form-control{
         width: 100%;
-        border-radius: $radius !important;
+        border-radius: $card-radius !important;
     }
     
     .invalid-feedback{
