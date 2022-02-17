@@ -9,7 +9,7 @@
 }
 
 @include media-breakpoint-between(xs, sm) {
-    .container{
+    .container:not(.from-nav){
         @extend .mobile-padding;
     }
 
