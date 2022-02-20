@@ -10521,7 +10521,7 @@ body {
     background-color: #fbfbfb;
   }
   .card-service .card-icon .blob {
-    left: -16px;
+    left: -16px !important;
     top: -25px;
   }
   .h2 {
