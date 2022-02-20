@@ -10,6 +10,10 @@
 .flexbox-between{
     @include flexbox(space-between);
 }
+
+.flexbox-end{
+    @include flexbox(flex-end);
+}
 /* ENDS HERE*/
 
 /* IMAGES */
@@ -62,8 +66,7 @@
 .card-service{
     @extend .card;
     @extend .p-md-3;
-    border: $border;
-    box-shadow: $shadow;
+    overflow: hidden;
 
     .card-icon{
         @include flexbox(flex-start);
@@ -73,6 +76,7 @@
             z-index: 1;
             position: relative;
             left: 10px;
+            color: $light !important;
         }
 
         .blob{
@@ -81,6 +85,18 @@
             position: absolute;
             left: 0;
             @include flexbox(center);
+        }
+
+        .blob-1{
+            fill: $c1;
+        }
+
+        .blob-2{
+            fill: $c2;
+        }
+
+        .blob-3{
+            fill: $c3;
         }
     } 
 
@@ -143,9 +159,10 @@
 
 .media-icon{
     @extend .text-decoration-none;
-
-    background-color: unquote(#1877f2 + "33");
-    border: 1px solid unquote(#1877f2 + "44");
+    // background-color: unquote(#1877f2 + "33");
+    // border: 1px solid unquote(#1877f2 + "44");
+    box-shadow: $shadow;
+    border-radius: $radius;
 }
 
 .bg-color{
@@ -154,6 +171,7 @@
 
 .my-avatar{
     border-radius: 50% !important;
+    object-fit: cover;
     @extend .shadow;
 }
 

@@ -26,7 +26,7 @@
 
 // HEADINGS
 .h1{
-    font-size: clamp(2.3rem, 5vw, 3.5rem) !important;
+    font-size: clamp(1.8rem, 5vw, 3rem) !important;
 }
 
 .h2{
@@ -72,8 +72,8 @@
 
 // BUTTONS
 .btn{
-    border-radius: $card-radius !important;
-    padding: 10px 20px;
+    border-radius: $radius !important;
+    padding: 10px 25px;
     font-weight: 500;
 }
 
@@ -91,7 +91,8 @@
 // CARDS
 .card{
     border-radius: $card-radius !important;
-    border: none;
+    border: $border;
+    box-shadow: $shadow;
 
     .card-icon{
         @extend .mx-3, .my-4;
@@ -126,7 +127,7 @@
 .input-group{
     .form-control{
         width: 100%;
-        border-radius: $radius !important;
+        border-radius: $card-radius !important;
     }
     
     .invalid-feedback{
