@@ -76,27 +76,16 @@
             z-index: 1;
             position: relative;
             left: 10px;
-            color: $light !important;
+            color: $primary !important;
         }
 
-        .blob{
+        svg.blob{
             width: 120px;
             height: 120px;
             position: absolute;
             left: 0;
+            fill: $saturated_primary !important;
             @include flexbox(center);
-        }
-
-        .blob-1{
-            fill: $c1;
-        }
-
-        .blob-2{
-            fill: $c2;
-        }
-
-        .blob-3{
-            fill: $c3;
         }
     } 
 
@@ -142,7 +131,7 @@
 }
 
 .flexbox-works{
-    align-items: start;
+    align-items: center;
     flex-direction: column-reverse;
 }
 
