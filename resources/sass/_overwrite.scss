@@ -77,6 +77,10 @@
     font-weight: 500;
 }
 
+.btn-primary{
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
 // .btn-outline-primary{
 //     background-color: unquote($primary + '33');
 //     color: $primary;
@@ -117,9 +121,11 @@
 
 // BADGE
 .badge{
-    background-color: #ddd !important;
+    background-color: #eee;
     color: $dark;
-    font-weight: 500 !important;
+    font-weight: normal !important;
+    font-size: 12px;
+    border: $border;
 }
 // ENDS HERE
 
