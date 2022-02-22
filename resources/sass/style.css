@@ -10193,7 +10193,7 @@ body {
 }
 
 .rounded {
-  border-radius: 20px !important;
+  border-radius: 4px !important;
 }
 
 .rounded-top {
@@ -10223,13 +10223,18 @@ body {
 }
 
 .btn {
-  border-radius: 40px !important;
+  border-radius: 1px !important;
   padding: 10px 25px;
   font-weight: 500;
 }
 
+.btn-primary {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
 .card, .card-service {
-  border-radius: 20px !important;
+  border-radius: 4px !important;
   border: 0.0625rem solid rgba(231, 234, 243, 0.7);
   -webkit-box-shadow: 9px 9px 18px #e9e9e9, -9px -9px 18px #ffffff;
           box-shadow: 9px 9px 18px #e9e9e9, -9px -9px 18px #ffffff;
@@ -10250,14 +10255,16 @@ body {
 }
 
 .badge {
-  background-color: #ddd !important;
+  background-color: #eee;
   color: #131b23;
-  font-weight: 500 !important;
+  font-weight: normal !important;
+  font-size: 12px;
+  border: 0.0625rem solid rgba(231, 234, 243, 0.7);
 }
 
 .input-group .form-control {
   width: 100%;
-  border-radius: 20px !important;
+  border-radius: 4px !important;
 }
 
 .input-group .invalid-feedback {
@@ -10477,14 +10484,14 @@ body {
 .work-img-wrapper {
   -webkit-box-shadow: 9px 9px 18px #e9e9e9, -9px -9px 18px #ffffff;
           box-shadow: 9px 9px 18px #e9e9e9, -9px -9px 18px #ffffff;
-  border-radius: 20px;
+  border-radius: 4px;
   overflow: hidden;
 }
 
 .media-icon {
   -webkit-box-shadow: 9px 9px 18px #e9e9e9, -9px -9px 18px #ffffff;
           box-shadow: 9px 9px 18px #e9e9e9, -9px -9px 18px #ffffff;
-  border-radius: 40px;
+  border-radius: 1px;
 }
 
 .bg-color {
