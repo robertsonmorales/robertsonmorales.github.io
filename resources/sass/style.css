@@ -10223,7 +10223,7 @@ body {
 }
 
 .btn {
-  border-radius: 1px !important;
+  border-radius: 20px !important;
   padding: 10px 25px;
   font-weight: 500;
 }
@@ -10491,7 +10491,7 @@ body {
 .media-icon {
   -webkit-box-shadow: 9px 9px 18px #e9e9e9, -9px -9px 18px #ffffff;
           box-shadow: 9px 9px 18px #e9e9e9, -9px -9px 18px #ffffff;
-  border-radius: 1px;
+  border-radius: 20px;
 }
 
 .bg-color {
@@ -10533,6 +10533,15 @@ body {
   }
   .h2 {
     font-size: 1.4rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-item {
+    margin-right: 20px;
+  }
+  .nav-item:last-child {
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
