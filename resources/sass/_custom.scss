@@ -64,28 +64,16 @@
 /* ENDS HERE */
 
 .card-service{
-    @extend .card;
-    @extend .p-md-3;
+    @extend .card, .p-md-3;
     overflow: hidden;
 
     .card-icon{
+        @extend .mx-3, .my-4;
         @include flexbox(flex-start);
 
         .feather{
-            width: 40px !important; 
-            z-index: 1;
-            position: relative;
-            left: 10px;
-            color: $primary !important;
-        }
-
-        svg.blob{
-            width: 120px;
-            height: 120px;
-            position: absolute;
-            left: 0;
-            fill: $saturated_primary !important;
-            @include flexbox(center);
+            width: 40px; 
+            color: $dark;
         }
     } 
 
@@ -99,10 +87,6 @@
         bottom: 0%;
         fill: $light;
         width: 100%;
-    }
-
-    &:last-child{
-        margin-right: 0px;
     }
 }
 
@@ -161,7 +145,6 @@
 .my-avatar{
     border-radius: 50% !important;
     object-fit: cover;
-    @extend .shadow;
 }
 
 .icon-wrapper{

@@ -7913,7 +7913,7 @@ button.bg-dark:focus {
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
-.shadow, .my-avatar {
+.shadow {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
@@ -8075,7 +8075,6 @@ button.bg-dark:focus {
 
 .mr-3,
 .mx-3,
-.card .card-icon,
 .card-service .card-icon {
   margin-right: 1rem !important;
 }
@@ -8087,7 +8086,6 @@ button.bg-dark:focus {
 
 .ml-3,
 .mx-3,
-.card .card-icon,
 .card-service .card-icon {
   margin-left: 1rem !important;
 }
@@ -8098,7 +8096,6 @@ button.bg-dark:focus {
 
 .mt-4,
 .my-4,
-.card .card-icon,
 .card-service .card-icon {
   margin-top: 1.5rem !important;
 }
@@ -8110,7 +8107,6 @@ button.bg-dark:focus {
 
 .mb-4,
 .my-4,
-.card .card-icon,
 .card-service .card-icon {
   margin-bottom: 1.5rem !important;
 }
@@ -10236,8 +10232,7 @@ body {
 .card, .card-service {
   border-radius: 4px !important;
   border: 0.0625rem solid rgba(231, 234, 243, 0.7);
-  -webkit-box-shadow: 9px 9px 18px #e9e9e9, -9px -9px 18px #ffffff;
-          box-shadow: 9px 9px 18px #e9e9e9, -9px -9px 18px #ffffff;
+  background-color: #e3e6f2;
 }
 
 .card .card-header, .card-service .card-header {
@@ -10257,9 +10252,10 @@ body {
 .badge {
   background-color: #eee;
   color: #131b23;
-  font-weight: normal !important;
+  font-weight: normal;
   font-size: 12px;
   border: 0.0625rem solid rgba(231, 234, 243, 0.7);
+  border-radius: 20px;
 }
 
 .input-group .form-control {
@@ -10274,10 +10270,6 @@ body {
 .shadow-lg {
   -webkit-box-shadow: 9px 9px 18px #e9e9e9, -9px -9px 18px #ffffff !important;
           box-shadow: 9px 9px 18px #e9e9e9, -9px -9px 18px #ffffff !important;
-}
-
-.text-muted {
-  color: #333 !important;
 }
 
 /* FLEXBOX */
@@ -10399,28 +10391,8 @@ body {
 }
 
 .card-service .card-icon .feather {
-  width: 40px !important;
-  z-index: 1;
-  position: relative;
-  left: 10px;
-  color: #3F37C9 !important;
-}
-
-.card-service .card-icon svg.blob {
-  width: 120px;
-  height: 120px;
-  position: absolute;
-  left: 0;
-  fill: #cdcbff !important;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 40px;
+  color: #131b23;
 }
 
 .card-service .card-footer {
@@ -10433,10 +10405,6 @@ body {
   bottom: 0%;
   fill: #f3f3f3;
   width: 100%;
-}
-
-.card-service:last-child {
-  margin-right: 0px;
 }
 
 .img-fluid-hovered {
