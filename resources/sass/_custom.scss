@@ -66,6 +66,8 @@
 .card-service{
     @extend .card, .p-md-3;
     overflow: hidden;
+    background-color: $light;
+    transition: all .1s ease;
 
     .card-icon{
         @extend .mx-3, .my-4;
@@ -87,6 +89,18 @@
         bottom: 0%;
         fill: $light;
         width: 100%;
+    }
+
+    &:hover{
+        background-color: $primary;
+        color: $white;
+        transform: scale(1.1);
+        z-index: 1;
+        @extend .shadow;
+
+        .feather{            
+            color: $white;
+        }
     }
 }
 
@@ -124,18 +138,17 @@
     flex-wrap: wrap;
 }
 
-.work-img-wrapper{
-    box-shadow: $shadow;
-    border-radius: $card-radius;
+.work-img-wrapper{    
+    border-radius: $border-radius;
     overflow: hidden;
+
+    img:hover{
+        transform: scale(1.05);
+    }
 }
 
 .media-icon{
     @extend .text-decoration-none;
-    // background-color: unquote(#1877f2 + "33");
-    // border: 1px solid unquote(#1877f2 + "44");
-    box-shadow: $shadow;
-    border-radius: $radius;
 }
 
 .bg-color{
@@ -144,11 +157,55 @@
 
 .my-avatar{
     border-radius: 50% !important;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .icon-wrapper{
     width: 55px;
     height: 55px;
     @extend .flexbox-center;
+}
+
+.font-16{
+    width: 16px;
+    height: 16px;
+}
+
+.bg-transparent{
+    background-color: transparent;
+}
+
+.outline-none{
+    outline: none;
+}
+
+.border-radius{
+    border-radius: $radius;
+}
+
+.img-drop-shadow{
+    filter: drop-shadow(15px 20px 10px rgba(0, 0, 0, 0.2));
+    object-fit: fill;
+    width: 462px;
+    height: 475px;
+}
+
+.placeholder{
+    color: #f3f3f3;
+    font-size: 80px;
+    z-index: -1;
+    font-weight: 900;
+    pointer-events: none;
+}
+
+.placeholder-1::before{
+    content: "01";
+}
+
+.placeholder-2::before{
+    content: "02";
+}
+
+.placeholder-3::before{
+    content: "03";
 }

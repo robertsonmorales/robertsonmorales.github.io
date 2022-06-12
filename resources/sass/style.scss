@@ -17,9 +17,8 @@ html{
 
 body{
     background-color: $body-bg;   
-    font-family: $font-family;
-    overflow-x: hidden;
     color: $dark;
+    font: $font-size $font-family;
 }
 
 @import '_overwrite.scss';

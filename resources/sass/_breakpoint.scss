@@ -35,6 +35,10 @@
     .h2{
         font-size: 1.4rem !important;
     }
+
+    .fixed-top{
+        position: static;
+    }
 }
 
 @include media-breakpoint-only(md) {
@@ -43,7 +47,7 @@
 
 @include media-breakpoint-between(lg, xl){
     .nav-item{
-        margin-right: 20px;
+        margin-right: 10px;
 
         &:last-child{
             margin-right: 0;
