@@ -1,18 +1,29 @@
-ScrollReveal().reveal('nav', {
+function useScrolling(el, params){
+    ScrollReveal().reveal(el, params);
+}
+
+useScrolling('nav', {
     delay: 100,
     distance: '5%',
     origin: 'top',
     easing: 'ease'
 });
 
-ScrollReveal().reveal('#catch-phrase', {
+useScrolling('#my-profile', {
+    delay: 300,
+    distance: '5%',
+    origin: 'top',
+    easing: 'ease'
+});
+
+useScrolling('#intro', {
     delay: 100,
     distance: '5%',
     origin: 'right',
     easing: 'ease'
 });
 
-ScrollReveal().reveal('#specialize', {
+useScrolling('#specialize', {
     delay: 200,
     distance: '5%',
     origin: 'left',
@@ -20,21 +31,21 @@ ScrollReveal().reveal('#specialize', {
 });
 
 // CAll TO ACTIONS
-ScrollReveal().reveal('#btn-my-works', {
-    delay: 300,
-    distance: '15%',
-    origin: 'right',
-    easing: 'ease'
-});
-
-ScrollReveal().reveal('#btn-download-resume', {
+useScrolling('#btn-my-works', {
     delay: 300,
     distance: '15%',
     origin: 'left',
     easing: 'ease'
 });
 
-ScrollReveal().reveal('#avatar', {
+useScrolling('#btn-download-resume', {
+    delay: 300,
+    distance: '15%',
+    origin: 'right',
+    easing: 'ease'
+});
+
+useScrolling('#avatar', {
     delay: 100,
     duration: 900,
     distance: '10%',
@@ -44,14 +55,14 @@ ScrollReveal().reveal('#avatar', {
 // ENDS HERE
 
 // TITLE
-ScrollReveal().reveal('.text-title', {
+useScrolling('.text-title', {
     delay: 200,
     distance: '10%',
     origin: 'top',
     easing: 'ease'
 });
 
-ScrollReveal().reveal('.h2', {
+useScrolling('.h2', {
     delay: 300,
     distance: '10%',
     origin: 'top',
@@ -60,7 +71,7 @@ ScrollReveal().reveal('.h2', {
 // ENDS HERE
 
 // SERVICE CARDS
-ScrollReveal().reveal('.card-deck #ui-ux-design', {
+useScrolling('.card-deck #ui-ux-design', {
     delay: 200,
     distance: '15%',
     origin: 'bottom',
@@ -68,7 +79,7 @@ ScrollReveal().reveal('.card-deck #ui-ux-design', {
     mobile: false
 });
 
-ScrollReveal().reveal('.card-deck #prototypes-to-html', {
+useScrolling('.card-deck #prototypes-to-html', {
     delay: 300,
     distance: '15%',
     origin: 'bottom',
@@ -76,7 +87,7 @@ ScrollReveal().reveal('.card-deck #prototypes-to-html', {
     mobile: false
 });
 
-ScrollReveal().reveal('.card-deck #web-app', {
+useScrolling('.card-deck #web-app', {
     delay: 400,
     distance: '15%',
     origin: 'bottom',
@@ -84,7 +95,7 @@ ScrollReveal().reveal('.card-deck #web-app', {
     mobile: false
 });
 
-ScrollReveal().reveal('.card-deck .card .card-service-child', {
+useScrolling('.card-deck .card .card-service-child', {
     delay: 300,
     duration: 1000,
     easing: 'linear',
@@ -93,14 +104,14 @@ ScrollReveal().reveal('.card-deck .card .card-service-child', {
 // ENDS HERE
 
 // WORKS
-ScrollReveal().reveal('.work-order-left', {
+useScrolling('.work-order-left', {
     delay: 300,
     distance: '15%',
     origin: 'left',
     easing: 'ease'
 });
 
-ScrollReveal().reveal('.work-order-right', {
+useScrolling('.work-order-right', {
     delay: 300,
     distance: '15%',
     origin: 'right',
@@ -109,35 +120,35 @@ ScrollReveal().reveal('.work-order-right', {
 // ENDS HERE
 
 // SKILLS
-// ScrollReveal().reveal('.img-fluid-extension', {
+// useScrolling('.img-fluid-extension', {
 //     delay: 300,
 //     easing: 'ease'
 // });
 // ENDS HERE
 
 // ABOUT ME
-ScrollReveal().reveal('.my-name', {
+useScrolling('.my-name', {
     delay: 300,
     distance: '10%',
     origin: 'left',
     easing: 'ease'
 });
 
-ScrollReveal().reveal('.about-me', {
+useScrolling('.about-me', {
     delay: 400,
     distance: '10%',
     origin: 'left',
     easing: 'ease'
 });
 
-ScrollReveal().reveal('#btn-download-resume', {
-    delay: 500,
-    distance: '10%',
-    origin: 'left',
-    easing: 'ease'
-});
+// useScrolling('#btn-download-resume', {
+//     delay: 500,
+//     distance: '10%',
+//     origin: 'left',
+//     easing: 'ease'
+// });
 
-ScrollReveal().reveal('#my-avatar', {
+useScrolling('#my-avatar', {
     delay: 500,
     distance: '10%',
     origin: 'right',
