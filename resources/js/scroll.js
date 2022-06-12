@@ -6,7 +6,9 @@ useScrolling('nav', {
     delay: 100,
     distance: '5%',
     origin: 'top',
-    easing: 'ease'
+    easing: 'ease',
+    mobile: false,
+    // interval: 50
 });
 
 useScrolling('#my-profile', {
@@ -55,14 +57,14 @@ useScrolling('#avatar', {
 // ENDS HERE
 
 // TITLE
-useScrolling('.text-title', {
+useScrolling('.text-section', {
     delay: 200,
     distance: '10%',
     origin: 'top',
     easing: 'ease'
 });
 
-useScrolling('.h2', {
+useScrolling('.text-highlight', {
     delay: 300,
     distance: '10%',
     origin: 'top',
@@ -71,73 +73,88 @@ useScrolling('.h2', {
 // ENDS HERE
 
 // SERVICE CARDS
-useScrolling('.card-deck #ui-ux-design', {
-    delay: 200,
-    distance: '15%',
-    origin: 'bottom',
-    easing: 'ease',
-    mobile: false
-});
-
-useScrolling('.card-deck #prototypes-to-html', {
+useScrolling('.card-group .card-service', {
     delay: 300,
     distance: '15%',
     origin: 'bottom',
     easing: 'ease',
-    mobile: false
+    interval: 100
 });
-
-useScrolling('.card-deck #web-app', {
-    delay: 400,
-    distance: '15%',
-    origin: 'bottom',
-    easing: 'ease',
-    mobile: false
-});
-
-useScrolling('.card-deck .card .card-service-child', {
-    delay: 300,
-    duration: 1000,
-    easing: 'linear',
-});
-
 // ENDS HERE
 
 // WORKS
-useScrolling('.work-order-left', {
+useScrolling('.placeholder', {
     delay: 300,
     distance: '15%',
-    origin: 'left',
+    origin: 'bottom',
     easing: 'ease'
 });
 
-useScrolling('.work-order-right', {
+useScrolling('.work-title', {
     delay: 300,
-    distance: '15%',
+    distance: '5%',
+    origin: 'left',
+    easing: 'ease-out',
+});
+
+useScrolling('.built-with-using', {
+    delay: 300,
+    distance: '5%',
+    origin: 'top',
+    easing: 'ease',
+});
+
+useScrolling('.work-description', {
+    delay: 300,
+    distance: '5%',
     origin: 'right',
-    easing: 'ease'
+    easing: 'ease',
+});
+
+useScrolling('.work-action a', {
+    delay: 300,
+    distance: '10%',
+    origin: 'bottom',
+    easing: 'ease',
+});
+
+useScrolling('.work-img-wrapper a img', {
+    delay: 300,
+    distance: '5%',
+    origin: 'bottom',
+    easing: 'ease',
 });
 // ENDS HERE
 
 // SKILLS
-// useScrolling('.img-fluid-extension', {
-//     delay: 300,
-//     easing: 'ease'
-// });
+useScrolling('.skill-gallery img', {
+    delay: 300,
+    distance: '5%',
+    origin: 'top',
+    easing: 'ease',
+    interval: 50
+});
 // ENDS HERE
 
 // ABOUT ME
-useScrolling('.my-name', {
+useScrolling('.a-bit-about-me', {
     delay: 300,
-    distance: '10%',
-    origin: 'left',
+    distance: '5%',
+    origin: 'right',
     easing: 'ease'
 });
 
-useScrolling('.about-me', {
-    delay: 400,
-    distance: '10%',
-    origin: 'left',
+useScrolling('.btn-download-resume', {
+    delay: 300,
+    distance: '15%',
+    origin: 'bottom',
+    easing: 'ease'
+});
+
+useScrolling('.img-drop-shadow', {
+    delay: 300,
+    distance: '25%',
+    origin: 'right',
     easing: 'ease'
 });
 

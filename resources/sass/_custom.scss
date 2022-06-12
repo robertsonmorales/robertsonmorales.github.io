@@ -69,10 +69,7 @@
     background-color: $light;
     transition: all .1s ease;
 
-    .card-icon{
-        @extend .mx-3, .my-4;
-        @include flexbox(flex-start);
-
+    .card-header{
         .feather{
             width: 40px; 
             color: $dark;
@@ -123,9 +120,14 @@
     filter: saturate(0.1);
 }
 
-.text-title{
-    font-weight: 600;
+.text-section{
+    font-weight: bolder;
     color: $primary;
+}
+
+.text-highlight{
+    font-weight: 600;
+    color: $dark;
 }
 
 .flexbox-works{
@@ -133,12 +135,20 @@
     flex-direction: column-reverse;
 }
 
+// * Builth with ???
 .built-with{
     display: flex;
     flex-wrap: wrap;
 }
 
-.work-img-wrapper{    
+.built-with-using{
+    @extend .mt-2, .mr-2;
+}
+// * ends here
+
+// * Works here
+.work-img-wrapper{  
+    @extend .mb-4, .mb-md-0;
     border-radius: $border-radius;
     overflow: hidden;
 
@@ -147,6 +157,40 @@
     }
 }
 
+.work-description{
+    @extend .text-muted;
+}
+
+.work-action{
+    @extend .mt-4, .flexbox-start;
+}
+// * ends here
+
+// * Skills
+.skill-gallery{
+    .skill-img{
+       @extend .img-fluid, .img-fluid-extension;
+    }
+}
+// * ends here
+
+// * a bit about me
+.a-bit-about-me{
+    @extend .text-muted;
+}
+
+.btn-download-resume{
+    @extend .mobile-w-100;
+}
+
+.img-drop-shadow{
+    @extend .img-fluid;
+    filter: drop-shadow(15px 20px 10px rgba(0, 0, 0, 0.2));
+    object-fit: fill;
+    width: 462px;
+    height: 475px;
+}
+// * ends here
 .media-icon{
     @extend .text-decoration-none;
 }
@@ -181,13 +225,6 @@
 
 .border-radius{
     border-radius: $radius;
-}
-
-.img-drop-shadow{
-    filter: drop-shadow(15px 20px 10px rgba(0, 0, 0, 0.2));
-    object-fit: fill;
-    width: 462px;
-    height: 475px;
 }
 
 .placeholder{
