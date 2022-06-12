@@ -28,10 +28,6 @@
 .h1{
     font-size: clamp(1.8rem, 5vw, 3rem) !important;
 }
-
-.h2{
-    font-weight: 500;
-}
 // HEADINGS
 
 // BORDERS
@@ -57,16 +53,18 @@
         outline: none;
         border: none;
         background-color: transparent;
-        font-size: .9rem !important;
+        font-size: $font-size;
+        font-weight: normal;
 
         &:hover{
-            color: #000 !important;
+            color: $primary !important;
         }
     }
 }
 
 .active{
     color: $primary !important;
+    font-weight: 600;
 }
 // ENDS HERE
 
@@ -75,21 +73,8 @@
     border-radius: $radius !important;
     padding: 10px 25px;
     font-weight: 500;
+    font-size: $font-size !important;
 }
-
-.btn-primary{
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-}
-
-// .btn-outline-primary{
-//     background-color: unquote($primary + '33');
-//     color: $primary;
-//     border: none;
-
-//     &:hover{
-//         color: #fff !important;
-//     }
-// }
 // ENDS HERE
 
 // CARDS
@@ -120,8 +105,8 @@
 .badge{
     background-color: #eee;
     color: $dark;
-    font-weight: normal;
-    font-size: 12px;
+    font-weight: 500;
+    font-size: 0.688rem;
     border: $border;
     border-radius: $radius;
 }
@@ -139,13 +124,3 @@
     }
 }
 // ENDS HERE
-
-// SHADOW
-.shadow-lg{
-    box-shadow: $shadow !important;
-}
-// ENDS HERE
-
-// .text-muted{
-//     color: #333 !important;
-// }

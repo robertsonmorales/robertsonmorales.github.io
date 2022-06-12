@@ -68,4 +68,12 @@ $(() => {
     }   
 
     // navBarHeight(); 
+
+    $('#btn-call').click(function(){
+        window.location.href = "tel:639552808438";
+    });
+    
+    $('#btn-email').click(function(){
+        window.location.href = "mailto:trebormoralesson@gmail.com?cc=moralesso152842@gmail.com";
+    });
 });
