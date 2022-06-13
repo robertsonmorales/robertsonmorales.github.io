@@ -1,9 +1,0 @@
-– UI/UX Design (done)
-– Wireframing & Prototyping User Interface (done)
-– Converting prototypes into web pages
-– Responsive Web Design
-– Website Revamps or Redesign
-– Web Application
-– SEO Performance
-– Relational Database Design
-– Website Debugging
