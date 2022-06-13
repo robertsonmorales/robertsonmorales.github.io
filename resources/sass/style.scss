@@ -19,6 +19,7 @@ body{
     background-color: $body-bg;   
     color: $dark;
     font: $font-size $font-family;
+    line-height: 22px;
 }
 
 @import '_overwrite.scss';
