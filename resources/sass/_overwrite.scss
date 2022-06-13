@@ -1,36 +1,26 @@
-// ANIMATION
-.animate__delay-100ms{
-    animation-delay: .1s !important;
-}
-
-.animate__delay-200ms{
-    animation-delay: .2s !important;
-}
-
-.animate__delay-300ms{
-    animation-delay: .3s !important;
-}
-
-.animate__delay-400ms{
-    animation-delay: .4s !important;
-}
-
-.animate__delay-500ms{
-    animation-delay: .5s !important;
-}
-
-.animate__delay-600ms{
-    animation-delay: .6s !important;
-}
-// ENDS HERE
-
 // HEADINGS
 .h1{
     font-size: clamp(1.8rem, 5vw, 3rem) !important;
+    font-weight: normal;
+    letter-spacing: -1px;
 }
 
 #intro{
     font-weight: 600;
+
+    .font-stack-1{
+        position: relative;
+
+        .feather{
+            position: absolute;
+            right: -29px;
+            bottom: -4px;
+        }
+    }
+
+    code{
+        font-family: $font-stack;
+    }
 }
 // HEADINGS
 
