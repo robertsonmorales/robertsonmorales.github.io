@@ -10389,8 +10389,8 @@ body {
 .card-service:hover {
   background-color: #8d39fa;
   color: #fff;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   z-index: 1;
 }
 
@@ -10448,6 +10448,11 @@ body {
 .work-img-wrapper {
   border-radius: 0.25rem;
   overflow: hidden;
+}
+
+.work-img-wrapper img {
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
 }
 
 .work-img-wrapper img:hover {
