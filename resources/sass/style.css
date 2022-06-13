@@ -7041,7 +7041,8 @@ button.bg-dark:focus {
 }
 
 .mt-3,
-.my-3 {
+.my-3,
+.flexbox-works {
   margin-top: 1rem !important;
 }
 
@@ -7051,7 +7052,8 @@ button.bg-dark:focus {
 }
 
 .mb-3,
-.my-3 {
+.my-3,
+.flexbox-works {
   margin-bottom: 1rem !important;
 }
 
@@ -7233,7 +7235,8 @@ button.bg-dark:focus {
 }
 
 .pt-5,
-.py-5 {
+.py-5,
+.flexbox-works {
   padding-top: 3rem !important;
 }
 
@@ -7243,7 +7246,8 @@ button.bg-dark:focus {
 }
 
 .pb-5,
-.py-5 {
+.py-5,
+.flexbox-works {
   padding-bottom: 3rem !important;
 }
 
@@ -9120,7 +9124,7 @@ body {
 
 .h1 {
   font-size: clamp(1.8rem, 5vw, 3rem) !important;
-  font-weight: normal;
+  font-weight: 500 !important;
   letter-spacing: -1px;
 }
 
@@ -9332,16 +9336,8 @@ body {
   color: #131b23;
 }
 
-.card-service .card-footer {
-  z-index: 1;
-}
-
-.card-service .waves {
-  position: absolute;
-  left: 0%;
-  bottom: 0%;
-  fill: #f3f3f3;
-  width: 100%;
+.card-service .card-body .card-text {
+  color: #6c757d;
 }
 
 .card-service:hover {
@@ -9354,6 +9350,10 @@ body {
 
 .card-service:hover .feather {
   color: #fff;
+}
+
+.card-service:hover .card-text {
+  color: #f3f3f3;
 }
 
 .img-fluid-hovered {
@@ -9381,7 +9381,6 @@ body {
 }
 
 .text-highlight {
-  font-weight: bolder;
   color: #131b23;
   letter-spacing: -1px;
 }
@@ -9424,8 +9423,6 @@ body {
           filter: drop-shadow(15px 20px 10px rgba(0, 0, 0, 0.2));
   -o-object-fit: fill;
      object-fit: fill;
-  width: 462px;
-  height: 475px;
 }
 
 .bg-color {
@@ -9482,6 +9479,10 @@ body {
 
 .font-stack-1 {
   font-family: "Libre Baskerville", sans-serif !important;
+}
+
+.border-top-left-radius {
+  border-top-left-radius: 50%;
 }
 
 @media (max-width: 575.98px) {

@@ -74,18 +74,12 @@
             width: 40px; 
             color: $dark;
         }
-    } 
-
-    .card-footer{
-        z-index: 1;
     }
 
-    .waves{
-        position: absolute;
-        left: 0%;
-        bottom: 0%;
-        fill: $light;
-        width: 100%;
+    .card-body{
+        .card-text{
+            color: $text-muted;
+        }
     }
 
     &:hover{
@@ -97,6 +91,10 @@
 
         .feather{            
             color: $white;
+        }
+
+        .card-text{
+            color: $light;
         }
     }
 }
@@ -126,7 +124,6 @@
 }
 
 .text-highlight{
-    font-weight: bolder;
     color: $dark;
     // @extend .font-stack-1;
     letter-spacing: -1px;
@@ -135,6 +132,7 @@
 .flexbox-works{
     align-items: center;
     flex-direction: column-reverse;
+    @extend .my-3, .py-5;
 }
 
 // * Builth with ???
@@ -193,8 +191,6 @@
     @extend .img-fluid;
     filter: drop-shadow(15px 20px 10px rgba(0, 0, 0, 0.2));
     object-fit: fill;
-    width: 462px;
-    height: 475px;
 }
 // * ends here
 .media-icon{
@@ -255,4 +251,8 @@
 
 .font-stack-1{
     font-family: $font-stack-1 !important;
+}
+
+.border-top-left-radius{
+    border-top-left-radius: 50%;
 }
