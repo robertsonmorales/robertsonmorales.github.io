@@ -121,13 +121,15 @@
 }
 
 .text-section{
-    font-weight: bolder;
+    font-weight: bold;
     color: $primary;
 }
 
 .text-highlight{
-    font-weight: 600;
+    font-weight: bolder;
     color: $dark;
+    // @extend .font-stack-1;
+    letter-spacing: -1px;
 }
 
 .flexbox-works{
@@ -249,4 +251,8 @@
 
 .placeholder-3::before{
     content: "03";
+}
+
+.font-stack-1{
+    font-family: $font-stack-1 !important;
 }
