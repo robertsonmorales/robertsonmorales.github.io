@@ -91,7 +91,7 @@
     &:hover{
         background-color: $primary;
         color: $white;
-        transform: scale(1.1);
+        transform: scale(1.05);
         z-index: 1;
         @extend .shadow;
 
@@ -152,8 +152,12 @@
     border-radius: $border-radius;
     overflow: hidden;
 
-    img:hover{
-        transform: scale(1.05);
+    img{
+        transition: all .1s ease;
+
+        &:hover{
+            transform: scale(1.05);
+        }
     }
 }
 
