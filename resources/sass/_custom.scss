@@ -1,18 +1,18 @@
 /* FLEXBOX */ 
 .flexbox-center{
-    @include flexbox(center);
+    @include flexbox(center, center);
 }
 
 .flexbox-start{
-    @include flexbox(flex-start);
+    @include flexbox(flex-start, center);
 }
 
 .flexbox-between{
-    @include flexbox(space-between);
+    @include flexbox(space-between, flex-start);
 }
 
 .flexbox-end{
-    @include flexbox(flex-end);
+    @include flexbox(flex-end, center);
 }
 /* ENDS HERE*/
 
@@ -189,7 +189,7 @@
 
 .img-drop-shadow{
     @extend .img-fluid;
-    filter: drop-shadow(15px 20px 10px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(-30px 25px 10px rgba(0, 0, 0, 0.3)) saturate(1.4);
     object-fit: fill;
 }
 // * ends here
@@ -207,8 +207,6 @@
 }
 
 .icon-wrapper{
-    width: 55px;
-    height: 55px;
     @extend .flexbox-center;
 }
 
@@ -254,5 +252,75 @@
 }
 
 .border-top-left-radius{
-    border-top-left-radius: 50%;
+    border-top-left-radius: 10%;
+}
+
+.border-top-right-radius{
+    border-top-right-radius: 10%;
+}
+
+.border-bottom-left-radius{
+    border-bottom-left-radius: 10%;
+}
+
+.border-bottom-right-radius{
+    border-bottom-right-radius: 10%;
+}
+
+.about-radius{
+    @extend .border-radius, .border-top-left-radius, .border-bottom-left-radius;
+}
+
+.contact-radius{
+    @extend .border-radius, .border-bottom-right-radius, .border-top-right-radius;
+}
+
+.contact-wrapper{
+    @extend .p-5;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-information{
+    @extend .text-left;
+    color: $light;
+
+    a{
+        color: $light;
+        text-decoration: none;
+    }
+
+    .btn-socmedia{
+        width: 32px;
+        height: 32px;
+        @extend .mr-3, .flexbox-center;
+        border-radius: 50%;
+        transition: all .2s ease;
+
+        &:hover{
+            background-color: $secondary;
+        }
+    }
+
+    .feather{
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.divider{
+    height: 1px;
+    border: 1px solid $secondary;
+    @extend .my-4, .w-50;
+}
+
+.contact-card{
+    @extend .border-radius, .p-1, .mt-5, .bg-white;
+}
+
+#offered-services{
+    display: flex; 
+    flex-wrap: wrap;
 }
