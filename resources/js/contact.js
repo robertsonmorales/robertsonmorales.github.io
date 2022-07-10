@@ -74,7 +74,7 @@ $(() => {
         console.log(result);
         if(xhr.status == 200 && status == "success"){ // Http OK
           if(result.is_success){
-            // alert(result.message);
+            alert(result.message);
             $('#contact-form .form-control').val("");
             $('#contact-form .custom-control-input').attr("checked", false);
           }else{
