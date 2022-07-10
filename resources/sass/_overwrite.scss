@@ -107,13 +107,50 @@
 
 // FORMS
 .input-group{
+    label{
+        font-weight: 500;
+        @extend .text-muted;
+    }
+
     .form-control{
         width: 100%;
-        border-radius: $card-radius !important;
+        border-radius: $radius !important;
+        font-size: $font-size;
+
+        &:focus{
+            font-weight: 500;
+        }
+    }
+
+    .custom-control{
+        display: inline;
+        margin-right: 15px;
+    }
+
+    .custom-control-label{
+        font-weight: normal;
+        
+        &::after{
+            top: 3px;
+        }
+
+        &::before{
+            top: 0.2rem;
+        }
     }
     
     .invalid-feedback{
         font-weight: 500 !important;
+        font-size: $font-size;
     }
 }
 // ENDS HERE
+
+// list group
+.list-group{
+    .list-group-item{
+        background-color: transparent;
+        padding: 10px 0;
+        border: none;
+    }
+}
