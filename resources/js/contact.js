@@ -62,13 +62,13 @@ $(() => {
       type: httpMethod,
       data: data,
       beforeSend: () => {
-        $('#btn-submit').css('cursor', 'not-allowed')
-        .prop('disabled', true)
-        .html('Sending Message...');
-        $('.form-control').css('cursor', 'not-allowed')
-        .prop('disabled', true);
-        $('.custom-control-input').css('cursor', 'not-allowed')
-        .prop('disabled', true);
+        // $('#btn-submit').css('cursor', 'not-allowed')
+        // .prop('disabled', true)
+        // .html('Sending Message...');
+        // $('.form-control').css('cursor', 'not-allowed')
+        // .prop('disabled', true);
+        // $('.custom-control-input').css('cursor', 'not-allowed')
+        // .prop('disabled', true);
       },
       success: (result, status, xhr) => {
         console.log(result);

@@ -268,7 +268,8 @@
 }
 
 .about-radius{
-    @extend .border-radius, .border-top-left-radius, .border-bottom-left-radius;
+    @extend .border-radius;
+    // .border-top-left-radius, .border-bottom-left-radius;
 }
 
 .contact-radius{
@@ -276,7 +277,6 @@
 }
 
 .contact-wrapper{
-    @extend .p-5;
     height: 100%;
     display: flex;
     flex-direction: column;
