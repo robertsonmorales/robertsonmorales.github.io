@@ -674,9 +674,9 @@
                     <h2 class="text-highlight">Any questions? Just write me a message!</h2>
                 </div>
                 
-                <div class="row no-gutters contact-card">
-                    <div class="col-5 bg-primary contact-radius">
-                        <div class="contact-wrapper">
+                <div class="row no-gutters contact-card flex-column flex-lg-row">
+                    <div class="col col-lg-5 bg-primary border-radius">
+                        <div class="contact-wrapper p-4 p-lg-5">
                             <div class="contact-information">
                                 <h4>Contact Information</h4>
                                 <p>Fill up the form and I will get back to you within 24 hours. Thank you!</p>
@@ -734,14 +734,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-7">
+                    <div class="col col-lg-7">
                         <form action="/mail/contact.php"
                             method="POST" 
                             id="contact-form"
+                            class="p-4 p-lg-5">
                             
-                            class="p-5">
-                            
-                            <div class="row">
+                            <div class="row flex-column flex-lg-row">
                                 <div class="col">
                                     <div class="input-group">
                                         <label for="first_name">First Name</label>
@@ -767,7 +766,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row flex-column flex-lg-row">
                                 <div class="col">
                                     <div class="input-group">
                                         <label for="email_address">Email Address</label>

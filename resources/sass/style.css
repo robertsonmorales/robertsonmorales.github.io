@@ -7232,7 +7232,7 @@ button.bg-dark:focus {
   padding-left: 1.5rem !important;
 }
 
-.p-5, .contact-wrapper {
+.p-5 {
   padding: 3rem !important;
 }
 
@@ -9511,7 +9511,7 @@ body {
   font-family: "Libre Baskerville", sans-serif !important;
 }
 
-.border-top-left-radius, .about-radius {
+.border-top-left-radius {
   border-top-left-radius: 10%;
 }
 
@@ -9519,7 +9519,7 @@ body {
   border-top-right-radius: 10%;
 }
 
-.border-bottom-left-radius, .about-radius {
+.border-bottom-left-radius {
   border-bottom-left-radius: 10%;
 }
 
