@@ -9120,7 +9120,7 @@ html {
 body {
   background-color: #fbfbfb;
   color: #131b23;
-  font: 0.875rem "Google Sans", sans-serif;
+  font: 1rem "Google Sans", sans-serif;
   line-height: 22px;
 }
 
@@ -9167,7 +9167,7 @@ body {
   outline: none;
   border: none;
   background-color: transparent;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .navbar .nav-link:hover {
@@ -9183,7 +9183,7 @@ body {
   border-radius: 5px !important;
   padding: 10px 25px;
   font-weight: 500;
-  font-size: 0.875rem !important;
+  font-size: 1rem !important;
 }
 
 .card, .card-service {
@@ -9210,7 +9210,7 @@ body {
   background-color: #eee;
   color: #131b23;
   font-weight: 500;
-  font-size: 0.688rem;
+  font-size: 0.875rem;
   border: 0.0625rem solid rgba(231, 234, 243, 0.7);
   border-radius: 5px;
 }
@@ -9222,7 +9222,7 @@ body {
 .input-group .form-control {
   width: 100%;
   border-radius: 5px !important;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .input-group .form-control:focus {
@@ -9248,7 +9248,7 @@ body {
 
 .input-group .invalid-feedback {
   font-weight: 500 !important;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .list-group .list-group-item {
@@ -9505,6 +9505,10 @@ body {
 
 .placeholder-3::before {
   content: "03";
+}
+
+.placeholder-4::before {
+  content: "04";
 }
 
 .font-stack-1 {
