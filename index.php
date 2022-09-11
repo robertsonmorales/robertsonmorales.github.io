@@ -210,7 +210,7 @@
                         </div>
                         <div class="card-body">
                             <h4 class="mb-4 card-title">UI/UX Design</h4>
-                            <p class="card-text">Build user interfaces that are user-friendly and responsive to all media devices that users will find easy to use and pleasurable.</p>
+                            <p class="card-text">Build user interfaces that are easy to use, intuitive and responsive across all media devices.</p>
                         </div>
                     </div>
     
@@ -221,7 +221,7 @@
                         </div>
                         <div class="card-body">
                             <h4 class="mb-4 card-title">Wireframing & Prototyping</h4>
-                            <p class="card-text">Create wireframes and prototypes for your product design. Here we can preview and provide constructive feedback in real-time on your product  before going to website development.</p>
+                            <p class="card-text">Wireframing and prototyping for your new product designs. I create them so that you can preview your design before moving to development.</p>
                         </div>                    
                     </div>
                     
@@ -348,7 +348,7 @@
                         
                         <br>
 
-                        <p class="work-description">A redesign website that users find a more E-Commerce-like user interface focuses on sportswear, apparel, and equipment products. In choosing a color, a vibrant and energetic one would be a good option, and it is user-friendly.</p>
+                        <p class="work-description">The E-Commerce design website focuses on sportswear and apparel products for users. In choosing a color, a vibrant and energetic one would be a good option, and it is user-friendly.</p>
                 
                         <div class="work-action">
                             <a href="https://robertsonmorales.github.io/ecommerce-nike" 
@@ -408,7 +408,7 @@
                         
                         <br>
 
-                        <p class="work-description">A simple restaurant POS UI/UX Design and a light-themed user interface. A POS where you can search, select a category of the menu then add it to the order list. It has the option for "pay later" and "pay now" via payment gateways.</p>
+                        <p class="work-description">A restaurant POS UI/UX Design and a light-themed user interface ideal for a casual restaurant. The menu can be searched, selected and added to the order list. It also has the options for "pay later" and "pay now" via payment gateways. This is a very flexible POS which follows user needs by smoothly integrating complex data processing queries.</p>
         
                         <div class="work-action">
                             <a href="http://working-food-ordering-system.herokuapp.com/" 
@@ -460,7 +460,7 @@
                         
                         <br>
 
-                        <p class="work-description">A Professional Portfolio template where you can download your resume/CV with sections like Clients, Services, Project, Testimonials, About Me, and Contact Me. It is a one-pager website, user-friendly and responsive.</p>
+                        <p class="work-description">This Professional Portfolio Template is a one-pager website template, and user-friendly and responsive. It has sections like Clients, Services, Project, Testimonials, About Me, and Contact Me.</p>
                 
                         <div class="work-action">
                             <a href="https://jethrocaparroso.netlify.app" 
@@ -482,6 +482,49 @@
                                     class="img-fluid rounded img-fluid-hovered"
                                     loading="lazy" 
                                     alt="Personal Portfolio Design"
+                                    width="500"
+                                    height="380">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row no-gutters flexbox-works flex-md-row">
+                    <div class="col-md-4">
+                        <div class="d-none d-md-block placeholder placeholder-4"></div>
+                        <h3 class="work-title">Dr. Healthcare</h3>
+        
+                        <div class="built-with">
+                            <div class="built-with-using">
+                                <div class="badge p-2">Figma</div>
+                            </div>
+                            <div class="built-with-using">
+                                <div class="badge p-2">UI/UX Design</div>
+                            </div>
+                        </div>
+                        
+                        <br>
+
+                        <p class="work-description">Dr. Healthcare is a mobile app where you can schedule doctor appointments, track your progression, and manage your chronic health conditions. We make sure you get the proper care as well as the most convenient access to it.</p>
+        
+                        <div class="work-action">
+                            <a href="http://working-food-ordering-system.herokuapp.com/" 
+                                target="_blank"
+                                title="View More" 
+                                rel="noopener" 
+                                class="btn btn-outline-primary mobile-w-100">View More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7">
+                        <div class="work-img-wrapper">
+                            <a href="resources/images/projects/dr-healthcare/thumbnail.png"
+                                target="_blank" 
+                                rel="noopener">
+                                <img src="resources/images/projects/dr-healthcare/thumbnail.png" 
+                                    class="img-fluid rounded img-fluid-hovered"
+                                    loading="lazy" 
+                                    alt="Restaurant POS"
                                     width="500"
                                     height="380">
                             </a>
