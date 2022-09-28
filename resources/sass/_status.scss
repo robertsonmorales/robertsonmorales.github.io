@@ -1,0 +1,17 @@
+#top-right-blob,
+#bottom-left-blob{
+    background-image: url("../images/svg/blob.svg");
+    background-size: cover;
+    height: 800px;
+    width: 800px;
+    position: fixed;
+    pointer-events: none;
+}
+
+#top-right-blob{    
+    transform: translate(100%, -40%);
+}
+
+#bottom-left-blob{
+    transform: translate(0%, -30%);
+}
