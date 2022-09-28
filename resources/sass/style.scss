@@ -2,7 +2,7 @@
 @import 'variables';
 @import 'mixins';
 
-@import '../../plugins/bootstrap/scss/bootstrap.scss';
+@import '../../plugins/bootstrap/scss/bootstrap';
 
 *{
     padding: 0;
@@ -22,7 +22,7 @@ body{
     line-height: 22px;
 }
 
-@import '_overwrite.scss';
-@import '_custom.scss';
-
-@import '_breakpoint.scss';
+@import 'overwrite';
+@import 'custom';
+@import 'status';
+@import 'breakpoint';

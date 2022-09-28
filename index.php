@@ -351,8 +351,8 @@
                         <p class="work-description">The E-Commerce design website focuses on sportswear and apparel products for users. In choosing a color, a vibrant and energetic one would be a good option, and it is user-friendly.</p>
                 
                         <div class="work-action">
-                            <a href="https://robertsonmorales.github.io/ecommerce-nike" 
-                                target="_blank"
+                            <a href="resources/views/503.php" 
+                                target="_self"
                                 title="View More" 
                                 rel="noopener" 
                                 class="btn btn-outline-primary mobile-w-100">
@@ -411,7 +411,7 @@
                         <p class="work-description">A restaurant POS UI/UX Design and a light-themed user interface ideal for a casual restaurant. The menu can be searched, selected and added to the order list. It also has the options for "pay later" and "pay now" via payment gateways. This is a very flexible POS which follows user needs by smoothly integrating complex data processing queries.</p>
         
                         <div class="work-action">
-                            <a href="http://working-food-ordering-system.herokuapp.com/" 
+                            <a href="https://working-food-ordering-system.herokuapp.com/" 
                                 target="_blank"
                                 title="View More" 
                                 rel="noopener" 
@@ -508,7 +508,7 @@
                         <p class="work-description">Dr. Healthcare is a mobile app where you can schedule doctor appointments, track your progression, and manage your chronic health conditions. We make sure you get the proper care as well as the most convenient access to it.</p>
         
                         <div class="work-action">
-                            <a href="http://working-food-ordering-system.herokuapp.com/" 
+                            <a href="resources/images/projects/dr-healthcare/thumbnail.png" 
                                 target="_blank"
                                 title="View More" 
                                 rel="noopener" 
@@ -652,7 +652,16 @@
                             alt="figma" 
                             class="skill-img p-4" 
                             title="figma" 
-                            loading="lazy">
+                            loading="lazy"
+                            width="110"
+                            height="110">
+                        <img src="resources/images/svg/skills/wix.svg" 
+                            alt="Wix" 
+                            class="skill-img p-4" 
+                            title="wix" 
+                            loading="lazy"
+                            width="110"
+                            height="110">
                         <img src="resources/images/svg/skills/outsystems.svg" 
                             alt="OutSystems" 
                             class="skill-img" 
@@ -727,11 +736,11 @@
                                 <ul class="list-group">
                                     <li class="list-group-item">
                                         <em data-feather="phone"></em>
-                                        <a class="ml-2" href="#callme" id="btn-call">+639552808438</a>
+                                        <a class="ml-2" href="#callme" id="btn-call">(+63) 955-2808-438</a>
                                     </li>
                                     <li class="list-group-item">
                                         <em data-feather="mail"></em>
-                                        <a class="ml-2" href="#emailme" id="btn-email">robertson.morales@gmail.com</a>
+                                        <a class="ml-2" href="mailto:trebormoralesson@gmail.com?cc=moralesso152842@gmail.com" id="btn-email">trebormoralesson@gmail.com</a>
                                     </li>
                                     <li class="list-group-item">
                                         <em data-feather="map-pin"></em>
@@ -744,6 +753,16 @@
                                 <div class="divider"></div>
 
                                 <div class="flexbox-start">
+                                    <a href="https://api.whatsapp.com/send?phone=639552808438" 
+                                        target="_blank" 
+                                        title="Message me on WhatsApp" 
+                                        rel="noopener"
+                                        class="btn-socmedia">
+                                        <div class="icon-wrapper">
+                                            <em data-feather="message-circle"></em>
+                                        </div>
+                                    </a>
+
                                     <a href="https://www.facebook.com/robertsonmorales.dev" 
                                         target="_blank" 
                                         title="Connect with me at facebook" 
