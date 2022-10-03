@@ -67,7 +67,20 @@
     @extend .card, .p-md-3;
     overflow: hidden;
     background-color: $light;
-    transition: all .1s ease;
+    transition: all .4s ease;
+
+    .card-hover{
+        z-index: -1;
+        clip-path: circle(0% at 50% 50%);
+        // background-color: #6440ff;
+        background-color: $white;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all .6s ease;
+
+        @extend .h-100, .w-100;
+    }
 
     .card-header{
         .feather{
@@ -83,18 +96,18 @@
     }
 
     &:hover{
-        background-color: $primary;
+        // background-color: $white;
         color: $white;
         transform: scale(1.05);
         z-index: 1;
         @extend .shadow;
 
-        .feather{            
-            color: $white;
+        .card-hover{
+            clip-path: circle(100% at 50% 50%);
         }
-
-        .card-text{
-            color: $light;
+        
+        .feather, .card-title, .card-text{            
+            color: $secondary;
         }
     }
 }
@@ -153,7 +166,7 @@
     overflow: hidden;
 
     img{
-        transition: all .1s ease;
+        transition: all .4s ease;
 
         &:hover{
             transform: scale(1.05);
@@ -189,7 +202,7 @@
 
 .img-drop-shadow{
     @extend .img-fluid;
-    filter: drop-shadow(-30px 25px 10px rgba(0, 0, 0, 0.3)) saturate(1.4);
+    filter: drop-shadow(-15px 15px 10px rgba(0, 0, 0, 0.3)) saturate(1.4);
     object-fit: fill;
 }
 // * ends here
@@ -289,34 +302,34 @@
 
 .contact-information{
     @extend .text-left;
-    color: $light;
 
     a{
-        color: $light;
+        color: $dark;
         text-decoration: none;
     }
 
     .btn-socmedia{
-        width: 32px;
-        height: 32px;
         @extend .mr-3, .flexbox-center;
+        width: 42px;
+        height: 42px;
         border-radius: 50%;
         transition: all .2s ease;
 
         &:hover{
             background-color: $secondary;
+            color: $light;
         }
     }
 
     .feather{
-        width: 16px;
-        height: 16px;
+        width: 24px;
+        height: 24px;
     }
 }
 
 .divider{
     height: 1px;
-    border: 1px solid $secondary;
+    border: 1px solid #777;
     @extend .my-4, .w-50;
 }
 

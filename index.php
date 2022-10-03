@@ -212,6 +212,7 @@
                             <h4 class="mb-4 card-title">UI/UX Design</h4>
                             <p class="card-text">Build user interfaces that are easy to use, intuitive and responsive across all media devices.</p>
                         </div>
+                        <div class="card-hover"></div>
                     </div>
     
                     <div class="card-service" 
@@ -222,7 +223,8 @@
                         <div class="card-body">
                             <h4 class="mb-4 card-title">Wireframing & Prototyping</h4>
                             <p class="card-text">Wireframing and prototyping for your new product designs. I create them so that you can preview your design before moving to development.</p>
-                        </div>                    
+                        </div> 
+                        <div class="card-hover"></div>                   
                     </div>
                     
                     <div class="card-service" 
@@ -234,6 +236,7 @@
                             <h4 class="mb-4 card-title">Prototypes to Web pages</h4>
                             <p class="card-text">Convert prototypes from (Figma, Adobe XD, Sketch, PSD, etc..) into new functional and user-interactive website pages.</p>
                         </div>
+                        <div class="card-hover"></div>
                     </div>
     
                     <div class="d-none d-md-block w-100"></div>
@@ -247,6 +250,7 @@
                             <h4 class="mb-4 card-title">Responsive Web Design</h4>
                             <p class="card-text">Let's build and design your website that is responsive and user-friendly to all media devices.</p>
                         </div>
+                        <div class="card-hover"></div>
                     </div>
     
                     <div class="card-service" 
@@ -257,7 +261,8 @@
                         <div class="card-body">
                             <h4 class="mb-4 card-title">Website Redesign or Revamp</h4>
                             <p class="card-text">Let's make some tweaks to improve your website performance, optimization, and Google visibility that will take an edge on your competitors by modifying the layout, design, brand, and products or services you provide.</p>
-                        </div>                    
+                        </div>   
+                        <div class="card-hover"></div>                 
                     </div>
     
                     <div class="card-service" 
@@ -269,6 +274,7 @@
                             <h4 class="mb-4 card-title">Website Application</h4>
                             <p class="card-text">Build Single page application to manage your business operations, increase efficiency, and reduce costs.</p>
                         </div>
+                        <div class="card-hover"></div>
                     </div>
     
                     <div class="d-none d-md-block w-100"></div>
@@ -282,6 +288,7 @@
                             <h4 class="mb-4 card-title">SEO Performance</h4>
                             <p class="card-text">Let's optimize your web page's quality content and technical configuration to make it easy to find or appear on the search engine results page.</p>
                         </div>
+                        <div class="card-hover"></div>
                     </div>
     
                     <div class="card-service" 
@@ -293,6 +300,7 @@
                             <h4 class="mb-4 card-title">Database Design</h4>
                             <p class="card-text">Let's organize your data by designing its flow. We will determine what data and its data type must be stored and how we can secure all of the information when it comes to the transactional process, and therefore we can prevent data duplication.</p>
                         </div>
+                        <div class="card-hover"></div>
                     </div>
                     
                     <div class="card-service" 
@@ -304,6 +312,7 @@
                             <h4 class="mb-4 card-title">Website Troubleshooting</h4>
                             <p class="card-text">Having errors in web pages is very common. Let's help your website with what it needs or what bugs are displaying that need to be fixed.</p>
                         </div>
+                        <div class="card-hover"></div>
                     </div>
     
                 </div>
@@ -695,7 +704,7 @@
                     </div>
                     <div class="col-1"></div>
                     <div class="col">
-                        <div class="bg-primary about-radius">
+                        <div class="bg-light about-radius">
                             <div class="pt-1 pt-md-5 mb-3 mb-md-0">
                                 <div class="flexbox-center overflow-hidden">
                                     <img class="img-drop-shadow" 
@@ -708,14 +717,13 @@
                             </div>
                         </div>
 
-                        <div class="d-block d-md-none">
+                        <!-- <div class="d-block d-md-none">
                             <a class="btn btn-outline-primary btn-download-resume"
                             href="resources/attachment/resume.pdf"
                             download="Resume">Download Resume</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
-        
             </div>
         </section>
 
@@ -727,7 +735,7 @@
                 </div>
                 
                 <div class="row no-gutters contact-card flex-column flex-lg-row">
-                    <div class="col col-lg-5 bg-primary border-radius">
+                    <div class="col col-lg-5 bg-light border-radius">
                         <div class="contact-wrapper p-4 p-lg-5">
                             <div class="contact-information">
                                 <h4>Contact Information</h4>
@@ -735,12 +743,16 @@
 
                                 <ul class="list-group">
                                     <li class="list-group-item">
-                                        <em data-feather="phone"></em>
-                                        <a class="ml-2" href="#callme" id="btn-call">(+63) 955-2808-438</a>
+                                        <a href="#callme" id="btn-call">
+                                            <em data-feather="phone"></em>
+                                            <span class="ml-2">(+63) 955-2808-438</span>
+                                        </a>
                                     </li>
                                     <li class="list-group-item">
-                                        <em data-feather="mail"></em>
-                                        <a class="ml-2" href="mailto:trebormoralesson@gmail.com?cc=moralesso152842@gmail.com" id="btn-email">trebormoralesson@gmail.com</a>
+                                        <a href="mailto:trebormoralesson@gmail.com?cc=moralesso152842@gmail.com" id="btn-email">
+                                            <em data-feather="mail"></em>
+                                            <span class="ml-2">trebormoralesson@gmail.com</span>
+                                        </a>
                                     </li>
                                     <li class="list-group-item">
                                         <em data-feather="map-pin"></em>
@@ -805,7 +817,7 @@
                             <div class="row flex-column flex-lg-row">
                                 <div class="col">
                                     <div class="input-group">
-                                        <label for="first_name">First Name</label>
+                                        <label for="first_name">First Name <span class="text-danger">*</span></label>
                                         <input type="text" 
                                             name="first_name" 
                                             id="first_name" 
@@ -817,7 +829,7 @@
                                 </div>
                                 <div class="col">
                                     <div class="input-group">
-                                        <label for="last_name">Last Name</label>
+                                        <label for="last_name">Last Name <span class="text-danger">*</span></label>
                                         <input type="text" 
                                             name="last_name" 
                                             id="last_name" 
@@ -831,7 +843,7 @@
                             <div class="row flex-column flex-lg-row">
                                 <div class="col">
                                     <div class="input-group">
-                                        <label for="email_address">Email Address</label>
+                                        <label for="email_address">Email Address <span class="text-danger">*</span></label>
                                         <input type="email" 
                                             name="email_address"
                                             id="email_address" 
@@ -843,7 +855,7 @@
                                 </div>
                                 <div class="col">
                                     <div class="input-group">
-                                        <label for="phone_number">Phone Number</label>
+                                        <label for="phone_number">Phone Number <span class="text-danger">*</span></label>
                                         <input type="number" 
                                             name="phone_number"
                                             id="phone_number" 
@@ -862,7 +874,7 @@
                                 id="validate-subject"></span>
                             </div>
                             <div class="input-group">
-                                <label for="message">Message</label>
+                                <label for="message">Message <span class="text-danger">*</span></label>
                                 <textarea name="message" 
                                     id="message"
                                     name="message" 
