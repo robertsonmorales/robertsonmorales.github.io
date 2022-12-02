@@ -382,7 +382,7 @@
                                 rel="noopener">
                                 <img src="resources/images/projects/eCommerce/eCommerce.webp" 
                                     class="img-fluid rounded img-fluid-hovered"
-                                    loading="lazy" 
+                                     
                                     alt="Nike Ecommerce Redesign"
                                     width="500"
                                     height="380">
@@ -440,7 +440,7 @@
                                 rel="noopener">
                                 <img src="resources/images/projects/pos/pos.webp" 
                                     class="img-fluid rounded img-fluid-hovered"
-                                    loading="lazy" 
+                                     
                                     alt="Restaurant POS"
                                     width="500"
                                     height="380">
@@ -494,7 +494,7 @@
                                 rel="noopener">
                                 <img src="resources/images/projects/portfolio/portfolio.webp" 
                                     class="img-fluid rounded img-fluid-hovered"
-                                    loading="lazy" 
+                                     
                                     alt="Personal Portfolio Design"
                                     width="500"
                                     height="380">
@@ -537,7 +537,7 @@
                                 rel="noopener">
                                 <img src="resources/images/projects/dr-healthcare/thumbnail.png" 
                                     class="img-fluid rounded img-fluid-hovered"
-                                    loading="lazy" 
+                                     
                                     alt="Restaurant POS"
                                     width="500"
                                     height="380">
@@ -568,140 +568,140 @@
                             alt="HTML 5" 
                             class="skill-img p-4" 
                             title="HTML 5" 
-                            loading="lazy"
+                            
                             width="110"
                             height="110">
                         <img src="resources/images/svg/skills/css3.svg" 
                             alt="CSS 3" 
                             class="skill-img p-4" 
                             title="CSS 3" 
-                            loading="lazy"
+                            
                             width="110"
                             height="110">
                         <img src="resources/images/svg/skills/sass.svg" 
                             alt="Sass" 
                             class="skill-img p-4" 
                             title="Sass" 
-                            loading="lazy"
+                            
                             width="110"
                             height="110">
                         <img src="resources/images/svg/skills/javascript.svg" 
                             alt="JavaScript" 
                             class="skill-img p-4" 
                             title="JavaScript" 
-                            loading="lazy"
+                            
                             width="110"
                             height="110">
                         <img src="resources/images/svg/skills/jquery.svg" 
                             alt="JQuery" 
                             class="skill-img p-4" 
                             title="JQuery" 
-                            loading="lazy"
+                            
                             width="110"
                             height="110">
                         <img src="resources/images/svg/skills/bootstrap.svg" 
                             alt="Bootstrap" 
                             class="skill-img p-4" 
                             title="Bootstrap" 
-                            loading="lazy"
+                            
                             width="110"
                             height="110">
                         <!-- <img src="resources/images/svg/skills/angular.svg" 
                             alt="AngularJS" 
                             class="skill-img p-4" 
                             title="AngularJS" 
-                            loading="lazy"
+                            
                             width="110"
                             height="110"> -->
                         <img src="resources/images/svg/skills/vue.svg" 
                             alt="VueJS" 
                             class="skill-img p-4" 
                             title="VueJS" 
-                            loading="lazy"
+                            
                             width="110"
                             height="110">
                         <img src="resources/images/svg/skills/php.svg" 
                             alt="PHP" 
                             class="skill-img p-4" 
                             title="PHP" 
-                            loading="lazy"
+                            
                             width="110"
                             height="110">
                         <img src="resources/images/svg/skills/mysql.svg" 
                             alt="MySQL" 
                             class="skill-img p-4" 
                             title="MySQL" 
-                            loading="lazy"
+                            
                             width="110"
                             height="110">
                         <img src="resources/images/svg/skills/laravel.svg" 
                             alt="Laravel" 
                             class="skill-img p-4" 
                             title="Laravel" 
-                            loading="lazy"
+                            
                             width="110"
                             height="110">
                         <img src="resources/images/svg/skills/git.svg" 
                             alt="git" 
                             class="skill-img p-4" 
                             title="git" 
-                            loading="lazy"
+                            
                             width="110"
                             height="110">
                         <!-- <img src="resources/images/svg/skills/adobe-xd.svg" 
                             alt="Adobe XD" 
                             class="skill-img" 
                             title="Adobe XD" 
-                            loading="lazy"
+                            
                             width="110"
                             height="110"> -->
                         <!-- <img src="resources/images/svg/skills/webflow.svg" 
                             alt="webflow" 
                             class="skill-img" 
                             title="webflow" 
-                            loading="lazy"
+                            
                             width="110"
                             height="110"> -->
                         <img src="resources/images/svg/skills/figma-1.svg" 
                             alt="figma" 
                             class="skill-img p-4" 
                             title="figma" 
-                            loading="lazy"
+                            
                             width="110"
                             height="110">
                         <img src="resources/images/svg/skills/wix.svg" 
                             alt="Wix" 
                             class="skill-img p-4" 
                             title="wix" 
-                            loading="lazy"
+                            
                             width="110"
                             height="110">
                         <img src="resources/images/svg/skills/outsystems.svg" 
                             alt="OutSystems" 
                             class="skill-img" 
                             title="OutSystems" 
-                            loading="lazy"
+                            
                             width="110"
                             height="110">
                         <img src="resources/images/svg/skills/mongodb.svg" 
                             alt="MongoDB" 
                             class="skill-img p-4" 
                             title="MongoDB" 
-                            loading="lazy"
+                            
                             width="110"
                             height="110">
                         <img src="resources/images/svg/skills/nodejs.svg" 
                             alt="NodeJS" 
                             class="skill-img p-4" 
                             title="NodeJS" 
-                            loading="lazy"
+                            
                             width="110"
                             height="110">
                         <img src="resources/images/svg/skills/expressjs.svg" 
                             alt="ExpressJS" 
                             class="skill-img p-4" 
                             title="ExpressJS" 
-                            loading="lazy"
+                            
                             width="110"
                             height="110">
                     </div>
@@ -735,7 +735,7 @@
                                 <div class="flexbox-center overflow-hidden">
                                     <img class="img-drop-shadow" 
                                         src="resources/images/me/profile.webp" 
-                                        loading="lazy"
+                                        
                                         width="462"
                                         height="475"
                                         alt="Avatar">
