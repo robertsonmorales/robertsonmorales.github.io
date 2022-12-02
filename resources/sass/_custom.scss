@@ -214,6 +214,10 @@
     background-color: $body-bg;
 }
 
+.bg-primary--saturated{
+    background-color: unquote($primary + "22");
+}
+
 .my-avatar{
     border-radius: 50% !important;
     object-fit: fill;
@@ -316,8 +320,9 @@
         transition: all .2s ease;
 
         &:hover{
-            background-color: $secondary;
-            color: $light;
+            transform: scale(1.1);
+            // background-color: $secondary;
+            // color: $light;
         }
     }
 
@@ -340,4 +345,43 @@
 #offered-services{
     display: flex; 
     flex-wrap: wrap;
+}
+
+// * TESTIMONIALS
+.carousel-item.active{
+    color: $dark !important;
+}
+
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    background-color: $text-muted;
+    border-radius: 100%;
+}
+
+.carousel-indicators li.active{
+    background-color: $primary;
+}
+
+.testimonial-icon{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    @extend .flexbox-center;
+}
+
+.testimonial-quote{
+    line-height: 37px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.testimonial-quote--two-liner{
+    line-height: 57px;
+    font-size: 44px;
+}
+
+.testimonial--highlight{
+    background-color: $primary;
+    color: $white;
 }
