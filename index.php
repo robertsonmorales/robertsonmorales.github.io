@@ -72,27 +72,27 @@
     </div>
 
     <script>
-    var chatbox = document.getElementById('fb-customer-chat');
-    chatbox.setAttribute("page_id", "105844545345201");
-    chatbox.setAttribute("attribution", "biz_inbox");
+        var chatbox = document.getElementById('fb-customer-chat');
+        chatbox.setAttribute("page_id", "105844545345201");
+        chatbox.setAttribute("attribution", "biz_inbox");
     </script>
 
     <!-- Your SDK code -->
     <script>
-    window.fbAsyncInit = function() {
-        FB.init({
-        xfbml            : true,
-        version          : 'v14.0'
-        });
-    };
+        window.fbAsyncInit = function() {
+            FB.init({
+            xfbml            : true,
+            version          : 'v14.0'
+            });
+        };
 
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
     </script>
 
     <header>
@@ -133,15 +133,20 @@
                                 id="nav-works"
                                 onclick="navSelected('works')">Works</button>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <button class="nav-link navbar font-weight-500"
                                 id="nav-skills"
                                 onclick="navSelected('skills')">Skills</button>
-                            </li>
+                            </li> -->
                             <li class="nav-item">
                                 <button class="nav-link navbar font-weight-500"
                                 id="nav-about" 
                                 onclick="navSelected('about')">About</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link navbar font-weight-500"
+                                id="nav-testimonials" 
+                                onclick="navSelected('testimonials')">Testimonials</button>
                             </li>
                             <li class="nav-item"> <!-- mr-md-5 -->
                                 <button class="nav-link navbar font-weight-500"
@@ -159,8 +164,8 @@
         <section id="hero" class="screen-height">
             <div class="container">
                 <div class="d-flex align-items-center flex-column justify-content-center">
-                    <img src="resources/images/me/profile.webp" 
-                        class="my-avatar mb-4 bg-light" 
+                    <img src="resources/images/me/profile-2.png" 
+                        class="my-avatar mb-4 bg-primary--saturated" 
                         alt="Avatar"
                         height="150"
                         width="150"
@@ -420,8 +425,8 @@
                         <p class="work-description">A restaurant POS UI/UX Design and a light-themed user interface ideal for a casual restaurant. The menu can be searched, selected and added to the order list. It also has the options for "pay later" and "pay now" via payment gateways. This is a very flexible POS which follows user needs by smoothly integrating complex data processing queries.</p>
         
                         <div class="work-action">
-                            <a href="https://working-food-ordering-system.herokuapp.com/" 
-                                target="_blank"
+                            <a href="resources/views/503.php" 
+                                target="_self"
                                 title="View More" 
                                 rel="noopener" 
                                 class="btn btn-outline-primary mobile-w-100">View More</a>
@@ -678,6 +683,27 @@
                             loading="lazy"
                             width="110"
                             height="110">
+                        <img src="resources/images/svg/skills/mongodb.svg" 
+                            alt="MongoDB" 
+                            class="skill-img p-4" 
+                            title="MongoDB" 
+                            loading="lazy"
+                            width="110"
+                            height="110">
+                        <img src="resources/images/svg/skills/nodejs.svg" 
+                            alt="NodeJS" 
+                            class="skill-img p-4" 
+                            title="NodeJS" 
+                            loading="lazy"
+                            width="110"
+                            height="110">
+                        <img src="resources/images/svg/skills/expressjs.svg" 
+                            alt="ExpressJS" 
+                            class="skill-img p-4" 
+                            title="ExpressJS" 
+                            loading="lazy"
+                            width="110"
+                            height="110">
                     </div>
                 </div>
             </div>
@@ -689,8 +715,8 @@
                     <div class="col d-flex align-items-start justify-content-center flex-column">
                         <div class="text-section">A BIT ABOUT ME &#128075;</div>
                         <h2 class="mb-3 text-highlight h1">Robertson Morales</h2>
-                        <p class="a-bit-about-me">I live in San Jose Del Monte City, Bulacan. I have a Bachelor of Science Degree in Information Technology. I work as a Passionate Web Developer & Designer, where I've developed and contributed to projects such as Travel, Loan, E-Commerce, E-Gift Certificates, and Revamp Websites. 
-                        <br><br>My hobbies are watching anime, tutorial videos, reading articles, and playing with my pets.</p>
+                        <p class="a-bit-about-me">I work as a Web Developer & Designer, I have worked on many projects where I have been able to develop and contribute to such things as Travel, Loans, E-Commerce, E-Gift Certificates, and Revamped websites.</p>
+                        <p class="a-bit-about-me">As a hobby, I enjoy watching anime, watching tutorial videos, reading articles, and playing with my pets.</p>
     
                         <div class="mb-3"></div>
     
@@ -723,6 +749,78 @@
                             download="Resume">Download Resume</a>
                         </div> -->
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-5">
+            <div class="container">
+                <div class="text-center">
+                    <div class="text-section">TESTIMONIALS</div>
+                    <h2 class="text-highlight">What my clients say..</h2>
+                </div>
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" 
+                            data-slide-to="0" 
+                            class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="p-5">
+                                <div class="testimonial-header flexbox-center">
+                                    <div class="testimonial-icon bg-primary mb-4">
+                                        <img src="/resources/images/quote.png" 
+                                            alt="feedback-icon" 
+                                            width="80">
+                                    </div>
+                                </div>
+                                <div class="text-center font-weight-500">
+                                    <p class="testimonial-quote  mb-4">Robertson is <span class="testimonial--highlight">an amazing full stack developer that delivered exactly what was needed</span>. In fact, he went above and beyond what is expected. He is easy to work with and very responsive. I can’t speak highly enough of his skills and strong work ethic. I’ve worked with him for several projects and surely will get him again for my future ones. Hire him, you will not be disappointed! 👌</p>
+                                    <p>
+                                        <a href="https://www.facebook.com/krizia.carriaga/posts/10159552643280376" 
+                                            title="See Post"
+                                            target="_blank">Krizia Carriaga Tenorio</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="p-5">
+                                <div class="testimonial-header flexbox-center">
+                                    <div class="testimonial-icon bg-primary mb-4">
+                                        <img src="/resources/images/quote.png" 
+                                            alt="feedback-icon" 
+                                            width="80">
+                                    </div>
+                                </div>
+                                <div class="text-center font-weight-500">
+                                    <h3 class="testimonial-quote testimonial-quote--two-liner mb-4"><span class="testimonial--highlight">Very tentative, responsive and professional,</span> <br> would definitely recommend Robert to anyone.</h3>
+                                    <p>
+                                        <a href="https://www.facebook.com/haidar.maliki.146/posts/961460288589621" 
+                                            title="See Post"
+                                            target="_blank">Haidar Maliki</a><span class="text-muted">, Managing Director of Viewcon Building Group</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <button class="carousel-control-prev" 
+                        type="button" 
+                        data-target="#carouselExampleIndicators" 
+                        data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" 
+                        type="button" 
+                        data-target="#carouselExampleIndicators" 
+                        data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </button> -->
                 </div>
             </div>
         </section>
@@ -771,37 +869,49 @@
                                         rel="noopener"
                                         class="btn-socmedia">
                                         <div class="icon-wrapper">
-                                            <em data-feather="message-circle"></em>
+                                            <img src="resources/images/svg/social-media/whatsapp.svg" 
+                                                alt="WhatsApp"
+                                                width="30"
+                                                height="30">
                                         </div>
                                     </a>
 
                                     <a href="https://www.facebook.com/robertsonmorales.dev" 
                                         target="_blank" 
-                                        title="Connect with me at facebook" 
+                                        title="Follow me at facebook" 
                                         rel="noopener"
                                         class="btn-socmedia">
                                         <div class="icon-wrapper">
-                                            <em data-feather="facebook"></em>
-                                        </div>
-                                    </a>
-                                    
-                                    <a href="https://www.linkedin.com/in/robertson-morales-517a721bb" 
-                                        target="_blank" 
-                                        title="Connect with me at linkedin" 
-                                        rel="noopener"
-                                        class="btn-socmedia">
-                                        <div class="icon-wrapper">
-                                            <em data-feather="linkedin"></em>
+                                            <img src="resources/images/svg/social-media/facebook.svg" 
+                                                alt="Facebook"
+                                                width="30"
+                                                height="30">
                                         </div>
                                     </a>
                                     
                                     <a href="https://github.com/robertsonmorales" 
                                         target="_blank" 
-                                        title="Follow me at github" 
+                                        title="Follow me at GitHub" 
                                         rel="noopener"
                                         class="btn-socmedia">
                                         <div class="icon-wrapper">
-                                            <em data-feather="github"></em>
+                                            <img src="resources/images/svg/social-media/github.svg" 
+                                                alt="GitHub"
+                                                width="30"
+                                                height="30">
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="https://www.linkedin.com/in/robertson-morales" 
+                                        target="_blank" 
+                                        title="Connect with me at linkedin" 
+                                        rel="noopener"
+                                        class="btn-socmedia">
+                                        <div class="icon-wrapper">
+                                            <img src="resources/images/svg/social-media/linkedin.svg" 
+                                                alt="Linkedin"
+                                                width="30"
+                                                height="30">
                                         </div>
                                     </a>
                                 </div>
