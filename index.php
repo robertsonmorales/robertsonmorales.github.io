@@ -173,7 +173,7 @@
     
                     <div class="text-left text-md-center">
                         <h1 class="h1" id="intro">Hi! I'm Robertson,
-                            <br>Web <span class="text-primary font-weight-600">Developer</span> and <span class="text-primary font-stack-1 font-weight-600">Designer <em data-feather="pen-tool"></em></span>
+                            <br>Web <span class="text-primary">Developer</span> & <span class="text-primary font-stack-1">Designer <em data-feather="pen-tool"></em></span>
                         </h1>
     
                         <div class="mb-3"></div>
@@ -333,124 +333,6 @@
     
                 <div class="row no-gutters flexbox-works flex-md-row-reverse">
                     <div class="col-md-4">
-                        <div class="d-none d-md-block placeholder placeholder-1"></div>
-                        <h3 class="work-title">E-Commerce Design</h3>
-
-                        <div class="built-with">
-                            <div class="built-with-using">
-                                <div class="badge p-2">Wireframing</div>
-                            </div>
-                            <div class="built-with-using">
-                                <div class="badge p-2">Prototyping</div>
-                            </div>
-                            <div class="built-with-using">
-                                <div class="badge p-2">Figma</div>
-                            </div>
-                            <div class="built-with-using">
-                                <div class="badge p-2">HTML</div>
-                            </div>
-                            <div class="built-with-using">
-                                <div class="badge p-2">CSS3</div>
-                            </div>
-                            <div class="built-with-using">
-                                <div class="badge p-2">Sass</div>
-                            </div>
-                            <div class="built-with-using">
-                                <div class="badge p-2">Vue.js</div>
-                            </div>
-                        </div>
-                        
-                        <br>
-
-                        <p class="work-description">The E-Commerce design website focuses on sportswear and apparel products for users. In choosing a color, a vibrant and energetic one would be a good option, and it is user-friendly.</p>
-                
-                        <div class="work-action">
-                            <a href="resources/views/503.php" 
-                                target="_self"
-                                title="View More" 
-                                rel="noopener" 
-                                class="btn btn-outline-primary mobile-w-100">
-                                <span>View More</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-7">
-                        <div class="work-img-wrapper">
-                            <a href="resources/images/projects/eCommerce/eCommerce.webp"
-                                target="_blank" 
-                                rel="noopener">
-                                <img src="resources/images/projects/eCommerce/eCommerce.webp" 
-                                    class="img-fluid rounded img-fluid-hovered"
-                                     
-                                    alt="Nike Ecommerce Redesign"
-                                    width="500"
-                                    height="380">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="row no-gutters flexbox-works flex-md-row">
-                    <div class="col-md-4">
-                        <div class="d-none d-md-block placeholder placeholder-2"></div>
-                        <h3 class="work-title">Food Ordering System</h3>
-        
-                        <div class="built-with">
-                            <div class="built-with-using">
-                                <div class="badge p-2">Figma</div>
-                            </div>
-                            <div class="built-with-using">
-                                <div class="badge p-2">HTML</div>
-                            </div>
-                            <div class="built-with-using">
-                                <div class="badge p-2">CSS</div>
-                            </div>
-                            <div class="built-with-using">
-                                <div class="badge p-2">JavaScript</div>
-                            </div>
-                            <div class="built-with-using">
-                                <div class="badge p-2">JQuery</div>
-                            </div>
-                            <div class="built-with-using">
-                                <div class="badge p-2">PHP</div>
-                            </div>
-                            <div class="built-with-using">
-                                <div class="badge p-2">Laravel</div>
-                            </div>
-                        </div>
-                        
-                        <br>
-
-                        <p class="work-description">A restaurant POS UI/UX Design and a light-themed user interface ideal for a casual restaurant. The menu can be searched, selected and added to the order list. It also has the options for "pay later" and "pay now" via payment gateways. This is a very flexible POS which follows user needs by smoothly integrating complex data processing queries.</p>
-        
-                        <div class="work-action">
-                            <a href="resources/views/503.php" 
-                                target="_self"
-                                title="View More" 
-                                rel="noopener" 
-                                class="btn btn-outline-primary mobile-w-100">View More</a>
-                        </div>
-                    </div>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-7">
-                        <div class="work-img-wrapper">
-                            <a href="resources/images/projects/pos/pos.webp"
-                                target="_blank" 
-                                rel="noopener">
-                                <img src="resources/images/projects/pos/pos.webp" 
-                                    class="img-fluid rounded img-fluid-hovered"
-                                     
-                                    alt="Restaurant POS"
-                                    width="500"
-                                    height="380">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="row no-gutters flexbox-works flex-md-row-reverse">
-                    <div class="col-md-4">
                         <div class="d-none d-md-block placeholder placeholder-3"></div>
                         <h3 class="work-title">Professional Portfolio Design</h3>
 
@@ -539,6 +421,177 @@
                                     class="img-fluid rounded img-fluid-hovered"
                                      
                                     alt="Restaurant POS"
+                                    width="500"
+                                    height="380">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row no-gutters flexbox-works flex-md-row-reverse">
+                    <div class="col-md-4">
+                        <div class="d-none d-md-block placeholder placeholder-2"></div>
+                        <h3 class="work-title">MLS JC Construction Services</h3>
+        
+                        <div class="built-with">
+                            <div class="built-with-using">
+                                <div class="badge p-2">Figma</div>
+                            </div>
+                            <div class="built-with-using">
+                                <div class="badge p-2">HTML</div>
+                            </div>
+                            <div class="built-with-using">
+                                <div class="badge p-2">CSS</div>
+                            </div>
+                            <div class="built-with-using">
+                                <div class="badge p-2">JavaScript</div>
+                            </div>
+                            <div class="built-with-using">
+                                <div class="badge p-2">JQuery</div>
+                            </div>
+                        </div>
+                        
+                        <br>
+
+                        <p class="work-description">MLS JC Construction Services is now primarily engaged in construction services. Site development, road concreting, and design and build of residential, commercial, industrial building structures and other civil works projects.</p>
+        
+                        <div class="work-action">
+                            <a href="https://mlsjcconstruction.com" 
+                                target="_blank"
+                                title="View More" 
+                                rel="noopener" 
+                                class="btn btn-outline-primary mobile-w-100">View More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7">
+                        <div class="work-img-wrapper">
+                            <a href="https://mlsjcconstruction.com"
+                                target="_blank" 
+                                rel="noopener">
+                                <img src="resources/images/projects/mls-jc-construction-services/mls-jc.webp" 
+                                    class="img-fluid rounded img-fluid-hovered"
+                                    alt="MLS JC Construction Services"
+                                    width="500"
+                                    height="380">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="row no-gutters flexbox-works flex-md-row">
+                    <div class="col-md-4">
+                        <div class="d-none d-md-block placeholder placeholder-2"></div>
+                        <h3 class="work-title">Food Ordering System</h3>
+        
+                        <div class="built-with">
+                            <div class="built-with-using">
+                                <div class="badge p-2">Figma</div>
+                            </div>
+                            <div class="built-with-using">
+                                <div class="badge p-2">HTML</div>
+                            </div>
+                            <div class="built-with-using">
+                                <div class="badge p-2">CSS</div>
+                            </div>
+                            <div class="built-with-using">
+                                <div class="badge p-2">JavaScript</div>
+                            </div>
+                            <div class="built-with-using">
+                                <div class="badge p-2">JQuery</div>
+                            </div>
+                            <div class="built-with-using">
+                                <div class="badge p-2">PHP</div>
+                            </div>
+                            <div class="built-with-using">
+                                <div class="badge p-2">Laravel</div>
+                            </div>
+                        </div>
+                        
+                        <br>
+
+                        <p class="work-description">A restaurant POS UI/UX Design and a light-themed user interface ideal for a casual restaurant. The menu can be searched, selected and added to the order list. It also has the options for "pay later" and "pay now" via payment gateways. This is a very flexible POS which follows user needs by smoothly integrating complex data processing queries.</p>
+        
+                        <div class="work-action">
+                            <a href="resources/views/503.php" 
+                                target="_self"
+                                title="View More" 
+                                rel="noopener" 
+                                class="btn btn-outline-primary mobile-w-100">View More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7">
+                        <div class="work-img-wrapper">
+                            <a href="resources/images/projects/pos/pos.webp"
+                                target="_blank" 
+                                rel="noopener">
+                                <img src="resources/images/projects/pos/pos.webp" 
+                                    class="img-fluid rounded img-fluid-hovered"
+                                     
+                                    alt="Restaurant POS"
+                                    width="500"
+                                    height="380">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row no-gutters flexbox-works flex-md-row-reverse">
+                    <div class="col-md-4">
+                        <div class="d-none d-md-block placeholder placeholder-1"></div>
+                        <h3 class="work-title">E-Commerce Design</h3>
+
+                        <div class="built-with">
+                            <div class="built-with-using">
+                                <div class="badge p-2">Wireframing</div>
+                            </div>
+                            <div class="built-with-using">
+                                <div class="badge p-2">Prototyping</div>
+                            </div>
+                            <div class="built-with-using">
+                                <div class="badge p-2">Figma</div>
+                            </div>
+                            <div class="built-with-using">
+                                <div class="badge p-2">HTML</div>
+                            </div>
+                            <div class="built-with-using">
+                                <div class="badge p-2">CSS3</div>
+                            </div>
+                            <div class="built-with-using">
+                                <div class="badge p-2">Sass</div>
+                            </div>
+                            <div class="built-with-using">
+                                <div class="badge p-2">Vue.js</div>
+                            </div>
+                        </div>
+                        
+                        <br>
+
+                        <p class="work-description">The E-Commerce design website focuses on sportswear and apparel products for users. In choosing a color, a vibrant and energetic one would be a good option, and it is user-friendly.</p>
+                
+                        <div class="work-action">
+                            <a href="resources/views/503.php" 
+                                target="_self"
+                                title="View More" 
+                                rel="noopener" 
+                                class="btn btn-outline-primary mobile-w-100">
+                                <span>View More</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7">
+                        <div class="work-img-wrapper">
+                            <a href="resources/images/projects/eCommerce/eCommerce.webp"
+                                target="_blank" 
+                                rel="noopener">
+                                <img src="resources/images/projects/eCommerce/eCommerce.webp" 
+                                    class="img-fluid rounded img-fluid-hovered"
+                                     
+                                    alt="Nike Ecommerce Redesign"
                                     width="500"
                                     height="380">
                             </a>
@@ -797,7 +850,7 @@
                                     </div>
                                 </div>
                                 <div class="text-center font-weight-500">
-                                    <h3 class="testimonial-quote testimonial-quote--two-liner mb-4"><span class="testimonial--highlight">Very tentative, responsive and professional,</span> <br> would definitely recommend Robert to anyone.</h3>
+                                    <h3 class="testimonial-quote testimonial-quote--two-liner mb-4"><span class="testimonial--highlight">Very tentative, responsive and professional,</span> <br> would definitely recommend Robertson to anyone.</h3>
                                     <p>
                                         <a href="https://www.facebook.com/haidar.maliki.146/posts/961460288589621" 
                                             title="See Post"
