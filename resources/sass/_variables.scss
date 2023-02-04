@@ -17,9 +17,9 @@ $theme-colors: (
     'dark': $dark
 );
 
-$font-stack: 'Google Sans', sans-serif;
+$font-stack: 'Google Sans', 'Poppins', sans-serif;
 $font-stack-1: 'Libre Baskerville', sans-serif;
-$font-size: 1rem; // 0.875rem;
+$font-size: 16px; // 0.875rem;
 
 $border: .0625rem solid rgba(231,234,243,.7);
 $card-radius: 4px; // 20px;
