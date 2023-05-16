@@ -3866,7 +3866,7 @@ input[type=button].btn-block {
   color: #fff;
 }
 
-.card, .card-service {
+.card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -3877,27 +3877,26 @@ input[type=button].btn-block {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
-.card > hr, .card-service > hr {
+.card > hr {
   margin-right: 0;
   margin-left: 0;
 }
-.card > .list-group, .card-service > .list-group {
+.card > .list-group {
   border-top: inherit;
   border-bottom: inherit;
 }
-.card > .list-group:first-child, .card-service > .list-group:first-child {
+.card > .list-group:first-child {
   border-top-width: 0;
   border-top-left-radius: calc(0.25rem - 1px);
   border-top-right-radius: calc(0.25rem - 1px);
 }
-.card > .list-group:last-child, .card-service > .list-group:last-child {
+.card > .list-group:last-child {
   border-bottom-width: 0;
   border-bottom-right-radius: calc(0.25rem - 1px);
   border-bottom-left-radius: calc(0.25rem - 1px);
 }
-.card > .card-header + .list-group, .card-service > .card-header + .list-group,
-.card > .list-group + .card-footer,
-.card-service > .list-group + .card-footer {
+.card > .card-header + .list-group,
+.card > .list-group + .card-footer {
   border-top: 0;
 }
 
@@ -3987,7 +3986,7 @@ input[type=button].btn-block {
   border-bottom-left-radius: calc(0.25rem - 1px);
 }
 
-.card-deck .card, .card-deck .card-service {
+.card-deck .card {
   margin-bottom: 15px;
 }
 @media (min-width: 576px) {
@@ -3997,7 +3996,7 @@ input[type=button].btn-block {
     margin-right: -15px;
     margin-left: -15px;
   }
-  .card-deck .card, .card-deck .card-service {
+  .card-deck .card {
     flex: 1 0 0%;
     margin-right: 15px;
     margin-bottom: 0;
@@ -4005,7 +4004,7 @@ input[type=button].btn-block {
   }
 }
 
-.card-group > .card, .card-group > .card-service {
+.card-group > .card {
   margin-bottom: 15px;
 }
 @media (min-width: 576px) {
@@ -4013,45 +4012,41 @@ input[type=button].btn-block {
     display: flex;
     flex-flow: row wrap;
   }
-  .card-group > .card, .card-group > .card-service {
+  .card-group > .card {
     flex: 1 0 0%;
     margin-bottom: 0;
   }
-  .card-group > .card + .card, .card-group > .card-service + .card, .card-group > .card + .card-service, .card-group > .card-service + .card-service {
+  .card-group > .card + .card {
     margin-left: 0;
     border-left: 0;
   }
-  .card-group > .card:not(:last-child), .card-group > .card-service:not(:last-child) {
+  .card-group > .card:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .card-group > .card:not(:last-child) .card-img-top, .card-group > .card-service:not(:last-child) .card-img-top,
-  .card-group > .card:not(:last-child) .card-header,
-  .card-group > .card-service:not(:last-child) .card-header {
+  .card-group > .card:not(:last-child) .card-img-top,
+  .card-group > .card:not(:last-child) .card-header {
     border-top-right-radius: 0;
   }
-  .card-group > .card:not(:last-child) .card-img-bottom, .card-group > .card-service:not(:last-child) .card-img-bottom,
-  .card-group > .card:not(:last-child) .card-footer,
-  .card-group > .card-service:not(:last-child) .card-footer {
+  .card-group > .card:not(:last-child) .card-img-bottom,
+  .card-group > .card:not(:last-child) .card-footer {
     border-bottom-right-radius: 0;
   }
-  .card-group > .card:not(:first-child), .card-group > .card-service:not(:first-child) {
+  .card-group > .card:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
-  .card-group > .card:not(:first-child) .card-img-top, .card-group > .card-service:not(:first-child) .card-img-top,
-  .card-group > .card:not(:first-child) .card-header,
-  .card-group > .card-service:not(:first-child) .card-header {
+  .card-group > .card:not(:first-child) .card-img-top,
+  .card-group > .card:not(:first-child) .card-header {
     border-top-left-radius: 0;
   }
-  .card-group > .card:not(:first-child) .card-img-bottom, .card-group > .card-service:not(:first-child) .card-img-bottom,
-  .card-group > .card:not(:first-child) .card-footer,
-  .card-group > .card-service:not(:first-child) .card-footer {
+  .card-group > .card:not(:first-child) .card-img-bottom,
+  .card-group > .card:not(:first-child) .card-footer {
     border-bottom-left-radius: 0;
   }
 }
 
-.card-columns .card, .card-columns .card-service {
+.card-columns .card {
   margin-bottom: 0.75rem;
 }
 @media (min-width: 576px) {
@@ -4063,7 +4058,7 @@ input[type=button].btn-block {
     orphans: 1;
     widows: 1;
   }
-  .card-columns .card, .card-columns .card-service {
+  .card-columns .card {
     display: inline-block;
     width: 100%;
   }
@@ -4072,19 +4067,19 @@ input[type=button].btn-block {
 .accordion {
   overflow-anchor: none;
 }
-.accordion > .card, .accordion > .card-service {
+.accordion > .card {
   overflow: hidden;
 }
-.accordion > .card:not(:last-of-type), .accordion > .card-service:not(:last-of-type) {
+.accordion > .card:not(:last-of-type) {
   border-bottom: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.accordion > .card:not(:first-of-type), .accordion > .card-service:not(:first-of-type) {
+.accordion > .card:not(:first-of-type) {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-.accordion > .card > .card-header, .accordion > .card-service > .card-header {
+.accordion > .card > .card-header {
   border-radius: 0;
   margin-bottom: -1px;
 }
@@ -4561,12 +4556,13 @@ a.badge-dark:focus, a.badge-dark.focus {
   vertical-align: text-top !important;
 }
 
-.bg-primary {
+.bg-primary, .btn-contact:hover {
   background-color: #6440ff !important;
 }
 
-a.bg-primary:hover, a.bg-primary:focus,
+a.bg-primary:hover, a.btn-contact:hover, a.bg-primary:focus,
 button.bg-primary:hover,
+button.btn-contact:hover,
 button.bg-primary:focus {
   background-color: #3b0dff !important;
 }
@@ -4641,7 +4637,7 @@ button.bg-dark:focus {
   background-color: #010202 !important;
 }
 
-.bg-white, .contact-card {
+.bg-white, .btn-contact, .contact-card {
   background-color: #fff !important;
 }
 
@@ -4729,7 +4725,7 @@ button.bg-dark:focus {
   border-radius: 0.2rem !important;
 }
 
-.rounded {
+.rounded, .btn-contact {
   border-radius: 0.25rem !important;
 }
 
@@ -5001,7 +4997,7 @@ button.bg-dark:focus {
   flex-direction: row !important;
 }
 
-.flex-column {
+.flex-column, .btn-contact {
   flex-direction: column !important;
 }
 
@@ -5700,7 +5696,7 @@ button.bg-dark:focus {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
-.shadow, .card-service:hover {
+.shadow, .btn-contact:hover, .card.card-service:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
@@ -5724,7 +5720,7 @@ button.bg-dark:focus {
   width: 75% !important;
 }
 
-.w-100, .card-service .card-hover {
+.w-100, .card.card-service .card-hover {
   width: 100% !important;
 }
 
@@ -5744,7 +5740,7 @@ button.bg-dark:focus {
   height: 75% !important;
 }
 
-.h-100, .card-service .card-hover {
+.h-100, .card.card-service .card-hover {
   height: 100% !important;
 }
 
@@ -5996,7 +5992,7 @@ button.bg-dark:focus {
   padding-left: 0.5rem !important;
 }
 
-.p-3 {
+.p-3, .btn-contact {
   padding: 1rem !important;
 }
 
@@ -6730,7 +6726,7 @@ button.bg-dark:focus {
   .px-md-2 {
     padding-left: 0.5rem !important;
   }
-  .p-md-3, .card-service {
+  .p-md-3, .card.card-service {
     padding: 1rem !important;
   }
   .pt-md-3,
@@ -7716,7 +7712,7 @@ button.bg-dark:focus {
   font-style: italic !important;
 }
 
-.text-white {
+.text-white, .btn-contact:hover > .text-dark {
   color: #fff !important;
 }
 
@@ -7768,11 +7764,11 @@ a.text-danger:hover, a.text-danger:focus {
   color: #a71d2a !important;
 }
 
-.text-light {
+.text-light, .btn-contact:hover > .text-muted, .input-group .btn-contact:hover > label, .btn-contact:hover > .work-description, .btn-contact:hover > .a-bit-about-me {
   color: #f3f3f3 !important;
 }
 
-a.text-light:hover, a.text-light:focus {
+a.text-light:hover, .btn-contact:hover > a.text-muted:hover, .btn-contact:hover > a.work-description:hover, .btn-contact:hover > a.a-bit-about-me:hover, a.text-light:focus, .btn-contact:hover > a.text-muted:focus, .btn-contact:hover > a.work-description:focus, .btn-contact:hover > a.a-bit-about-me:focus {
   color: #cdcdcd !important;
 }
 
@@ -7808,7 +7804,7 @@ a.text-dark:hover, a.text-dark:focus {
   border: 0;
 }
 
-.text-decoration-none, .media-icon {
+.text-decoration-none, .btn-contact, .media-icon {
   text-decoration: none !important;
 }
 
@@ -7925,9 +7921,13 @@ body {
   line-height: 22px;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6,
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
 .h1 {
-  font-size: clamp(1.8rem, 5vw, 3rem) !important;
-  font-weight: 500 !important;
+  font-size: clamp(1.8rem, 6vw, 4rem);
   letter-spacing: -1px;
 }
 
@@ -7946,8 +7946,8 @@ body {
   font-family: "Google Sans", "Poppins", sans-serif;
 }
 
-.rounded {
-  border-radius: 4px !important;
+.rounded, .btn-contact {
+  border-radius: 8px !important;
 }
 
 .rounded-top {
@@ -7973,25 +7973,26 @@ body {
 .active {
   color: #6440ff !important;
   font-weight: 600;
+  transform: scale(1.05);
+  transition: font-weight 0.1s linear;
 }
 
 .btn {
-  border-radius: 5px !important;
-  padding: 10px 25px;
+  border-radius: 8px !important;
+  padding: 10px 20px;
   font-weight: 500;
-  font-size: 16px !important;
 }
 
-.card, .card-service {
-  border-radius: 4px !important;
+.card {
+  border-radius: 0px !important;
   border: 0.0625rem solid rgba(231, 234, 243, 0.7);
-  background-color: #e3e6f2;
+  background-color: rgba(100, 64, 255, 0.0823529412);
 }
-.card .card-header, .card-service .card-header {
+.card .card-header {
   border: none;
   background-color: transparent;
 }
-.card .card-footer, .card-service .card-footer {
+.card .card-footer {
   border: none;
   background-color: transparent;
 }
@@ -8001,12 +8002,12 @@ body {
 }
 
 .badge {
-  background-color: #eee;
-  color: #131b23;
+  background-color: rgba(100, 64, 255, 0.0823529412);
+  color: #6440ff;
   font-weight: 500;
   font-size: 0.875rem;
   border: 0.0625rem solid rgba(231, 234, 243, 0.7);
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .input-group label {
@@ -8014,7 +8015,7 @@ body {
 }
 .input-group .form-control {
   width: 100%;
-  border-radius: 5px !important;
+  border-radius: 8px !important;
   font-size: 16px;
 }
 .input-group .form-control:focus {
@@ -8045,7 +8046,7 @@ body {
 }
 
 /* FLEXBOX */
-.flexbox-center, .testimonial-icon, .contact-information .btn-socmedia, .icon-wrapper, .screen-height {
+.flexbox-center, .btn-contact, .testimonial-icon, .contact-information .btn-socmedia, .icon-wrapper, .screen-height {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8117,12 +8118,12 @@ body {
 }
 
 /* ENDS HERE */
-.card-service {
+.card.card-service {
   overflow: hidden;
   background-color: #f3f3f3;
   transition: all 0.4s ease;
 }
-.card-service .card-hover {
+.card.card-service .card-hover {
   z-index: -1;
   -webkit-clip-path: circle(0% at 50% 50%);
           clip-path: circle(0% at 50% 50%);
@@ -8132,23 +8133,23 @@ body {
   top: 0;
   transition: all 0.6s ease;
 }
-.card-service .card-header .feather {
+.card.card-service .card-header .feather {
   width: 40px;
   color: #131b23;
 }
-.card-service .card-body .card-text {
+.card.card-service .card-body .card-text {
   color: #6c757d;
 }
-.card-service:hover {
+.card.card-service:hover {
   color: #fff;
   transform: scale(1.05);
   z-index: 1;
 }
-.card-service:hover .card-hover {
+.card.card-service:hover .card-hover {
   -webkit-clip-path: circle(100% at 50% 50%);
           clip-path: circle(100% at 50% 50%);
 }
-.card-service:hover .feather, .card-service:hover .card-title, .card-service:hover .card-text {
+.card.card-service:hover .feather, .card.card-service:hover .card-title, .card.card-service:hover .card-text {
   color: #4e31cd;
 }
 
@@ -8233,7 +8234,7 @@ body {
 }
 
 .border-radius, .contact-card, .contact-radius, .about-radius {
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .placeholder {
@@ -8356,6 +8357,14 @@ body {
   color: #fff;
 }
 
+.gap-x-base {
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+
+.btn-contact {
+  transition: all 0.4s ease;
+}
 #top-right-blob,
 #bottom-left-blob {
   background-image: url("../images/svg/blob.svg");

@@ -63,8 +63,8 @@
 }
 /* ENDS HERE */
 
-.card-service{
-    @extend .card, .p-md-3;
+.card.card-service{
+    @extend .p-md-3;
     overflow: hidden;
     background-color: $light;
     transition: all .4s ease;
@@ -72,7 +72,6 @@
     .card-hover{
         z-index: -1;
         clip-path: circle(0% at 50% 50%);
-        // background-color: #6440ff;
         background-color: $white;
         position: absolute;
         left: 0;
@@ -388,4 +387,25 @@
 .testimonial--highlight{
     background-color: $primary;
     color: $white;
+}
+
+.gap-x-base{
+    column-gap: 16px;
+}
+
+.btn-contact{
+    transition: all .4s ease;
+    @extend .flexbox-center, .flex-column, .text-decoration-none, .rounded, .bg-white, .p-3;
+
+    &:hover{
+        @extend .shadow, .bg-primary;
+    }
+
+    &:hover > .text-dark{
+        @extend .text-white;
+    }
+    
+    &:hover > .text-muted{
+        @extend .text-light;
+    }
 }

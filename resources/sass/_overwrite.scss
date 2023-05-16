@@ -1,7 +1,11 @@
 // HEADINGS
+.h1, .h2, .h3, .h4, .h5, .h6, 
+h1, h2, h3, h4, h5, h6{
+    font-weight: 600;
+}
+
 .h1{
-    font-size: clamp(1.8rem, 5vw, 3rem) !important;
-    font-weight: 500 !important;
+    font-size: clamp(1.8rem, 6vw, 4rem);
     letter-spacing: -1px;
 }
 
@@ -26,7 +30,7 @@
 
 // BORDERS
 .rounded{
-    border-radius: $card-radius !important;
+    border-radius: $radius !important;
 }
 
 .rounded-top{
@@ -58,15 +62,16 @@
 .active{
     color: $primary !important;
     font-weight: 600;
+    transform: scale(1.05);
+    transition: font-weight .1s linear;
 }
 // ENDS HERE
 
 // BUTTONS
 .btn{
     border-radius: $radius !important;
-    padding: 10px 25px;
+    padding: 10px 20px;
     font-weight: 500;
-    font-size: $font-size !important;
 }
 // ENDS HERE
 
@@ -96,8 +101,8 @@
 
 // BADGE
 .badge{
-    background-color: #eee;
-    color: $dark;
+    background-color: $saturated_primary;
+    color: $primary;
     font-weight: 500;
     font-size: 0.875rem;
     border: $border;
