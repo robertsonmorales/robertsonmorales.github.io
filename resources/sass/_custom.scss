@@ -367,8 +367,8 @@
 }
 
 .testimonial-icon{
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 100%;
     @extend .flexbox-center;
 }
@@ -396,7 +396,7 @@
 .btn-contact{
     transition: all .4s ease;
     @extend .flexbox-center, .flex-column, .text-decoration-none, .rounded, .bg-white, .p-3;
-
+    
     &:hover{
         @extend .shadow, .bg-primary;
     }
