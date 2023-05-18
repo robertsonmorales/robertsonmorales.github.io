@@ -201,7 +201,7 @@
 
 .img-drop-shadow{
     @extend .img-fluid;
-    filter: drop-shadow(-15px 15px 10px rgba(0, 0, 0, 0.3)) saturate(1.4);
+    filter: drop-shadow(-15px 15px 10px rgba(0, 0, 0, 0.3));
     object-fit: fill;
 }
 // * ends here
