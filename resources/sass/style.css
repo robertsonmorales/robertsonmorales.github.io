@@ -4556,7 +4556,10 @@ a.badge-dark:focus, a.badge-dark.focus {
   vertical-align: text-top !important;
 }
 
-.bg-primary, .btn-contact:hover, #carouselOnlineBanking > .carousel-indicators li.active, .carousel-indicators li.active {
+.bg-primary, .btn-contact:hover, #carouselOnlineBanking > .carousel-indicators li.active,
+#carouselTravelBuddy > .carousel-indicators li.active,
+#carouselCareerSpace > .carousel-indicators li.active,
+#carouselTimeboard > .carousel-indicators li.active, .carousel-indicators li.active {
   background-color: #6440ff !important;
 }
 
@@ -7947,7 +7950,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .rounded, .btn-contact {
-  border-radius: 8px !important;
+  border-radius: 12px !important;
 }
 
 .rounded-top {
@@ -7978,13 +7981,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-  border-radius: 8px !important;
+  border-radius: 12px !important;
   padding: 10px 20px;
   font-weight: 500;
 }
 
 .card {
-  border-radius: 8px !important;
+  border-radius: 20px !important;
   border: 0.0625rem solid rgba(231, 234, 243, 0.7);
   background-color: rgba(100, 64, 255, 0.0823529412);
 }
@@ -8007,7 +8010,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   font-size: 0.875rem;
   border: 0.0625rem solid rgba(231, 234, 243, 0.7);
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 .input-group label {
@@ -8015,7 +8018,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .input-group .form-control {
   width: 100%;
-  border-radius: 8px !important;
+  border-radius: 12px !important;
   font-size: 16px;
 }
 .input-group .form-control:focus {
@@ -8189,11 +8192,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .work-img-wrapper {
-  border-radius: 0.25rem;
+  border-radius: 20px;
   overflow: hidden;
 }
 .work-img-wrapper img {
-  transition: all 0.4s ease;
+  transition: all 0.4s ease-in-out;
 }
 .work-img-wrapper img:hover {
   transform: scale(1.05);
@@ -8233,7 +8236,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .border-radius, .contact-card, .contact-radius, .about-radius {
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 .placeholder {
@@ -8262,6 +8265,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .placeholder-5::before {
   content: "05";
+}
+
+.placeholder-6::before {
+  content: "06";
+}
+
+.placeholder-7::before {
+  content: "07";
 }
 
 .font-stack-1 {
@@ -8330,13 +8341,15 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 100%;
 }
 
-#carouselOnlineBanking > .carousel-indicators li {
-  background-color: #fff;
+#carouselOnlineBanking > .carousel-indicators li,
+#carouselTravelBuddy > .carousel-indicators li,
+#carouselCareerSpace > .carousel-indicators li,
+#carouselTimeboard > .carousel-indicators li {
+  background-color: #f3f3f3;
   opacity: 1;
 }
 
 .carousel-navigators {
-  background-image: linear-gradient(to bottom, rgba(251, 251, 251, 0.062745098) 0%, rgba(251, 251, 251, 0.062745098) 0%, rgba(251, 251, 251, 0.062745098) 0%, rgba(0, 0, 0, 0.2509803922) 100%);
   display: flex;
   align-items: center;
   justify-content: space-between;
