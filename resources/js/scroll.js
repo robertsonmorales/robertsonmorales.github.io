@@ -118,7 +118,7 @@ useScrolling('.work-action a', {
     easing: 'ease',
 });
 
-useScrolling('.work-img-wrapper a img', {
+useScrolling('.work-img-wrapper', { // a img
     delay: 300,
     distance: '5%',
     origin: 'bottom',
