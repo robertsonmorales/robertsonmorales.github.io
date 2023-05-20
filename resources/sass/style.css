@@ -538,7 +538,7 @@ table {
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #6c757d;
+  color: #555;
   text-align: left;
   caption-side: bottom;
 }
@@ -1918,7 +1918,7 @@ textarea.form-control {
   margin-left: -1.25rem;
 }
 .form-check-input[disabled] ~ .form-check-label, .form-check-input:disabled ~ .form-check-label {
-  color: #6c757d;
+  color: #555;
 }
 
 .form-check-label {
@@ -4728,7 +4728,7 @@ button.bg-dark:focus {
   border-radius: 0.2rem !important;
 }
 
-.rounded, .btn-contact {
+.rounded {
   border-radius: 0.25rem !important;
 }
 
@@ -7788,7 +7788,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-muted, .a-bit-about-me, .work-description, .input-group label {
-  color: #6c757d !important;
+  color: #555 !important;
 }
 
 .text-black-50 {
@@ -7949,7 +7949,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Google Sans", "Poppins", sans-serif;
 }
 
-.rounded, .btn-contact {
+.rounded {
   border-radius: 12px !important;
 }
 
@@ -7968,6 +7968,8 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   background-color: transparent;
   font-size: 16px;
+  font-weight: 500;
+  color: #131b23;
 }
 .navbar .nav-link:hover {
   color: #6440ff !important;
@@ -8140,7 +8142,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #131b23;
 }
 .card.card-service .card-body .card-text {
-  color: #6c757d;
+  color: #555;
 }
 .card.card-service:hover {
   color: #fff;
@@ -8217,7 +8219,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .my-avatar {
-  border-radius: 50% !important;
+  border-radius: 45% !important;
   -o-object-fit: fill;
      object-fit: fill;
 }
@@ -8235,7 +8237,7 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
-.border-radius, .contact-card, .contact-radius, .about-radius {
+.border-radius, .contact-card, .contact-radius {
   border-radius: 12px;
 }
 
@@ -8295,6 +8297,10 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-right-radius: 10%;
 }
 
+.about-radius {
+  border-radius: 20px;
+}
+
 .contact-wrapper {
   height: 100%;
   display: flex;
@@ -8337,7 +8343,7 @@ h1, h2, h3, h4, h5, h6 {
 .carousel-indicators li {
   width: 10px;
   height: 10px;
-  background-color: #6c757d;
+  background-color: #555;
   border-radius: 100%;
 }
 
@@ -8366,7 +8372,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
   border-radius: 100%;
   background-color: #fff;
-  color: #6c757d !important;
+  color: #555 !important;
   opacity: 1;
 }
 .carousel-navigators button:hover {
@@ -8408,6 +8414,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-contact {
   transition: all 0.4s ease;
+  border-radius: 20px;
 }
 #top-right-blob,
 #bottom-left-blob {

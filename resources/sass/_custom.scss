@@ -217,7 +217,7 @@
 }
 
 .my-avatar{
-    border-radius: 50% !important;
+    border-radius: 45% !important;
     object-fit: fill;
 }
 
@@ -299,7 +299,7 @@
 }
 
 .about-radius{
-    @extend .border-radius;
+    border-radius: $card-radius;
     // .border-top-left-radius, .border-bottom-left-radius;
 }
 
@@ -457,7 +457,8 @@
 
 .btn-contact{
     transition: all .4s ease;
-    @extend .flexbox-center, .flex-column, .text-decoration-none, .rounded, .bg-white, .p-3;
+    border-radius: $card-radius;
+    @extend .flexbox-center, .flex-column, .text-decoration-none, .bg-white, .p-3;
     
     &:hover{
         @extend .shadow, .bg-primary;

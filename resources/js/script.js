@@ -1,7 +1,5 @@
 feather.replace();
 
-// window.scrollTo(0,0);
-
 function navSelected(id){
     let navbar = document.getElementsByClassName('navbar');
     for (let i = 0; i < navbar.length; i++) {
@@ -20,33 +18,6 @@ function navSelected(id){
     }
 }
 
-function visibleToViewport(el){
-    var rect = el.getBoundingClientRect();
-
-    // return rect;
-    return (
-        rect.top == 0 &&
-        rect.left == 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-
-// const navs = ['hero', 'services', 'works', 'skills', 'about', 'contact'];
-
-// var message = {};
-
-// document.addEventListener('scroll', () => {
-//     message = {
-//         visibiliy: visibleToViewport(document.getElementById('works')) 
-//             ? 'Visible to viewport'
-//             : 'Not Visible to viewport',
-//         rect: document.getElementById('services').getBoundingClientRect()
-//     }
-
-//     // console.log(message);
-// });
-
 $(() => {
     'use strict';
 
@@ -58,30 +29,7 @@ $(() => {
         $("#navbar").toggleClass('bg-white', $(this).scrollTop() > $("#navbar").height());
 	});
 
-    function navBarHeight(){
-        var set_height = $('#navbar').height() * 2;
-        $('#about').css('margin-top', set_height + "px");
-        $('#services').css('margin-top', set_height + "px");
-        $('#projects').css('margin-top', set_height + "px");
-        $('#skills').css('margin-top', set_height + "px");
-        $('#contact').css('margin-top', set_height + "px");
-    }   
-
-    // navBarHeight(); 
-
     $('#btn-call').click(function(){
         window.location.href = "tel:639552808438";
     });
-
-    // $(window).on('scroll', function() {
-    //     var rotationAngle = $(window).scrollTop() / $(window).height() * 30; 
-
-    //     $('#hero').css('transform', 'rotate(' + rotationAngle + 'deg)')
-    //     // $('#services').css('transform', 'rotate(-' + rotationAngle + 'deg)')
-    //     $('#works').css('transform', 'rotate(-' + rotationAngle + 'deg)')
-    //     // $('#skills').css('transform', 'rotate(' + rotationAngle + 'deg)')
-    //     $('#about-me').css('transform', 'rotate(-' + rotationAngle + 'deg)')
-    //     // $('#testimonials').css('transform', 'rotate(' + rotationAngle + 'deg)')
-    //     $('#contact').css('transform', 'rotate(-' + rotationAngle + 'deg)')
-    // });
 });
