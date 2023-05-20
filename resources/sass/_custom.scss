@@ -160,11 +160,11 @@
 // * Works here
 .work-img-wrapper{  
     @extend .mb-4, .mb-md-0;
-    border-radius: $border-radius;
+    border-radius: $card-radius;
     overflow: hidden;
 
     img{
-        transition: all .4s ease;
+        transition: all .4s ease-in-out;
 
         &:hover{
             transform: scale(1.05);
@@ -270,6 +270,14 @@
     content: "05";
 }
 
+.placeholder-6::before{
+    content: "06";
+}
+
+.placeholder-7::before{
+    content: "07";
+}
+
 .font-stack-1{
     font-family: $font-stack-1 !important;
 }
@@ -350,6 +358,10 @@
 }
 
 // * TESTIMONIALS & WORKS
+// .carousel-inner{
+//     border-radius: $card-radius;
+// }
+
 .carousel-item.active{
     color: $dark !important;
 }
@@ -365,17 +377,23 @@
     @extend .bg-primary;
 }
 
-#carouselOnlineBanking > .carousel-indicators li{
-    background-color: $white;
+#carouselOnlineBanking > .carousel-indicators li,
+#carouselTravelBuddy > .carousel-indicators li,
+#carouselCareerSpace > .carousel-indicators li,
+#carouselTimeboard > .carousel-indicators li{
+    background-color: $light;
     opacity: 1;
 }
 
-#carouselOnlineBanking > .carousel-indicators li.active{
+#carouselOnlineBanking > .carousel-indicators li.active,
+#carouselTravelBuddy > .carousel-indicators li.active,
+#carouselCareerSpace > .carousel-indicators li.active,
+#carouselTimeboard > .carousel-indicators li.active{
     @extend .bg-primary;
 }
 
 .carousel-navigators{
-    background-image: linear-gradient(to bottom, #fbfbfb10 0%, #fbfbfb10 0%, #fbfbfb10 0%, #00000040 100%);
+    // background-image: linear-gradient(to bottom, #ffffff10 0%, #ffffff10 0%, #ffffff10 0%, #00000040 100%);
     display: flex;
     align-items: center;
     justify-content: space-between;
