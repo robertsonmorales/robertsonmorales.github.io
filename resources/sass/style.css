@@ -4556,7 +4556,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   vertical-align: text-top !important;
 }
 
-.bg-primary, .btn-contact:hover {
+.bg-primary, .btn-contact:hover, #carouselOnlineBanking > .carousel-indicators li.active, .carousel-indicators li.active {
   background-color: #6440ff !important;
 }
 
@@ -5692,7 +5692,7 @@ button.bg-dark:focus {
   white-space: normal;
 }
 
-.shadow-sm {
+.shadow-sm, .carousel-navigators button:hover {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
@@ -7984,7 +7984,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card {
-  border-radius: 0px !important;
+  border-radius: 8px !important;
   border: 0.0625rem solid rgba(231, 234, 243, 0.7);
   background-color: rgba(100, 64, 255, 0.0823529412);
 }
@@ -8120,14 +8120,13 @@ h1, h2, h3, h4, h5, h6 {
 /* ENDS HERE */
 .card.card-service {
   overflow: hidden;
-  background-color: #f3f3f3;
+  background-color: #fff;
   transition: all 0.4s ease;
 }
 .card.card-service .card-hover {
   z-index: -1;
   -webkit-clip-path: circle(0% at 50% 50%);
           clip-path: circle(0% at 50% 50%);
-  background-color: #fff;
   position: absolute;
   left: 0;
   top: 0;
@@ -8142,15 +8141,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 .card.card-service:hover {
   color: #fff;
-  transform: scale(1.05);
   z-index: 1;
 }
 .card.card-service:hover .card-hover {
   -webkit-clip-path: circle(100% at 50% 50%);
           clip-path: circle(100% at 50% 50%);
+  background-color: #6440ff;
 }
-.card.card-service:hover .feather, .card.card-service:hover .card-title, .card.card-service:hover .card-text {
-  color: #4e31cd;
+.card.card-service:hover .feather, .card.card-service:hover .card-title, .card.card-service:hover .card-text, .card.card-service:hover .card-footer > a {
+  color: #fff;
 }
 
 .img-fluid-hovered {
@@ -8201,7 +8200,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .img-drop-shadow {
-  filter: drop-shadow(-15px 15px 10px rgba(0, 0, 0, 0.3)) saturate(1.4);
+  filter: drop-shadow(-15px 15px 10px rgba(0, 0, 0, 0.3));
   -o-object-fit: fill;
      object-fit: fill;
 }
@@ -8331,8 +8330,40 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 100%;
 }
 
-.carousel-indicators li.active {
+#carouselOnlineBanking > .carousel-indicators li {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.carousel-navigators {
+  background-image: linear-gradient(to bottom, rgba(251, 251, 251, 0.062745098) 0%, rgba(251, 251, 251, 0.062745098) 0%, rgba(251, 251, 251, 0.062745098) 0%, rgba(0, 0, 0, 0.2509803922) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 16px;
+}
+.carousel-navigators button {
+  position: static;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #fff;
+  color: #6c757d !important;
+  opacity: 1;
+}
+.carousel-navigators button:hover {
   background-color: #6440ff;
+}
+.carousel-navigators button:hover > .carousel-control-icon {
+  color: #fff;
+}
+.carousel-navigators button:active {
+  background-color: #4e31cd;
 }
 
 .testimonial-icon {

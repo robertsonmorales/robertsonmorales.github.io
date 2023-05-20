@@ -72,4 +72,16 @@ $(() => {
     $('#btn-call').click(function(){
         window.location.href = "tel:639552808438";
     });
+
+    // $(window).on('scroll', function() {
+    //     var rotationAngle = $(window).scrollTop() / $(window).height() * 30; 
+
+    //     $('#hero').css('transform', 'rotate(' + rotationAngle + 'deg)')
+    //     // $('#services').css('transform', 'rotate(-' + rotationAngle + 'deg)')
+    //     $('#works').css('transform', 'rotate(-' + rotationAngle + 'deg)')
+    //     // $('#skills').css('transform', 'rotate(' + rotationAngle + 'deg)')
+    //     $('#about-me').css('transform', 'rotate(-' + rotationAngle + 'deg)')
+    //     // $('#testimonials').css('transform', 'rotate(' + rotationAngle + 'deg)')
+    //     $('#contact').css('transform', 'rotate(-' + rotationAngle + 'deg)')
+    // });
 });
