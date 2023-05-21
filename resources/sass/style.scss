@@ -20,6 +20,11 @@ body{
     color: $dark;
     font: $font-size $font-stack;
     line-height: 22px;
+    cursor: url('../images/cursors/cursor-pointer.png'), auto;
+}
+
+a:hover, button:hover{
+    cursor: url('../images/cursors/cursor-click.png'), auto !important;
 }
 
 @import 'overwrite';
