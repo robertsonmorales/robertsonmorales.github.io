@@ -7922,6 +7922,11 @@ body {
   color: #131b23;
   font: 16px "Google Sans", "Poppins", sans-serif;
   line-height: 22px;
+  cursor: url("../images/cursors/cursor-pointer.png"), auto;
+}
+
+a:hover, button:hover {
+  cursor: url("../images/cursors/cursor-click.png"), auto !important;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6,
