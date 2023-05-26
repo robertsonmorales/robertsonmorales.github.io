@@ -40,6 +40,12 @@ h1, h2, h3, h4, h5, h6{
 // ENDS HERE
 
 // NAVIGATION
+
+.navbar-light .navbar-nav .nav-link{
+    color: #555;
+    font-weight: normal;
+}
+
 .navbar{
     .navbar-brand{
         border: none;
@@ -61,9 +67,9 @@ h1, h2, h3, h4, h5, h6{
     }
 }
 
-.active{
-    color: $primary !important;
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{
     font-weight: 600;
+    color: $primary !important;
     transform: scale(1.05);
     transition: font-weight .1s linear;
 }
@@ -81,7 +87,8 @@ h1, h2, h3, h4, h5, h6{
 .card{
     border-radius: $card-radius !important;
     border: $border;
-    background-color: $saturated_primary;
+    // background-color: $saturated_primary;
+    // @extend .glassmorphism;
     
     .card-header{
         border: none;
