@@ -39,13 +39,24 @@
     .fixed-top{
         position: static;
     }
+
+    .testimonial-quote{
+        line-height: 25px;
+        font-size: $font-size;
+    }
 }
 
 @include media-breakpoint-only(md) {
-    
+    .h1{
+        letter-spacing: -1.5px;
+    }
 }
 
 @include media-breakpoint-between(lg, xl){
+    .h1{
+        letter-spacing: -3px;
+    }
+
     .nav-item{
         margin-right: 10px;
 

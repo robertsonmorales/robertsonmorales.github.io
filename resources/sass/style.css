@@ -7920,7 +7920,7 @@ html {
 body {
   background-color: #fbfbfb;
   color: #131b23;
-  font: 16px "Google Sans", "Poppins", sans-serif;
+  font: 16px "Poppins", sans-serif;
   line-height: 25px;
   letter-spacing: 0.2px;
 }
@@ -7932,7 +7932,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .h1 {
   font-size: clamp(1.8rem, 6vw, 4rem);
-  letter-spacing: -3px;
+  letter-spacing: 0;
 }
 
 #intro {
@@ -7947,7 +7947,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: -4px;
 }
 #intro code {
-  font-family: "Google Sans", "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .rounded {
@@ -7974,7 +7974,7 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
   background-color: transparent;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
   color: #131b23;
 }
 .navbar .nav-link:hover {
@@ -8055,8 +8055,12 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
 }
 
+.carousel-indicators {
+  position: static;
+}
+
 /* FLEXBOX */
-.flexbox-center, .btn-contact, .testimonial-icon, .contact-information .btn-socmedia, .icon-wrapper, .screen-height {
+.flexbox-center, .circle-success, .circle-error, .btn-contact, .testimonial-icon, .contact-information .btn-socmedia, .icon-wrapper, .screen-height {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8096,7 +8100,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 }
 .input-group label {
-  font-size: 0.9em !important;
+  font-size: 0.8em !important;
   margin-bottom: 3px !important;
 }
 
@@ -8322,6 +8326,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 42px;
   border-radius: 50%;
   transition: all 0.2s ease;
+  color: #555;
 }
 .contact-information .btn-socmedia:hover {
   transform: scale(1.1);
@@ -8402,19 +8407,18 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.testimonial-quote--two-liner {
-  line-height: 57px;
-  font-size: 44px;
-}
-
 .testimonial--highlight {
   background-color: #6440ff;
   color: #fff;
 }
 
-.gap-x-base {
+.gap-y-base {
   -moz-column-gap: 16px;
        column-gap: 16px;
+}
+
+.gap-x-base {
+  row-gap: 16px;
 }
 
 .btn-contact {
@@ -8427,6 +8431,21 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(255, 255, 255, 0.75);
   border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.circle-success, .circle-error {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  color: #fff;
+}
+
+.circle-success {
+  background-color: #6440ff;
+}
+
+.circle-error {
+  background-color: #dc3545;
 }
 
 #top-right-blob,
@@ -8474,8 +8493,20 @@ h1, h2, h3, h4, h5, h6 {
   .fixed-top {
     position: static;
   }
+  .testimonial-quote {
+    line-height: 25px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .h1 {
+    letter-spacing: -1.5px;
+  }
 }
 @media (min-width: 992px) {
+  .h1 {
+    letter-spacing: -3px;
+  }
   .nav-item {
     margin-right: 10px;
   }

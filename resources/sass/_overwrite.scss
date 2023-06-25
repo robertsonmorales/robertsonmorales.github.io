@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, h6{
 
 .h1{
     font-size: clamp(1.8rem, 6vw, 4rem);
-    letter-spacing: -3px;
+    letter-spacing: 0;
 }
 
 #intro{
@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6{
         border: none;
         background-color: transparent;
         font-size: $font-size;
-        font-weight: 500;
+        font-weight: 600;
         color: $dark;
 
         &:hover{
@@ -171,4 +171,9 @@ h1, h2, h3, h4, h5, h6{
         padding: 10px 0;
         border: none;
     }
+}
+
+// Carousel
+.carousel-indicators{
+    position: static;
 }
