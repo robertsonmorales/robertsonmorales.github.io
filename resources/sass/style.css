@@ -8045,8 +8045,8 @@ h1, h2, h3, h4, h5, h6 {
   top: 0.2rem;
 }
 .input-group .invalid-feedback {
-  font-weight: 500 !important;
-  font-size: 16px;
+  font-weight: normal !important;
+  font-size: 14px;
 }
 
 .list-group .list-group-item {
@@ -8224,7 +8224,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .my-avatar {
-  border-radius: 45% !important;
+  border-radius: 100% !important;
   -o-object-fit: fill;
      object-fit: fill;
 }
