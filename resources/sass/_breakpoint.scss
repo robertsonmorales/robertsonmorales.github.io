@@ -54,15 +54,7 @@
 
 @include media-breakpoint-between(lg, xl){
     .h1{
-        letter-spacing: -3px;
-    }
-
-    .nav-item{
-        margin-right: 10px;
-
-        &:last-child{
-            margin-right: 0;
-        }
+        letter-spacing: -2px;
     }
 }
 

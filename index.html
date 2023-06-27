@@ -131,44 +131,40 @@
                     <div class="navbar-text">
                         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 gap-y-base">
                             <li class="nav-item">
-                                <a href="#hero"
+                                <button
                                 class="nav-link navbar active"
                                 id="nav-hero"
-                                onclick="navSelected('hero')">Home</a>
+                                onclick="navSelected('hero')">Home</button>
                             </li>
                             <li class="nav-item">
-                                <a href="#services"
-                                class="nav-link navbar"
+                                <button class="nav-link navbar"
                                 id="nav-services"
-                                onclick="navSelected('services')">Services</a>
+                                onclick="navSelected('services')">Services</button>
                             </li>
                             <li class="nav-item">
-                                <a href="#works"
-                                class="nav-link navbar"
+                                <button class="nav-link navbar"
                                 id="nav-works"
-                                onclick="navSelected('works')">Works</a>
+                                onclick="navSelected('works')">Work</button>
                             </li>
-                            <!-- <li class="nav-item">
-                                <a href="#skills"
-                                class="nav-link navbar"
-                                id="nav-skills">Skills</a>
-                            </li> -->
                             <li class="nav-item">
-                                <a href="#about-me"
-                                class="nav-link navbar"
+                                <button class="nav-link navbar"
                                 id="nav-about-me"
-                                onclick="navSelected('about-me')">About Me</a>
+                                onclick="navSelected('about-me')">About Me</button>
                             </li>
-                            <!-- <li class="nav-item">
-                                <a href="#testimonials"
-                                class="nav-link navbar"
-                                id="nav-testimonials">Testimonials</a>
-                            </li> -->
+                            <li class="nav-item">
+                                <button class="nav-link navbar"
+                                id="nav-testimonials" onclick="navSelected('testimonials')">Testimonials</button>
+                            </li>
                             <li class="nav-item"> <!-- mr-md-5 -->
-                                <a href="#contact"
-                                class="nav-link navbar"
+                                <button class="nav-link navbar"
                                 id="nav-contact"
-                                onclick="navSelected('contact')">Contact</a>
+                                onclick="navSelected('contact')">Contact</button>
+                            </li>
+                            
+                            <li class="nav-item"> <!-- mr-md-5 -->
+                                <a class="btn btn-primary text-white"
+                                href="resources/attachment/resume.pdf"
+                                id="nav-download"><span class="mr-2">Download Resume</span><em data-feather="download" class="font-size-sm"></em></a>
                             </li>
                         </ul>
                     </div>
@@ -184,8 +180,8 @@
                     <img src="resources/images/me/pic.png" 
                         class="my-avatar mb-4 bg-primary--saturated" 
                         alt="Avatar"
-                        height="130"
-                        width="130"
+                        height="110"
+                        width="110"
                         id="my-profile">
     
                     <div class="text-left text-md-center">
@@ -201,15 +197,14 @@
     
                         <div class="call-to-actions">
                             <button class="btn btn-primary mb-1 mb-md-0 mr-1 mobile-w-100"
-                                onclick="navSelected('works')"
-                                id="btn-my-works">View Works</button>
+                                onclick="navSelected('services')"
+                                id="btn-my-works">My Services</button>
     
                             <div class="d-block d-md-none w-100"></div>
-    
-                            <a class="btn btn-outline-primary mobile-w-100 btn-download-resume"
-                                href="resources/attachment/resume.pdf"
-                                download="Resume"
-                                id="btn-download-resume">Download Resume</a>
+
+                            <button class="btn btn-outline-primary mobile-w-100"
+                                onclick="navSelected('works')"
+                                id="btn-my-works">See Work &#8594;</button>
                         </div>
                         <div class="mb-4 mb-md-0"></div>
                     </div>
@@ -1137,7 +1132,7 @@
             </div>
         </section>
     
-        <section id="skills" class="py-5 py-md-0 screen-height bg-light">
+        <!-- <section id="skills" class="py-5 py-md-0 screen-height bg-light">
             <div class="container">
                 <div class="text-center">
                     <div class="text-section">ABOUT MY</div>
@@ -1182,13 +1177,6 @@
                             title="Bootstrap" 
                             width="110"
                             height="110">
-                        <!-- <img src="resources/images/svg/skills/angular.svg" 
-                            alt="AngularJS" 
-                            class="skill-img p-4" 
-                            title="AngularJS" 
-                            
-                            width="110"
-                            height="110"> -->
                         <img src="resources/images/svg/skills/vue.svg" 
                             alt="VueJS" 
                             class="skill-img p-4" 
@@ -1220,20 +1208,6 @@
                             title="git" 
                             width="110"
                             height="110">
-                        <!-- <img src="resources/images/svg/skills/adobe-xd.svg" 
-                            alt="Adobe XD" 
-                            class="skill-img" 
-                            title="Adobe XD" 
-                            
-                            width="110"
-                            height="110"> -->
-                        <!-- <img src="resources/images/svg/skills/webflow.svg" 
-                            alt="webflow" 
-                            class="skill-img" 
-                            title="webflow" 
-                            
-                            width="110"
-                            height="110"> -->
                         <img src="resources/images/svg/skills/figma-1.svg" 
                             alt="figma" 
                             class="skill-img p-4" 
@@ -1291,7 +1265,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     
         <section id="about-me" class="py-5">
             <div class="container">
@@ -1419,51 +1393,20 @@
                 </div>
                 
                 <div class="row no-gutters contact-card flex-column flex-lg-row">
-                    <div class="col col-lg-5 bg-light border-radius">
-                        <div class="contact-wrapper p-4 p-lg-5">
-                            <div class="contact-information">
-                                <h4>I would love to help.</h4>
-                                <p class="text-muted">Fill up the form and I will get back to you within 24 hours. Thank you!</p>
+                    <div class="col col-lg-5 background-img border-radius"></div>
+                    <div class="col col-lg-7">
+                        <form action="https://submit-form.com/jB4EPKoR"
+                            method="POST"
+                            id="contact-form"
+                            class="p-4 p-lg-5">
 
-                                <ul class="list-group">
-                                    <li class="list-group-item">
-                                        <a href="https://api.whatsapp.com/send?phone=639552808438" 
-                                            id="btn-call" 
-                                            target="_blank" 
-                                            title="Open and send message to Whatsapp" 
-                                            class="text-muted">
-                                            <em data-feather="phone"></em>
-                                            <span class="ml-2">(+63) 9552808438</span>
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="mailto:robertsonmorales23@gmail.com?cc=trebormoralesson@gmail.com" 
-                                            id="btn-email" 
-                                            title="Send message via mail" 
-                                            class="text-muted">
-                                            <em data-feather="mail"></em>
-                                            <span class="ml-2">rm23@gmail.com</span>
-                                        </a>
-                                    </li>
-                                    <li class="list-group-item text-muted">
-                                        <em data-feather="map-pin"></em>
-                                        <span class="ml-2">San Jose Del Monte, Bulacan, Philippines</span>
-                                    </li>
-                                </ul>
+                            <div class="w-100">
+                                <h4>Work With Me!</h4>
+                                <p class="text-muted">Fill up the form and I will get back to you within 24 hours. Thank you!</p>
                             </div>
 
-                            <div class="contact-information">
-                                <div class="divider"></div>
-
+                            <div class="contact-information mb-4">
                                 <div class="flexbox-start">
-                                    <a href="https://dribbble.com/robertsonmorales" 
-                                        target="_blank" 
-                                        title="Follow me at Dribbble" 
-                                        rel="noopener"
-                                        class="btn-socmedia">
-                                        <em class="icon-wrapper" data-feather="dribbble"></em>
-                                    </a>
-
                                     <a href="https://www.facebook.com/robertsonmorales.dev/" 
                                         target="_blank" 
                                         title="Follow me at facebook" 
@@ -1488,15 +1431,16 @@
                                         class="btn-socmedia">
                                         <em class="icon-wrapper" data-feather="linkedin"></em>
                                     </a>
+
+                                    <a href="https://dribbble.com/robertsonmorales" 
+                                        target="_blank" 
+                                        title="Follow me at Dribbble" 
+                                        rel="noopener"
+                                        class="btn-socmedia">
+                                        <em class="icon-wrapper" data-feather="dribbble"></em>
+                                    </a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col col-lg-7">
-                        <form action="https://submit-form.com/jB4EPKoR"
-                            method="POST"
-                            id="contact-form"
-                            class="p-4 p-lg-5">
                             
                             <div class="row flex-column flex-lg-row">
                                 <div class="col">
@@ -1574,9 +1518,10 @@
                             </div>
     
                             <div class="flexbox-start">
-                                <button class="btn btn-primary mobile-w-100"
+                                <!-- mobile-w-100 -->
+                                <button class="btn btn-primary w-100"
                                     id="btn-submit" 
-                                    type="button">Let's get started!</button>
+                                    type="button">Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -1587,7 +1532,35 @@
 
     <footer>
         <div class="text-center py-1 bg-light">
-            <div class="text-muted font-weight-500">&copy; <span id="year"></span> | Robertson Morales</div>
+            <div class="container">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="text-muted">Or Email Me</span>
+                        <a href="mailto:robertsonmorales23@gmail.com?cc=trebormoralesson@gmail.com" 
+                            id="btn-email" 
+                            title="Send message via mail" 
+                            class="text-decoration-none">
+                            <h5 class="text-dark">robertsonmorales23@gmail.com</h5>
+                        </a>
+                    </li>
+
+                    <li class="list-group-item">
+                        <span class="text-muted">Or Call Me</span>
+                        <a href="https://api.whatsapp.com/send?phone=639552808438" 
+                            id="btn-call" 
+                            target="_blank" 
+                            title="Open and send message to Whatsapp"
+                            class="text-decoration-none">
+                            <h5 class="text-dark">+63 9552808438</h5>
+                        </a>
+                    </li>
+
+                    <li class="list-group-item text-muted">
+                        <span class="text-muted">Or Let' Hang out!</span>
+                        <h5 class="text-dark">San Jose Del Monte, Bulacan, Philippines</h5>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 

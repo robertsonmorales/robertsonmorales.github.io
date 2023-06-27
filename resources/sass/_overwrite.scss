@@ -65,6 +65,12 @@ h1, h2, h3, h4, h5, h6{
             color: $primary !important;
         }
     }
+
+    #nav-download{
+        .feather{
+            width: 16px;
+        }
+    }
 }
 
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{
@@ -80,6 +86,7 @@ h1, h2, h3, h4, h5, h6{
     border-radius: $radius !important;
     padding: 10px 20px;
     font-weight: 500;
+    font-size: $font-size;
 }
 // ENDS HERE
 
@@ -166,10 +173,17 @@ h1, h2, h3, h4, h5, h6{
 
 // list group
 .list-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+
     .list-group-item{
         background-color: transparent;
         padding: 10px 0;
         border: none;
+        text-align: center;
     }
 }
 

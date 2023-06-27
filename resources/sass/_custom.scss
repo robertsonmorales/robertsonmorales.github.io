@@ -323,12 +323,14 @@
     }
 
     .btn-socmedia{
-        @extend .mr-3, .flexbox-center;
+        @extend .mr-2, .flexbox-center;
         width: 42px;
         height: 42px;
-        border-radius: 50%;
+        border-radius: 100%;
         transition: all .2s ease;
         color: $text-muted;
+        background-color: $light;
+        border: $border;
 
         &:hover{
             transform: scale(1.1);
@@ -496,4 +498,10 @@
 
 .circle-error{
     background-color: $danger;
+}
+
+.background-img{
+    background-image: linear-gradient(to right, #4e31cd55, #6440ff33), url("../images/bg.jpg");
+    background-position: left;
+    background-size: cover;
 }

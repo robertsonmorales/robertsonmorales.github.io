@@ -36,14 +36,14 @@ useScrolling('#specialize', {
 useScrolling('#btn-my-works', {
     delay: 300,
     distance: '15%',
-    origin: 'left',
+    origin: 'right',
     easing: 'ease'
 });
 
 useScrolling('#btn-download-resume', {
     delay: 300,
     distance: '15%',
-    origin: 'right',
+    origin: 'left',
     easing: 'ease'
 });
 
