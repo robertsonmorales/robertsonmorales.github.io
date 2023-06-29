@@ -246,37 +246,37 @@
     color: #f3f3f3;
     font-size: 80px;
     z-index: -1;
-    font-weight: 900;
+    font-weight: 600;
     pointer-events: none;
 }
 
-.placeholder-1::before{
-    content: "01";
-}
+// .placeholder-1::before{
+//     content: "01";
+// }
 
-.placeholder-2::before{
-    content: "02";
-}
+// .placeholder-2::before{
+//     content: "02";
+// }
 
-.placeholder-3::before{
-    content: "03";
-}
+// .placeholder-3::before{
+//     content: "03";
+// }
 
-.placeholder-4::before{
-    content: "04";
-}
+// .placeholder-4::before{
+//     content: "04";
+// }
 
-.placeholder-5::before{
-    content: "05";
-}
+// .placeholder-5::before{
+//     content: "05";
+// }
 
-.placeholder-6::before{
-    content: "06";
-}
+// .placeholder-6::before{
+//     content: "06";
+// }
 
-.placeholder-7::before{
-    content: "07";
-}
+// .placeholder-7::before{
+//     content: "07";
+// }
 
 .font-stack-1{
     font-family: $font-stack-1 !important;
