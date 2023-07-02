@@ -184,7 +184,13 @@
 // * Skills
 .skill-gallery{
     .skill-img{
-       @extend .img-fluid, .img-fluid-extension;
+        filter: saturate(0.1);
+        transition: filter 0.4s ease-in-out;
+        @extend .img-fluid, .img-fluid-extension;
+
+       &:hover{
+            filter: saturate(1);
+       }
     }
 }
 // * ends here

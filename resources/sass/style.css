@@ -7951,7 +7951,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .rounded {
-  border-radius: 12px !important;
+  border-radius: 10px !important;
 }
 
 .rounded-top {
@@ -7992,7 +7992,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn {
-  border-radius: 12px !important;
+  border-radius: 10px !important;
   padding: 10px 20px;
   font-weight: 500;
   font-size: 14px;
@@ -8021,7 +8021,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   font-size: 0.875rem;
   border: 0.0625rem solid rgba(231, 234, 243, 0.7);
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .input-group label {
@@ -8029,7 +8029,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .input-group .form-control {
   width: 100%;
-  border-radius: 12px !important;
+  border-radius: 10px !important;
   font-size: 14px;
 }
 .input-group .form-control:focus {
@@ -8226,6 +8226,14 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.05);
 }
 
+.skill-gallery .skill-img {
+  filter: saturate(0.1);
+  transition: filter 0.4s ease-in-out;
+}
+.skill-gallery .skill-img:hover {
+  filter: saturate(1);
+}
+
 .img-drop-shadow {
   filter: drop-shadow(-15px 15px 10px rgba(0, 0, 0, 0.3));
   -o-object-fit: fill;
@@ -8260,7 +8268,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .border-radius, .contact-card, .contact-radius {
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .placeholder {
