@@ -8167,6 +8167,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .card.card-service:hover {
   color: #fff;
+  transform: translateY(-10px);
   z-index: 1;
 }
 .card.card-service:hover .card-hover {

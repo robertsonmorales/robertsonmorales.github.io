@@ -95,7 +95,7 @@
 
     &:hover{
         color: $white;
-        // transform: scale(1.05);
+        transform: translateY(-10px);
         z-index: 1;
         @extend .shadow;
 
