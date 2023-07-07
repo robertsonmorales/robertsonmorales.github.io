@@ -87,6 +87,11 @@ h1, h2, h3, h4, h5, h6{
     padding: 10px 20px;
     font-weight: 500;
     font-size: $font-size;
+
+    .feather{
+        width: 16px;
+        height: 16px;
+    }
 }
 // ENDS HERE
 
@@ -131,12 +136,12 @@ h1, h2, h3, h4, h5, h6{
     label{
         font-weight: 500;
         @extend .text-muted;
+        font-size: $font-size;
     }
 
     .form-control{
         width: 100%;
         border-radius: $radius !important;
-        font-size: $font-size;
 
         &:focus{
             font-weight: 500;

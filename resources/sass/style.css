@@ -1840,7 +1840,7 @@ select.form-control:focus::-ms-value {
 .col-form-label-sm {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 1.5;
 }
 
@@ -1864,7 +1864,7 @@ select.form-control:focus::-ms-value {
 .form-control-sm {
   height: calc(1.5em + 0.5rem + 2px);
   padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -1955,7 +1955,7 @@ textarea.form-control {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 1.6;
   color: #fff;
   background-color: rgba(40, 167, 69, 0.9);
@@ -2048,7 +2048,7 @@ textarea.form-control {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 1.6;
   color: #fff;
   background-color: rgba(220, 53, 69, 0.9);
@@ -2688,7 +2688,7 @@ fieldset:disabled a.btn {
 
 .btn-sm, .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -2982,7 +2982,7 @@ input[type=button].btn-block {
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-append > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -3195,7 +3195,7 @@ input[type=button].btn-block {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 .custom-select-lg {
@@ -7920,7 +7920,7 @@ html {
 body {
   background-color: #fbfbfb;
   color: #131b23;
-  font: 14px "Poppins", sans-serif;
+  font: 16px "Poppins", sans-serif;
   line-height: 25px;
   letter-spacing: 0.2px;
 }
@@ -7973,7 +7973,7 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
   border: none;
   background-color: transparent;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: #131b23;
 }
@@ -7995,7 +7995,11 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px !important;
   padding: 10px 20px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
+}
+.btn .feather {
+  width: 16px;
+  height: 16px;
 }
 
 .card {
@@ -8026,11 +8030,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .input-group label {
   font-weight: 500;
+  font-size: 16px;
 }
 .input-group .form-control {
   width: 100%;
   border-radius: 10px !important;
-  font-size: 14px;
 }
 .input-group .form-control:focus {
   font-weight: 500;
@@ -8050,7 +8054,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .input-group .invalid-feedback {
   font-weight: normal !important;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .list-group {
@@ -8496,7 +8500,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .testimonial-quote {
     line-height: 25px;
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
