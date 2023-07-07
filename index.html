@@ -152,19 +152,22 @@
                                 onclick="navSelected('about-me')">About Me</button>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link navbar"
+                                target="_blank"
+                                href="resources/attachment/resume.pdf"
+                                id="nav-download">
+                                    <span class="mr-2">Resume</span>
+                                    <em data-feather="external-link" class="font-size-sm"></em>
+                                </a>
+                            </li>
+                            <li class="nav-item">
                                 <button class="nav-link navbar"
                                 id="nav-testimonials" onclick="navSelected('testimonials')">Testimonials</button>
                             </li>
-                            <li class="nav-item mr-md-3">
+                            <li class="nav-item">
                                 <button class="nav-link navbar"
                                 id="nav-contact"
                                 onclick="navSelected('contact')">Contacts</button>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <a class="btn btn-primary text-white"
-                                href="resources/attachment/resume.pdf"
-                                id="nav-download"><span class="mr-2">Download Resume</span><em data-feather="download" class="font-size-sm"></em></a>
                             </li>
                         </ul>
                     </div>
@@ -1289,10 +1292,10 @@
     
                         <div class="d-none d-md-block">
                             <a class="btn btn-outline-primary btn-download-resume"
-                            href="resources/attachment/resume.pdf"
-                            download="Resume">
-                                <span class="mr-2">Download Resume</span>
-                                <em data-feather="download" class="font-size-sm"></em>  
+                            target="_blank"
+                            href="resources/attachment/resume.pdf">
+                                <span class="mr-2">View Resume</span>
+                                <em data-feather="external-link" class="font-size-sm"></em>  
                             </a>
                         </div>
     
