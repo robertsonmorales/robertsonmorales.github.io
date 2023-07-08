@@ -112,7 +112,7 @@
         <nav class="navbar navbar-expand-md navbar-light mobile-bg-white fixed-top" id="navbar">
             <div class="container from-nav mx-3 mx-md-auto">
                 <a class="navbar-brand border-0 bg-transparent outline-none" href="/">
-                    <div class="font-weight-600">Robertson<span class="text-primary">.</span></div>
+                    <div class="font-weight-500">Robertson<span class="text-primary">.</span></div>
                 </a>
                 
                 <button class="navbar-toggler border-0 outline-none"
@@ -180,23 +180,12 @@
         <section id="hero" class="screen-height">
             <div class="container">
                 <div class="d-flex align-items-center flex-column justify-content-center">
-                    <img src="resources/images/me/pic.png" 
-                        class="my-avatar mb-4 bg-primary--saturated" 
-                        alt="Avatar"
-                        height="110"
-                        width="110"
-                        id="my-profile">
-    
                     <div class="text-left text-md-center">
-                        <h1 class="h1" id="intro">Hi! I'm Robertson,
-                            <br>Web <span class="text-primary">Developer</span> & <span class="text-primary font-stack-1">Designer <em data-feather="pen-tool"></em></span>
-                        </h1>
+                        <div class="display-1 mb-4" id="intro">Hi! I'm Robertson,
+                            <br>Web <span class="text-primary">Developer</span> & <span class="text-primary">Designer</span>.
+                        </div>
     
-                        <div class="mb-3"></div>
-    
-                        <h6 class="text-muted font-weight-normal" id="specialize">Unleashing Business Potential in the Digital Era through Web Development & Design</h6>
-    
-                        <div class="mb-4"></div>
+                        <h5 class="text-muted font-weight-normal mb-4" id="specialize">Unleashing Business Potential in the Digital Era through Web Development & Design</h5>
     
                         <div class="call-to-actions">
                             <button class="btn btn-primary mb-1 mb-md-0 mr-1 mobile-w-100"
@@ -207,12 +196,20 @@
 
                             <button class="btn btn-outline-primary mobile-w-100"
                                 onclick="navSelected('works')"
-                                id="btn-my-works">See Work &#8594;</button>
+                                id="btn-my-works">See My Work &#8594;</button>
                         </div>
                         <div class="mb-4 mb-md-0"></div>
                     </div>
                 </div>
             </div>
+
+            <lottie-player 
+                src="https://assets10.lottiefiles.com/temp/lf20_d2VnjJ.json" 
+                background="transparent"  
+                speed="0.5"
+                class="mouse-scroll"
+                loop  
+                autoplay></lottie-player>
         </section>
 
         <section id="services" class="py-5">
@@ -434,7 +431,10 @@
                                 title="View More" 
                                 rel="noopener" 
                                 class="btn btn-primary mobile-w-100">
-                                <span>View More</span>
+                                <div class="d-flex align-items-center">
+                                    <span class="mr-2">View More</span>
+                                    <em data-feather="external-link" class="font-size-sm"></em>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -514,7 +514,12 @@
                                 target="_blank"
                                 title="View More" 
                                 rel="noopener" 
-                                class="btn btn-primary mobile-w-100">View More</a>
+                                class="btn btn-primary mobile-w-100">
+                                <div class="d-flex align-items-center">
+                                    <span class="mr-2">View More</span>
+                                    <em data-feather="external-link" class="font-size-sm"></em>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-1"></div>
@@ -593,7 +598,10 @@
                                 title="View More" 
                                 rel="noopener" 
                                 class="btn btn-primary mobile-w-100">
-                                <span>View More</span>
+                                <div class="d-flex align-items-center">
+                                    <span class="mr-2">View More</span>
+                                    <em data-feather="external-link" class="font-size-sm"></em>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -680,7 +688,12 @@
                                 target="_blank"
                                 title="View More" 
                                 rel="noopener" 
-                                class="btn btn-primary mobile-w-100">View More</a>
+                                class="btn btn-primary mobile-w-100">
+                                <div class="d-flex align-items-center">
+                                    <span class="mr-2">View More</span>
+                                    <em data-feather="external-link" class="font-size-sm"></em>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-1"></div>
@@ -761,7 +774,10 @@
                                 title="View More" 
                                 rel="noopener" 
                                 class="btn btn-primary mobile-w-100">
-                                <span>View More</span>
+                                <div class="d-flex align-items-center">
+                                    <span class="mr-2">View More</span>
+                                    <em data-feather="external-link" class="font-size-sm"></em>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -851,7 +867,12 @@
                                 target="_blank"
                                 title="View More" 
                                 rel="noopener" 
-                                class="btn btn-primary mobile-w-100">View More</a>
+                                class="btn btn-primary mobile-w-100">
+                                <div class="d-flex align-items-center">
+                                    <span class="mr-2">View More</span>
+                                    <em data-feather="external-link" class="font-size-sm"></em>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-1"></div>
@@ -936,7 +957,10 @@
                                 title="View More"
                                 rel="noopener" 
                                 class="btn btn-primary mobile-w-100">
-                                <span>View More</span>
+                                <div class="d-flex align-items-center">
+                                    <span class="mr-2">View More</span>
+                                    <em data-feather="external-link" class="font-size-sm"></em>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -1015,7 +1039,12 @@
                                 target="_blank"
                                 title="View More" 
                                 rel="noopener" 
-                                class="btn btn-primary mobile-w-100">View More</a>
+                                class="btn btn-primary mobile-w-100">
+                                <div class="d-flex align-items-center">
+                                    <span class="mr-2">View More</span>
+                                    <em data-feather="external-link" class="font-size-sm"></em>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-1"></div>
@@ -1061,7 +1090,10 @@
                                 title="View More" 
                                 rel="noopener" 
                                 class="btn btn-primary mobile-w-100">
-                                <span>View More</span>
+                                <div class="d-flex align-items-center">
+                                    <span class="mr-2">View More</span>
+                                    <em data-feather="external-link" class="font-size-sm"></em>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -1117,7 +1149,10 @@
                                 title="View More" 
                                 rel="noopener" 
                                 class="btn btn-primary mobile-w-100">
-                                <span>View More</span>
+                                <div class="d-flex align-items-center">
+                                    <span class="mr-2">View More</span>
+                                    <em data-feather="external-link" class="font-size-sm"></em>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -1294,8 +1329,10 @@
                             <a class="btn btn-outline-primary btn-download-resume"
                             target="_blank"
                             href="resources/attachment/resume.pdf">
-                                <span class="mr-2">View Resume</span>
-                                <em data-feather="external-link" class="font-size-sm"></em>  
+                                <div class="d-flex align-items-center">
+                                    <span class="mr-2">View Resume</span>
+                                    <em data-feather="external-link" class="font-size-sm"></em>
+                                </div>
                             </a>
                         </div>
     
@@ -1339,11 +1376,12 @@
                                             width="80">
                                     </div>
                                 </div>
-                                <div class="text-center font-weight-500">
+                                <div class="text-center font-weight-normal text-muted">
                                     <p class="testimonial-quote mb-4">Robertson is <span class="testimonial--highlight">an amazing full stack developer that delivered exactly what was needed</span>. In fact, he went above and beyond what is expected. He is easy to work with and very responsive. I can’t speak highly enough of his skills and strong work ethic. I’ve worked with him for several projects and surely will get him again for my future ones. Hire him, you will not be disappointed! 👌</p>
                                     <p>
                                         <a href="https://www.facebook.com/krizia.carriaga/posts/10159552643280376" 
                                             title="See Post"
+                                            class="font-weight-500"
                                             target="_blank">Krizia Carriaga Tenorio</a>
                                     </p>
                                 </div>
@@ -1358,7 +1396,7 @@
                                             width="60">
                                     </div>
                                 </div>
-                                <div class="text-center font-weight-500">
+                                <div class="text-center font-weight-normal text-muted">
                                     <h3 class="testimonial-quote mb-4"><span class="testimonial--highlight">Very tentative, responsive and professional</span>,<br> would definitely recommend Robert to anyone.</h3>
                                     <p>
                                         <a href="https://www.facebook.com/haidar.maliki.146/posts/961460288589621" 
@@ -1401,7 +1439,7 @@
                     <h2 class="text-highlight">Get in touch and let's work together.</h2>
                 </div>
                 
-                <div class="row no-gutters contact-card flex-column flex-lg-row">
+                <div class="row no-gutters contact-card flex-column flex-lg-row overflow-hidden">
                     <div class="col col-lg-5 background-img border-radius"></div>
                     <div class="col col-lg-7">
                         <form action="https://submit-form.com/jB4EPKoR"
@@ -1573,6 +1611,7 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="plugins/scrollreveal/scrollreveal.min.js"></script>
     <script src="plugins/jquery/dist/jquery.min.js"></script>
     <script defer src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
