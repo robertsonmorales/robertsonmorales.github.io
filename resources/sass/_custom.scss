@@ -30,7 +30,7 @@
     margin-bottom: 20px;
 
     label{
-        font-size: .8em !important;
+        font-size: $font-size-sm;
         margin-bottom: 3px !important;
     }
 }
@@ -39,6 +39,7 @@
 /* FONT */
 .font-weight-500{
     font-weight: 500;
+    font-family: $font-medium;
 }
 
 .font-weight-600{
@@ -132,12 +133,6 @@
 .text-section{
     font-weight: bold;
     color: $primary;
-}
-
-.text-highlight{
-    color: $dark;
-    // @extend .font-stack-1;
-    letter-spacing: -1px;
 }
 
 .flexbox-works{
@@ -485,8 +480,8 @@
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(255, 255, 255, 0.75);
-    border-radius: 12px;
-    border: 1px solid rgba(209, 213, 219, 0.3);
+    // border-radius: 12px;
+    // border: 1px solid rgba(209, 213, 219, 0.3);
 }
 
 // * Feedback Page
@@ -510,4 +505,11 @@
     background-image: linear-gradient(to right, #4e31cd55, #6440ff33), url("../images/bg.jpg");
     background-position: left;
     background-size: cover;
+}
+
+.mouse-scroll{
+    width: 50px; 
+    height: 50px; 
+    position: absolute; 
+    bottom: 30px;
 }
