@@ -7612,8 +7612,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .display-1 {
-  font-size: 80px;
-  line-height: 80px;
+  font-size: clamp(1.8rem, 6vw, 4rem);
   font-family: "GT Walsheim Bold", sans-serif;
 }
 
@@ -8123,8 +8122,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mouse-scroll {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   position: absolute;
   bottom: 30px;
 }
