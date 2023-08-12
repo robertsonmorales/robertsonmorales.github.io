@@ -163,15 +163,16 @@
 
 // * Works here
 .work-img-wrapper{  
-    @extend .mb-4, .mb-md-0;
-    border-radius: $card-radius;
     overflow: hidden;
+    border-radius: $card-radius;
+    @extend .mb-4, .mb-md-0;
 
     img{
         transition: all .4s ease-in-out;
-        width: 100%;
+        
 
         &:hover{
+            opacity: 0.9;
             transform: scale(1.05);
         }
     }
@@ -189,12 +190,15 @@
 // * Skills
 .skill-gallery{
     .skill-img{
-        filter: saturate(0.1);
-        transition: filter 0.4s ease-in-out;
+        // filter: saturate(0.1);
+        transition: all 0.4s ease-in-out;
+        object-fit: contain;
+        aspect-ratio: 1 / 1;
         @extend .img-fluid, .img-fluid-extension;
 
        &:hover{
-            filter: saturate(1);
+            transform: scale(1.1);
+            // filter: saturate(1);
        }
     }
 }
@@ -372,7 +376,7 @@
     flex-wrap: wrap;
 }
 
-// * TESTIMONIALS & WORKS
+// * TESTIMONIALS
 // .carousel-inner{
 //     border-radius: $card-radius;
 // }
@@ -389,21 +393,6 @@
 }
 
 .carousel-indicators li.active{
-    @extend .bg-primary;
-}
-
-#carouselOnlineBanking > .carousel-indicators li,
-#carouselTravelBuddy > .carousel-indicators li,
-#carouselCareerSpace > .carousel-indicators li,
-#carouselTimeboard > .carousel-indicators li{
-    background-color: $light;
-    opacity: 1;
-}
-
-#carouselOnlineBanking > .carousel-indicators li.active,
-#carouselTravelBuddy > .carousel-indicators li.active,
-#carouselCareerSpace > .carousel-indicators li.active,
-#carouselTimeboard > .carousel-indicators li.active{
     @extend .bg-primary;
 }
 
@@ -513,7 +502,7 @@
 }
 
 .background-img{
-    background-image: linear-gradient(to right, #4e31cd55, #6440ff33), url("../images/bg.jpg");
+    background-image: url("../images/bg.png"); // linear-gradient(to right, #4e31cd55, #6440ff33), ;
     background-position: left;
     background-size: cover;
 }

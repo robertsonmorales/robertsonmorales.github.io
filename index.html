@@ -56,7 +56,8 @@
     <!-- ends here -->
     <!-- preloads ends here -->
 
-    <link rel="stylesheet" href="resources/sass/style.css">
+    <link rel="stylesheet" href="plugins/bootstrap/scss/bootstrap.css">
+    <link rel="stylesheet" href="resources/sass/style.css">    
 
     <link rel="canonical" href="http://robertsonmorales.vercel.app">
     <link rel="canonical" href="https://robertsonmorales.vercel.app">
@@ -65,8 +66,12 @@
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NCR2QZVRF6"></script>
-    <script src="resources/js/gtag.js">
-      
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-NCR2QZVRF6');
     </script>
 </head>
 <body>
@@ -398,7 +403,7 @@
                 <div class="text-center">
                     <div class="text-section">WORK</div>
                     <h2 class="text-highlight">Recent Projects</h2>
-                </div>                
+                </div>
 
                 <!-- Renobuild -->
                 <div class="row no-gutters flexbox-works flex-md-row-reverse">
@@ -422,7 +427,7 @@
                         <div class="work-action">
                             <a href="https://dribbble.com/shots/21817669-Renobuild-Construction-Services-Web-Design" 
                                 target="_blank"
-                                title="View More" 
+                                title="View More"
                                 rel="noopener" 
                                 class="btn btn-primary mobile-w-100">
                                 <div class="d-flex align-items-center">
@@ -438,7 +443,7 @@
                             <a href="https://dribbble.com/shots/21817669-Renobuild-Construction-Services-Web-Design"
                                 target="_blank" 
                                 rel="noopener noreferrer">
-                                <img src="resources/images/projects/renobuild/Thumbnail.png" 
+                                <img src="resources/images/projects/renobuild/thumbnail.png" 
                                     class="img-fluid img-fluid-hovered rounded"
                                     alt="Renobuild Construction Services"
                                     width="500"
@@ -535,9 +540,9 @@
                             <a href="https://dribbble.com/shots/20691887-Careerspace-Job-Posting-Platform"
                                 target="_blank"
                                 rel="noopener noreferrer">
-                                <img src="resources/images/projects/careerspace/Thmbnail.png" 
+                                <img src="resources/images/projects/careerspace/thumbnail.png" 
                                     class="img-fluid rounded img-fluid-hovered"
-                                    alt="QuickPOS Dark Theme"
+                                    alt="CareerSpace"
                                     width="500"
                                     height="380">
                             </a>
@@ -631,70 +636,24 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-6">
                         <div class="work-img-wrapper">
-                            <div>
-                                <div id="carouselOnlineBanking" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <div>
-                                                <img src="resources/images/projects/online-banking/Main Screens.png" 
-                                                    class="img-fluid rounded img-fluid-hovered"
-                                                    alt="Main Screens"
-                                                    width="500"
-                                                    height="380"
-                                                    loading="lazy">
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div>
-                                                <img src="resources/images/projects/online-banking/Auth Screens.png" 
-                                                    class="img-fluid rounded img-fluid-hovered"
-                                                    alt="Auth Screens"
-                                                    width="500"
-                                                    height="380"
-                                                    loading="lazy">
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div>
-                                                <img src="resources/images/projects/online-banking/Onboarding Screens.png" 
-                                                    class="img-fluid rounded img-fluid-hovered"
-                                                    alt="Onboarding Screens"
-                                                    width="500"
-                                                    height="380"
-                                                    loading="lazy">
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="carousel-navigators">
-                                        <button class="carousel-control-prev" 
-                                            type="button" 
-                                            data-target="#carouselOnlineBanking" 
-                                            data-slide="prev">
-                                            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-                                            <em data-feather="chevron-left" class="carousel-control-icon" aria-hidden="true"></em>
-                                            <span class="sr-only">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" 
-                                            type="button" 
-                                            data-target="#carouselOnlineBanking" 
-                                            data-slide="next">
-                                            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-                                            <em data-feather="chevron-right" class="carousel-control-icon" aria-hidden="true"></em>
-                                            <span class="sr-only">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="https://dribbble.com/shots/20602030-Online-Banking-Mobile-App"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="resources/images/projects/online-banking/thumbnail.png" 
+                                    class="img-fluid rounded img-fluid-hovered"
+                                    alt="Online Mobile Banking"
+                                    width="500"
+                                    height="380">
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Employee Timekeeping -->
+                <!-- TimeBoard -->
                 <div class="row no-gutters flexbox-works flex-md-row">
                     <div class="col-md-5">
                         <div class="d-none d-md-block placeholder placeholder-4"></div>
-                        <h3 class="work-title">Employee Timekeeping</h3>
+                        <h3 class="work-title">TimeBoard</h3>
         
                         <div class="built-with">
                             <div class="built-with-using">
@@ -707,7 +666,7 @@
                         
                         <br>
 
-                        <p class="work-description">Travelbuddy is a hotel booking platform that offers a variety of accommodations with 24/7 support. Whether you're looking for a luxurious hotel or a budget-friendly hostel, Travelbuddy has something for everyone. With our easy-to-use search engine, you can find the perfect place to stay in any destination. And with our 24/7 support, you can always get help if you need it.</p>
+                        <p class="work-description">TimeBoard is a mobile app design that makes it easy for employees to clock in and out, manage their leaves and overtime, and stay compliant with labor laws. With TimeBoard, employees can easily track their time and productivity, and managers can get real-time insights into employee timekeeping data.</p>
         
                         <div class="work-action">
                             <a href="https://dribbble.com/shots/20601324-Employee-Timekeeping-Mobile-App" 
@@ -725,56 +684,15 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-6">
                         <div class="work-img-wrapper">
-                            <div>
-                                <div id="carouselTimeboard" class="carousel slide" data-ride="carousel">
-                                    <!-- <ol class="carousel-indicators">
-                                        <li data-target="#carouselTimeboard" 
-                                            data-slide-to="0" 
-                                            class="active"></li>
-                                        <li data-target="#carouselTimeboard" 
-                                            data-slide-to="1"></li>
-                                    </ol> -->
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <div>
-                                                <img src="resources/images/projects/timeboard/3 Screens.png" 
-                                                    class="img-fluid rounded img-fluid-hovered"
-                                                    alt="Timeboard"
-                                                    width="500"
-                                                    height="380">
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div>
-                                                <img src="resources/images/projects/timeboard/All Screens.png" 
-                                                    class="img-fluid rounded img-fluid-hovered"
-                                                    alt="Timeboard"
-                                                    width="500"
-                                                    height="380">
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="carousel-navigators">
-                                        <button class="carousel-control-prev" 
-                                            type="button" 
-                                            data-target="#carouselTimeboard" 
-                                            data-slide="prev">
-                                            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-                                            <em data-feather="chevron-left" class="carousel-control-icon" aria-hidden="true"></em>
-                                            <span class="sr-only">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" 
-                                            type="button" 
-                                            data-target="#carouselTimeboard" 
-                                            data-slide="next">
-                                            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-                                            <em data-feather="chevron-right" class="carousel-control-icon" aria-hidden="true"></em>
-                                            <span class="sr-only">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="https://dribbble.com/shots/20601324-Employee-Timekeeping-Mobile-App"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="resources/images/projects/timeboard/3 Screens.png" 
+                                    class="img-fluid rounded img-fluid-hovered"
+                                    alt="TimeBoard"
+                                    width="500"
+                                    height="380">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -814,47 +732,15 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-6">
                         <div class="work-img-wrapper">
-                            <div>
-                                <div id="carouselEcommerce" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <div>
-                                                <img src="resources/images/projects/eCommerce/eCommerce-1.webp" 
-                                                    class="img-fluid rounded img-fluid-hovered"
-                                                    alt="Timeboard"
-                                                    width="500"
-                                                    height="380">
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div>
-                                                <img src="resources/images/projects/eCommerce/eCommerce.webp" 
-                                                    class="img-fluid rounded img-fluid-hovered"
-                                                    alt="Timeboard"
-                                                    width="500"
-                                                    height="380">
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="carousel-navigators">
-                                        <button class="carousel-control-prev" 
-                                            type="button" 
-                                            data-target="#carouselEcommerce" 
-                                            data-slide="prev">
-                                            <em data-feather="chevron-left" class="carousel-control-icon" aria-hidden="true"></em>
-                                            <span class="sr-only">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" 
-                                            type="button" 
-                                            data-target="#carouselEcommerce" 
-                                            data-slide="next">
-                                            <em data-feather="chevron-right" class="carousel-control-icon" aria-hidden="true"></em>
-                                            <span class="sr-only">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="resources/views/503.html"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="resources/images/projects/eCommerce/eCommerce-1.webp" 
+                                    class="img-fluid rounded img-fluid-hovered"
+                                    alt="E-Commerce UI/UX Design"
+                                    width="500"
+                                    height="380">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -879,7 +765,7 @@
                         
                         <br>
 
-                        <p class="work-description">MLS JC Construction Services is now primarily engaged in construction services. Site development, road concreting, and design and build of residential, commercial, industrial building structures and other civil works projects.</p>
+                        <p class="work-description">MLS JC Construction Services is a sole proprietorship company located at Davao St., Aluba, Macasandig, Cagayan de Oro City. It was established on December 3, 2007, and started to operate in the first quarter of the following year.</p>
         
                         <div class="work-action">
                             <a href="https://mlsjcconstruction.com" 
@@ -888,7 +774,7 @@
                                 rel="noopener" 
                                 class="btn btn-primary mobile-w-100">
                                 <div class="d-flex align-items-center">
-                                    <span class="mr-2">View More</span>
+                                    <span class="mr-2">View Live</span>
                                     <em data-feather="external-link" class="font-size-sm"></em>
                                 </div>
                             </a>
@@ -901,7 +787,7 @@
                                 <a href="https://mlsjcconstruction.com"
                                     target="_blank" 
                                     rel="noopener">
-                                    <img src="resources/images/projects/mls-jc-construction-services/mls-jc.webp" 
+                                    <img src="resources/images/projects/mls-jc-construction-services/thumbnail.png" 
                                         class="img-fluid rounded img-fluid-hovered"
                                         alt="MLS JC Construction Services"
                                         width="500"
@@ -925,6 +811,9 @@
                             <div class="built-with-using">
                                 <div class="badge p-2">#wix</div>
                             </div>
+                            <div class="built-with-using">
+                                <div class="badge p-2">#seo</div>
+                            </div>
                         </div>
                         
                         <br>
@@ -938,7 +827,7 @@
                                 rel="noopener" 
                                 class="btn btn-primary mobile-w-100">
                                 <div class="d-flex align-items-center">
-                                    <span class="mr-2">View More</span>
+                                    <span class="mr-2">View Live</span>
                                     <em data-feather="external-link" class="font-size-sm"></em>
                                 </div>
                             </a>
@@ -947,17 +836,15 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-6">
                         <div class="work-img-wrapper">
-                            <div>
-                                <a href="https://www.viewconbg.com.au"
-                                    target="_blank" 
-                                    rel="noopener">
-                                    <img src="resources/images/projects/viewconbg/Viewcon Building Logo - White Bg.png" 
-                                        class="img-fluid rounded img-fluid-hovered"
-                                        alt="Viewcon Building Group"
-                                        width="500"
-                                        height="380">
-                                </a>
-                            </div>
+                            <a href="https://www.viewconbg.com.au"
+                                target="_blank" 
+                                rel="noopener">
+                                <img src="resources/images/projects/viewconbg/thumbnail.jpg" 
+                                    class="img-fluid rounded img-fluid-hovered"
+                                    alt="Viewcon Building Group"
+                                    width="500"
+                                    height="380">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -988,7 +875,7 @@
                         
                         <br>
 
-                        <p class="work-description">This Professional Portfolio Template is a one-page website template that is user-friendly and responsive. It has sections for Clients, Services, Projects, Testimonials, About Me, and Contact Me.</p>
+                        <p class="work-description">The Professional Portfolio Template is a one-page, user-friendly, and responsive website template that provides a clear and concise overview of your work and experience. It includes sections for clients, services, projects, testimonials, about me, and contact me, making it an ideal solution for showcasing your skills and accomplishments to potential clients and employers.</p>
                 
                         <div class="work-action">
                             <a href="https://jethrocaparroso.netlify.app" 
@@ -997,7 +884,7 @@
                                 rel="noopener" 
                                 class="btn btn-primary mobile-w-100">
                                 <div class="d-flex align-items-center">
-                                    <span class="mr-2">View More</span>
+                                    <span class="mr-2">View Live</span>
                                     <em data-feather="external-link" class="font-size-sm"></em>
                                 </div>
                             </a>
@@ -1006,10 +893,10 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-6">
                         <div class="work-img-wrapper">
-                            <a href="resources/images/projects/portfolio/portfolio.webp"
+                            <a href="https://jethrocaparroso.netlify.app"
                                 target="_blank" 
                                 rel="noopener">
-                                <img src="resources/images/projects/portfolio/portfolio.webp" 
+                                <img src="resources/images/projects/portfolio/thumbnail.png" 
                                     class="img-fluid rounded img-fluid-hovered"
                                      
                                     alt="Personal Portfolio Design"
@@ -1103,7 +990,7 @@
                         title="git" 
                         width="110"
                         height="110">
-                    <img src="resources/images/svg/skills/figma-1.svg" 
+                    <img src="resources/images/svg/skills/figma.svg" 
                         alt="figma" 
                         class="skill-img p-4" 
                         title="Figma" 
@@ -1117,7 +1004,7 @@
                         height="110">
                     <img src="resources/images/svg/skills/outsystems.svg" 
                         alt="OutSystems" 
-                        class="skill-img" 
+                        class="skill-img p-4" 
                         title="OutSystems" 
                         width="110"
                         height="110">
@@ -1141,7 +1028,7 @@
                         height="110">
                     <img src="resources/images/svg/skills/firebase.svg" 
                         alt="Firebase" 
-                        class="skill-img" 
+                        class="skill-img p-4" 
                         title="Firebase" 
                         width="110"
                         height="110">
@@ -1261,20 +1148,6 @@
                             class="active"></li>
                         <li data-target="#carouselTestimonials" data-slide-to="1"></li>
                     </ol>
-                    <!-- <button class="carousel-control-prev" 
-                        type="button" 
-                        data-target="#carouselTestimonials" 
-                        data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" 
-                        type="button" 
-                        data-target="#carouselTestimonials" 
-                        data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </button> -->
                 </div>
             </div>
         </section>
@@ -1405,15 +1278,17 @@
                                     name="message" 
                                     cols="30" 
                                     rows="3" 
+                                    minlength="1"
+                                    maxlength="500"
                                     class="form-control" 
                                     autocomplete="off"></textarea>
                                 <span class="invalid-feedback" 
                                 id="validate-message"></span>
                             </div>
     
-                            <div class="flexbox-start">
+                            <div class="flexbox-end">
                                 <!-- mobile-w-100 -->
-                                <button class="btn btn-primary w-100"
+                                <button class="btn btn-primary mobile-w-100"
                                     id="btn-submit" 
                                     type="button">Send Message</button>
                             </div>
