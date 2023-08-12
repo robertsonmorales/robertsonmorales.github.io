@@ -89,6 +89,10 @@
     }
 
     .card-body{
+        .card-title{
+            @extend .font-stack-1;
+        }
+
         .card-text{
             color: $text-muted;
         }
@@ -114,10 +118,11 @@
 .img-fluid-hovered{
     width: 100%;
     transition: all .4s ease;
+    // aspect-ratio: 1.32;
+    object-fit: fill;
 
     &:hover{
         opacity: .9;
-        // transform: scale(1.05);
     }
 }
 
@@ -133,6 +138,10 @@
 .text-section{
     font-weight: bold;
     color: $primary;
+}
+
+.text-highlight{
+    @extend .font-stack-1;    
 }
 
 .flexbox-works{
@@ -160,6 +169,7 @@
 
     img{
         transition: all .4s ease-in-out;
+        width: 100%;
 
         &:hover{
             transform: scale(1.05);
@@ -281,6 +291,7 @@
 
 .font-stack-1{
     font-family: $font-stack-1 !important;
+    letter-spacing: .4px;
 }
 
 .border-top-left-radius{
@@ -514,4 +525,8 @@
     bottom: 30px;
     
     @extend .text-muted;
+}
+
+.work-title{
+    @extend .font-stack-1;
 }

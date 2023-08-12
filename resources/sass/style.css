@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap");
 @font-face {
   font-family: "GT Walsheim Bold";
   src: url("../fonts/GTWalsheimBold.ttf") format("truetype");
@@ -7616,10 +7617,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "GT Walsheim Bold", sans-serif;
 }
 
-#intro .font-stack-1 {
+#intro .font-stack-1, #intro .work-title, #intro .text-highlight, #intro .card.card-service .card-body .card-title, .card.card-service .card-body #intro .card-title {
   position: relative;
 }
-#intro .font-stack-1 .feather {
+#intro .font-stack-1 .feather, #intro .work-title .feather, #intro .text-highlight .feather, #intro .card.card-service .card-body .card-title .feather, .card.card-service .card-body #intro .card-title .feather {
   position: absolute;
   right: -29px;
   bottom: -4px;
@@ -7750,7 +7751,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* FLEXBOX */
-.flexbox-center, .circle-success, .circle-error, .btn-contact, .testimonial-icon, .contact-information .btn-socmedia, .icon-wrapper, .screen-height {
+.flexbox-center, .circle-success, .circle-error, .btn-contact, .testimonial-icon, .contact-information .btn-socmedia, .icon-wrapper, .screen-height, .navbar .nav-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7861,6 +7862,8 @@ h1, h2, h3, h4, h5, h6 {
 .img-fluid-hovered {
   width: 100%;
   transition: all 0.4s ease;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .img-fluid-hovered:hover {
   opacity: 0.9;
@@ -7895,6 +7898,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .work-img-wrapper img {
   transition: all 0.4s ease-in-out;
+  width: 100%;
 }
 .work-img-wrapper img:hover {
   transform: scale(1.05);
@@ -7953,8 +7957,9 @@ h1, h2, h3, h4, h5, h6 {
   pointer-events: none;
 }
 
-.font-stack-1 {
-  font-family: "Libre Baskerville", sans-serif !important;
+.font-stack-1, .work-title, .card.card-service .card-body .card-title, .text-highlight {
+  font-family: "DM Serif Display", sans-serif !important;
+  letter-spacing: 0.4px;
 }
 
 .border-top-left-radius {
@@ -8094,7 +8099,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.4s ease;
   border-radius: 20px;
 }
-.glassmorphism {
+.glassmorphism, .card {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(255, 255, 255, 0.75);

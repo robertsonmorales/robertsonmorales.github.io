@@ -38,7 +38,6 @@
 
     <!-- preloads -->
     <!-- styles -->
-    <link rel="preload" href="plugins/bootstrap/dist/css/bootstrap.min.css" as="style">
     <link rel="preload" href="resources/sass/style.css" as="style">
     <!-- ends here -->
 
@@ -46,6 +45,7 @@
     <link rel="preload" href="plugins/jquery/dist/jquery.min.js" as="script">
     <link rel="preload" href="plugins/bootstrap/dist/js/bootstrap.min.js" as="script">
     <link rel="preload" href="resources/js/script.js" as="script">
+    <link rel="preload" href="resources/js/scroll.js" as="script">
     <!-- ends here -->
 
     <!-- images -->
@@ -56,10 +56,8 @@
     <!-- ends here -->
     <!-- preloads ends here -->
 
-    <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/sass/style.css">
 
-    <link rel="canonical" href="robertsonmorales.vercel.app">
     <link rel="canonical" href="http://robertsonmorales.vercel.app">
     <link rel="canonical" href="https://robertsonmorales.vercel.app">
 
@@ -67,12 +65,8 @@
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NCR2QZVRF6"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-NCR2QZVRF6');
+    <script src="resources/js/gtag.js">
+      
     </script>
 </head>
 <body>
@@ -112,7 +106,7 @@
         <nav class="navbar navbar-expand-md navbar-light mobile-bg-white fixed-top" id="navbar">
             <div class="container from-nav mx-3 mx-md-auto">
                 <a class="navbar-brand border-0 bg-transparent outline-none" href="/">
-                    <div class="font-weight-500">Robertson<span class="text-primary">.</span></div>
+                    <div class="font-weight-500 font-stack-1">RM<span class="text-primary">.</span></div>
                 </a>
                 
                 <button class="navbar-toggler border-0 outline-none"
@@ -181,16 +175,16 @@
             <div class="container">
                 <div class="d-flex align-items-center flex-column justify-content-center">
                     <div class="text-left text-md-center">
-                        <div class="display-1 mb-3 md-md-4" id="intro">Hi! I'm Robertson,
+                        <div class="display-1 font-stack-1 mb-3 mb-md-4" id="intro">Hi! I'm Robertson,
                             <br>Web <span class="text-primary">Developer</span> & <span class="text-primary">Designer</span>.
                         </div>
     
-                        <h5 class="text-muted font-weight-normal mb-3 md-md-4" id="specialize">Unleashing Business Potential in the Digital Era through Web Development & Design</h5>
+                        <div class="h5 text-muted font-weight-normal mb-3 mb-md-4" id="specialize">Unleashing Business Potential in the Digital Era through Web Development & Design</div>
     
                         <div class="call-to-actions">
                             <button class="btn btn-primary mb-1 mb-md-0 mr-1 mobile-w-100"
                                 onclick="navSelected('services')"
-                                id="btn-my-works">My Services</button>
+                                id="btn-my-services">My Services</button>
     
                             <div class="d-block d-md-none w-100"></div>
 
@@ -226,7 +220,7 @@
                             <em data-feather="layout"></em>
                         </div>
                         <div class="card-body">
-                            <h4 class="mb-4 card-title">UI/UX Design</h4>
+                            <div class="h4 mb-4 card-title">UI/UX Design</div>
                             <p class="card-text">Create user interfaces that are visually appealing, easy to use, and engaging. I work with you to understand your needs and goals, and then create a design that meets those needs.</p>
                         </div>
                         <div class="pb-4 pt-2 card-footer">
@@ -245,7 +239,7 @@
                             <em data-feather="pen-tool"></em>
                         </div>
                         <div class="card-body">
-                            <h4 class="mb-4 card-title">Wireframing & Prototyping</h4>
+                            <div class="h4 mb-4 card-title">Wireframing & Prototyping</div>
                             <p class="card-text">Create low-fidelity sketches and interactive mockups to help you visualize and test your website or application before it is built.</p>
                         </div> 
                         <div class="pb-4 pt-2 card-footer">
@@ -264,7 +258,7 @@
                             <em data-feather="code"></em>
                         </div>
                         <div class="card-body">
-                            <h4 class="mb-4 card-title">Prototypes to Web pages</h4>
+                            <div class="h4 mb-4 card-title">Prototypes to Web pages</div>
                             <p class="card-text">Take your prototypes and turn them into fully functional web pages using a variety of programming languages and technologies. I can create web pages that are both visually appealing and user-friendly.</p>
                         </div>
                         <div class="pb-4 pt-2 card-footer">
@@ -287,7 +281,7 @@
                             <em data-feather="smartphone"></em>
                         </div>
                         <div class="card-body">
-                            <h4 class="mb-4 card-title">Responsive Web Design</h4>
+                            <div class="h4 mb-4 card-title">Responsive Web Design</div>
                             <p class="card-text">Create websites that look great on all devices, regardless of screen size or orientation. I use responsive design techniques to ensure that your website will look good and be easy to use on any device.</p>
                         </div>
                         <div class="pb-4 pt-2 card-footer">
@@ -306,7 +300,7 @@
                             <em data-feather="trending-up"></em>
                         </div>
                         <div class="card-body">
-                            <h4 class="mb-4 card-title">Website Revamp</h4>
+                            <div class="h4 mb-4 card-title">Website Revamp</div>
                             <p class="card-text">Let's make some tweaks to improve your website performance, optimization, and Google visibility that will take an edge on your competitors by modifying the layout, design, brand, and products or services you provide.</p>
                         </div>   
                         <div class="pb-4 pt-2 card-footer">
@@ -325,7 +319,7 @@
                             <em data-feather="monitor"></em>
                         </div>
                         <div class="card-body">
-                            <h4 class="mb-4 card-title">Website Application</h4>
+                            <div class="h4 mb-4 card-title">Website Application</div>
                             <p class="card-text">Create custom website applications that meet your specific needs. I have experience developing a variety of website applications, including e-commerce websites, social media websites, and content management systems.</p>
                         </div>
                         <div class="pb-4 pt-2 card-footer">
@@ -348,7 +342,7 @@
                             <em data-feather="search"></em>
                         </div>
                         <div class="card-body">
-                            <h4 class="mb-4 card-title">SEO Performance</h4>
+                            <div class="h4 mb-4 card-title">SEO Performance</div>
                             <p class="card-text">Let's optimize your web page's quality content and technical configuration to make it easy to find or appear on the search engine results page.</p>
                         </div>
                         <div class="pb-4 pt-2 card-footer">
@@ -367,7 +361,7 @@
                             <em data-feather="database"></em>
                         </div>
                         <div class="card-body">
-                            <h4 class="mb-4 card-title">Database Design</h4>
+                            <div class="h4 mb-4 card-title">Database Design</div>
                             <p class="card-text">Let's organize your data by designing its flow. We will determine what data needs to be stored, its type, and how to secure it during transactions to prevent data duplication.</p>
                         </div>
                         <div class="pb-4 pt-2 card-footer">
@@ -386,7 +380,7 @@
                             <em data-feather="settings"></em>
                         </div>
                         <div class="card-body">
-                            <h4 class="mb-4 card-title">Website Troubleshooting</h4>
+                            <div class="h4 mb-4 card-title">Website Troubleshooting</div>
                             <!-- <p class="card-text">It's not uncommon for web pages to have errors. Let me help you fix any bugs or issues that your website may be experiencing.</p> -->
                             <p class="card-text">Let's identify and fix broken links, find and upload missing images, and optimize code to improve loading speed.</p>
                         </div>
@@ -441,51 +435,16 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-6">
                         <div class="work-img-wrapper">
-                            <div>
-                                <div id="carouselRenobuild" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <div>
-                                                <img src="resources/images/projects/renobuild/Thumbnail.png" 
-                                                    class="img-fluid rounded img-fluid-hovered"
-                                                    alt="Renobuild Construction Services"
-                                                    width="500"
-                                                    height="380"
-                                                    loading="lazy">
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div>
-                                                <img src="resources/images/projects/renobuild/Cards.png" 
-                                                    class="img-fluid rounded img-fluid-hovered"
-                                                    alt="Renobuild Construction Services"
-                                                    width="500"
-                                                    height="380"
-                                                    loading="lazy">
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="carousel-navigators">
-                                        <button class="carousel-control-prev" 
-                                            type="button" 
-                                            data-target="#carouselRenobuild" 
-                                            data-slide="prev">
-                                            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-                                            <em data-feather="chevron-left" class="carousel-control-icon" aria-hidden="true"></em>
-                                            <span class="sr-only">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" 
-                                            type="button" 
-                                            data-target="#carouselRenobuild" 
-                                            data-slide="next">
-                                            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-                                            <em data-feather="chevron-right" class="carousel-control-icon" aria-hidden="true"></em>
-                                            <span class="sr-only">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="https://dribbble.com/shots/21817669-Renobuild-Construction-Services-Web-Design"
+                                target="_blank" 
+                                rel="noopener noreferrer">
+                                <img src="resources/images/projects/renobuild/Thumbnail.png" 
+                                    class="img-fluid img-fluid-hovered rounded"
+                                    alt="Renobuild Construction Services"
+                                    width="500"
+                                    height="380"
+                                    loading="lazy">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -525,50 +484,15 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-6">
                         <div class="work-img-wrapper">
-                            <div>
-                                <div id="carouselQuickPOS" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <div>
-                                                <img src="resources/images/projects/quick-pos/light.webp" 
-                                                    class="img-fluid rounded img-fluid-hovered"
-                                                    alt="QuickPOS Light Theme"
-                                                    width="500"
-                                                    height="380">
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div>
-                                                <img src="resources/images/projects/quick-pos/dark.webp" 
-                                                    class="img-fluid rounded img-fluid-hovered"
-                                                    alt="QuickPOS Dark Theme"
-                                                    width="500"
-                                                    height="380">
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="carousel-navigators">
-                                        <button class="carousel-control-prev" 
-                                            type="button" 
-                                            data-target="#carouselQuickPOS" 
-                                            data-slide="prev">
-                                            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-                                            <em data-feather="chevron-left" class="carousel-control-icon" aria-hidden="true"></em>
-                                            <span class="sr-only">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" 
-                                            type="button" 
-                                            data-target="#carouselQuickPOS" 
-                                            data-slide="next">
-                                            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-                                            <em data-feather="chevron-right" class="carousel-control-icon" aria-hidden="true"></em>
-                                            <span class="sr-only">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="https://dribbble.com/shots/21636574-QuickPOS-Point-Of-Sale-Platform"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="resources/images/projects/quick-pos/dark.webp" 
+                                    class="img-fluid rounded img-fluid-hovered"
+                                    alt="QuickPOS Dark Theme"
+                                    width="500"
+                                    height="380">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -608,58 +532,15 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-6">
                         <div class="work-img-wrapper">
-                            <div>
-                                <div id="carouselCareerSpace" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <div>
-                                                <img src="resources/images/projects/careerspace/Login.png" 
-                                                    class="img-fluid rounded img-fluid-hovered"
-                                                    alt="Auth Screen"
-                                                    width="500"
-                                                    height="380">
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div>
-                                                <img src="resources/images/projects/careerspace/Thmbnail.png" 
-                                                    class="img-fluid rounded img-fluid-hovered"
-                                                    alt="Main Screens"
-                                                    width="500"
-                                                    height="380">
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div>
-                                                <img src="resources/images/projects/careerspace/Thumbnail 2.png" 
-                                                    class="img-fluid rounded img-fluid-hovered"
-                                                    alt="Main Screens"
-                                                    width="500"
-                                                    height="380">
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="carousel-navigators">
-                                        <button class="carousel-control-prev" 
-                                            type="button" 
-                                            data-target="#carouselCareerSpace" 
-                                            data-slide="prev">
-                                            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-                                            <em data-feather="chevron-left" class="carousel-control-icon" aria-hidden="true"></em>
-                                            <span class="sr-only">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" 
-                                            type="button" 
-                                            data-target="#carouselCareerSpace" 
-                                            data-slide="next">
-                                            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-                                            <em data-feather="chevron-right" class="carousel-control-icon" aria-hidden="true"></em>
-                                            <span class="sr-only">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="https://dribbble.com/shots/20691887-Careerspace-Job-Posting-Platform"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="resources/images/projects/careerspace/Thmbnail.png" 
+                                    class="img-fluid rounded img-fluid-hovered"
+                                    alt="QuickPOS Dark Theme"
+                                    width="500"
+                                    height="380">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -699,49 +580,15 @@
                     <div class="col-md-1"></div>
                     <div class="col-md-6">
                         <div class="work-img-wrapper">
-                            <div>
-                                <div id="carouselTravelBuddy" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <div>
-                                                <img src="resources/images/projects/travel-buddy/1.png" 
-                                                    class="img-fluid rounded img-fluid-hovered"
-                                                    alt="TravelBuddy"
-                                                    width="500"
-                                                    height="380">
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">
-                                            <div>
-                                                <img src="resources/images/projects/travel-buddy/2.png" 
-                                                    class="img-fluid rounded img-fluid-hovered"
-                                                    alt="TravelBuddy"
-                                                    width="500"
-                                                    height="380">
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                    <div class="carousel-navigators">
-                                        <button class="carousel-control-prev" 
-                                            type="button" 
-                                            data-target="#carouselTravelBuddy" 
-                                            data-slide="prev">
-                                            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-                                            <em data-feather="chevron-left" class="carousel-control-icon" aria-hidden="true"></em>
-                                            <span class="sr-only">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" 
-                                            type="button" 
-                                            data-target="#carouselTravelBuddy" 
-                                            data-slide="next">
-                                            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-                                            <em data-feather="chevron-right" class="carousel-control-icon" aria-hidden="true"></em>
-                                            <span class="sr-only">Next</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="https://dribbble.com/shots/20628703-Travelbuddy-Online-Hotel-Booking-Platform"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="resources/images/projects/travel-buddy/1.png" 
+                                    class="img-fluid rounded img-fluid-hovered"
+                                    alt="TravelBuddy"
+                                    width="500"
+                                    height="380">
+                            </a>
                         </div>
                     </div>
                 </div>

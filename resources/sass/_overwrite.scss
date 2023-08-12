@@ -55,6 +55,10 @@ h1, h2, h3, h4, h5, h6{
         background-color: transparent;
         outline: none;
     }
+
+    .nav-item{
+        @extend .flexbox-center;
+    }
     
     .nav-link{
         outline: none;
@@ -102,8 +106,7 @@ h1, h2, h3, h4, h5, h6{
 .card{
     border-radius: $card-radius !important;
     border: $border;
-    // background-color: $saturated_primary;
-    // @extend .glassmorphism;
+    @extend .glassmorphism;
     
     .card-header{
         border: none;

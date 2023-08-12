@@ -33,7 +33,7 @@ $(document).ready(function(){
         easing: 'ease'
     });
     
-    useScrolling('#btn-download-resume', {
+    useScrolling('#btn-my-services', {
         delay: 300,
         distance: '15%',
         origin: 'left',
@@ -66,7 +66,7 @@ $(document).ready(function(){
     // ENDS HERE
     
     // SERVICE CARDS
-    useScrolling('.card-group .card-service', {
+    useScrolling('.card-deck .card-service', {
         delay: 300,
         distance: '15%',
         origin: 'bottom',
@@ -147,20 +147,6 @@ $(document).ready(function(){
     useScrolling('.img-drop-shadow', {
         delay: 300,
         distance: '25%',
-        origin: 'right',
-        easing: 'ease'
-    });
-    
-    // useScrolling('#btn-download-resume', {
-    //     delay: 500,
-    //     distance: '10%',
-    //     origin: 'left',
-    //     easing: 'ease'
-    // });
-    
-    useScrolling('#my-avatar', {
-        delay: 500,
-        distance: '10%',
         origin: 'right',
         easing: 'ease'
     });
