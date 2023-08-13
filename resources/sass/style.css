@@ -8371,7 +8371,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .background-img {
-  background-image: url("../images/bg.png");
+  background-image: url("../images/bg.svg");
   background-position: left;
   background-size: cover;
 }
