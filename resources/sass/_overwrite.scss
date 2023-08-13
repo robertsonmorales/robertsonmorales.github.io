@@ -43,10 +43,14 @@ h1, h2, h3, h4, h5, h6{
 // ENDS HERE
 
 // NAVIGATION
-
 .navbar-light .navbar-nav .nav-link{
     color: #555;
     font-weight: normal;
+
+    .feather{
+        width: 16px;
+
+    }
 }
 
 .navbar{
@@ -70,12 +74,6 @@ h1, h2, h3, h4, h5, h6{
 
         &:hover{
             color: $primary !important;
-        }
-    }
-
-    #nav-download{
-        .feather{
-            width: 16px;
         }
     }
 }
