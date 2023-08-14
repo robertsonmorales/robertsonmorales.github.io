@@ -2555,6 +2555,34 @@ input[type=button].btn-block {
   width: 100%;
 }
 
+.fade {
+  transition: opacity 0.15s linear;
+}
+@media (prefers-reduced-motion: reduce) {
+  .fade {
+    transition: none;
+  }
+}
+.fade:not(.show) {
+  opacity: 0;
+}
+
+.collapse:not(.show) {
+  display: none;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    transition: none;
+  }
+}
+
 .input-group {
   position: relative;
   display: flex;
@@ -7600,6 +7628,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "GT Walsheim Bold", sans-serif;
   font-size: clamp(2.4rem, 6vw, 4rem);
   line-height: 1.1;
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 #intro .font-stack-1, #intro .work-title, #intro .text-highlight, #intro .card.card-service .card-body .card-title, .card.card-service .card-body #intro .card-title {
