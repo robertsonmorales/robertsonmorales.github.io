@@ -190,15 +190,13 @@
 // * Skills
 .skill-gallery{
     .skill-img{
-        // filter: saturate(0.1);
         transition: all 0.4s ease-in-out;
         object-fit: contain;
         aspect-ratio: 1 / 1;
-        @extend .img-fluid, .img-fluid-extension;
+        @extend .p-4, .img-fluid, .img-fluid-extension;
 
        &:hover{
             transform: scale(1.1);
-            // filter: saturate(1);
        }
     }
 }
