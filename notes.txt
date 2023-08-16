@@ -1,0 +1,9 @@
+****************** SEO **************************
+1. A clear and concise title can help explain what this site has to offer and can bring more traffic to the site.
+
+1.1 Title requirements:
+    1.1.0 At least one keyword
+    1.1.1 The business or site name
+    1.1.2 The business location
+    1.1.3 Text length between 10 and 200 characters
+
