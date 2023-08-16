@@ -7,10 +7,10 @@ $(() => {
     var services = offeredService[i].textContent;
     var elName = services.split(' ').join('_').toLowerCase();
 
-    htmlContent += '<div class="custom-control custom-checkbox">\
+    htmlContent += '<label class="custom-control custom-checkbox">\
       <input type="checkbox" name="services[]" class="custom-control-input" id="'+elName+'" value="'+services+'">\
-      <label class="custom-control-label" for="'+elName+'">'+services+'</label>\
-    </div>';
+      <span class="custom-control-label" for="'+elName+'">'+services+'</span>\
+    </label>';
   }
 
   function getServices(){
