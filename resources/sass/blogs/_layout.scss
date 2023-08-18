@@ -1,0 +1,16 @@
+.img-banner{
+    background-image: linear-gradient(to left, rgba(0,0,0,0.4), rgba(0,0,0,0.5)), url("../images/blogs/ui-ux.jpg");
+    background-size: cover;
+    background-position: center;
+    // background-attachment: fixed;
+    height: 350px;
+
+
+    @extend .rounded;
+}
+
+article p, 
+article ul li {
+    font-size: 20px;
+    line-height: 1.8;
+}
