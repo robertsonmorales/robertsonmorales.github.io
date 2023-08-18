@@ -128,7 +128,7 @@
 
 .screen-height{
     min-height: 100vh;
-    @extend .flexbox-center;
+    @extend .flexbox-center, .bg-primary--saturated;
 }
 
 .saturate{
@@ -152,12 +152,17 @@
 
 // * Builth with ???
 .built-with{
+    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-}
+    align-items: center;
+    justify-content: flex-start;
 
-.built-with-using{
-    @extend .mt-2, .mr-2;
+    @extend .gap-sm, .mb-0;
+
+    .built-with-using{
+        // @extend .mt-2, .mr-2;
+    }
 }
 // * ends here
 
@@ -169,8 +174,7 @@
 
     img{
         transition: all .4s ease-in-out;
-        
-
+    
         &:hover{
             opacity: 0.9;
             transform: scale(1.05);
@@ -178,12 +182,16 @@
     }
 }
 
+.work-title{
+    @extend .font-stack-1;
+}
+
 .work-description{
-    @extend .text-muted;
+    color: $text-muted;
 }
 
 .work-action{
-    @extend .mt-4, .flexbox-start;
+    @extend .flexbox-start;
 }
 // * ends here
 
@@ -191,6 +199,8 @@
 .skill-gallery{
     .skill-img{
         transition: all 0.4s ease-in-out;
+        width: 110px;
+        height: 110px;
         object-fit: contain;
         aspect-ratio: 1 / 1;
         @extend .p-4, .img-fluid, .img-fluid-extension;
@@ -226,7 +236,7 @@
 }
 
 .bg-primary--saturated{
-    background-color: unquote($primary + "22");
+    background-color: unquote($yellow + "05");
 }
 
 .my-avatar{
@@ -461,6 +471,18 @@
     row-gap: 16px;
 }
 
+.gap-x-sm{
+    row-gap: 12px;
+}
+
+.gap-base{
+    gap: 16px;
+}
+
+.gap-sm{
+    gap: 8px;
+}
+
 .btn-contact{
     transition: all .4s ease;
     border-radius: $card-radius;
@@ -517,8 +539,4 @@
     bottom: 30px;
     
     @extend .text-muted;
-}
-
-.work-title{
-    @extend .font-stack-1;
 }

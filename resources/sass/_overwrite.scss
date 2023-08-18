@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6{
     font-size: clamp(1.8rem, 6vw, 4rem);
 }
 
-.display-1{
+.display-3{
     font-family: $font-bold;
     font-size: clamp(2.4rem, 6vw, 4rem);;
     line-height: 1.1;
@@ -127,12 +127,13 @@ h1, h2, h3, h4, h5, h6{
 
 // BADGE
 .badge{
-    background-color: $saturated_primary;
     color: $primary;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 0.875rem;
     border: $border;
-    border-radius: $radius;
+    border-radius: 20px;
+
+    @extend .bg-primary--saturated, .py-1, .px-2;
 }
 // ENDS HERE
 

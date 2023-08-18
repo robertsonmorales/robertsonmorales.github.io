@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
-$body-bg: #fafafa;
+$body-bg: #fafafa; // fafafa
 $primary: #6440ff;
 $secondary: #4e31cd;
-$light: #f3f3f3 !default;
+$light: #f3f3f3 !default; // f3f3f3
 $dark: #131b23 !default;
 $white: #fff;
-$text-muted: #555;
-
-$saturated_primary: #6440ff15;
+$text-muted: #626970;
 // blue : 4285f4;
 // green: 34a853;
 //  red: ea4335
-// yellow: fbbc05
+$yellow: #DBFF40;
 
 $theme-colors: (
     'primary': $primary,

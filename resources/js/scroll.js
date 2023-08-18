@@ -90,11 +90,12 @@ $(document).ready(function(){
         easing: 'ease-out',
     });
     
-    useScrolling('.built-with-using', {
+    useScrolling('.badge', {
         delay: 300,
         distance: '5%',
-        origin: 'top',
+        origin: 'right',
         easing: 'ease',
+        interval: 100
     });
     
     useScrolling('.work-description', {
