@@ -128,7 +128,7 @@
 
 .screen-height{
     min-height: 100vh;
-    @extend .flexbox-center, .bg-primary--saturated;
+    @extend .flexbox-center, .bg-warning--saturated;
 }
 
 .saturate{
@@ -232,6 +232,10 @@
 }
 
 .bg-primary--saturated{
+    background-color: unquote($primary + "11");
+}
+
+.bg-warning--saturated{
     background-color: unquote($yellow + "05");
 }
 
