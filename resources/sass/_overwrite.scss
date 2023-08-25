@@ -9,10 +9,12 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .display-3{
-    font-family: $font-bold;
     font-size: clamp(2.4rem, 6vw, 4rem);;
     line-height: 1.1;
+    letter-spacing: 1px;
     text-shadow: 0px 3px 3px rgba(0,0,0,0.1);
+
+    @extend .font-weight-bolder;
 }
 
 #intro{
@@ -133,7 +135,7 @@ h1, h2, h3, h4, h5, h6{
     border: $border;
     border-radius: 20px;
 
-    @extend .bg-primary--saturated, .py-1, .px-2;
+    @extend .bg-warning--saturated, .py-1, .px-2;
 }
 // ENDS HERE
 
