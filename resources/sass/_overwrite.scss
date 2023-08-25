@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6{
     border: $border;
     border-radius: 20px;
 
-    @extend .bg-warning--saturated, .py-1, .px-2;
+    @extend .bg-primary--saturated, .py-1, .px-2;
 }
 // ENDS HERE
 
