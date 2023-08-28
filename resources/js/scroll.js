@@ -113,7 +113,7 @@ $(document).ready(function(){
     });
     
     useScrolling('.work-img-wrapper', { // a img
-        delay: 300,
+        delay: 100,
         distance: '5%',
         origin: 'bottom',
         easing: 'ease',
@@ -122,7 +122,7 @@ $(document).ready(function(){
     
     // SKILLS
     useScrolling('.skill-gallery img', {
-        delay: 300,
+        delay: 100,
         distance: '5%',
         origin: 'top',
         easing: 'ease',
