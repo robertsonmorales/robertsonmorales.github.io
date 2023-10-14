@@ -18,7 +18,7 @@ html{
 body{
     background-color: $body-bg;   
     color: $dark;
-    font: $font-size $font-stack;
+    font: $font-base $font-stack;
 }
 
 @import 'overwrite';
