@@ -44,6 +44,10 @@
         line-height: 25px;
         font-size: $font-size;
     }
+
+    .mouse-scroll{
+        visibility: hidden;
+    }
 }
 
 @include media-breakpoint-only(md) {
