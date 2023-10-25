@@ -16,22 +16,6 @@ h1, h2, h3, h4, h5, h6{
 
     @extend .font-weight-bolder;
 }
-
-#intro{
-    .font-stack-1{
-        position: relative;
-
-        .feather{
-            position: absolute;
-            right: -29px;
-            bottom: -4px;
-        }
-    }
-
-    code{
-        font-family: $font-stack;
-    }
-}
 // HEADINGS
 
 // BORDERS
