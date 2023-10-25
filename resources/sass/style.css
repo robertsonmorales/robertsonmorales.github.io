@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @font-face {
   font-family: "GT Walsheim Bold";
   src: url("../fonts/GTWalsheimBold.ttf") format("truetype");
@@ -7838,10 +7837,6 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -1;
   font-weight: 600;
   pointer-events: none;
-}
-
-.font-stack-1, .card.card-service .card-body .card-title, .text-highlight, .work-title {
-  letter-spacing: -0.4px;
 }
 
 .border-top-left-radius {
