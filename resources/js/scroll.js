@@ -90,7 +90,7 @@ $(document).ready(function(){
         easing: 'ease-out',
     });
     
-    useScrolling('.badge', {
+    useScrolling('.built-with li', {
         delay: 300,
         distance: '5%',
         origin: 'right',
