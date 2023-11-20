@@ -89,10 +89,6 @@
     }
 
     .card-body{
-        .card-title{
-            @extend .font-stack-1;
-        }
-
         .card-text{
             color: $text-muted;
         }
@@ -138,10 +134,6 @@
 .text-section{
     font-weight: bold;
     color: $primary;
-}
-
-.text-highlight{
-    @extend .font-stack-1;    
 }
 
 .flexbox-works{
@@ -190,10 +182,6 @@
     }
 }
 
-.work-title{
-    @extend .font-stack-1;
-}
-
 .work-description{
     color: $text-muted;
 }
@@ -205,13 +193,27 @@
 
 // * Skills
 .skill-gallery{
+    // display: grid;
+    // grid-template-columns: repeat(7, 1fr);
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+
+    & > div{
+        transition: all .4s ease;
+        text-align: center;
+        &:hover{
+            @extend .shadow-sm, .bg-white;
+        }
+    }
+    
     .skill-img{
         transition: all 0.4s ease-in-out;
-        width: 110px;
-        height: 110px;
+        width: 42px;
+        height: 42px;
         object-fit: contain;
         aspect-ratio: 1 / 1;
-        @extend .p-4, .img-fluid, .img-fluid-extension;
+        @extend .img-fluid, .img-fluid-extension;
 
        &:hover{
             // transform: scale(1.1);
@@ -287,39 +289,6 @@
     z-index: -1;
     font-weight: 600;
     pointer-events: none;
-}
-
-// .placeholder-1::before{
-//     content: "01";
-// }
-
-// .placeholder-2::before{
-//     content: "02";
-// }
-
-// .placeholder-3::before{
-//     content: "03";
-// }
-
-// .placeholder-4::before{
-//     content: "04";
-// }
-
-// .placeholder-5::before{
-//     content: "05";
-// }
-
-// .placeholder-6::before{
-//     content: "06";
-// }
-
-// .placeholder-7::before{
-//     content: "07";
-// }
-
-.font-stack-1{
-    // font-family: $font-stack-1 !important;
-    // letter-spacing: -.4px;
 }
 
 .border-top-left-radius{
