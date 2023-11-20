@@ -4247,7 +4247,7 @@ button.bg-dark:focus {
   background-color: #010202 !important;
 }
 
-.bg-white, .btn-contact, .contact-card {
+.bg-white, .btn-contact, .contact-card, .skill-gallery > div:hover {
   background-color: #fff !important;
 }
 
@@ -5302,7 +5302,7 @@ button.bg-dark:focus {
   white-space: normal;
 }
 
-.shadow-sm, .carousel-navigators button:hover {
+.shadow-sm, .carousel-navigators button:hover, .skill-gallery > div:hover {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
@@ -5630,7 +5630,7 @@ button.bg-dark:focus {
   padding-left: 1rem !important;
 }
 
-.p-4, .skill-gallery .skill-img {
+.p-4 {
   padding: 1.5rem !important;
 }
 
@@ -7765,10 +7765,19 @@ h1, h2, h3, h4, h5, h6 {
   color: #626970;
 }
 
+.skill-gallery {
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.skill-gallery > div {
+  transition: all 0.4s ease;
+  text-align: center;
+}
 .skill-gallery .skill-img {
   transition: all 0.4s ease-in-out;
-  width: 110px;
-  height: 110px;
+  width: 42px;
+  height: 42px;
   -o-object-fit: contain;
      object-fit: contain;
   aspect-ratio: 1/1;
