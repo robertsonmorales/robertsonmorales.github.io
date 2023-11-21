@@ -19,6 +19,7 @@ body{
     background-color: $body-bg;   
     color: $dark;
     font: $font-base $font-family-base;
+    line-height: 1.5;
 }
 
 @import 'overwrite';
