@@ -193,17 +193,15 @@
 
 // * Skills
 .skill-gallery{
-    // display: grid;
-    // grid-template-columns: repeat(7, 1fr);
-    gap: 24px;
-    align-items: center;
-    justify-content: center;
+    // gap: 24px;
+    align-items: start;
+    justify-content: start;
 
     & > div{
         transition: all .4s ease;
         text-align: center;
         &:hover{
-            @extend .shadow-sm, .bg-white;
+            @extend .glassmorphism, .shadow, .bg-white;
         }
     }
     
@@ -426,20 +424,20 @@
 }
 
 .testimonial-icon{
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
     border-radius: 100%;
     @extend .flexbox-center;
 
     img{
-        width: 60px;
-        height: 60px;
+        width: 48px;
+        height: 48px;
         aspect-ratio: 1 / 1;
     }
 }
 
 .testimonial-quote{
-    font-size: 20px;
+    // font-size: 20px;
     font-weight: normal;
 }
 
