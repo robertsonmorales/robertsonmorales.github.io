@@ -5323,11 +5323,11 @@ button.bg-dark:focus {
   white-space: normal;
 }
 
-.shadow-sm, .carousel-navigators button:hover, .skill-gallery > div:hover {
+.shadow-sm, .carousel-navigators button:hover {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
-.shadow, .btn-contact:hover, .card.card-service:hover {
+.shadow, .btn-contact:hover, .skill-gallery > div:hover, .card.card-service:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
@@ -7788,9 +7788,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skill-gallery {
-  gap: 24px;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
+  justify-content: start;
 }
 .skill-gallery > div {
   transition: all 0.4s ease;
@@ -7958,18 +7957,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .testimonial-icon {
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
   border-radius: 100%;
 }
 .testimonial-icon img {
-  width: 60px;
-  height: 60px;
+  width: 48px;
+  height: 48px;
   aspect-ratio: 1/1;
 }
 
 .testimonial-quote {
-  font-size: 20px;
   font-weight: normal;
 }
 
@@ -8003,7 +8001,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.4s ease;
   border-radius: 20px;
 }
-.glassmorphism, .card {
+.glassmorphism, .card, .skill-gallery > div:hover {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(255, 255, 255, 0.75);
