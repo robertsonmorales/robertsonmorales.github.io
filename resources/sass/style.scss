@@ -16,10 +16,15 @@ html{
 }
 
 body{
-    background-color: $body-bg;   
+    // background-color: $body-bg;
+    background-image: url('../../resources/images/body-background.svg');
+    background-position: center;
     color: $dark;
     font: $font-base $font-family-base;
     line-height: 1.5;
+    // &:not([data-theme="dark"]){
+    //     filter: invert(1) hue-rotate(180deg);
+    // };
 }
 
 @import 'overwrite';
