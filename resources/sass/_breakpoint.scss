@@ -1,3 +1,17 @@
+// Type Scale
+:root {
+    --text-size-xs: 0.64rem;
+    --text-size-sm: 0.8rem;
+    --text-size-base: 1rem;
+    --text-size-h6: clamp(1.13rem, 1.0933rem + 0.1836vw, 1.25rem);
+    --text-size-h5: clamp(1.27rem, 1.1813rem + 0.4436vw, 1.56rem);
+    --text-size-h4: clamp(1.42rem, 1.2579rem + 0.8107vw, 1.95rem);
+    --text-size-h3: clamp(1.6rem, 1.343rem + 1.2849vw, 2.44rem);
+    --text-size-h2: clamp(1.8rem, 1.4176rem + 1.912vw, 3.05rem);
+    --text-size-h1: clamp(2rem, 6vw, 4.5rem);
+}
+
+// Media Queres
 @include media-breakpoint-only(xs) {
     .mobile-w-100{
         width: 100% !important;
@@ -50,11 +64,7 @@
     }
 }
 
-@include media-breakpoint-only(md) {
-    .h1{
-        letter-spacing: -1.5px;
-    }
-}
+@include media-breakpoint-only(md) {}
 
 @include media-breakpoint-between(lg, xl){
     .h1{
@@ -68,4 +78,81 @@
 
 @include media-breakpoint-only(xl) {
     
+}
+
+@media (min-width: 1200px) {
+    /* Styles for large desktop screens */
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for small desktop screens */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Styles for tablets */
+}
+
+@media (max-width: 767px) {
+    /* Styles for mobile devices */
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /* Styles for small mobile devices */
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+h1,
+.h1 {
+    font-size: var(--text-size-h1);
+}
+
+h2,
+.h2 {
+    font-size: var(--text-size-h2);
+}
+
+h3,
+.h3 {
+    font-size: var(--text-size-h3);
+}
+
+h4,
+.h4 {
+    font-size: var(--text-size-h4);
+}
+
+h5,
+.h5 {
+    font-size: var(--text-size-h5);
+}
+
+h6,
+.h6 {
+    font-size: var(--text-size-h6);
+}
+
+p {
+    font-size: var(--text-size-base);
+}
+
+a {
+    font-size: var(--text-size-base);
+}
+
+.text-sm {
+    font-size: var(--text-size-sm);
 }

@@ -4268,7 +4268,7 @@ button.bg-dark:focus {
   background-color: black !important;
 }
 
-.bg-white, .btn-contact, .contact-card, .skill-gallery > div:hover {
+.bg-white, .btn-contact, .contact-card {
   background-color: #fff !important;
 }
 
@@ -5327,7 +5327,7 @@ button.bg-dark:focus {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
-.shadow, .btn-contact:hover, .skill-gallery > div:hover, .card.card-service:hover {
+.shadow, .btn-contact:hover, .card.card-service:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
@@ -7339,7 +7339,7 @@ button.bg-dark:focus {
   font-weight: 700 !important;
 }
 
-.font-weight-bolder, .display-3 {
+.font-weight-bolder {
   font-weight: bolder !important;
 }
 
@@ -7479,20 +7479,6 @@ body {
   line-height: 1.5;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6,
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
-}
-
-.h1 {
-  font-size: clamp(1.8rem, 6vw, 4rem);
-}
-
-.display-3 {
-  font-size: clamp(1.6rem, 6vw, 4rem);
-  letter-spacing: 1px;
-}
-
 .rounded, .img-banner {
   border-radius: 10px !important;
 }
@@ -7500,6 +7486,10 @@ h1, h2, h3, h4, h5, h6 {
 .rounded-top {
   border-top-left-radius: 50% !important;
   border-top-right-radius: 50% !important;
+}
+
+.rounded-full {
+  border-radius: 100%;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -7558,7 +7548,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: transparent;
 }
 
-.font-weight-bolder, .display-3 {
+.font-weight-bolder {
   font-weight: 800 !important;
 }
 
@@ -7742,8 +7732,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-section {
-  font-weight: bold;
-  color: #6440ff;
+  margin-bottom: 16px;
 }
 
 .flexbox-works {
@@ -7963,11 +7952,13 @@ h1, h2, h3, h4, h5, h6 {
 .testimonial-icon img {
   width: 48px;
   height: 48px;
+  border-radius: 100%;
   aspect-ratio: 1/1;
 }
 
 .testimonial-quote {
   font-weight: normal;
+  font-size: var(--text-size-h5);
 }
 
 .testimonial--highlight {
@@ -8000,10 +7991,10 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.4s ease;
   border-radius: 20px;
 }
-.glassmorphism, .card, .card.card-service, .skill-gallery > div:hover {
+.glassmorphism, .card, .card.card-service {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .circle-success, .circle-error {
@@ -8032,6 +8023,18 @@ h1, h2, h3, h4, h5, h6 {
   height: 80px;
   position: absolute;
   bottom: 30px;
+}
+
+:root {
+  --text-size-xs: 0.64rem;
+  --text-size-sm: 0.8rem;
+  --text-size-base: 1rem;
+  --text-size-h6: clamp(1.13rem, 1.0933rem + 0.1836vw, 1.25rem);
+  --text-size-h5: clamp(1.27rem, 1.1813rem + 0.4436vw, 1.56rem);
+  --text-size-h4: clamp(1.42rem, 1.2579rem + 0.8107vw, 1.95rem);
+  --text-size-h3: clamp(1.6rem, 1.343rem + 1.2849vw, 2.44rem);
+  --text-size-h2: clamp(1.8rem, 1.4176rem + 1.912vw, 3.05rem);
+  --text-size-h1: clamp(2rem, 6vw, 4.5rem);
 }
 
 @media (max-width: 575.98px) {
@@ -8069,16 +8072,83 @@ h1, h2, h3, h4, h5, h6 {
     visibility: hidden;
   }
 }
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .h1 {
-    letter-spacing: -1.5px;
-  }
-}
 @media (min-width: 992px) {
   .h1 {
     letter-spacing: -2px;
   }
 }
+@media (min-width: 1200px) {
+  /* Styles for large desktop screens */
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Styles for small desktop screens */
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Styles for tablets */
+}
+@media (max-width: 767px) {
+  /* Styles for mobile devices */
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Styles for small mobile devices */
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+h1,
+.h1 {
+  font-size: var(--text-size-h1);
+}
+
+h2,
+.h2 {
+  font-size: var(--text-size-h2);
+}
+
+h3,
+.h3 {
+  font-size: var(--text-size-h3);
+}
+
+h4,
+.h4 {
+  font-size: var(--text-size-h4);
+}
+
+h5,
+.h5 {
+  font-size: var(--text-size-h5);
+}
+
+h6,
+.h6 {
+  font-size: var(--text-size-h6);
+}
+
+p {
+  font-size: var(--text-size-base);
+}
+
+a {
+  font-size: var(--text-size-base);
+}
+
+.text-sm {
+  font-size: var(--text-size-sm);
+}
+
 .img-banner {
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../images/blogs/ui-ux.jpg");
   background-size: cover;
