@@ -128,7 +128,7 @@ a {
   background-color: transparent;
 }
 a:hover {
-  color: #0056b3;
+  color: rgb(0, 86.1, 178.5);
   text-decoration: underline;
 }
 
