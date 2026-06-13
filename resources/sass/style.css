@@ -22,21 +22,21 @@
 }
 @font-face {
   font-family: "Euclid Circular A Regular";
-  src: url("../fonts/euclid-circular-a/Euclid Circular A Regular.ttf") format("truetype");
+  src: url("../fonts/euclid-circular-a-woff2/EuclidCircularA-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Euclid Circular A Medium";
-  src: url("../fonts/euclid-circular-a/Euclid Circular A Medium.ttf") format("truetype");
+  src: url("../fonts/euclid-circular-a-woff2/EuclidCircularA-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Euclid Circular A SemiBold";
-  src: url("../fonts/euclid-circular-a/Euclid Circular A SemiBold.ttf") format("truetype");
+  src: url("../fonts/euclid-circular-a-woff2/EuclidCircularA-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -1546,7 +1546,7 @@ select.form-control:focus::-ms-value {
 .col-form-label-sm {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
-  font-size: 0.98rem;
+  font-size: 0.9rem;
   line-height: 1.5;
 }
 
@@ -1570,7 +1570,7 @@ select.form-control:focus::-ms-value {
 .form-control-sm {
   height: calc(1.5em + 0.5rem + 2px);
   padding: 0.25rem 0.5rem;
-  font-size: 0.98rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -1661,7 +1661,7 @@ textarea.form-control {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-  font-size: 0.98rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   color: #fff;
   background-color: rgba(40, 167, 69, 0.9);
@@ -1754,7 +1754,7 @@ textarea.form-control {
   max-width: 100%;
   padding: 0.25rem 0.5rem;
   margin-top: 0.1rem;
-  font-size: 0.98rem;
+  font-size: 0.9rem;
   line-height: 1.6;
   color: #fff;
   background-color: rgba(220, 53, 69, 0.9);
@@ -2394,7 +2394,7 @@ fieldset:disabled a.btn {
 
 .btn-sm {
   padding: 0.25rem 0.5rem;
-  font-size: 0.98rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -2584,7 +2584,7 @@ input[type=button].btn-block {
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-append > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.98rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -2797,7 +2797,7 @@ input[type=button].btn-block {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;
-  font-size: 0.98rem;
+  font-size: 0.9rem;
 }
 
 .custom-select-lg {
@@ -2903,14 +2903,16 @@ input[type=button].btn-block {
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  -webkit-appearance: none;
-          appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-webkit-slider-thumb {
     -webkit-transition: none;
     transition: none;
   }
+}
+.custom-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
 }
 .custom-range::-webkit-slider-thumb:active {
   background-color: rgb(244.8560209424, 242.5, 255);
@@ -2932,14 +2934,16 @@ input[type=button].btn-block {
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  -moz-appearance: none;
-       appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-moz-range-thumb {
     -moz-transition: none;
     transition: none;
   }
+}
+.custom-range::-moz-range-thumb {
+  -moz-appearance: none;
+       appearance: none;
 }
 .custom-range::-moz-range-thumb:active {
   background-color: rgb(244.8560209424, 242.5, 255);
@@ -2964,13 +2968,15 @@ input[type=button].btn-block {
   border-radius: 1rem;
   -ms-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-ms-thumb {
     -ms-transition: none;
     transition: none;
   }
+}
+.custom-range::-ms-thumb {
+  appearance: none;
 }
 .custom-range::-ms-thumb:active {
   background-color: rgb(244.8560209424, 242.5, 255);
@@ -3353,10 +3359,6 @@ input[type=button].btn-block {
     display: none;
   }
 }
-.navbar-expand {
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-}
 .navbar-expand > .container,
 .navbar-expand > .container-fluid,
 .navbar-expand > .container-sm,
@@ -3365,6 +3367,10 @@ input[type=button].btn-block {
 .navbar-expand > .container-xl {
   padding-right: 0;
   padding-left: 0;
+}
+.navbar-expand {
+  flex-flow: row nowrap;
+  justify-content: flex-start;
 }
 .navbar-expand .navbar-nav {
   flex-direction: row;
@@ -4268,7 +4274,7 @@ button.bg-dark:focus {
   background-color: black !important;
 }
 
-.bg-white, .btn-contact, .contact-card {
+.bg-white, .btn-contact, .contact-card, .skill-gallery .skill-img {
   background-color: #fff !important;
 }
 
@@ -7475,12 +7481,12 @@ body {
   background-image: url("../../resources/images/body-background.svg");
   background-position: center;
   color: #0E0E11;
-  font: 18px "Euclid Circular A Regular", "GT Walsheim Regular", "Poppins", sans-serif;
+  font: 16px "Euclid Circular A Regular", "GT Walsheim Regular", "Poppins", sans-serif;
   line-height: 1.5;
 }
 
 .rounded, .img-banner {
-  border-radius: 10px !important;
+  border-radius: 16px !important;
 }
 
 .rounded-top {
@@ -7509,7 +7515,7 @@ body {
   outline: none;
   border: none;
   background-color: transparent;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: #0E0E11;
 }
@@ -7518,17 +7524,35 @@ body {
 }
 
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
-  font-weight: 600;
+  font-weight: 500;
   color: #6440ff !important;
   transform: scale(1.05);
   transition: font-weight 0.1s linear;
 }
 
+#navbar {
+  top: 16px;
+  right: 24px;
+  left: 24px;
+  border-radius: 200px !important;
+  background: rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(60px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.55) !important;
+  box-shadow: 0 4px 24px rgba(100, 64, 255, 0.07), 0 1px 4px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+  padding: 16px 24px;
+}
+#navbar.navbar-scrolled {
+  background: rgba(255, 255, 255, 0.75) !important;
+  box-shadow: 0 8px 32px rgba(100, 64, 255, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
 .btn {
-  border-radius: 10px !important;
-  padding: 10px 20px;
+  border-radius: 200px !important;
+  padding: 10px 24px;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .btn .feather {
   width: 16px;
@@ -7536,7 +7560,7 @@ body {
 }
 
 .card {
-  border-radius: 20px !important;
+  border-radius: 16px !important;
   border: 0.0625rem solid rgba(231, 234, 243, 0.7);
 }
 .card .card-header {
@@ -7562,7 +7586,7 @@ body {
 
 .input-group .form-control {
   width: 100%;
-  border-radius: 10px !important;
+  border-radius: 8px !important;
 }
 .input-group .form-control:focus {
   font-weight: 500;
@@ -7583,7 +7607,7 @@ body {
 }
 .input-group .invalid-feedback {
   font-weight: normal !important;
-  font-size: 0.98rem;
+  font-size: 0.9rem;
 }
 
 .list-group {
@@ -7645,7 +7669,7 @@ body {
   margin-bottom: 20px;
 }
 .input-group label {
-  font-size: 0.98rem;
+  font-size: 0.9rem;
   margin-bottom: 3px !important;
 }
 
@@ -7730,7 +7754,11 @@ body {
 }
 
 .text-section {
+  font-weight: bold;
+  color: #6440ff;
   margin-bottom: 16px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
 }
 
 .flexbox-works {
@@ -7759,7 +7787,7 @@ body {
 
 .work-img-wrapper {
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 16px;
 }
 .work-img-wrapper img {
   transition: all 0.4s ease-in-out;
@@ -7831,8 +7859,8 @@ body {
   outline: none;
 }
 
-.border-radius, .contact-card, .contact-radius {
-  border-radius: 10px;
+.border-radius, .contact-radius {
+  border-radius: 200px;
 }
 
 .placeholder {
@@ -7860,7 +7888,7 @@ body {
 }
 
 .about-radius {
-  border-radius: 20px;
+  border-radius: 16px;
 }
 
 .contact-wrapper {
@@ -7894,6 +7922,10 @@ body {
 .divider {
   height: 1px;
   border: 1px solid #777;
+}
+
+.contact-card {
+  border-radius: 16px;
 }
 
 #offered-services {
@@ -7987,7 +8019,7 @@ body {
 
 .btn-contact {
   transition: all 0.4s ease;
-  border-radius: 20px;
+  border-radius: 16px;
 }
 .glassmorphism, .card, .card.card-service {
   backdrop-filter: blur(16px) saturate(180%);
@@ -8023,6 +8055,83 @@ body {
   bottom: 30px;
 }
 
+#intro {
+  --cursor-x: 50%;
+  --cursor-y: 50%;
+  position: relative;
+}
+#intro::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(circle 180px at var(--cursor-x) var(--cursor-y), #6440ff 0%, transparent 65%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+#intro:hover::after {
+  opacity: 1;
+}
+
+@keyframes glitch-font {
+  0% {
+    font-family: inherit;
+    font-style: normal;
+    color: inherit;
+    animation-timing-function: step-end;
+  }
+  12% {
+    font-family: "Georgia", serif;
+    font-style: italic;
+    color: #6440ff;
+    animation-timing-function: step-end;
+  }
+  25% {
+    font-family: inherit;
+    font-style: normal;
+    color: inherit;
+    animation-timing-function: step-end;
+  }
+  42% {
+    font-family: "Georgia", serif;
+    font-style: italic;
+    color: #DBFF40;
+    animation-timing-function: step-end;
+  }
+  55% {
+    font-family: inherit;
+    font-style: normal;
+    color: inherit;
+    animation-timing-function: step-end;
+  }
+  72% {
+    font-family: "Georgia", serif;
+    font-style: italic;
+    color: #6440ff;
+    animation-timing-function: step-end;
+  }
+  85% {
+    font-family: inherit;
+    font-style: normal;
+    color: inherit;
+    animation-timing-function: step-end;
+  }
+  100% {
+    font-family: inherit;
+    font-style: normal;
+    color: inherit;
+  }
+}
+.glitch-effect.glitch-active {
+  animation: glitch-font 540ms forwards;
+}
+
 :root {
   --text-size-xs: 0.64rem;
   --text-size-sm: 0.8rem;
@@ -8032,7 +8141,7 @@ body {
   --text-size-h4: clamp(1.42rem, 1.2579rem + 0.8107vw, 1.95rem);
   --text-size-h3: clamp(1.6rem, 1.343rem + 1.2849vw, 2.44rem);
   --text-size-h2: clamp(1.8rem, 1.4176rem + 1.912vw, 3.05rem);
-  --text-size-h1: clamp(2rem, 6vw, 4.5rem);
+  --text-size-h1: clamp(2.6rem, 6vw, 4.5rem);
 }
 
 @media (max-width: 575.98px) {
@@ -8059,8 +8168,16 @@ body {
   .h2 {
     font-size: 1.4rem !important;
   }
-  .fixed-top {
-    position: static;
+  #navbar {
+    position: sticky !important;
+    top: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    border-radius: 0 !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: 0.0625rem solid rgba(231, 234, 243, 0.7) !important;
   }
   .testimonial-quote {
     line-height: 25px;
@@ -8077,12 +8194,21 @@ body {
 }
 @media (min-width: 1200px) {
   /* Styles for large desktop screens */
+  h1, .h1 {
+    line-height: 70px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Styles for small desktop screens */
+  h1, .h1 {
+    line-height: 60px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   /* Styles for tablets */
+  h1, .h1 {
+    line-height: 50px;
+  }
 }
 @media (max-width: 767px) {
   /* Styles for mobile devices */
@@ -8158,4 +8284,29 @@ article p,
 article ul li {
   font-size: 20px;
   line-height: 1.8;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* BENTO GRID */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.bento-grid .bento-heading {
+  grid-column: 1;
+  grid-row: 1;
+}
+.bento-grid .bento-featured {
+  grid-column: 2/4;
+  grid-row: 1;
+}
+.bento-grid .bento-results {
+  grid-column: 1/3;
+  grid-row: 2;
+}
+.bento-grid .bento-numbers {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+/* ENDS HERE *//*# sourceMappingURL=style.css.map */

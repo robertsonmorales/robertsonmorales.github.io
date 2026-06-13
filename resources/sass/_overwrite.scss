@@ -1,6 +1,6 @@
 // BORDERS
 .rounded{
-    border-radius: $radius !important;
+    border-radius: $card-radius !important;
 }
 
 .rounded-top{
@@ -39,7 +39,7 @@
         outline: none;
         border: none;
         background-color: transparent;
-        font-size: $font-size;
+        font-size: $font-size-sm;
         font-weight: 600;
         color: $dark;
 
@@ -50,19 +50,38 @@
 }
 
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{
-    font-weight: 600;
+    font-weight: 500;
     color: $primary !important;
     transform: scale(1.05);
     transition: font-weight .1s linear;
+}
+
+#navbar {
+    top: 16px;
+    right: 24px;
+    left: 24px;
+    border-radius: $radius !important;
+    background: rgba(255, 255, 255, 0.25) !important;
+    backdrop-filter: blur(60px) saturate(160%);
+    -webkit-backdrop-filter: blur(18px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.55) !important;
+    box-shadow: 0 4px 24px rgba($primary, 0.07), 0 1px 4px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease, background 0.3s ease;
+    padding: 16px 24px;
+
+    &.navbar-scrolled {
+        background: rgba(255, 255, 255, 0.75) !important;
+        box-shadow: 0 8px 32px rgba($primary, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
 }
 // ENDS HERE
 
 // BUTTONS
 .btn{
     border-radius: $radius !important;
-    padding: 10px 20px;
+    padding: 10px 24px;
     font-weight: 500;
-    font-size: $font-size;
+    font-size: $font-size-sm;
 
     .feather{
         width: 16px;
@@ -115,7 +134,7 @@
 
     .form-control{
         width: 100%;
-        border-radius: $radius !important;
+        border-radius: $input-radius !important;
 
         &:focus{
             font-weight: 500;

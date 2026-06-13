@@ -22,13 +22,14 @@ $theme-colors: (
 $font-bold: 'Euclid Circular A SemiBold', sans-serif;
 $font-medium: 'Euclid Circular A Medium', sans-serif;
 $font-family-base: 'Euclid Circular A Regular', 'GT Walsheim Regular', 'Poppins', sans-serif;
-$font-base: 18px;
+$font-base: 16px;
 $font-size: 1rem;
-$font-size-sm: 0.98rem;
+$font-size-sm: 0.9rem;
 
 $border: .0625rem solid rgba(231,234,243,.7);
-$card-radius: 20px;
-$radius: 10px;
+$card-radius: 16px;
+$input-radius: 8px;
+$radius: 200px;
 $line-height-base: 1.6;
 
 // $shadow: 0px 0px 19px #e9e9e9, -4px -4px 19px #ffffff;

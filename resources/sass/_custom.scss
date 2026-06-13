@@ -133,9 +133,16 @@
 }
 
 .text-section{
-    // font-weight: bold;
-    // color: $primary;
+    font-weight: bold;
+    color: $primary;
     margin-bottom: 16px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+
+    // &::before, &::after{
+    //     content: "•";
+    //     margin: 0 8px;
+    // }
 }
 
 .flexbox-works{
@@ -213,7 +220,7 @@
         height: 42px;
         object-fit: contain;
         aspect-ratio: 1 / 1;
-        @extend .img-fluid, .img-fluid-extension;
+        @extend .img-fluid, .img-fluid-extension, .bg-white;
 
        &:hover{
             // transform: scale(1.1);
@@ -360,7 +367,8 @@
 }
 
 .contact-card{
-    @extend .border-radius, .p-1, .mt-5, .bg-white;
+    border-radius: $card-radius;
+    @extend .p-1, .mt-5, .bg-white;
 }
 
 #offered-services{
@@ -518,10 +526,52 @@
 }
 
 .mouse-scroll{
-    width: 80px; 
-    height: 80px; 
-    position: absolute; 
+    width: 80px;
+    height: 80px;
+    position: absolute;
     bottom: 30px;
-    
+
     @extend .text-muted;
+}
+
+// Radial spotlight gradient on hero heading
+#intro {
+    --cursor-x: 50%;
+    --cursor-y: 50%;
+    position: relative;
+
+    &::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: radial-gradient(circle 180px at var(--cursor-x) var(--cursor-y), $primary 0%, transparent 65%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        pointer-events: none;
+    }
+
+    &:hover::after {
+        opacity: 1;
+    }
+}
+
+@keyframes glitch-font {
+    0%   { font-family: inherit; font-style: normal; color: inherit; animation-timing-function: step-end; }
+    12%  { font-family: 'Georgia', serif; font-style: italic; color: $primary; animation-timing-function: step-end; }
+    25%  { font-family: inherit; font-style: normal; color: inherit; animation-timing-function: step-end; }
+    42%  { font-family: 'Georgia', serif; font-style: italic; color: $yellow; animation-timing-function: step-end; }
+    55%  { font-family: inherit; font-style: normal; color: inherit; animation-timing-function: step-end; }
+    72%  { font-family: 'Georgia', serif; font-style: italic; color: $primary; animation-timing-function: step-end; }
+    85%  { font-family: inherit; font-style: normal; color: inherit; animation-timing-function: step-end; }
+    100% { font-family: inherit; font-style: normal; color: inherit; }
+}
+
+.glitch-effect.glitch-active {
+    animation: glitch-font 540ms forwards;
 }

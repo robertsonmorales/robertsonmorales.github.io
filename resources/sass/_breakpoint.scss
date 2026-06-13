@@ -8,7 +8,7 @@
     --text-size-h4: clamp(1.42rem, 1.2579rem + 0.8107vw, 1.95rem);
     --text-size-h3: clamp(1.6rem, 1.343rem + 1.2849vw, 2.44rem);
     --text-size-h2: clamp(1.8rem, 1.4176rem + 1.912vw, 3.05rem);
-    --text-size-h1: clamp(2rem, 6vw, 4.5rem);
+    --text-size-h1: clamp(2.6rem, 6vw, 4.5rem);
 }
 
 // Media Queres
@@ -50,8 +50,17 @@
         font-size: 1.4rem !important;
     }
 
-    .fixed-top{
-        position: static;
+    #navbar {
+        position: -webkit-sticky !important;
+        position: sticky !important;
+        top: 0 !important;
+        right: 0 !important;
+        left: 0 !important;
+        border-radius: 0 !important;
+        border-left: none !important;
+        border-right: none !important;
+        border-top: none !important;
+        border-bottom: $border !important;
     }
 
     .testimonial-quote{
@@ -82,14 +91,23 @@
 
 @media (min-width: 1200px) {
     /* Styles for large desktop screens */
+    h1,.h1{
+        line-height: 70px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
     /* Styles for small desktop screens */
+    h1,.h1{
+        line-height: 60px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     /* Styles for tablets */
+    h1,.h1{
+        line-height: 50px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -122,12 +140,12 @@ h1,
 
 h2,
 .h2 {
-    font-size: var(--text-size-h2);
+    font-size: var(--text-size-h2);    
 }
 
 h3,
 .h3 {
-    font-size: var(--text-size-h3);
+    font-size: var(--text-size-h3);    
 }
 
 h4,

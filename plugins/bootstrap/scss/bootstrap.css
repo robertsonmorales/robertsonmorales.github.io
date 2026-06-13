@@ -2861,14 +2861,16 @@ input[type=button].btn-block {
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  -webkit-appearance: none;
-          appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-webkit-slider-thumb {
     -webkit-transition: none;
     transition: none;
   }
+}
+.custom-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
 }
 .custom-range::-webkit-slider-thumb:active {
   background-color: rgb(178.5, 215.4, 255);
@@ -2890,14 +2892,16 @@ input[type=button].btn-block {
   border-radius: 1rem;
   -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  -moz-appearance: none;
-       appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-moz-range-thumb {
     -moz-transition: none;
     transition: none;
   }
+}
+.custom-range::-moz-range-thumb {
+  -moz-appearance: none;
+       appearance: none;
 }
 .custom-range::-moz-range-thumb:active {
   background-color: rgb(178.5, 215.4, 255);
@@ -2922,13 +2926,15 @@ input[type=button].btn-block {
   border-radius: 1rem;
   -ms-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  appearance: none;
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-ms-thumb {
     -ms-transition: none;
     transition: none;
   }
+}
+.custom-range::-ms-thumb {
+  appearance: none;
 }
 .custom-range::-ms-thumb:active {
   background-color: rgb(178.5, 215.4, 255);
@@ -3311,10 +3317,6 @@ input[type=button].btn-block {
     display: none;
   }
 }
-.navbar-expand {
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-}
 .navbar-expand > .container,
 .navbar-expand > .container-fluid,
 .navbar-expand > .container-sm,
@@ -3323,6 +3325,10 @@ input[type=button].btn-block {
 .navbar-expand > .container-xl {
   padding-right: 0;
   padding-left: 0;
+}
+.navbar-expand {
+  flex-flow: row nowrap;
+  justify-content: flex-start;
 }
 .navbar-expand .navbar-nav {
   flex-direction: row;
