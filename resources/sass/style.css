@@ -5442,7 +5442,7 @@ button.bg-dark:focus {
   margin-top: 0.25rem !important;
 }
 
-.mr-1,
+.mr-1, .contact-information .btn-socmedia,
 .mx-1 {
   margin-right: 0.25rem !important;
 }
@@ -5466,7 +5466,7 @@ button.bg-dark:focus {
   margin-top: 0.5rem !important;
 }
 
-.mr-2, .contact-information .btn-socmedia,
+.mr-2,
 .mx-2 {
   margin-right: 0.5rem !important;
 }
@@ -8309,4 +8309,71 @@ article ul li {
   grid-row: 2;
 }
 
+/* ENDS HERE */
+/* SERVICES GRID */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.875rem;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* ENDS HERE */
+/* FOOTER GRID */
+.footer-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+.footer-link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-link-list li {
+  margin-bottom: 0.75rem;
+}
+.footer-link-list a {
+  color: #0E0E11;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.footer-link-list a:hover {
+  color: #6440ff;
+}
+
+.footer-contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+.footer-contact-list li {
+  margin-bottom: 1.25rem;
+}
+.footer-contact-list a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer-columns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .footer-columns {
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+  }
+}
 /* ENDS HERE *//*# sourceMappingURL=style.css.map */

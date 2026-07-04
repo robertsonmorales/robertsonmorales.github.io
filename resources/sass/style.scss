@@ -60,3 +60,79 @@ body{
     }
 }
 /* ENDS HERE */
+
+/* SERVICES GRID */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.875rem;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* ENDS HERE */
+
+/* FOOTER GRID */
+.footer-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+}
+
+.footer-link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        margin-bottom: .75rem;
+    }
+
+    a {
+        color: $dark;
+        text-decoration: none;
+        transition: color .2s ease;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+.footer-contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+
+    li {
+        margin-bottom: 1.25rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .footer-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-columns {
+        grid-template-columns: 1.4fr 1fr 1fr 1fr;
+        gap: 1.5rem;
+    }
+}
+/* ENDS HERE */
