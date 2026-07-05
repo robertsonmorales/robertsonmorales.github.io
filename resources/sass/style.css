@@ -123,12 +123,10 @@ p {
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   cursor: help;
   border-bottom: 0;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
 }
 
 address {
@@ -1495,10 +1493,6 @@ mark,
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(100, 64, 255, 0.25);
 }
-.form-control::-moz-placeholder {
-  color: #6c757d;
-  opacity: 1;
-}
 .form-control::placeholder {
   color: #6c757d;
   opacity: 1;
@@ -1512,9 +1506,7 @@ input[type=date].form-control,
 input[type=time].form-control,
 input[type=datetime-local].form-control,
 input[type=month].form-control {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 select.form-control:focus::-ms-value {
@@ -1893,9 +1885,7 @@ textarea.form-control {
   color: #212529;
   text-align: center;
   vertical-align: middle;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
@@ -2620,8 +2610,7 @@ input[type=button].btn-block {
   display: block;
   min-height: 1.6rem;
   padding-left: 1.5rem;
-  -webkit-print-color-adjust: exact;
-          color-adjust: exact;
+  color-adjust: exact;
 }
 
 .custom-control-inline {
@@ -2762,9 +2751,7 @@ input[type=button].btn-block {
   background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 .custom-select:focus {
   border-color: rgb(203.4685863874, 191.5, 255);
@@ -2875,9 +2862,7 @@ input[type=button].btn-block {
   height: 1.4rem;
   padding: 0;
   background-color: transparent;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 .custom-range:focus {
   outline: none;
@@ -2901,18 +2886,15 @@ input[type=button].btn-block {
   background-color: #6440ff;
   border: 0;
   border-radius: 1rem;
-  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-webkit-slider-thumb {
-    -webkit-transition: none;
     transition: none;
   }
 }
 .custom-range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 .custom-range::-webkit-slider-thumb:active {
   background-color: rgb(244.8560209424, 242.5, 255);
@@ -2932,18 +2914,15 @@ input[type=button].btn-block {
   background-color: #6440ff;
   border: 0;
   border-radius: 1rem;
-  -moz-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-moz-range-thumb {
-    -moz-transition: none;
     transition: none;
   }
 }
 .custom-range::-moz-range-thumb {
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
 }
 .custom-range::-moz-range-thumb:active {
   background-color: rgb(244.8560209424, 242.5, 255);
@@ -2966,12 +2945,10 @@ input[type=button].btn-block {
   background-color: #6440ff;
   border: 0;
   border-radius: 1rem;
-  -ms-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .custom-range::-ms-thumb {
-    -ms-transition: none;
     transition: none;
   }
 }
@@ -3659,10 +3636,8 @@ input[type=button].btn-block {
 }
 @media (min-width: 576px) {
   .card-columns {
-    -moz-column-count: 3;
-         column-count: 3;
-    -moz-column-gap: 1.25rem;
-         column-gap: 1.25rem;
+    column-count: 3;
+    column-gap: 1.25rem;
     orphans: 1;
     widows: 1;
   }
@@ -5239,21 +5214,15 @@ button.bg-dark:focus {
   }
 }
 .user-select-all {
-  -webkit-user-select: all !important;
-     -moz-user-select: all !important;
-          user-select: all !important;
+  user-select: all !important;
 }
 
 .user-select-auto {
-  -webkit-user-select: auto !important;
-     -moz-user-select: auto !important;
-          user-select: auto !important;
+  user-select: auto !important;
 }
 
 .user-select-none {
-  -webkit-user-select: none !important;
-     -moz-user-select: none !important;
-          user-select: none !important;
+  user-select: none !important;
 }
 
 .overflow-auto {
@@ -7656,8 +7625,7 @@ body {
 /* ENDS HERE*/
 /* IMAGES */
 .img-fluid-extension, .skill-gallery .skill-img {
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
   width: 110px;
   height: 110px;
 }
@@ -7738,8 +7706,7 @@ body {
 .img-fluid-hovered {
   width: 100%;
   transition: all 0.4s ease;
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
 }
 .img-fluid-hovered:hover {
   opacity: 0.9;
@@ -7781,8 +7748,7 @@ body {
 .built-with > li img {
   width: 32px;
   height: 32px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .work-img-wrapper {
@@ -7813,8 +7779,7 @@ body {
   transition: all 0.4s ease-in-out;
   width: 42px;
   height: 42px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   aspect-ratio: 1/1;
 }
 .skill-gallery .skill-img:hover {
@@ -7823,8 +7788,7 @@ body {
 
 .img-drop-shadow {
   filter: drop-shadow(-15px 15px 10px rgba(0, 0, 0, 0.3));
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
 }
 
 .bg-color {
@@ -7842,8 +7806,7 @@ body {
 
 .my-avatar {
   border-radius: 100% !important;
-  -o-object-fit: fill;
-     object-fit: fill;
+  object-fit: fill;
 }
 
 .font-16 {
@@ -7997,8 +7960,7 @@ body {
 }
 
 .gap-y-base {
-  -moz-column-gap: 16px;
-       column-gap: 16px;
+  column-gap: 16px;
 }
 
 .gap-x-base {
@@ -8169,6 +8131,7 @@ body {
     font-size: 1.4rem !important;
   }
   #navbar {
+    position: -webkit-sticky !important;
     position: sticky !important;
     top: 0 !important;
     right: 0 !important;
@@ -8383,4 +8346,84 @@ article ul li {
     gap: 1.5rem;
   }
 }
-/* ENDS HERE *//*# sourceMappingURL=style.css.map */
+/* ENDS HERE */
+/* PRELOADER */
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  background-image: url("../../resources/images/body-background.svg");
+  background-position: center;
+  transition: opacity 0.5s ease;
+}
+
+#preloader.preloader-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+body:has(#preloader:not(.preloader-hidden)) {
+  overflow: hidden;
+}
+
+.preloader-text {
+  font: 2rem "Euclid Circular A SemiBold", sans-serif;
+  color: #0E0E11;
+}
+
+.preloader-text span:not(.preloader-dot) {
+  display: inline-block;
+  animation: preloader-wave 1s ease-in-out infinite;
+}
+
+.preloader-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.preloader-text span:nth-child(2) {
+  animation-delay: 0.08s;
+}
+
+.preloader-text span:nth-child(3) {
+  animation-delay: 0.16s;
+}
+
+.preloader-text span:nth-child(4) {
+  animation-delay: 0.24s;
+}
+
+.preloader-text span:nth-child(5) {
+  animation-delay: 0.32s;
+}
+
+.preloader-text span:nth-child(6) {
+  animation-delay: 0.4s;
+}
+
+.preloader-text span:nth-child(7) {
+  animation-delay: 0.48s;
+}
+
+.preloader-text span:nth-child(8) {
+  animation-delay: 0.56s;
+}
+
+.preloader-text span:nth-child(9) {
+  animation-delay: 0.64s;
+}
+
+@keyframes preloader-wave {
+  0%, 60%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+}
+/* ENDS HERE */
+
+/*# sourceMappingURL=style.css.map */

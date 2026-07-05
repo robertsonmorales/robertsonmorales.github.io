@@ -65,3 +65,11 @@ glitchEls.forEach((el, i) => {
         setInterval(trigger, 7000);
     }, offset);
 });
+
+const preloader = document.getElementById('preloader');
+if (preloader) {
+    setTimeout(() => {
+        preloader.classList.add('preloader-hidden');
+        preloader.addEventListener('transitionend', () => preloader.remove(), { once: true });
+    }, 2000);
+}
