@@ -82,6 +82,13 @@ body{
 /* ENDS HERE */
 
 /* FOOTER GRID */
+.footer {
+  border-top-left-radius: $card-radius;
+  border-top-right-radius: $card-radius;
+  overflow: hidden;
+  padding: 32px;
+}
+
 .footer-columns {
     display: grid;
     grid-template-columns: 1fr;
