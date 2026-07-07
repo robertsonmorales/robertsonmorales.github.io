@@ -143,3 +143,52 @@ body{
     }
 }
 /* ENDS HERE */
+
+/* PRELOADER */
+#preloader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $body-bg;
+    background-image: url('../../resources/images/body-background.svg');
+    background-position: center;
+    transition: opacity .5s ease;
+}
+
+#preloader.preloader-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+body:has(#preloader:not(.preloader-hidden)) {
+    overflow: hidden;
+}
+
+.preloader-text {
+    font: 2rem $font-bold;
+    color: $dark;
+}
+
+.preloader-text span:not(.preloader-dot) {
+    display: inline-block;
+    animation: preloader-wave 1s ease-in-out infinite;
+}
+
+@for $i from 1 through 9 {
+    .preloader-text span:nth-child(#{$i}) {
+        animation-delay: #{($i - 1) * 0.08}s;
+    }
+}
+
+@keyframes preloader-wave {
+    0%, 60%, 100% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-10px);
+    }
+}
+/* ENDS HERE */
