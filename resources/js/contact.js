@@ -35,9 +35,13 @@ $(() => {
     if  (input == "" || input == null || input == undefined){
       $('#'+id).addClass('is-invalid');
       $('#validate-'+id).text('The ' + newName + ' is a required field.').addClass('d-block');
+
+      return true;
     }else{
       $('#'+id).removeClass('is-invalid');
       $('#validate-'+id).removeClass('d-block');
+
+      return false;
     }
   }
 
@@ -123,9 +127,9 @@ $(() => {
       counter.push(isChecked);
     }
 
-    var noSelectedService = counter.find((el) => el == true);
-    if(noSelectedService){
-      
+    var hasSelectedService = counter.find((el) => el == true);
+    if(hasSelectedService){
+
       $('#validate-subject').text("").removeClass('d-block');
     }else{
       $('#validate-subject').text("Please select at least one.").addClass('d-block');
@@ -136,9 +140,9 @@ $(() => {
     let emailAddress = isEmpty($('#email_address').val(), $('#email_address').attr('id'), $('#email_address').attr('name'));
     let phoneNumber = isEmpty($('#phone_number').val(), $('#phone_number').attr('id'), $('#phone_number').attr('name'));
     let message = isEmpty($('#message').val(), $('#message').attr('id'), $('#message').attr('name'));
-    let validateEmailAddress = validateEmail($('#email_address').val());
+    let validateEmailAddress = emailAddress ? false : validateEmail($('#email_address').val());
 
-    if(!firstName && !lastName && !phoneNumber && !emailAddress && !message && !validateEmailAddress){
+    if(!firstName && !lastName && !phoneNumber && !emailAddress && !message && !validateEmailAddress && hasSelectedService){
       letsGetStarted();
     }
   });

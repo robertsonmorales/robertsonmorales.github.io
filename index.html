@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Primary Meta Tags -->
     <title>
-      Web Development & Design Services | Robertson Morales - Philippines-Based
-      Freelance Developer & UI/UX Designer
+      Robertson Morales — Full-Stack Developer & UI/UX Designer | Philippines
     </title>
     <meta
       name="title"
-      content="Web Development & Design Services | Robertson Morales - Philippines-Based Freelance Developer & UI/UX Designer"
+      content="Robertson Morales — Full-Stack Developer & UI/UX Designer | Philippines"
     />
     <meta
       name="description"
-      content="Professional web development and design services for businesses, startups, and individuals. Hire Robertson Morales, a skilled Philippines-based freelance developer & UI/UX designer, to elevate your online presence."
+      content="Robertson Morales is a Philippines-based full-stack developer & UI/UX designer building fast, user-friendly websites and web apps. Available for full-time roles and freelance projects."
     />
     <meta
       name="keywords"
-      content="Web Development, Web Design, UI/UX Design, Freelance Developer, Philippines-based Developer, Business Websites, Startup Websites, Individual Websites, Professional Web Services, Custom Web Solutions"
+      content="Full-Stack Developer, Full-Stack Web Developer, UI/UX Designer, Web Development, Web Design, Freelance Developer, Philippines-based Developer, Business Websites, Startup Websites, Professional Web Services, Custom Web Solutions"
     />
 
     <meta name="author" content="Robertson Morales" />
@@ -34,15 +33,15 @@
     <meta property="og:url" content="https://www.robertsonmorales.com" />
     <meta
       property="og:title"
-      content="Web Development & Design Services | Robertson Morales - Philippines-Based Freelance Developer & UI/UX Designer"
+      content="Robertson Morales — Full-Stack Developer & UI/UX Designer | Philippines"
     />
     <meta
       property="og:description"
-      content="Professional web development and design services for businesses, startups, and professional individuals. Hire Robertson Morales, a skilled Philippines-based freelance developer & UI/UX designer, to elevate your online presence."
+      content="Robertson Morales is a Philippines-based full-stack developer & UI/UX designer building fast, user-friendly websites and web apps. Available for full-time roles and freelance projects."
     />
     <meta
       property="og:image"
-      content="https://www.robertsonmorales.com/resources/images/social-share.png"
+      content="https://www.robertsonmorales.com/resources/images/social-share.jpg"
     />
 
     <!-- Twitter -->
@@ -50,16 +49,34 @@
     <meta property="twitter:url" content="https://www.robertsonmorales.com" />
     <meta
       property="twitter:title"
-      content="Web Development & Design Services | Robertson Morales - Philippines-Based Freelance Developer & UI/UX Designer"
+      content="Robertson Morales — Full-Stack Developer & UI/UX Designer | Philippines"
     />
     <meta
       property="twitter:description"
-      content="Professional web development and design services for businesses, startups, and individuals. Hire Robertson Morales, a skilled Philippines-based freelance developer & UI/UX designer, to elevate your online presence."
+      content="Robertson Morales is a Philippines-based full-stack developer & UI/UX designer building fast, user-friendly websites and web apps. Available for full-time roles and freelance projects."
     />
     <meta
       property="twitter:image"
-      content="https://www.robertsonmorales.com/resources/images/social-share.png"
+      content="https://www.robertsonmorales.com/resources/images/social-share.jpg"
     />
+
+    <!-- theme: applied before CSS loads to avoid a flash of the wrong theme -->
+    <meta name="theme-color" content="#fafafa" />
+    <script>
+      (function () {
+        var theme = localStorage.getItem("theme");
+        if (!theme)
+          theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        document.documentElement.setAttribute("data-theme", theme);
+        if (theme === "dark")
+          document
+            .querySelector('meta[name="theme-color"]')
+            .setAttribute("content", "#131114");
+      })();
+    </script>
+    <!-- ends here -->
 
     <!-- preloads -->
     <!-- styles -->
@@ -129,6 +146,7 @@
     <!-- ends here -->
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <div id="preloader">
       <div class="preloader-text" aria-hidden="true">
         <span>R</span><span>o</span><span>b</span><span>e</span><span>r</span><span>t</span><span>s</span><span>o</span><span>n</span><span class="preloader-dot text-primary">.</span>
@@ -206,8 +224,17 @@
         </ul>
       </div>
 
-      <!-- Right: CTA (desktop) + hamburger (mobile) -->
+      <!-- Right: theme toggle + CTA (desktop) + hamburger (mobile) -->
       <div class="d-flex align-items-center">
+        <!-- <button
+          id="themeToggle"
+          type="button"
+          class="border-0 bg-transparent outline-none mr-2"
+          aria-label="Switch to dark theme"
+          aria-pressed="false"
+        >
+          <em data-feather="moon"></em>
+        </button> -->
         <a
           href="mailto:robertsonmorales23@gmail.com?cc=trebormoralesson@gmail.com"
           class="btn btn-primary d-none d-md-inline-block"
@@ -320,7 +347,7 @@
                 class="text-muted font-weight-normal mb-3 mb-md-4 w-75"
                 id="specialize"
               >
-                Frustrating design costs revenue. I bridge the gap between stunning UI/UX design and clean, optimized development to create seamless digital experiences.
+                Frustrating design costs revenue. As a full-stack developer and UI/UX designer, I bridge the gap between stunning design and clean, optimized code to create seamless digital experiences.
               </p>
             </div>
 
@@ -358,51 +385,7 @@
       ></lottie-player>
     </header>
 
-    <main>
-      <!-- Value Stack (Empathy Statement & Results) -->
-      <!-- <section class="py-5">
-        <div class="container">
-          <div class="bento-grid">
-            <div class="card bg-primary p-4 p-lg-5 bento-heading">
-              <h4 class="text-highlight text-white mb-0">
-                Helping businesses and professional individuals create stunning websites that
-                drive results.
-              </h4>
-            </div>
-
-            <div class="card p-4 p-lg-5 bento-featured">
-              <h4 class="card-title">Empathy Statement</h4>
-              <p class="card-text">
-                I understand the frustration of having a website that doesn't
-                effectively represent your brand or engage your audience. My
-                mission is to help you create a stunning online presence that
-                not only looks great but also drives results.
-              </p>
-            </div>
-
-            <div class="card p-4 p-lg-5 bento-results">
-              <h4 class="card-title">Results</h4>
-              <p class="card-text">
-                With my expertise in web design and development, I can help
-                you create a website that not only looks great but also
-                performs well. From increased traffic and higher conversion
-                rates to improved user engagement and brand credibility, I can
-                help you achieve your online goals.
-              </p>
-            </div>
-
-            <div class="card p-4 p-lg-5 bento-numbers" style="background-color: #DBFF40;">
-              <h2 class="card-title">6+</h2>
-              <p class="card-text">
-                Years of experience, projects shipped, and clients served — the
-                numbers speak for themselves.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- Ends here -->
+    <main id="main-content" tabindex="-1">
 
       <!-- Services -->
       <section id="services" class="py-5">
@@ -420,13 +403,8 @@
                 <em data-feather="layout"></em>
               </div>
               <div class="card-body">
-                <h4 class="card-title">UI/UX Design</h4>
-                <p class="card-text">
-                  Designing user interfaces that are not only visually appealing
-                  but also intuitive and engaging. By collaborating closely with
-                  you to understand your specific needs and objectives, I ensure
-                  that the final design effectively meets your requirements.
-                </p>
+                <h3 class="card-title">UI/UX Design</h3>
+                <p class="card-text">Your business isn't a template, so your design shouldn't be either. I design interfaces around your goals and your users — so every screen feels intentional, intuitive, and unmistakably yours.</p>
               </div>
               <div class="card-hover"></div>
             </div>
@@ -436,14 +414,8 @@
                 <em data-feather="code"></em>
               </div>
               <div class="card-body">
-                <h4 class="card-title">Website Development</h4>
-                <p class="card-text">
-                  Creating custom websites for small businesses, startups, and
-                  individuals. Whether you're looking to showcase your products
-                  and services, build an online store, or establish a strong
-                  online presence, I can deliver high-quality, user-friendly
-                  websites that meet your specific needs and budget.
-                </p>
+                <h3 class="card-title">Website Development</h3>
+                <p class="card-text">You don't need just a website — you need one that works flawlessly on every screen and turns visitors into customers. I build custom, fully responsive sites for small businesses and startups, ready to grow with you.</p>
               </div>
               <div class="card-hover"></div>
             </div>
@@ -453,62 +425,8 @@
                 <em data-feather="layers"></em>
               </div>
               <div class="card-body">
-                <h4 class="card-title">Responsive Web Design</h4>
-                <p class="card-text">
-                  Create websites that look great on all devices, regardless of
-                  screen size or orientation. I use responsive design techniques
-                  to ensure that your website will look good and be easy to use
-                  on any device.
-                </p>
-              </div>
-              <div class="card-hover"></div>
-            </div>
-
-            <div class="card card-service" id="seo-performance">
-              <div class="pt-4 pb-2 pt-lg-3 card-header">
-                <em data-feather="search"></em>
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">On-page SEO</h4>
-                <p class="card-text">
-                  Let's optimize your web page's quality content and technical
-                  configuration to make it easy to find or appear on the Search
-                  Engine Results Page.
-                </p>
-              </div>
-              <div class="card-hover"></div>
-            </div>
-
-            <div class="card card-service" id="web-hosting">
-              <div class="pt-4 pb-2 pt-lg-3 card-header">
-                <em data-feather="upload-cloud"></em>
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">Web Hosting</h4>
-                <p class="card-text">
-                  Let me help you set up your website hosting account, install
-                  essential software, and optimize your site for speed and
-                  performance. Enjoy a hassle-free setup process and peace of
-                  mind knowing your website is in good hands while you focus on
-                  your business.
-                </p>
-              </div>
-              <div class="card-hover"></div>
-            </div>
-
-            <div class="card card-service" id="maintenance-and-support">
-              <div class="pt-4 pb-2 pt-lg-3 card-header">
-                <em data-feather="settings"></em>
-              </div>
-              <div class="card-body">
-                <h4 class="card-title">Maintenance & Support</h4>
-                <p class="card-text">
-                  Don't let technical issues slow you down. I can help you with
-                  your maintenance and support to ensure your website is always
-                  up-to-date, secure, and performing at its best. I'll handle
-                  everything from updates and backups to troubleshooting and
-                  optimization.
-                </p>
+                <h3 class="card-title">SEO & Ongoing Care</h3>
+                <p class="card-text">Launch is the start, not the finish. I handle on-page SEO, hosting setup, updates, backups, and security — so you get found on Google and stay fast, secure, and online while you run your business.</p>
               </div>
               <div class="card-hover"></div>
             </div>
@@ -528,7 +446,7 @@
           <div class="row no-gutters flexbox-works flex-md-row-reverse">
             <div class="col-md-5">
               <div class="d-flex flex-column gap-x-sm">
-                <h5 class="work-title mb-0" title="Client Verified">
+                <h4 class="work-title mb-0" title="Client Verified">
                   <span>SMC Events</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -547,10 +465,13 @@
                     />
                     <path d="m9 12 2 2 4-4" />
                   </svg>
-                </h5>
+                </h4>
 
                 <p class="work-description">
                   SMC Events is a event management company that specializes in creating unforgettable experiences for clients across various industries.
+                </p>
+                <p class="work-description">
+                  <em>Designed under Unstoppable Latina Marketing, shown here with permission.</em>
                 </p>
                 <p class="work-details">
                   <strong>Role:</strong> Web Designer<br />
@@ -576,6 +497,7 @@
                     href="https://www.smceventsnyc.com"
                     target="_blank"
                     title="View Live"
+                    aria-label="View SMC Events live site"
                     rel="noopener"
                     class="btn btn-primary mobile-w-100"
                   >
@@ -612,7 +534,7 @@
           <div class="row no-gutters flexbox-works flex-md-row">
             <div class="col-md-5">
               <div class="d-flex flex-column gap-x-sm">
-                <h5 class="work-title mb-0" title="Client Verified">
+                <h4 class="work-title mb-0" title="Client Verified">
                   <span>Clarity Point Financial</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -631,13 +553,13 @@
                     />
                     <path d="m9 12 2 2 4-4" />
                   </svg>
-                </h5>
+                </h4>
 
                 <p class="work-description">
-                  Clarity Point Financial is Your Trusted Partner For All Financial
-                  Planning Needs in Calgary, Alberta, Canada that provides a wide
-                  array of services, including Retirement Planning, Investment Management,
-                  Tax Planning, and Estate Planning.
+                  A family-focused financial planning site for CPA and CFP® Jackie Walsh, designed to translate complex investment and college-planning guidance into a calm, trustworthy client experience.
+                </p>
+                <p class="work-description">
+                  <em>Designed under Unstoppable Latina Marketing, shown here with permission.</em>
                 </p>
                 <p class="work-details">
                   <strong>Role:</strong> Web Designer<br />
@@ -646,6 +568,26 @@
                 </p>
 
                 <ul class="built-with">
+                  <li>
+                    <img
+                      src="./resources/images/svg/skills/relume.svg"
+                      alt="Relume"
+                      width="32"
+                      height="32"
+                      loading="lazy"
+                      title="Relume"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./resources/images/svg/skills/figma.svg"
+                      alt="Figma"
+                      width="32"
+                      height="32"
+                      loading="lazy"
+                      title="Figma"
+                    />
+                  </li>
                   <li>
                     <img
                       src="./resources/images/svg/skills/wix.svg"
@@ -663,6 +605,7 @@
                     href="https://www.claritypointfinancial.com"
                     target="_blank"
                     title="View Live"
+                    aria-label="View Clarity Point Financial live site"
                     rel="noopener"
                     class="btn btn-primary mobile-w-100"
                   >
@@ -699,7 +642,7 @@
           <div class="row no-gutters flexbox-works flex-md-row-reverse">
             <div class="col-md-5">
               <div class="d-flex flex-column gap-x-sm">
-                <h5 class="work-title mb-0" title="Client Verified">
+                <h4 class="work-title mb-0" title="Client Verified">
                   <span>AI Latina</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -718,13 +661,16 @@
                     />
                     <path d="m9 12 2 2 4-4" />
                   </svg>
-                </h5>
+                </h4>
 
                 <p class="work-description">
                   AI Latina empowers visionary women to learn and lead with AI
                   through inclusive, wellness-centered education—so they can
                   reclaim their time, amplify their voice, and shape the future
                   of tech.
+                </p>
+                <p class="work-description">
+                  <em>Designed under Unstoppable Latina Marketing, shown here with permission.</em> 
                 </p>
                 <p class="work-details">
                   <strong>Role:</strong> Web Designer<br />
@@ -751,6 +697,7 @@
                     href="https://www.theailatina.com/"
                     target="_blank"
                     title="View Live"
+                    aria-label="View AI Latina live site"
                     rel="noopener"
                     class="btn btn-primary mobile-w-100"
                   >
@@ -787,7 +734,7 @@
           <div class="row no-gutters flexbox-works flex-md-row">
             <div class="col-md-5">
               <div class="d-flex flex-column gap-x-sm">
-                <h5 class="work-title mb-0" title="Client Verified">
+                <h4 class="work-title mb-0" title="Client Verified">
                   <span>R&A Car Care Center</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -806,7 +753,7 @@
                     />
                     <path d="m9 12 2 2 4-4" />
                   </svg>
-                </h5>
+                </h4>
 
                 <p class="work-description">
                   R&A Car Care Center is Your Trusted Partner For All Automotive
@@ -838,6 +785,7 @@
                     href="https://www.rnaautomotive.com"
                     target="_blank"
                     title="View Live"
+                    aria-label="View R&A Car Care Center live site"
                     rel="noopener"
                     class="btn btn-primary mobile-w-100"
                   >
@@ -874,7 +822,7 @@
           <div class="row no-gutters flexbox-works flex-md-row-reverse">
             <div class="col-md-5">
               <div class="d-flex flex-column gap-x-sm">
-                <h5 class="work-title mb-0" title="Client Verified">
+                <h4 class="work-title mb-0" title="Client Verified">
                   <span>Interactive Builders Corporation</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -893,7 +841,7 @@
                     />
                     <path d="m9 12 2 2 4-4" />
                   </svg>
-                </h5>
+                </h4>
 
                 <p class="work-description">
                   Interactive Builders Corporation is an Engineering and
@@ -979,6 +927,7 @@
                     href="https://ibcorp-ph.com"
                     target="_blank"
                     title="View Live"
+                    aria-label="View Interactive Builders Corporation live site"
                     rel="noopener"
                     class="btn btn-primary mobile-w-100"
                   >
@@ -1011,7 +960,7 @@
           <div class="row no-gutters flexbox-works flex-md-row">
             <div class="col-md-5">
               <div class="d-flex flex-column gap-x-sm">
-                <h5 class="work-title mb-0" title="Client Verified">
+                <h4 class="work-title mb-0" title="Client Verified">
                   <span>EASE Therapy</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1030,7 +979,7 @@
                     />
                     <path d="m9 12 2 2 4-4" />
                   </svg>
-                </h5>
+                </h4>
 
                 <p class="work-description">
                   Ease Therapy is a small team creating a big impact—delivering
@@ -1063,6 +1012,7 @@
                     href="https://www.easetx.com"
                     target="_blank"
                     title="View Live"
+                    aria-label="View EASE Therapy live site"
                     rel="noopener"
                     class="btn btn-primary mobile-w-100"
                   >
@@ -1095,7 +1045,7 @@
           <div class="row no-gutters flexbox-works flex-md-row-reverse">
             <div class="col-md-5">
               <div class="d-flex flex-column gap-x-sm">
-                <h5 class="work-title mb-0" title="Client Verified">
+                <h4 class="work-title mb-0" title="Client Verified">
                   <span>AwayStay Properties</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1114,7 +1064,7 @@
                     />
                     <path d="m9 12 2 2 4-4" />
                   </svg>
-                </h5>
+                </h4>
 
                 <p class="work-description">
                   AwayStay Properties buy houses directly from homeowners just
@@ -1148,6 +1098,7 @@
                     href="https://www.awaystayco.com"
                     target="_blank"
                     title="View Live"
+                    aria-label="View AwayStay Properties live site"
                     rel="noopener"
                     class="btn btn-primary mobile-w-100"
                   >
@@ -1184,7 +1135,7 @@
           <div class="row no-gutters flexbox-works flex-md-row">
             <div class="col-md-5">
               <div class="d-flex flex-column gap-x-sm">
-                <h5 class="work-title mb-0" title="Client Verified">
+                <h4 class="work-title mb-0" title="Client Verified">
                   <span>Innovado</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1203,15 +1154,21 @@
                     />
                     <path d="m9 12 2 2 4-4" />
                   </svg>
-                </h5>
+                </h4>
 
                 <p class="work-description">
-                  A premier web design agency dedicated to transforming digital
-                  landscapes through innovative and tailored web solutions. With
-                  a legacy of excellence, we pride ourselves on our expertise in
-                  creating bespoke websites that captivate visitors and convert
-                  them into loyal customers.
+                  Innovado is a web design agency that builds tailored web
+                  solutions for growing businesses. I designed their marketing
+                  site in Figma and brought it to life in Framer, with a clean,
+                  conversion-focused layout that reflects their brand.
                 </p>
+                <!-- TODO(Robertson): fill in real Role/Responsibility details, then uncomment.
+                <p class="work-details">
+                  <strong>Role:</strong> ...<br />
+                  <strong>Responsibility:</strong> ...<br />
+                </p>
+                -->
+
 
                 <ul class="built-with">
                   <li>
@@ -1241,6 +1198,7 @@
                     href="https://www.innovado.co"
                     target="_blank"
                     title="View Live"
+                    aria-label="View Innovado live site"
                     rel="noopener"
                     class="btn btn-primary mobile-w-100"
                   >
@@ -1277,7 +1235,7 @@
           <div class="row no-gutters flexbox-works flex-md-row-reverse">
             <div class="col-md-5">
               <div class="d-flex flex-column gap-x-sm">
-                <h5 class="work-title mb-0">Renobuild Construction Services</h5>
+                <h4 class="work-title mb-0">Renobuild Construction Services</h4>
 
                 <!-- <ul class="built-with">
                                 <li class="badge">UI/UX Design</li>
@@ -1290,6 +1248,12 @@
                   of construction services, including renovations, remodeling,
                   and new construction projects.
                 </p>
+                <!-- TODO(Robertson): fill in real Role/Responsibility details, then uncomment.
+                <p class="work-details">
+                  <strong>Role:</strong> ...<br />
+                  <strong>Responsibility:</strong> ...<br />
+                </p>
+                -->
 
                 <ul class="built-with">
                   <li>
@@ -1329,6 +1293,7 @@
                     href="https://renobuild.vercel.app"
                     target="_blank"
                     title="View Live"
+                    aria-label="View Renobuild Construction Services live site"
                     rel="noopener"
                     class="btn btn-primary mobile-w-100"
                   >
@@ -1365,7 +1330,7 @@
           <div class="row no-gutters flexbox-works flex-md-row">
             <div class="col-md-5">
               <div class="d-flex flex-column gap-x-sm">
-                <h5 class="work-title mb-0" title="Client Verified">
+                <h4 class="work-title mb-0" title="Client Verified">
                   <span>MLS JC Construction Services</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1384,7 +1349,7 @@
                     />
                     <path d="m9 12 2 2 4-4" />
                   </svg>
-                </h5>
+                </h4>
 
                 <p class="work-description">
                   MLS JC Construction Services is a sole proprietorship company
@@ -1392,6 +1357,12 @@
                   It was established on December 3, 2007, and started to operate
                   in the first quarter of the following year.
                 </p>
+                <!-- TODO(Robertson): fill in real Role/Responsibility details, then uncomment.
+                <p class="work-details">
+                  <strong>Role:</strong> ...<br />
+                  <strong>Responsibility:</strong> ...<br />
+                </p>
+                -->
 
                 <ul class="built-with">
                   <li>
@@ -1451,6 +1422,7 @@
                     href="https://mlsjcconstruction.com"
                     target="_blank"
                     title="View Live"
+                    aria-label="View MLS JC Construction Services live site"
                     rel="noopener"
                     class="btn btn-primary mobile-w-100"
                   >
@@ -1489,7 +1461,7 @@
           <div class="row no-gutters flexbox-works flex-md-row-reverse">
             <div class="col-md-5">
               <div class="d-flex flex-column gap-x-sm">
-                <h5 class="work-title mb-0" title="Client Verified">
+                <h4 class="work-title mb-0" title="Client Verified">
                   <span>Viewcon Building Group</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1508,15 +1480,21 @@
                     />
                     <path d="m9 12 2 2 4-4" />
                   </svg>
-                </h5>
+                </h4>
 
                 <p class="work-description">
                   Melbourne-based construction firm renowned for crafting
                   bespoke homes and innovative townhouse developments. With a
-                  legacy spanning over 17 years, we are dedicated to delivering
+                  legacy spanning over 17 years, they're dedicated to delivering
                   exceptional customer service and maintaining open
                   communication throughout the building process.
                 </p>
+                <!-- TODO(Robertson): fill in real Role/Responsibility details, then uncomment.
+                <p class="work-details">
+                  <strong>Role:</strong> ...<br />
+                  <strong>Responsibility:</strong> ...<br />
+                </p>
+                -->
 
                 <ul class="built-with">
                   <li>
@@ -1536,6 +1514,7 @@
                     href="https://www.viewconbg.com.au"
                     target="_blank"
                     title="View Live"
+                    aria-label="View Viewcon Building Group live site"
                     rel="noopener"
                     class="btn btn-primary mobile-w-100"
                   >
@@ -1582,7 +1561,7 @@
           <div class="row no-gutters flexbox-works flex-md-row">
             <div class="col-md-5">
               <div class="d-flex flex-column gap-x-sm">
-                <h5 class="work-title mb-0">Professional Portfolio Design</h5>
+                <h4 class="work-title mb-0">Professional Portfolio Design</h4>
 
                 <p class="work-description">
                   A one-page, user-friendly, and responsive website template
@@ -1651,6 +1630,7 @@
                     href="https://jethrocaparroso.netlify.app"
                     target="_blank"
                     title="View Live"
+                    aria-label="View Professional Portfolio Design live site"
                     rel="noopener"
                     class="btn btn-primary mobile-w-100"
                   >
@@ -1673,7 +1653,7 @@
                   <img
                     src="resources/images/projects/portfolio/thumbnail.webp"
                     class="img-fluid rounded img-fluid-hovered"
-                    alt="Personal Portfolio Design"
+                    alt="Professional Portfolio Design"
                     width="500"
                     height="380"
                     loading="lazy"
@@ -1687,7 +1667,7 @@
           <div class="row no-gutters flexbox-works flex-md-row-reverse">
             <div class="col-md-5">
               <div class="d-flex flex-column gap-x-sm">
-                <h5 class="work-title mb-0">ArtAuctions</h5>
+                <h4 class="work-title mb-0">ArtAuctions</h4>
 
                 <p class="work-description">
                   A mobile app revolutionizing the art auction experience by
@@ -1714,6 +1694,7 @@
                     href="https://www.behance.net/gallery/185402461/ArtAuctions-Mobile-Design"
                     target="_blank"
                     title="View Live"
+                    aria-label="View ArtAuctions on Behance"
                     rel="noopener"
                     class="btn btn-primary mobile-w-100"
                   >
@@ -1736,7 +1717,7 @@
                   <img
                     src="resources/images/projects/art-auctions/thumbnail-light.webp"
                     class="img-fluid img-fluid-hovered rounded"
-                    alt="Renobuild Construction Services"
+                    alt="ArtAuctions"
                     width="500"
                     height="380"
                     loading="lazy"
@@ -1750,7 +1731,7 @@
           <div class="row no-gutters flexbox-works flex-md-row">
             <div class="col-md-5">
               <div class="d-flex flex-column gap-x-sm">
-                <h5 class="work-title mb-0">Digital Wallet App</h5>
+                <h4 class="work-title mb-0">Digital Wallet App</h4>
 
                 <p class="work-description">
                   A mobile application that simplifies personal finance
@@ -1798,7 +1779,7 @@
                   <img
                     src="resources/images/projects/digital-wallet-app/thumbnail.webp"
                     class="img-fluid rounded img-fluid-hovered"
-                    alt="QuickPOS Dark Theme"
+                    alt="Digital Wallet App"
                     width="500"
                     height="380"
                     loading="lazy"
@@ -1812,7 +1793,7 @@
           <div class="row no-gutters flexbox-works flex-md-row-reverse">
             <div class="col-md-5">
               <div class="d-flex flex-column gap-x-sm">
-                <h5 class="work-title mb-0">QuickPOS</h5>
+                <h4 class="work-title mb-0">QuickPOS</h4>
 
                 <p class="work-description">
                   The advanced point-of-sale solution that revolutionizes your
@@ -1876,7 +1857,7 @@
           <div class="row no-gutters flexbox-works flex-md-row">
             <div class="col-md-5">
               <div class="d-flex flex-column gap-x-sm">
-                <h5 class="work-title mb-0">CareerSpace</h5>
+                <h4 class="work-title mb-0">CareerSpace</h4>
 
                 <p class="work-description">
                   The ultimate destination for job seekers and employers alike.
@@ -1943,7 +1924,7 @@
           <div class="row no-gutters flexbox-works flex-md-row-reverse">
             <div class="col-md-5">
               <div class="d-flex flex-column gap-x-sm">
-                <h5 class="work-title mb-0">Travelbuddy</h5>
+                <h4 class="work-title mb-0">Travelbuddy</h4>
 
                 <p class="work-description">
                   A hotel booking platform that offers a variety of
@@ -2008,7 +1989,7 @@
           <div class="row no-gutters flexbox-works flex-md-row">
             <div class="col-md-5 mb-0">
               <div class="d-flex flex-column gap-x-sm">
-                <h5 class="work-title">Online Mobile Banking</h5>
+                <h4 class="work-title">Online Mobile Banking</h4>
 
                 <p class="work-description">
                   Mobile online banking is a way to access your bank accounts
@@ -2067,98 +2048,6 @@
             </div>
           </div>
 
-          <!-- <div class="row no-gutters flexbox-works flex-md-row-reverse">
-            <div class="col-md-5">
-              <div class="d-flex flex-column gap-x-sm">
-                <h5 class="work-title mb-0">
-                  <span>Roland Electronic</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="#6440ff"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="lucide lucide-badge-check"
-                  >
-                    <path
-                      d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
-                    />
-                    <path d="m9 12 2 2 4-4" />
-                  </svg>
-                </h5>
-
-                <p class="work-description">
-                  Get top dollar for your used devices at Roland Electronic.
-                  They buy iPhones, laptops, tablets, and more! Visit
-                  <a href="https://rolandelectronic.net" target="_blank"
-                    >rolandelectronic.net</a
-                  >
-                  to see how much your devices are worth.
-                </p>
-
-                <ul class="built-with">
-                  <li>
-                    <img
-                      src="./resources/images/svg/skills/wordpress.svg"
-                      alt="WordPress"
-                      width="32"
-                      height="32"
-                      loading="lazy"
-                      title="WordPress"
-                    />
-                  </li>
-                  <li>
-                    <img
-                      src="./resources/images/svg/skills/elementor.svg"
-                      alt="Elementor"
-                      width="32"
-                      height="32"
-                      loading="lazy"
-                      title="Elementor"
-                    />
-                  </li>
-                </ul>
-
-                <div class="work-action">
-                  <a
-                    href="https://rolandelectronic.net"
-                    target="_blank"
-                    title="View Live"
-                    rel="noopener"
-                    class="btn btn-primary mobile-w-100"
-                  >
-                    <div class="flexbox-center">
-                      <em data-feather="external-link"></em>
-                      <span class="ml-2 mr-2">View Live</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-6">
-              <div class="work-img-wrapper">
-                <a
-                  href="https://rolandelectronic.net"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  <img
-                    src="resources/images/projects/rolandelectronic/thumbnail.webp"
-                    class="img-fluid rounded img-fluid-hovered"
-                    alt="Roland Electronic"
-                    width="500"
-                    height="380"
-                    loading="lazy"
-                  />
-                </a>
-              </div>
-            </div>
-          </div> -->
         </div>
       </section>
 
@@ -2176,9 +2065,8 @@
             >
               <img
                 src="resources/images/svg/skills/html.svg"
-                alt="HTML"
+                alt=""
                 class="skill-img"
-                title="HTML"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2190,9 +2078,8 @@
             >
               <img
                 src="resources/images/svg/skills/css3.svg"
-                alt="CSS"
+                alt=""
                 class="skill-img"
-                title="CSS"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2204,9 +2091,8 @@
             >
               <img
                 src="resources/images/svg/skills/sass.svg"
-                alt="SASS"
+                alt=""
                 class="skill-img"
-                title="SASS"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2219,9 +2105,8 @@
             >
               <img
                 src="resources/images/svg/skills/bootstrap.svg"
-                alt="Bootstrap"
+                alt=""
                 class="skill-img"
-                title="Bootstrap"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2234,9 +2119,8 @@
             >
               <img
                 src="resources/images/svg/skills/tailwindcss.svg"
-                alt="Tailwind CSS"
+                alt=""
                 class="skill-img"
-                title="Tailwind CSS"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2249,9 +2133,8 @@
             >
               <img
                 src="resources/images/svg/skills/javascript.svg"
-                alt="JavaScript"
+                alt=""
                 class="skill-img"
-                title="JavaScript"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2264,9 +2147,8 @@
             >
               <img
                 src="resources/images/svg/skills/typescript.svg"
-                alt="TypeScript"
+                alt=""
                 class="skill-img"
-                title="TypeScript"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2279,9 +2161,8 @@
             >
               <img
                 src="resources/images/svg/skills/jquery.svg"
-                alt="jQuery"
+                alt=""
                 class="skill-img"
-                title="jQuery"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2294,9 +2175,8 @@
             >
               <img
                 src="resources/images/svg/skills/reactjs.svg"
-                alt="ReactJS"
+                alt=""
                 class="skill-img"
-                title="ReactJS"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2309,9 +2189,8 @@
             >
               <img
                 src="resources/images/svg/skills/vue.svg"
-                alt="VueJS"
+                alt=""
                 class="skill-img"
-                title="VueJS"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2324,9 +2203,8 @@
             >
               <img
                 src="resources/images/svg/skills/nodejs.svg"
-                alt="NodeJS"
+                alt=""
                 class="skill-img"
-                title="NodeJS"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2339,9 +2217,8 @@
             >
               <img
                 src="resources/images/svg/skills/expressjs.svg"
-                alt="ExpressJS"
+                alt=""
                 class="skill-img"
-                title="ExpressJS"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2354,9 +2231,8 @@
             >
               <img
                 src="resources/images/svg/skills/php.svg"
-                alt="PHP"
+                alt=""
                 class="skill-img"
-                title="PHP"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2369,9 +2245,8 @@
             >
               <img
                 src="resources/images/svg/skills/laravel.svg"
-                alt="Laravel"
+                alt=""
                 class="skill-img"
-                title="Laravel"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2384,9 +2259,8 @@
             >
               <img
                 src="resources/images/svg/skills/mysql.svg"
-                alt="MySQL"
+                alt=""
                 class="skill-img"
-                title="MySQL"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2399,9 +2273,8 @@
             >
               <img
                 src="resources/images/svg/skills/postgreSQL.svg"
-                alt="postgreSQL"
+                alt=""
                 class="skill-img"
-                title="PostgreSQL"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2414,9 +2287,8 @@
             >
               <img
                 src="resources/images/svg/skills/mongodb.svg"
-                alt="MongoDB"
+                alt=""
                 class="skill-img"
-                title="MongoDB"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2429,9 +2301,8 @@
             >
               <img
                 src="resources/images/svg/skills/firebase.svg"
-                alt="Firebase"
+                alt=""
                 class="skill-img"
-                title="Firebase"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2444,9 +2315,8 @@
             >
               <img
                 src="resources/images/svg/skills/wix.svg"
-                alt="Wix"
+                alt=""
                 class="skill-img"
-                title="Wix"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2459,9 +2329,8 @@
             >
               <img
                 src="resources/images/svg/skills/outsystems.svg"
-                alt="OutSystems"
+                alt=""
                 class="skill-img"
-                title="OutSystems"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2474,9 +2343,8 @@
             >
               <img
                 src="resources/images/svg/skills/github.svg"
-                alt="GitHub"
+                alt=""
                 class="skill-img"
-                title="GitHub"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2489,9 +2357,8 @@
             >
               <img
                 src="resources/images/svg/skills/figma.svg"
-                alt="Figma"
+                alt=""
                 class="skill-img"
-                title="Figma"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2504,9 +2371,8 @@
             >
               <img
                 src="resources/images/svg/skills/framer.svg"
-                alt="Framer"
+                alt=""
                 class="skill-img"
-                title="Framer"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2519,9 +2385,8 @@
             >
               <img
                 src="resources/images/svg/skills/netlify.svg"
-                alt="Netlify"
+                alt=""
                 class="skill-img"
-                title="Netlify"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2534,9 +2399,8 @@
             >
               <img
                 src="resources/images/svg/skills/vercel.svg"
-                alt="Vercel"
+                alt=""
                 class="skill-img"
-                title="Vercel"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2549,9 +2413,8 @@
             >
               <img
                 src="resources/images/svg/skills/cursor.svg"
-                alt="Cursor"
+                alt=""
                 class="skill-img"
-                title="Cursor"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2563,9 +2426,8 @@
             >
               <img
                 src="resources/images/svg/skills/claude.svg"
-                alt="Claude"
+                alt=""
                 class="skill-img"
-                title="Claude"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2577,9 +2439,8 @@
             >
               <img
                 src="resources/images/svg/skills/wordpress.svg"
-                alt="WordPress"
+                alt=""
                 class="skill-img"
-                title="WordPress"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2591,9 +2452,8 @@
             >
               <img
                 src="resources/images/svg/skills/elementor.svg"
-                alt="Elementor"
+                alt=""
                 class="skill-img"
-                title="Elementor"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2605,9 +2465,8 @@
             >
               <img
                 src="resources/images/svg/skills/digital-ocean.svg"
-                alt="Digital Ocean"
+                alt=""
                 class="skill-img"
-                title="Digital Ocean"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2619,9 +2478,8 @@
             >
               <img
                 src="resources/images/svg/skills/inertia.svg"
-                alt="InertiaJS"
+                alt=""
                 class="skill-img"
-                title="InertiaJS"
                 width="42"
                 height="42"
                 loading="lazy"
@@ -2651,7 +2509,7 @@
                 <a
                   class="btn btn-outline-primary btn-download-resume"
                   target="_blank"
-                  href="https://drive.google.com/file/d/1GSdGFtc0hr5cTzc9nrTinRGKW7zDcdpo/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1kBhc882BS5T0TAo-tkJ6cXk6USSRE1qd/view?usp=sharing"
                 >
                   <div class="flexbox-center">
                     <em data-feather="external-link"></em>
@@ -2687,109 +2545,16 @@
         <div class="container">
           <div class="text-center">
             <div class="text-section">Testimonials</div>
-            <h2 class="text-highlight">What my clients' say..</h2>
+            <h2 class="text-highlight">What my clients say</h2>
           </div>
 
           <div
             id="carouselTestimonials"
             class="carousel slide"
             data-ride="carousel"
+            data-pause="hover"
           >
             <div class="carousel-inner">
-              <!-- <div class="carousel-item active">
-                <div class="d-flex mt-4 gap-base">
-                  <div class="card p-4 align-items-start">
-                    <div class="testimonial-header flexbox-center mb-4">
-                      <div class="testimonial-icon">
-                        <img
-                          src="/resources/images/quote.svg"
-                          alt="feedback-icon"
-                          width="48"
-                          height="48"
-                        />
-                      </div>
-                    </div>
-                    <div class="text-left">
-                      <div class="mb-4">
-                        <em>
-                          Robertson is an amazing full stack developer that
-                          delivered exactly what was needed. In fact, he went
-                          above and beyond what is expected. He is easy to work
-                          with and very responsive. I can't speak highly enough
-                          of his skills and strong work ethic. I've worked with
-                          him for several projects and surely will get him again
-                          for my future ones. Hire him, you will not be
-                          disappointed! 👌
-                        </em>
-                      </div>
-                      <div class="d-flex gap-base align-items-center">
-                        <img
-                          src="https://ui-avatars.com/api/?name=Krizia+Carriaga+Tenorio&background=6440ff&color=fff"
-                          class="img-fluid rounded-full"
-                          alt="Krizia Carriaga Tenorio"
-                          width="40"
-                          height="40"
-                          loading="lazy"
-                        />
-
-                        <div class="d-flex flex-column">
-                          <a
-                            href="https://www.facebook.com/krizia.carriaga/posts/10159552643280376"
-                            title="See Post"
-                            class="font-weight-500"
-                            target="_blank"
-                            >Krizia Carriaga Tenorio</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card p-4 align-items-start">
-                    <div class="testimonial-header flexbox-center mb-4">
-                      <div class="testimonial-icon">
-                        <img
-                          src="/resources/images/quote.svg"
-                          alt="feedback-icon"
-                          width="48"
-                          height="48"
-                        />
-                      </div>
-                    </div>
-                    <div class="text-left">
-                      <div class="mb-4">
-                        <em
-                          >I've worked with Robert twice already and both times
-                          he's delivered above and beyond what I needed. Easy to
-                          converse with, knows what needs to be done with
-                          minimal supervision. Hoping to work again with him in
-                          future projects soon!</em
-                        >
-                      </div>
-                      <div class="d-flex gap-base align-items-center">
-                        <img
-                          src="https://ui-avatars.com/api/?name=Krizia+Carriaga+Tenorio&background=6440ff&color=fff"
-                          class="img-fluid rounded-full"
-                          alt="Krizia Carriaga Tenorio"
-                          width="40"
-                          height="40"
-                          loading="lazy"
-                        />
-
-                        <div class="d-flex flex-column">
-                          <a
-                            href="https://www.facebook.com/krizia.carriaga/posts/10159552643280376"
-                            title="See Post"
-                            class="font-weight-500"
-                            target="_blank"
-                            >Krizia Carriaga Tenorio</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
 
               <div class="carousel-item active">
                 <div class="py-5 px-0 p-md-5">
@@ -2797,7 +2562,7 @@
                     <div class="testimonial-icon bg-primary mb-4">
                       <img
                         src="/resources/images/quote.svg"
-                        alt="feedback-icon"
+                        alt=""
                         width="60"
                         height="60"
                       />
@@ -2814,6 +2579,7 @@
                       <a
                         href="https://www.facebook.com/Nicknicklovesritz/posts/pfbid02gBN9U5wq2acjK7WCNhXXRMdNUYwWmx7e3MXXmBH2wr3Y4fS6bXMZoyXR7fZpMH2jl"
                         title="See Post"
+                        aria-label="See Desiree Dizon Mascarenas's post on Facebook"
                         class="font-weight-500"
                         target="_blank"
                         >Desiree Dizon Mascarenas</a
@@ -2831,7 +2597,7 @@
                     <div class="testimonial-icon bg-primary mb-4">
                       <img
                         src="/resources/images/quote.svg"
-                        alt="feedback-icon"
+                        alt=""
                         width="60"
                         height="60"
                       />
@@ -2853,6 +2619,7 @@
                     <a
                       href="https://www.facebook.com/krizia.carriaga/posts/10159552643280376"
                       title="See Post"
+                      aria-label="See Krizia Carriaga Tenorio's post on Facebook"
                       class="font-weight-500"
                       target="_blank"
                       >Krizia Carriaga Tenorio</a
@@ -2867,7 +2634,7 @@
                     <div class="testimonial-icon bg-primary mb-4">
                       <img
                         src="/resources/images/quote.svg"
-                        alt="feedback-icon"
+                        alt=""
                         width="60"
                         height="60"
                       />
@@ -2887,6 +2654,7 @@
                       <a
                         href="https://www.facebook.com/renzo.rebolos/posts/6331411720314834"
                         title="See Post"
+                        aria-label="See Renzo Rebolos's post on Facebook"
                         target="_blank"
                         >Renzo Rebolos</a
                       ><span class="text-muted"
@@ -2903,7 +2671,7 @@
                     <div class="testimonial-icon bg-primary mb-4">
                       <img
                         src="/resources/images/quote.svg"
-                        alt="feedback-icon"
+                        alt=""
                         width="60"
                         height="60"
                       />
@@ -2925,6 +2693,7 @@
                       <a
                         href="https://www.facebook.com/joseph.roland.9081/posts/pfbid03dyNgNn4vvGYw5LhTuXPuMANinyTQG5Zdjk5UfCQ6PJN8fAEbd8zZQXF9EeiZYVVl"
                         title="See Post"
+                        aria-label="See Joseph Roland's post on Facebook"
                         target="_blank"
                         >Joseph Roland</a
                       ><span class="text-muted">, Roland Electronic</span>
@@ -2939,7 +2708,7 @@
                     <div class="testimonial-icon bg-primary mb-4">
                       <img
                         src="/resources/images/quote.svg"
-                        alt="feedback-icon"
+                        alt=""
                         width="60"
                         height="60"
                       />
@@ -2956,6 +2725,7 @@
                       <a
                         href="https://www.facebook.com/haidar.maliki.146/posts/961460288589621"
                         title="See Post"
+                        aria-label="See Haidar Maliki's post on Facebook"
                         target="_blank"
                         >Haidar Maliki</a
                       ><span class="text-muted">, Viewcon Building Group</span>
@@ -2970,7 +2740,7 @@
                     <div class="testimonial-icon bg-primary mb-4">
                       <img
                         src="/resources/images/quote.svg"
-                        alt="feedback-icon"
+                        alt=""
                         width="60"
                         height="60"
                       />
@@ -2989,6 +2759,7 @@
                       <a
                         href="https://www.facebook.com/alknnth/posts/2121214061556000"
                         title="See Post"
+                        aria-label="See Al Kenneth Bataller's post on Facebook"
                         target="_blank"
                         >Al Kenneth Bataller</a
                       >
@@ -3003,7 +2774,7 @@
                     <div class="testimonial-icon bg-primary mb-4">
                       <img
                         src="/resources/images/quote.svg"
-                        alt="feedback-icon"
+                        alt=""
                         width="60"
                         height="60"
                       />
@@ -3023,6 +2794,7 @@
                       <a
                         href="https://www.facebook.com/mark.pogi.abyss/posts/1773460303125607"
                         title="See Post"
+                        aria-label="See Mark Aldrin Bandola's post on Facebook"
                         target="_blank"
                         >Mark Aldrin Bandola</a
                       >
@@ -3037,7 +2809,7 @@
                     <div class="testimonial-icon bg-primary mb-4">
                       <img
                         src="/resources/images/quote.svg"
-                        alt="feedback-icon"
+                        alt=""
                         width="60"
                         height="60"
                       />
@@ -3060,6 +2832,7 @@
                       <a
                         href="https://www.facebook.com/permalink.php?story_fbid=pfbid028FsRLEuzwvqAXSnyZc4gV4RhKqA2qYyzn9d7GhjvuvDP62Cf9wBcpuA5GPBbM7wyl&id=100094135244435"
                         title="See Post"
+                        aria-label="See EASE Therapy's post on Facebook"
                         target="_blank"
                         >EASE Therapy</a
                       >
@@ -3074,7 +2847,7 @@
                     <div class="testimonial-icon bg-primary mb-4">
                       <img
                         src="/resources/images/quote.svg"
-                        alt="feedback-icon"
+                        alt=""
                         width="60"
                         height="60"
                       />
@@ -3096,6 +2869,7 @@
                       <a
                         href="https://www.facebook.com/tepbuizon/posts/pfbid02AiHCWX67YRErvTihEshSq7muUTfC3Pzx1mJgjV5ommw4shhxUPisi6FrL3xsMVzql"
                         title="See Post"
+                        aria-label="See Stephen D Buizon's post on Facebook"
                         target="_blank"
                         >Stephen D Buizon</a
                       ><span class="text-muted"
@@ -3107,21 +2881,40 @@
               </div>
             </div>
 
-            <ol class="carousel-indicators">
-              <li
+            <div class="carousel-indicators">
+              <button type="button"
                 data-target="#carouselTestimonials"
                 data-slide-to="0"
                 class="active"
                 aria-label="Testimonial #1"
-              ></li>
-              <li data-target="#carouselTestimonials" data-slide-to="1" aria-label="Testimonial #2"></li>
-              <li data-target="#carouselTestimonials" data-slide-to="2" aria-label="Testimonial #3"></li>
-              <li data-target="#carouselTestimonials" data-slide-to="3" aria-label="Testimonial #4"></li>
-              <li data-target="#carouselTestimonials" data-slide-to="4" aria-label="Testimonial #5"></li>
-              <li data-target="#carouselTestimonials" data-slide-to="5" aria-label="Testimonial #6"></li>
-              <li data-target="#carouselTestimonials" data-slide-to="6" aria-label="Testimonial #7"></li>
-              <li data-target="#carouselTestimonials" data-slide-to="7" aria-label="Testimonial #8"></li>
-            </ol>
+              ></button>
+              <button type="button" data-target="#carouselTestimonials" data-slide-to="1" aria-label="Testimonial #2"></button>
+              <button type="button" data-target="#carouselTestimonials" data-slide-to="2" aria-label="Testimonial #3"></button>
+              <button type="button" data-target="#carouselTestimonials" data-slide-to="3" aria-label="Testimonial #4"></button>
+              <button type="button" data-target="#carouselTestimonials" data-slide-to="4" aria-label="Testimonial #5"></button>
+              <button type="button" data-target="#carouselTestimonials" data-slide-to="5" aria-label="Testimonial #6"></button>
+              <button type="button" data-target="#carouselTestimonials" data-slide-to="6" aria-label="Testimonial #7"></button>
+              <button type="button" data-target="#carouselTestimonials" data-slide-to="7" aria-label="Testimonial #8"></button>
+              <button type="button" data-target="#carouselTestimonials" data-slide-to="8" aria-label="Testimonial #9"></button>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselTestimonials"
+              role="button"
+              data-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous testimonial</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselTestimonials"
+              role="button"
+              data-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next testimonial</span>
+            </a>
           </div>
         </div>
       </section>
@@ -3167,10 +2960,14 @@
                         name="first_name"
                         id="first_name"
                         class="form-control"
+                        required
+                        aria-required="true"
+                        aria-describedby="validate-first_name"
                       />
                       <span
                         class="invalid-feedback"
                         id="validate-first_name"
+                        role="alert"
                       ></span>
                     </div>
                   </div>
@@ -3184,10 +2981,14 @@
                         name="last_name"
                         id="last_name"
                         class="form-control"
+                        required
+                        aria-required="true"
+                        aria-describedby="validate-last_name"
                       />
                       <span
                         class="invalid-feedback"
                         id="validate-last_name"
+                        role="alert"
                       ></span>
                     </div>
                   </div>
@@ -3204,10 +3005,14 @@
                         name="email_address"
                         id="email_address"
                         class="form-control"
+                        required
+                        aria-required="true"
+                        aria-describedby="validate-email_address"
                       />
                       <span
                         class="invalid-feedback"
                         id="validate-email_address"
+                        role="alert"
                       ></span>
                     </div>
                   </div>
@@ -3222,24 +3027,35 @@
                         id="phone_number"
                         class="form-control"
                         autocomplete="off"
+                        required
+                        aria-required="true"
+                        aria-describedby="validate-phone_number"
                       />
                       <span
                         class="invalid-feedback"
                         id="validate-phone_number"
+                        role="alert"
                       ></span>
                     </div>
                   </div>
                 </div>
 
-                <div class="input-group">
-                  <label for="subject"
+                <fieldset
+                  class="input-group"
+                  aria-describedby="validate-subject"
+                >
+                  <legend class="contact-form-legend"
                     >What do you want me to do?
-                    <span class="text-danger">*</span></label
+                    <span class="text-danger">*</span></legend
                   >
                   <div id="offered-services"></div>
 
-                  <span class="invalid-feedback" id="validate-subject"></span>
-                </div>
+                  <span
+                    class="invalid-feedback"
+                    id="validate-subject"
+                    role="alert"
+                  ></span>
+                </fieldset>
 
                 <div class="input-group">
                   <label for="message"
@@ -3254,8 +3070,15 @@
                     maxlength="500"
                     class="form-control"
                     autocomplete="off"
+                    required
+                    aria-required="true"
+                    aria-describedby="validate-message"
                   ></textarea>
-                  <span class="invalid-feedback" id="validate-message"></span>
+                  <span
+                    class="invalid-feedback"
+                    id="validate-message"
+                    role="alert"
+                  ></span>
                 </div>
 
                 <div class="flexbox-end">
@@ -3361,6 +3184,7 @@
                   href="https://www.facebook.com/robertsonmorales.dev/"
                   target="_blank"
                   title="Follow me at facebook"
+                  aria-label="Follow me on Facebook"
                   rel="noopener"
                   class="btn-socmedia"
                 >
@@ -3371,6 +3195,7 @@
                   href="https://www.instagram.com/robertson.morales/"
                   target="_blank"
                   title="Follow me at Instagram"
+                  aria-label="Follow me on Instagram"
                   rel="noopener"
                   class="btn-socmedia"
                 >
@@ -3381,10 +3206,22 @@
                   href="https://www.linkedin.com/in/robertson-morales"
                   target="_blank"
                   title="Connect with me at linkedin"
+                  aria-label="Connect with me on LinkedIn"
                   rel="noopener"
                   class="btn-socmedia"
                 >
                   <em class="icon-wrapper" data-feather="linkedin"></em>
+                </a>
+
+                <a
+                  href="https://dribbble.com/robertsonmorales"
+                  target="_blank"
+                  title="Follow me at Dribbble"
+                  aria-label="Follow me on Dribbble"
+                  rel="noopener"
+                  class="btn-socmedia"
+                >
+                  <em class="icon-wrapper" data-feather="dribbble"></em>
                 </a>
               </div>
             </div>
