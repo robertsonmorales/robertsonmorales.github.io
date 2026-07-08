@@ -66,6 +66,39 @@ glitchEls.forEach((el, i) => {
     }, offset);
 });
 
+// THEME TOGGLE
+// initial data-theme is set by the inline <head> script before CSS loads
+const themeToggle = document.getElementById('themeToggle');
+const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+
+function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    if (themeColorMeta) themeColorMeta.setAttribute('content', theme === 'dark' ? '#131114' : '#fafafa');
+    if (themeToggle) {
+        themeToggle.innerHTML = `<em data-feather="${theme === 'dark' ? 'sun' : 'moon'}"></em>`;
+        themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
+        themeToggle.setAttribute('aria-pressed', theme === 'dark');
+        feather.replace();
+    }
+}
+
+// const mode = document.documentElement.getAttribute('data-theme') || 'light';
+const mode = 'light';
+applyTheme(mode);
+
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('theme', next);
+        applyTheme(next);
+    });
+}
+
+// follow the OS live while the visitor hasn't made an explicit choice
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    if (!localStorage.getItem('theme')) applyTheme(e.matches ? 'dark' : 'light');
+});
+
 const preloader = document.getElementById('preloader');
 if (preloader) {
     setTimeout(() => {

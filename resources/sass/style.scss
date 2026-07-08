@@ -13,10 +13,10 @@
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
+    cursor: url('../../resources/custom-cursor-small.png') 4 1, auto;
 }
 
 body{
-    // background-color: $body-bg;
     background-image: url('../../resources/images/body-background.svg');
     background-position: center;
     color: $dark;
@@ -189,6 +189,409 @@ body:has(#preloader:not(.preloader-hidden)) {
     }
     30% {
         transform: translateY(-10px);
+    }
+}
+/* ENDS HERE */
+
+/* SKIP LINK */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 16px;
+    z-index: 10000;
+    padding: 8px 16px;
+    background-color: $primary;
+    color: $white;
+    border-radius: 8px;
+    text-decoration: none;
+
+    &:focus {
+        top: 16px;
+        color: $white;
+    }
+}
+/* ENDS HERE */
+
+/* HEADING LEVELS
+   Semantic levels changed for a11y (services h4->h3, works h5->h4);
+   keep the original visual sizes. */
+.card-service .card-title {
+    font-size: var(--text-size-h4);
+}
+
+.work-title {
+    font-size: var(--text-size-h5);
+}
+/* ENDS HERE */
+
+/* WORKS SUBSECTIONS (Client Projects / UI Explorations) */
+.works-subsection {
+    .works-subtitle {
+        margin-bottom: .5rem;
+    }
+
+    .works-subtext {
+        margin-bottom: 0;
+    }
+}
+/* ENDS HERE */
+
+/* CAROUSEL A11Y
+   Indicators are now <button> elements inside a <div> (keyboard focusable);
+   replicate the old li styles and add visible focus states. */
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: $text-muted;
+    // cursor: url('../../resources/custom-cursor-pointer-small.png') 1 1, pointer;
+
+    &.active {
+        background-color: $primary;
+    }
+
+    &:focus-visible {
+        outline: 2px solid $primary;
+        outline-offset: 2px;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 48px;
+
+    &:focus-visible {
+        outline: 2px solid $primary;
+        outline-offset: -2px;
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    // bootstrap ships white icons; flip them for the light background
+    filter: invert(1) grayscale(100%);
+}
+/* ENDS HERE */
+
+/* CONTACT FORM LEGEND (matches the sibling labels) */
+.contact-form-legend {
+    font-size: var(--text-size-base);
+    width: auto;
+    margin-bottom: 0;
+}
+/* ENDS HERE */
+
+/* REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .preloader-text span:not(.preloader-dot) {
+        animation: none;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+/* ENDS HERE */
+
+a, button, [role="button"], [type="button"], [type="submit"], [type="reset"],
+label, select, summary, .btn {
+    cursor: url('../../resources/custom-cursor-pointer-small.png') 1 1, pointer !important;
+}
+
+/* THEME TOGGLE */
+#themeToggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    color: $dark;
+    transition: color .2s ease;
+
+    &:hover {
+        color: $primary;
+    }
+
+    &:focus-visible {
+        outline: 2px solid $primary;
+        outline-offset: 2px;
+        border-radius: 8px;
+    }
+
+    .feather {
+        width: 20px;
+        height: 20px;
+    }
+}
+/* ENDS HERE */
+
+/* DARK MODE
+   Activated by data-theme="dark" on <html> (set by the inline head script
+   before CSS loads, toggled by resources/js/theme.js).
+   Light theme stays the compiled default; everything dark lives here. */
+html[data-theme="dark"] {
+    // surfaces (reference-derived, warm near-black)
+    --dm-bg: #131114;
+    --dm-surface: #1B191D;
+    --dm-card: #232126;
+    --dm-elevated: #2C2A30;
+    --dm-text: #F4F3F1;
+    --dm-text-muted: #A5A3AA;
+    --dm-border: rgba(255, 255, 255, .09);
+    // brand accents lightened for legibility as text on dark surfaces
+    --dm-primary-soft: #9D85FF;
+
+    color-scheme: dark;
+
+    body {
+        background-color: var(--dm-bg);
+        background-image: url('../../resources/images/body-background-dark.svg');
+        color: var(--dm-text);
+    }
+
+    /* navbar glass pill */
+    #navbar {
+        background: rgba(22, 20, 24, .45) !important;
+        border-color: var(--dm-border) !important;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, .35), 0 1px 4px rgba(0, 0, 0, .25);
+
+        &.navbar-scrolled {
+            background: rgba(22, 20, 24, .8) !important;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, .5), 0 2px 8px rgba(0, 0, 0, .3);
+        }
+    }
+
+    .navbar .nav-link,
+    .navbar-light .navbar-nav .nav-link {
+        color: var(--dm-text);
+    }
+
+    .navbar-light .navbar-brand,
+    .navbar-light .navbar-brand:hover,
+    .navbar-light .navbar-brand:focus {
+        color: var(--dm-text);
+    }
+
+    .navbar-light .navbar-nav .show > .nav-link,
+    .navbar-light .navbar-nav .active > .nav-link,
+    .navbar-light .navbar-nav .nav-link.show,
+    .navbar-light .navbar-nav .nav-link.active {
+        color: var(--dm-primary-soft) !important;
+    }
+
+    .navbar .nav-link:hover {
+        color: var(--dm-primary-soft) !important;
+    }
+
+    .navbar-toggler {
+        color: var(--dm-text);
+    }
+
+    #themeToggle {
+        color: var(--dm-text);
+
+        &:hover {
+            color: var(--dm-primary-soft);
+        }
+    }
+
+    /* glass surfaces (cards, mobile menu overlay) */
+    .glassmorphism {
+        background-color: rgba(30, 28, 33, .8);
+    }
+
+    .card {
+        border-color: var(--dm-border);
+    }
+
+    .card.card-service {
+        background-color: var(--dm-card);
+
+        .card-header .feather {
+            color: var(--dm-text);
+        }
+    }
+
+    /* bootstrap utilities (must match bootstrap's !important) */
+    .text-dark {
+        color: var(--dm-text) !important;
+    }
+
+    // .a-bit-about-me / .input-group label / .mouse-scroll get their color via
+    // @extend .text-muted, so the utility override alone doesn't reach them
+    .text-muted,
+    .a-bit-about-me,
+    .input-group label,
+    .mouse-scroll {
+        color: var(--dm-text-muted) !important;
+    }
+
+    .text-primary {
+        color: var(--dm-primary-soft) !important;
+    }
+
+    .bg-light {
+        background-color: var(--dm-surface) !important;
+    }
+
+    // .contact-card and .btn-contact get white via @extend .bg-white;
+    // .btn-contact is scoped :not(:hover) so its purple hover fill still wins
+    .bg-white,
+    .contact-card,
+    .btn-contact:not(:hover) {
+        background-color: var(--dm-card) !important;
+    }
+
+    // keep skill-logo tiles light so the (often dark) logos stay legible
+    .skill-gallery .skill-img {
+        background-color: $white !important;
+    }
+
+    // "built with" logos sit bare on the page background; give the dark ones
+    // (wix, relume, …) a light chip like the skill tiles
+    .built-with > li img {
+        background-color: $white;
+        border-radius: 8px;
+        padding: 4px;
+    }
+
+    a {
+        color: var(--dm-primary-soft);
+
+        &:hover {
+            color: lighten(#9D85FF, 8%);
+        }
+    }
+
+    .text-section {
+        color: var(--dm-text);
+    }
+
+    /* buttons */
+    .btn-outline-primary {
+        color: var(--dm-primary-soft);
+        border-color: var(--dm-primary-soft);
+
+        &:hover, &:not(:disabled):not(.disabled):active {
+            color: $white;
+            background-color: $primary;
+            border-color: $primary;
+        }
+    }
+
+    /* badges */
+    .badge {
+        color: var(--dm-primary-soft);
+        border-color: var(--dm-border);
+        background-color: rgba(100, 64, 255, .16);
+    }
+
+    /* forms (contact) */
+    .form-control {
+        background-color: var(--dm-card);
+        border-color: var(--dm-border);
+        color: var(--dm-text);
+
+        &::placeholder {
+            color: var(--dm-text-muted);
+        }
+
+        &:focus {
+            background-color: var(--dm-card);
+            border-color: $primary;
+            color: var(--dm-text);
+        }
+    }
+
+    .custom-control-label::before {
+        background-color: var(--dm-card);
+        border-color: var(--dm-border);
+    }
+
+    /* testimonials carousel */
+    .carousel-item.active {
+        color: var(--dm-text) !important;
+    }
+
+    .carousel-navigators button {
+        background-color: var(--dm-elevated);
+        color: var(--dm-text) !important;
+
+        &:hover {
+            background-color: $primary;
+        }
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        // bootstrap's icons are white already — correct on dark
+        filter: none;
+    }
+
+    .carousel-indicators button {
+        background-color: var(--dm-text-muted);
+
+        &.active {
+            background-color: var(--dm-primary-soft);
+        }
+    }
+
+    /* contact */
+    .contact-information a {
+        color: var(--dm-text);
+    }
+
+    .btn-socmedia {
+        background-color: var(--dm-elevated);
+        border-color: var(--dm-border);
+        color: var(--dm-text-muted);
+    }
+
+    /* footer */
+    .footer-link-list a {
+        color: var(--dm-text);
+
+        &:hover {
+            color: var(--dm-primary-soft);
+        }
+    }
+
+    /* misc surfaces */
+    .placeholder {
+        color: #211F24;
+    }
+
+    .bg-warning--saturated {
+        background: var(--dm-surface);
+        background: radial-gradient(circle, var(--dm-surface) 0%, #201E24 0%, var(--dm-surface) 46%);
+    }
+
+    .bg-color {
+        background-color: var(--dm-bg);
+    }
+
+    .bg-primary--saturated {
+        background-color: rgba(100, 64, 255, .16);
+    }
+
+    /* preloader (with the head script this paints dark before first render) */
+    #preloader {
+        background-color: var(--dm-bg);
+        background-image: url('../../resources/images/body-background-dark.svg');
+    }
+
+    .preloader-text {
+        color: var(--dm-text);
     }
 }
 /* ENDS HERE */

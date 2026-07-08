@@ -28,7 +28,7 @@
     <!-- Open Graph / Facebook -->
     <meta name="facebook-domain-verification" content="uzzsxxilpj16pbzb997eruvhai1kya" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.robertsonmorales.com/privacy-policy" />
+    <meta property="og:url" content="https://www.robertsonmorales.com/privacy-policy.html" />
     <meta
       property="og:title"
       content="Privacy Policy | Robertson Morales - Philippines-Based Freelance Developer & UI/UX Designer"
@@ -39,12 +39,12 @@
     />
     <meta
       property="og:image"
-      content="https://www.robertsonmorales.com/resources/images/social-share.png"
+      content="https://www.robertsonmorales.com/resources/images/social-share.jpg"
     />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://www.robertsonmorales.com/privacy-policy" />
+    <meta property="twitter:url" content="https://www.robertsonmorales.com/privacy-policy.html" />
     <meta
       property="twitter:title"
       content="Privacy Policy | Robertson Morales - Philippines-Based Freelance Developer & UI/UX Designer"
@@ -55,8 +55,26 @@
     />
     <meta
       property="twitter:image"
-      content="https://www.robertsonmorales.com/resources/images/social-share.png"
+      content="https://www.robertsonmorales.com/resources/images/social-share.jpg"
     />
+
+    <!-- theme: applied before CSS loads to avoid a flash of the wrong theme -->
+    <meta name="theme-color" content="#fafafa" />
+    <script>
+      (function () {
+        var theme = localStorage.getItem("theme");
+        if (!theme)
+          theme = window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        document.documentElement.setAttribute("data-theme", theme);
+        if (theme === "dark")
+          document
+            .querySelector('meta[name="theme-color"]')
+            .setAttribute("content", "#131114");
+      })();
+    </script>
+    <!-- ends here -->
 
     <!-- preloads -->
     <!-- styles -->
@@ -101,7 +119,7 @@
     />
     <!-- preloads ends here -->
 
-    <link rel="canonical" href="https://www.robertsonmorales.com/privacy-policy" />
+    <link rel="canonical" href="https://www.robertsonmorales.com/privacy-policy.html" />
     <link rel="shortcut icon" href="resources/images/me/favicon.ico" />
 
     <!-- Import CSS files -->
@@ -161,8 +179,17 @@
         </ul>
       </div>
 
-      <!-- Right: CTA (desktop) + hamburger (mobile) -->
+      <!-- Right: theme toggle + CTA (desktop) + hamburger (mobile) -->
       <div class="d-flex align-items-center">
+        <!-- <button
+          id="themeToggle"
+          type="button"
+          class="border-0 bg-transparent outline-none mr-2"
+          aria-label="Switch to dark theme"
+          aria-pressed="false"
+        >
+          <em data-feather="moon"></em>
+        </button> -->
         <a
           href="mailto:robertsonmorales23@gmail.com?cc=trebormoralesson@gmail.com"
           class="btn btn-primary d-none d-md-inline-block"
@@ -498,7 +525,7 @@
               <ul class="footer-link-list">
                 <li><a href="/">Home</a></li>
                 <li><a href="/#services">Services</a></li>
-                <li><a href="/works">Works</a></li>
+                <li><a href="/#works">Works</a></li>
               </ul>
             </div>
 
@@ -559,6 +586,7 @@
                     href="https://www.facebook.com/robertsonmorales.dev/"
                     target="_blank"
                     title="Follow me at facebook"
+                    aria-label="Follow me on Facebook"
                     rel="noopener"
                     class="btn-socmedia"
                   >
@@ -569,6 +597,7 @@
                     href="https://www.instagram.com/robertson.morales/"
                     target="_blank"
                     title="Follow me at Instagram"
+                    aria-label="Follow me on Instagram"
                     rel="noopener"
                     class="btn-socmedia"
                   >
@@ -579,6 +608,7 @@
                     href="https://www.linkedin.com/in/robertson-morales"
                     target="_blank"
                     title="Connect with me at linkedin"
+                    aria-label="Connect with me on LinkedIn"
                     rel="noopener"
                     class="btn-socmedia"
                   >
@@ -589,6 +619,7 @@
                     href="https://dribbble.com/robertsonmorales"
                     target="_blank"
                     title="Follow me at Dribbble"
+                    aria-label="Follow me on Dribbble"
                     rel="noopener"
                     class="btn-socmedia"
                   >

@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+    }
+
     function useScrolling(el, params){
         ScrollReveal().reveal(el, params);
     }
