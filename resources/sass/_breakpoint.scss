@@ -23,6 +23,10 @@
 }
 
 @include media-breakpoint-between(xs, sm) {
+    section{
+        padding: 10% 0%;
+    }
+
     .container:not(.from-nav){
         @extend .mobile-padding;
     }
@@ -73,7 +77,9 @@
     }
 }
 
-@include media-breakpoint-only(md) {}
+@include media-breakpoint-only(md) {
+    
+}
 
 @include media-breakpoint-between(lg, xl){
     .h1{
