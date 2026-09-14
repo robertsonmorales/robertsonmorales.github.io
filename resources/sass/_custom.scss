@@ -133,11 +133,17 @@
 }
 
 .text-section{
-    font-weight: bold;
+    font-weight: 600;
+    font-size: $font-size-sm;
     color: $dark;
     margin-bottom: 16px;
     letter-spacing: 1.4px;
-    text-transform: uppercase;
+    text-transform: sentence-case;
+    padding: 3px 12px;
+    background-color: $primary;
+    color: $white;
+    border-radius: 100px;
+    width: fit-content;
 
     // &::before, &::after{
     //     content: "•";

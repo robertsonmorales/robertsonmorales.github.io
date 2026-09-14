@@ -20,6 +20,16 @@ function navSelected(id){
     document.body.style.overflow = '';
 }
 
+// BOOKING CTA
+// report which "Book a Consultation" button was clicked (navbar, mobile-menu, hero, footer);
+// the link opens in a new tab, so this page stays alive to send the event
+document.addEventListener('click', (e) => {
+    const cta = e.target.closest('[data-cta]');
+    if (cta && typeof gtag === 'function') {
+        gtag('event', 'book_consultation', { cta_location: cta.dataset.cta });
+    }
+});
+
 const navbar = document.querySelector('#navbar');
 const mouseScroll = document.querySelector('.mouse-scroll');
 function toggleNavbarClass() {

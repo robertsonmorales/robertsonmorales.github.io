@@ -27,6 +27,10 @@ body{
     // };
 }
 
+section{
+    padding: 6.3% 6.3%;
+}
+
 @import 'overwrite';
 @import 'custom';
 @import 'breakpoint';
@@ -213,14 +217,20 @@ body:has(#preloader:not(.preloader-hidden)) {
 /* ENDS HERE */
 
 /* HEADING LEVELS
-   Semantic levels changed for a11y (services h4->h3, works h5->h4);
-   keep the original visual sizes. */
+   Semantic levels changed for a11y (services h4->h3, works h5->h3,
+   privacy-policy h4->h2, status pages h3->h1); keep the original visual sizes. */
 .card-service .card-title {
     font-size: var(--text-size-h4);
 }
 
 .work-title {
     font-size: var(--text-size-h5);
+}
+
+// _breakpoint.scss gives the h1 element a fixed 50-70px line-height for the hero;
+// an h1 styled at h3 size must keep Bootstrap's heading line-height instead
+h1.h3 {
+    line-height: 1.2;
 }
 /* ENDS HERE */
 
@@ -331,6 +341,35 @@ label, select, summary, .btn {
     .feather {
         width: 20px;
         height: 20px;
+    }
+}
+/* ENDS HERE */
+
+/* CERTIFICATIONS (about me) */
+.certifications {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+
+    img {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        height: 80px;
+    }
+}
+
+@media (max-width: 575px) {
+    .certifications {
+        gap: .75rem;
+
+        img {
+            height: 64px;
+        }
     }
 }
 /* ENDS HERE */
@@ -463,6 +502,12 @@ html[data-theme="dark"] {
         background-color: $white;
         border-radius: 8px;
         padding: 4px;
+    }
+
+    // the Wix Partner badge is a black disc; a faint light edge keeps it
+    // from dissolving into the dark background
+    .certifications img {
+        filter: drop-shadow(0 0 1px rgba(255, 255, 255, .45));
     }
 
     a {
