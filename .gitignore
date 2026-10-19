@@ -3,3 +3,4 @@ vendor/
 .vscode
 .vscode/settings.json
 .claude
+claude.md
